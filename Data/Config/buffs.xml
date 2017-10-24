@@ -294,7 +294,7 @@
 		<modify id="1" stat="health" amount="-5" rate="1" />
 		<modify id="0" stat="speedmodifier" mulValue="0.1" />
 	</buff>
-	<buff id="turret" duration="9000t" type="speedmodifier" icon="ui_game_symbol_turret" name_key="turret" description_key="Maning a turret" tooltip_key="You are maning a turret">
+	<buff id="turret" duration="9000t" type="speedmodifier" icon="ui_game_symbol_turret" name_key="turret" description_key="あなたは銃座に乗っています。" tooltip_key="You are maning a turret">
 		<modify id="0" stat="speedmodifier" mulValue="0" />
 	</buff>
 	<buff id="scorpionPoisoning" duration="1800" actions="increment(@wellness, -.2, 30, 0, 0)" type="sickness" icon="ui_game_symbol_scorpion" name_key="scorpionPoisoning" description_key="scorpionPoisoningDesc">
@@ -330,10 +330,10 @@
 	<buff id="MetabolizeScurvy" mutex="fruity" buffif="+full &gt; 0" duration="0" actions="increment(scurvyLevel, 1, 100t, 0, 0)" name_key="MetabolizeScurvy" />
 	<!-- Spend 2 weeks without eating fruit, and you'll get scurvy -->
 	<!-- The longer you wait, the more fruit you'll need to heal it -->
-	<buff id="Scurvy" mutex="fruity" type="sickness" smell="smallSmell" actions="increment(@wellness, -0.02, 30t, 0, 0)" duration="0" buffif="scurvyLevel greater 336" debuffif="fatiguelevel less 337" icon="ui_game_symbol_scurvy" name_key="Scurvy" description_key="You're showing signs of scurvy. Eat fruit!" tooltip_key="You're showing signs of scurvy. Eat fruit!">
+	<buff id="Scurvy" mutex="fruity" type="sickness" smell="smallSmell" actions="increment(@wellness, -0.02, 30t, 0, 0)" duration="0" buffif="scurvyLevel greater 336" debuffif="fatiguelevel less 337" icon="ui_game_symbol_scurvy" name_key="Scurvy" description_key="壊血病の兆しがあります。果物を食べましょう！" tooltip_key="You're showing signs of scurvy. Eat fruit!">
 		<modify id="0" stat="stamina" amount="-1" rate="1" />
 	</buff>
-	<buff id="fruity" actions="setvar(scurvyLevel, 0);debuff(Scurvy);debuff(MetabolizeScurvy)" duration="300t" onexpired="ResumeScurvy" icon="ui_game_symbol_fruity" name_key="fruity" description_key="You recently ate some fruit. That's great for your teeth!" tooltip_key="Fruity" />
+	<buff id="fruity" actions="setvar(scurvyLevel, 0);debuff(Scurvy);debuff(MetabolizeScurvy)" duration="300t" onexpired="ResumeScurvy" icon="ui_game_symbol_fruity" name_key="fruity" description_key="最近果物を食べました。歯にいいことした気分です。" tooltip_key="Fruity" />
 	<buff id="ResumeScurvy" duration="1" actions="setvar(scurvyLevel, 1)" onexpired="MetabolizeScurvy" name_key="ResumeScurvy" />
 	<!-- SCURVY DISEASE -->
 	<!-- TEMPORARY -->
@@ -369,17 +369,17 @@
 	<!-- Addiction level is always decreasing, if it's higher then 10 -->
 	<buff id="MetabolizeAddiction" buffif="addiction greater 0" debuffif="addiction less 1" actions="increment(addiction, -1, 100t, 0, 0);min(addiction, 0)" name_key="MetabolizeAddiction" />
 	<!-- If fatigue less or equal 0, get a 3h well rested buff -->
-	<buff id="wellrested" actions="setvar(fatiguelevel, 0);debuff(fatigue)" duration="300t" buffif="fatiguelevel less 1" debuffif="fatiguelevel greater 0" onexpired="ResumeFatigue" icon="ui_game_symbol_wellrested" name_key="wellrested" description_key="You feel perfectly rested and ready for action!" tooltip_key="Well Rested">
+	<buff id="wellrested" actions="setvar(fatiguelevel, 0);debuff(fatigue)" duration="300t" buffif="fatiguelevel less 1" debuffif="fatiguelevel greater 0" onexpired="ResumeFatigue" icon="ui_game_symbol_wellrested" name_key="wellrested" description_key="十分に休み、活動的になりました" tooltip_key="Well Rested">
 		<modify id="0" stat="speedmodifier" setValue="1.2" />
 	</buff>
 	<!-- More then 24 hours without mitigating fatigue, you'll get sleepy -->
-	<buff id="sleepy" mutex="fatigued" type="sickness" actions="increment(@wellness, -0.02, 30t, 0, 0)" duration="0" buffif="fatiguelevel greater 24" debuffif="fatiguelevel less 1" icon="ui_game_symbol_sleepy" name_key="sleepy" description_key="You feel sleepy. You should consider some rest." tooltip_key="Your feel sleepy" />
+	<buff id="sleepy" mutex="fatigued" type="sickness" actions="increment(@wellness, -0.02, 30t, 0, 0)" duration="0" buffif="fatiguelevel greater 24" debuffif="fatiguelevel less 1" icon="ui_game_symbol_sleepy" name_key="sleepy" description_key="眠いです。休憩するべきでしょう。" tooltip_key="Your feel sleepy" />
 	<!-- More then 35 hours without mitigating fatigue, you'll get fatigued -->
-	<buff id="fatigued" mutex="sleepDeprived,CoffeeStaminaBoost" type="sickness" actions="increment(@wellness, -0.05, 30t, 0, 0);debuff(sleepy)" duration="0" buffif="fatiguelevel greater 35" debuffif="fatiguelevel less 25" icon="ui_game_symbol_fatigued" name_key="fatigued" description_key="You're fatigued. Really dude, get some rest!" tooltip_key="You're fatigued">
+	<buff id="fatigued" mutex="sleepDeprived,CoffeeStaminaBoost" type="sickness" actions="increment(@wellness, -0.05, 30t, 0, 0);debuff(sleepy)" duration="0" buffif="fatiguelevel greater 35" debuffif="fatiguelevel less 25" icon="ui_game_symbol_fatigued" name_key="fatigued" description_key="疲労困憊です。ばか者！さっさと休むんだ！" tooltip_key="You're fatigued">
 		<modify id="0" stat="speedmodifier" setValue="0.90" />
 	</buff>
 	<!-- More then 48 hours without mitigating fatigue, you'll get sleepy -->
-	<buff id="sleepDeprived" type="sickness" actions="increment(@wellness, -0.25, 50t, 0, 0);debuff(fatigued);debuff(sleepy)" duration="0" buffif="fatiguelevel greater 48" debuffif="fatiguelevel less 36" icon="ui_game_symbol_deprivation" name_key="sleepDeprived" description_key="You're suffering for severe sleep deprivation! REST!" tooltip_key="Sleep Deprivation">
+	<buff id="sleepDeprived" type="sickness" actions="increment(@wellness, -0.25, 50t, 0, 0);debuff(fatigued);debuff(sleepy)" duration="0" buffif="fatiguelevel greater 48" debuffif="fatiguelevel less 36" icon="ui_game_symbol_deprivation" name_key="sleepDeprived" description_key="睡眠不足で最悪なことになっています！休みなさい！" tooltip_key="Sleep Deprivation">
 		<modify id="0" stat="stamina" amount="-2" rate="1" />
 		<modify id="1" stat="speedmodifier" setValue="0.75" />
 	</buff>
@@ -390,32 +390,32 @@
 	<!-- Fatigue mitigation drinks -->
 	<buff id="FatigueDrink" duration="1" actions="increment(fatiguelevel, -6, 0, 0, 1)" name_key="FatigueDrink" />
 	<!-- Fatigue mitigation soft drugs - lasts 3h during which it stops your addiction, if existing -->
-	<buff id="Cigar" duration="60" actions="attach(#SmokingParticle?SmokingParticle, Origin/CameraNode, 0, firstperson);increment(fatiguelevel, -12, 0, 0, 1);increment(addiction, 10, 0, 0, 1);debuff(addicted);debuff(drugged);increment(sanity, 0.5, 10, 0, 0)" onexpired="drugged" icon="ui_game_symbol_smoking" name_key="Cigar" description_key="Ahh, nice cigar..." tooltip_key="Smoking a Cigar" />
+	<buff id="Cigar" duration="60" actions="attach(#SmokingParticle?SmokingParticle, Origin/CameraNode, 0, firstperson);increment(fatiguelevel, -12, 0, 0, 1);increment(addiction, 10, 0, 0, 1);debuff(addicted);debuff(drugged);increment(sanity, 0.5, 10, 0, 0)" onexpired="drugged" icon="ui_game_symbol_smoking" name_key="Cigar" description_key="あぁ…、こりゃいいタバコだ…" tooltip_key="Smoking a Cigar" />
 	<!-- Fatigue mitigation strong drugs - lasts 6h during which it stops your addiction, if existing -->
-	<buff id="Blunt" duration="60" actions="attach(#SmokingParticle?SmokingParticle, Origin/CameraNode, 0, firstperson);increment(fatiguelevel, -24, 0, 0, 1);increment(addiction, 20, 0, 0, 1);debuff(addicted);debuff(drugged);increment(sanity, 1, 10, 0, 0)" onexpired="drugged" icon="ui_game_symbol_joint" name_key="Blunt" description_key="Dude... Man... Dude.." tooltip_key="Smoking a Blunt" />
+	<buff id="Blunt" duration="60" actions="attach(#SmokingParticle?SmokingParticle, Origin/CameraNode, 0, firstperson);increment(fatiguelevel, -24, 0, 0, 1);increment(addiction, 20, 0, 0, 1);debuff(addicted);debuff(drugged);increment(sanity, 1, 10, 0, 0)" onexpired="drugged" icon="ui_game_symbol_joint" name_key="Blunt" description_key="フフッフ…こりゃ、最高だ…" tooltip_key="Smoking a Blunt" />
 	<!-- You recently took drugs, should feel gooood. This actually increses addiction by 0.5 every hour-->
-	<buff id="drugged" duration="200t" actions="debuff(addicted);increment(addiction, 1.5, 100t, 0, 0)" icon="ui_game_symbol_high" name_key="drugged" description_key="Dude... I feel goooood..." tooltip_key="Drugged" />
+	<buff id="drugged" duration="200t" actions="debuff(addicted);increment(addiction, 1.5, 100t, 0, 0)" icon="ui_game_symbol_high" name_key="drugged" description_key="最っ高だぜ、お前よぉおおおおおお!!!" tooltip_key="Drugged" />
 	<!-- Ohoh, you got addicted -->
-	<buff id="addicted" mutex="Cigar,Blunt,drugged" type="sickness" actions="increment(@wellness, -0.05, 30t, 0, 0)" duration="0" buffif="addiction greater 60" debuffif="addiction less 61" icon="ui_game_symbol_addicted" name_key="addicted" description_key="I...need...a...fix..." tooltip_key="Addicted">
+	<buff id="addicted" mutex="Cigar,Blunt,drugged" type="sickness" actions="increment(@wellness, -0.05, 30t, 0, 0)" duration="0" buffif="addiction greater 60" debuffif="addiction less 61" icon="ui_game_symbol_addicted" name_key="addicted" description_key="治さなきゃ…治さなきゃ…、薬はどこだ？" tooltip_key="Addicted">
 		<modify id="0" stat="speedmodifier" setValue="0.80" />
 	</buff>
 	<!-- Syringe made from radiated mushroom... Powerful shit -->
-	<buff id="radSyringeBuff" name_key="radSyringeBuff" duration="1" actions="setvar(fatiguelevel, 0);setvar(radlevel, 0);increment(addiction, 100, 0, 0, 1);increment(health, 15, 0, 0, 1);increment(stamina, 10, 0, 0, 1)" onexpired="drugged" description_key="Nhmmmmmaaahhh" tooltip_key="Aaahhhh hmmmmm" icon="ui_game_symbol_resetrad" />
+	<buff id="radSyringeBuff" name_key="radSyringeBuff" duration="1" actions="setvar(fatiguelevel, 0);setvar(radlevel, 0);increment(addiction, 100, 0, 0, 1);increment(health, 15, 0, 0, 1);increment(stamina, 10, 0, 0, 1)" onexpired="drugged" description_key="ンッホオオォォォ！" tooltip_key="Aaahhhh hmmmmm" icon="ui_game_symbol_resetrad" />
 	<!-- DRUGS AND ADDICTION -->
 	<!-- ADMIN - Heals Fatigue and Addiction -->
 	<buff id="healAll" duration="1" actions="setvar(fatiguelevel, 1);setvar(addiction, 1)" name_key="healAll" />
 	<buff id="addFatigue" duration="1" actions="increment(fatiguelevel, 10, 0, 0, 1)" name_key="addFatigue" />
 	<!-- SLEEP AND REST -->
 	<!-- Sleeping buffs, adapted for fatigue -->
-	<buff id="sleepingBagEffect" duration="0" buffif="CTRbedroll greater 0" debuffif="CTRbedroll less 1" actions="increment(CTRbedroll, -3, 2, 0, 0);increment(fatiguelevel, -2, 10, 0, 0);increment(sanity, 0.7, 5, 0, 0)" icon="ui_game_symbol_sleep" name_key="sleepingBagEffect" description_key="This feels nice" tooltip_key="Resting">
+	<buff id="sleepingBagEffect" duration="0" buffif="CTRbedroll greater 0" debuffif="CTRbedroll less 1" actions="increment(CTRbedroll, -3, 2, 0, 0);increment(fatiguelevel, -2, 10, 0, 0);increment(sanity, 0.7, 5, 0, 0)" icon="ui_game_symbol_sleep" name_key="sleepingBagEffect" description_key="これはいい気分だ…" tooltip_key="Resting">
 		<modify id="0" stat="health" amount="1" rate="30" />
 		<modify id="1" stat="stamina" amount="1" rate="3" />
 	</buff>
-	<buff id="sleepingBedEffect" duration="0" buffif="CTRbed greater 0" debuffif="CTRbed less 1" actions="increment(CTRbed, -3, 2, 0, 0);increment(fatiguelevel, -5, 10, 0, 0);increment(sanity, 1.4, 5, 0, 0)" name_key="sleepingBedEffect" description_key="Finally a bed!" tooltip_key="Resting" icon="ui_game_symbol_sleep">
+	<buff id="sleepingBedEffect" duration="0" buffif="CTRbed greater 0" debuffif="CTRbed less 1" actions="increment(CTRbed, -3, 2, 0, 0);increment(fatiguelevel, -5, 10, 0, 0);increment(sanity, 1.4, 5, 0, 0)" name_key="sleepingBedEffect" description_key="やっとベッドを見つけた！" tooltip_key="Resting better" icon="ui_game_symbol_sleep">
 		<modify id="0" stat="health" amount="1" rate="15" />
 		<modify id="1" stat="stamina" amount="1" rate="3" />
 	</buff>
-	<buff id="sleepingBigBedEffect" duration="0" buffif="CTRbigbed greater 0" debuffif="CTRbigbed less 1" actions="increment(CTRbigbed, -7, 2, 0, 0);increment(fatiguelevel, -7, 10, 0, 0);increment(sanity, 2.4, 5, 0, 0)" name_key="sleepingBigBedEffect" description_key="Too bad i don't have company..." tooltip_key="Resting well" icon="ui_game_symbol_sleep">
+	<buff id="sleepingBigBedEffect" duration="0" buffif="CTRbigbed greater 0" debuffif="CTRbigbed less 1" actions="increment(CTRbigbed, -7, 2, 0, 0);increment(fatiguelevel, -7, 10, 0, 0);increment(sanity, 2.4, 5, 0, 0)" name_key="sleepingBigBedEffect" description_key="1人で眠る寂しさよ…。" tooltip_key="Resting well" icon="ui_game_symbol_sleep">
 		<modify id="1" stat="health" amount="1" rate="5" />
 		<modify id="1" stat="stamina" amount="1" rate="3" />
 	</buff>
@@ -433,7 +433,7 @@
 	<buff id="StrongMind" duration="0" name_key="StrongMind" description_key="StrongMindDesc" tooltip_key="StrongMindDesc" icon="ui_game_symbol_strongmind" />
 	<buff id="meditatingTrigger" duration="1" actions="setvar(CTRcarpet, 10)" />
 	<buff id="Meditate" duration="0" buffif="CTRcarpet greater 0" debuffif="CTRcarpet less 1" name_key="Meditate" actions="increment(CTRcarpet, -3, 2, 0, 0);increment(sanity, 4, 3, 0, 0)" description_key="MeditatingDesc" tooltip_key="MeditatingDesc" icon="ui_game_symbol_meditate" />
-	<buff id="Meditating" duration="0" name_key="Meditating" actions="increment(sanity, 3, 3, 0, 0)" description_key="MeditatingDesc" tooltip_key="MeditatingDesc" icon="ui_game_symbol_meditate" />
+	<buff id="Meditating" duration="0" name_key="Meditating" actions="increment(sanity, 4, 3, 0, 0)" description_key="MeditatingDesc" tooltip_key="MeditatingDesc" icon="ui_game_symbol_meditate" />
 	<buff id="meditatePassive1" mutex="meditatePassive2,meditatePassive3,meditatePassive4,meditatePassive5,meditatePassive6,meditatePassive7" duration="0" actions="increment(sanity, 0.1, 25t, 0, 0)" name_key="meditatePassive1" />
 	<buff id="meditatePassive2" mutex="meditatePassive3,meditatePassive4,meditatePassive5,meditatePassive6,meditatePassive7" duration="0" actions="increment(sanity, 0.4, 25t, 0, 0)" name_key="meditatePassive2" />
 	<buff id="meditatePassive3" mutex="meditatePassive4,meditatePassive5,meditatePassive6,meditatePassive7" duration="0" actions="increment(sanity, 0.5, 25t, 0, 0)" name_key="meditatePassive3" />
@@ -442,8 +442,8 @@
 	<buff id="meditatePassive6" mutex="meditatePassive7" duration="0" actions="increment(sanity, 0.9, 25t, 0, 0)" name_key="meditatePassive6" />
 	<buff id="meditatePassive7" duration="0" actions="increment(sanity, 1.3, 25t, 0, 1)" name_key="meditatePassive7" />
 	<!-- SANITY DEBUFFS -->
-	<buff id="sanityVerySmall" duration="4" actions="increment(sanity, -.2, 1, 0, 1)" name_key="sanityVerySmall" />
-	<buff id="sanitySmall" duration="4" actions="increment(sanity, -.35, 1, 0, 1)" name_key="sanitySmall" />
+	<buff id="sanityVerySmall" duration="4" actions="increment(sanity, -.1, 1, 0, 1)" name_key="sanityVerySmall" />
+	<buff id="sanitySmall" duration="4" actions="increment(sanity, -.3, 1, 0, 1)" name_key="sanitySmall" />
 	<buff id="sanityNormal" duration="2" actions="increment(sanity, -1, 1, 0, 1)" name_key="sanityNormal" />
 	<buff id="sanityMedium" duration="2" actions="increment(sanity, -3, 1, 0, 1)" name_key="sanityMedium" />
 	<buff id="sanityBig" duration="2" actions="increment(sanity, -50, 1, 0, 1)" name_key="sanityBig" />

@@ -18595,7 +18595,7 @@
 	</block>
 	<!-- this workstation needs no power, but only allows to make very basic metal stuff -->
 	<block id="983" name="forgestone">
-		<property name="DescriptionKey" value="anvil1Desc" />
+		<property name="DescriptionKey" value="forgestoneDesc" />
 		<property name="Material" value="metal" />
 		<property name="Stacknumber" value="1" />
 		<property name="Shape" value="ModelEntity" />

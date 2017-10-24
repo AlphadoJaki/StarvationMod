@@ -8259,7 +8259,7 @@
 	</item>
 	<item id="3" name="improvedCane">
 		<property name="Extends" value="cane" />
-		<property name="DescriptionKey" value="caneDesc" />
+		<property name="DescriptionKey" value="improvedCaneDesc" />
 		<property name="Meshfile" value="#fishing1?caneW" />
 		<property name="ActionSkillGroup" value="Fisherman" />
 		<property name="CraftingSkillGroup" value="Fisherman" />
@@ -8490,6 +8490,7 @@
 		<property class="Action1">
 			<property name="Blockname" value="skull3Wall" />
 		</property>
+		<property name="DescriptionKey" value="headDesc" />
 	</item>
 	<item id="34" name="fish">
 		<property name="Meshfile" value="#fishes?fish" />
@@ -8519,7 +8520,7 @@
 	</item>
 	<item id="36" name="rudFish">
 		<property name="Extends" value="fish" />
-		<property name="DescriptionKey" value="fishDesc" />
+		<property name="DescriptionKey" value="rudFishDesc" />
 		<property name="Meshfile" value="#fishes?rudFish" />
 		<property name="DropMeshfile" value="#fishes?rudFish" />
 		<property class="Action1">
@@ -12458,7 +12459,6 @@
 	<item id="343" name="fruitMaster">
 		<property name="CreativeMode" value="Dev" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="DescriptionKey" value="fruitGroupDesc" />
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="500" />
@@ -12544,7 +12544,6 @@
 	<item id="375" name="vegetableMaster">
 		<property name="CreativeMode" value="Dev" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="DescriptionKey" value="fruitGroupDesc" />
 		<property name="HoldType" value="45" />
 		<property name="Material" value="organic" />
 		<property name="Stacknumber" value="500" />

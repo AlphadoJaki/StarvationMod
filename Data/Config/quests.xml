@@ -204,13 +204,7 @@
 	<quest id="treasure_raphael" name_key="treasure_raphael" subtitle_key="treasure_raphael_subtitle" description_key="treasure_raphael_offer" icon="ui_game_symbol_treasure" repeatable="true" category_key="treasure" offer_key="treasure_raphael_offer" difficulty="medium">
 		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
 	</quest>
-	<quest id="challenge_junkhunt1" group_name_key="Junkhunt" name_key="Scavenging for orphans" subtitle_key="Scavenging for orphans" offer_key="A little orphan girl showed up at the tradingpost and won't stop crying about her lost dolly.  Find her a doll and you will be rewarded!" description_key="Find a doll and you will be rewarded!!" icon="ui_game_symbol_rubberDoll" category_key="challenge">
-		<objective type="FetchKeep" id="rubberDoll" value="1" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-		<reward type="Quest" id="challenge_junkhunt2" />
-	</quest>
-	<quest id="challenge_junkhunt2" group_name_key="Junkhunt" name_key="Scavenging for orphans again" subtitle_key="Scavenging for orphans again" offer_key="That girl's brother just showed up.  All he talks about is becoming a zombie killing soldier and is missing his toy soldier collection.  Collect some toy soldiers and you will be rewarded!  Are you up for this one too?" description_key="Collect some toy soldiers and you will be rewarded!" icon="ui_game_symbol_plasticSoldier" category_key="challenge">
+	<quest id="challenge_junkhunt2" group_name_key="ガラクタ集め" name_key="親なき子のためのゴミ漁り  再び！" subtitle_key="親なき子のためのゴミ漁り  再び！" description="今度は娘の弟が来やがった。こいつゾンビハンターになってやるだの、コレクションを失くして悔しいだのとしか言わない。戦士の人形を全部見つけたらお礼は弾むぜ！さあさあ坊や、こいつも欲しいかい？" offer="戦士の人形を全部見つけたらお礼は弾むぜ！" icon="ui_game_symbol_plasticSoldier" category_key="challenge">
 		<objective type="FetchKeep" id="plasticSoldier" value="1" />
 		<objective type="FetchKeep" id="woodSoldier" value="1" />
 		<objective type="FetchKeep" id="ironSoldier" value="1" />
@@ -219,11 +213,17 @@
 		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
-	<quest id="quest_nuclearPlant1" group_name="Nuclear Plant" name="Nuclear Plant" subtitle="Nuclear Plant" description="Well....\n\nYou seem to be a resourceful fella.\nI've heard that there's a active nuclear plant somewhere.\n\nHere, take this modified geiger counter, it might help you.\nI adjusted it to look for nuclear plant radiation signature.\n\nI advise you to approach with care.\n\nIf you find it, I want you to power it up and make me some plutonium...\nDon't ask me how... Just do it, and I'll make it worthwhile" icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="challenge_junkhunt1" group_name_key="ガラクタ集め" name_key="親なき子のためのゴミ漁り" subtitle_key="親なき子のためのゴミ漁り" description="孤児の娘が市場に来ては失くした人形のことを泣きわめきやがる。あの娘の人形を見つけたらお礼はするぜ！" offer="人形を見つけたらお礼はするぜ！" icon="ui_game_symbol_rubberDoll" category_key="challenge">
+		<objective type="FetchKeep" id="rubberDoll" value="1" />
+		<reward type="Exp" value="400" />
+		<reward type="SkillPoints" value="1" />
+		<reward type="Quest" id="challenge_junkhunt2" />
+	</quest>
+	<quest id="quest_nuclearPlant1" group_name="原子力発電所" name="原子力発電所" subtitle="原子力発電所" description="えっと…、\nキミはいいやつみたいだから、俺が地図に\n近くの原子力発電所を書いておいてやった。\n\n気を付けて近づくことだ。\n\n見つけたら戻ってきてくれ、話がある。" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<reward type="Item" id="findPlant" />
 		<reward type="Quest" id="quest_nuclearPlant2" />
 	</quest>
-	<quest id="quest_nuclearPlant2" group_name="Nuclear Plant" name="Power it UP" subtitle="Power it UP" description="So, let's find that nuclear plant and get ourselfs some plutonium." icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="quest_nuclearPlant2" group_name="原子力発電所" name="再稼働だ！" subtitle="再稼働だ！" description="良かった、残ってたみたいだな！\n\nあれを起動して、生成されたプルトニウムを取ってきてくれ。\nきっと使い方や燃料はどこかに残っているはずだ。\n\n戻ったら面白いことを教えてやれるはずさ。" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<objective type="FetchKeep" id="plutonium" value="1" />
 		<reward type="Quest" id="quest_nuclearPlant3" />
 	</quest>
@@ -237,20 +237,20 @@
 	<quest id="quest_nuclearPlant5" group_name="Nuclear Plant" name="Power it UP" subtitle="Power it UP" description="Perfect, so you finally got some plutonium... That's awsome man!\n\n Here, take this, make good use of it!" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<reward type="Item" id="exoHelmet" />
 	</quest>
-	<quest id="quest_repairKatana1" group_name_key="quest_repairKatana1" name="Repair My Gun 1/2" name_key="quest_repairKatana1" subtitle="Get me some stuff" description="You seem resourceful. If you could get me some leather and\nforged iron to repair my Katana, maybe we could talk...\n\nGet this stuff and come back to me!" icon="ui_game_symbol_hammer" category_key="Quest">
+	<quest id="quest_repairKatana1" group_name_key="刀の修理" name="刀の修理" name_key="刀の修理1" subtitle="修理素材を集めてくれ" description="色々と物には困っていないみたいだね。\n私になめし皮と精錬鉄を持ってきて\nくれないか、刀の修理に必要なんだ。\n\n見つかったら持ってきてくれ！" icon="ui_game_symbol_hammer" category_key="Quest">
 		<action type="TrackQuest" />
 		<objective type="FetchKeep" id="leather" value="5" />
 		<objective type="FetchKeep" id="forgedSteel" value="2" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="quest_repairKatana2" name="quest_repairKatana2" subtitle="Need some more help" description="This mats will certainly help me,\nbut I'm not getting out of here with so many zeds around.\n\nDo some cleaning, and I may follow you!\nI really HATE female zombies, their screams are disgusting!\n\nCome back to me when you're done!" icon="ui_game_symbol_zombie" category_key="challenge">
+	<quest id="quest_repairKatana2" name="邪魔者退治" subtitle="もうちょっと助けてくれ" description="材料はこれできっと足りるはず。\nだがこの辺にはゾンビが多すぎる。\n\n蹴散らしてくれれば君についていこう。\n俺は女ゾンビが大嫌いなんだ。やつらは叫ぶからね。\n終わったらまた話してくれ。" icon="ui_game_symbol_zombie" category_key="challenge">
 		<objective type="ZombieKill" id="zombieArlene" value="1" />
 		<objective type="ZombieKill" id="zombieDarlene" value="1" />
 		<objective type="ZombieKill" id="zombieMarlene" value="1" />
 		<objective type="ZombieKill" id="zombieNurse" value="1" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="quest_repairKatana3" name="quest_repairKatana3" subtitle="Get me some more...." description="There are still to many of those suckers running around,\nbring me a few more and I got a nice present for you" icon="ui_game_symbol_zombie" category_key="challenge">
+	<quest id="quest_repairKatana3" name="邪魔者退治再び" subtitle="これで最後だ！" description="奴ら、まだまだ大量に走り回ってるね。\nあとちょっとだけ倒してくれれば、良いものをあんたにやろう。" icon="ui_game_symbol_zombie" category_key="challenge">
 		<objective type="ZombieKill" id="zombieBoe" value="1" />
 		<objective type="ZombieKill" id="zombieJoe" value="1" />
 		<objective type="ZombieKill" id="zombieMoe" value="1" />
@@ -258,12 +258,12 @@
 		<reward type="Item" id="talkingHeadItem" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="quest_militaryAid" name="Military Aid" name_key="quest_militaryAid" subtitle="I want revenge!" description="My entire unit was killed inside the radiated zone!\nI want you to kill that damn mutant bosses for me!\n\nI'll make it worth while!" icon="ui_game_symbol_zombie" category_key="challenge">
+	<quest id="quest_militaryAid" name="軍人の仇討ち" name_key="軍人の仇討ち" subtitle="仇を討ってくれ！" description="俺の小隊は放射能汚染区域で全滅しちまった！\n俺はあの憎きミュータントどもをお前に倒してほしいんだ！\n\n見返りはすぐに用意する。" icon="ui_game_symbol_zombie" category_key="challenge">
 		<objective type="ZombieKill" id="radApe" value="1" />
 		<objective type="ZombieKill" id="zombieWightFeralRadiated" value="1" />
 		<reward type="Item" id="aviatorGoggles" />
 	</quest>
-	<quest id="quest_militaryReward" name="Revenge" subtitle="I want revenge!" description="AH AH AH AH! You got them fuckers!\n\nI hope you brought me their goggles as prove!\n\nWear them for me, please! This is awsome!!" icon="ui_game_symbol_zombie" category_key="Quest">
+	<quest id="quest_militaryReward" name="軍人の仇討ち" subtitle="仇を討ってくれ！" description="ハッハッハッハ！よくやってくれた！\n\nきっと奴らから形見のゴーグルを取り戻してくれたはずだ！\n着けて見せてくれ、これは最高だ!!" icon="ui_game_symbol_zombie" category_key="Quest">
 		<objective type="Wear" id="aviatorGoggles" />
 		<reward type="Item" id="MilitaryScrewer" />
 	</quest>
@@ -271,31 +271,31 @@
 	  <objective type="Goto" id="junkyard_med_MG" value="5" />
 	  <reward type="SkillPoints" value="1" />
 	 </quest> -->
-	<quest id="quest_TheFarmer" group_name="The Farmer" name="The Farmer" subtitle="Find the Farmer" description="Where the hell is the farmer" icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="quest_TheFarmer" group_name="農家のおっちゃん" name="農家のおっちゃん" subtitle="農家のおっちゃんを探せ" description="Farmerは一体どこに居るんだ！" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<objective type="Goto" id="FarmerPrefab" value="5" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="quest_TheScientists" group_name="The Scientists" name="The Scientists" subtitle="Find the Scientists" description="Scientists, where are they hiding" icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="quest_TheScientists" group_name="化学者" name="化学者" subtitle="化学者を探せ" description="化学者(Scientists)は一体どこに居るんだ！" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<objective type="Goto" id="ScientistShelter" value="5" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="quest_Michone" group_name="The Katana Lady" name="The Katana Lady" subtitle="Find Michone" description="Find Michones House" icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="quest_Michone" group_name="刀の女" name="刀の女" subtitle="Michonesを探せ" description="Michonesの家" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<objective type="Goto" id="abandoned_house_michone" value="5" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="quest_Madmole" group_name="Tha Church" name="Holy Rooms" subtitle="Find Madmole" description="Find Madmoles Church" icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="quest_Madmole" group_name="教会" name="ヒゲの神官" subtitle="ヒゲを探せ" description="ヒゲ(Madmole)の教会を探せ" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<objective type="Goto" id="church_madmole" value="5" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="quest_Military" group_name="Military" name="Get da Beast" subtitle="Find Trooper" description="Find Trooper" icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="quest_Military" group_name="軍人" name="力を求めて" subtitle="軍人を探せ" description="軍人(Trooper)を探せ" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<objective type="Goto" id="militarybarracks" value="5" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="quest_PrepareForTheCure" group_name="The Cure" name="Is there a Cure?" subtitle="Get your Rad Suit to help us" description="You know what, take this key and get your Hazmat Suit.\n\nYou'll probably need it, if you're gonna help us.\n\nTalk to me when you have it!" icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="quest_PrepareForTheCure" group_name="特効薬" name="特効薬はあるのか？" subtitle="対放射線装備で助けてくれ" description="ああ、やっと増援が来たのか。この鍵で対放射線装備を取ってこい。\n助けてくれるなら、多分そいつが必要になるだろう。\n\n持ってきたら話しかけてくれ。" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<reward type="Item" id="RadSuitKey" />
 		<reward type="Quest" id="quest_theCure" />
 	</quest>
-	<quest id="quest_theCure" group_name="The Cure" name="Is there a Cure? 1" subtitle="Wear the Hazmat" description="Wear the full hazmat suit, and talk with the doc again." icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="quest_theCure" group_name="特効薬" name="特効薬はあるのか？１" subtitle="HAZMATスーツを着る" description="HAZMATスーツを着て、もう一度話しかけよう。" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<objective type="FetchKeep" id="hazmatMask" value="1" />
 		<objective type="FetchKeep" id="hazmatGloves" value="1" />
 		<objective type="FetchKeep" id="hazmatShirt" value="1" />
@@ -303,61 +303,61 @@
 		<objective type="FetchKeep" id="hazmatBoots" value="1" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="quest_theCure1" group_name="The Cure" name="Is there a Cure? 2" subtitle="Find the infected Scientist" description="We've recently sent a team to the outer radiated zones.\nWe suspected there may be something there that can help us...\nUnfortunately we lost contact with our team,\nand we fear for the worse.\nMy brother was one of the team members,\nand I was wondering if you could go look for him there.\n\nAnd... ermmm... If he's infected, please make sure you free him...\n\nOh and if he's carying any syringe,\nmake sure you bring it back with you!" icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="quest_theCure1" group_name="特効薬" name="特効薬はあるのか？２" subtitle="感染した化学者を探す" description="最近「外の世界」にうちのチームを送ったんだが、助けが必要になったらしい\nあそこには何かあるはずだ…\n残念ながら最近通信ができなくてな、\n何か悪いことがあったんじゃないかと思う。\n中に俺の兄弟もいるから、探してくれないか？\nもし…万が一、な？感染してたら、楽にしてくれ…。\nああ、そうだ、あいつが注射器を持っていたら必ず持って帰ってきてくれ。" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<objective type="ZombieKill" id="DocZd" value="1" />
 		<objective type="FetchKeep" id="RadSyringe" value="1" />
 		<reward type="Item" id="antibiotics" />
 	</quest>
-	<quest id="quest_theCure2" group_name="The Cure" name="Is there a Cure? 3" subtitle="One step closer" description="Well, shit... That's unfortunate about my brother.\n\nHowever the syringe you brought back\nis VERY interesting! This cures almost any disease...\nCareful though, it's quite addictive!\n\nHere, you keep that one and let me teach you\nhow to make more!\n\nBye now, i'll keep investigating a definite cure!!" icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="quest_theCure2" group_name="特効薬" name="特効薬はあるのか？３" subtitle="近くで見せる" description="ああ、なんてこった…。弟は…、そうか…。\nだが、君が持って帰ってきてくれたものはとても有用なものだ。ほぼ全ての病を治してくれるらしい…。\n中毒にならないように気を付けてくれよ？\n\nよし、これの作り方を本にまとめよう。これを使って役に立ててくれ。\nじゃあな、俺はもう少し研究を続けるとするよ。" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<objective type="FetchKeep" id="RadSyringe" value="1" />
 		<reward type="Item" id="radSyringeBook" />
 	</quest>
-	<quest id="quest_farmer1" group_name="Save my Ass" name="Save my Ass 1" subtitle="Seed Me" description="Hi there pilgrim!\n\nI wonder if you could help me with something!\nI've been trying to restart my farm, but I need some seeds..." icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="quest_farmer1" group_name="頑固おやじの頼み" name="頑固おやじの頼み" subtitle="種をくれ" description="よう、旅人さん！\n俺の手助けをしてくれねぇか?\n農業をもう一度始めたいんだが、種を全部食われちまったんだ…。" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<action type="TrackQuest" />
 		<objective type="FetchKeep" id="potato" value="3" />
 		<objective type="FetchKeep" id="corn" value="2" />
 		<objective type="FetchKeep" id="wheat" value="1" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="quest_farmer2" group_name="Save my Ass" name="Save my Ass 2" subtitle="Save My Ass" description="Perfect... But this damn zeds keep destroying my plants!\n\nI'm just not strong enough... Could you help me?\nYou do this for me, and I'll get you a nice ass!\n\nAre you ready for this?" icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="quest_farmer2" group_name="頑固おやじの頼み" name="頑固おやじの頼み" subtitle="頑固おやじの頼み" description="ありがとよ！だが、あのゾンビたちが作物を踏み荒らしやがる。\n\n腕っぷしに自信は無くてな。助けてくれねぇか？\nやってくれるなら俺の相棒を紹介しよう。\n\n準備はいいか？" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<action type="TrackQuest" />
 		<objective type="ZombieKill" id="zombieBoe" value="1" />
 		<objective type="ZombieKill" id="zombieJoe" value="1" />
 		<reward type="Item" id="donkeyItem" />
 	</quest>
-	<quest id="quest_BurnedHouse" group_name="Rad Zone" name="Unit Outpost" subtitle="Unit Outpost" description="I have no hope of surviving... My unit was pinned out deep inside the rad zone..\nI managed to run away, but radiation is gettting to me... I feel I can't got on...\n\nAt night I hear this damn spiders lurking around, and I'm almost out of ammo..\nI made a map of our unit outpost, we left some gear behind! Maybe someone finds this, and is able to use it...\nHumanity must survive!" offer="I have no hope of surviving... My unit was pinned out deep inside the rad zone..\nI managed to run away, but radiation is gettting to me... I feel I can't got on...\n\nAt night I hear this damn spiders lurking around, and I'm almost out of ammo..\nI made a map of our unit outpost, we left some gear behind! Maybe someone finds this, and is able to use it...\nHumanity must survive!" icon="ui_game_symbol_map_trader" category_key="Quest" repeatable="true" difficulty="hard">
+	<quest id="quest_BurnedHouse" group_name="「外の世界」" name="軍用装備" subtitle="小隊の前哨基地に向かえ" description="生存の望みは絶たれた。私の小隊は汚染区域の深部に取り残された…。私の除染の試みも全て無駄だった…。長くはないと思う。\n今夜もあの恐ろしい蜘蛛が闊歩するのを聞きながら、残りの弾薬を数えている。もう片手で数えられるだけしか残っていない…。この前哨基地の地図を作った。残る軍用装備は見つけた者の役に立つだろう…。\n人類の再生を期して、万歳！" offer="生存の望みは絶たれた。私の小隊は汚染区域の深部に取り残された…。私の除染の試みも全て無駄だった…。長くはないと思う。\n今夜もあの恐ろしい蜘蛛が闊歩するのを聞きながら、残りの弾薬を数えている。もう片手で数えられるだけしか残っていない…。この前哨基地の地図を作った。残る軍用装備は見つけた者の役に立つだろう…。\n人類の再生を期して、万歳！" icon="ui_game_symbol_map_trader" category_key="Quest" repeatable="true" difficulty="hard">
 		<objective type="Goto" id="HouseBurntRadiated" value="5" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="quest_BurnedHouse1" group_name="Rad Zone" name="Mario Diary" subtitle="Mario Diary" description="I fell my mind decaying... I thought I could come here and salvage some good loot, but this damn radiation is just too much...\n\nI'm starting to forget simple things. This map is a reminder of my hidden stach...\n\nBe careful, i had to run when they came! Those monsters...\nI think i lost them, but I can't be sure anymore..." offer="I fell my mind decaying... I thought I could come here and salvage some good loot, but this damn radiation is just too much...\n\nI'm starting to forget simple things. This map is a reminder of my hidden stach...\n\nBe careful, i had to run when they came! Those monsters...\nI think i lost them, but I can't be sure anymore..." icon="ui_game_symbol_map_trader" category_key="Quest" repeatable="true" difficulty="hard">
+	<quest id="quest_BurnedHouse1" group_name="「外の世界」" name="Marioの日記" subtitle="日記の場所に向かう" description="精神がすり減っていく。ここならいいものが見つかると思っていたが、汚染が酷すぎる…。\n簡単なことでさえ忘れてしまう。この地図は私が何かを隠した時の物だろうか…？気を付けないと…。やつらが来たら逃げるしかない！あの化け物のことだ…。\n何かを隠したのかもしれないが、もうどうでもいいことだ。見つけても、使い方はわからないだろう…。" offer="精神がすり減っていく。ここならいいものが見つかると思っていたが、汚染が酷すぎる…。\n簡単なことでさえ忘れてしまう。この地図は私が何かを隠した時の物だろうか…？気を付けないと…。やつらが来たら逃げるしかない！あの化け物のことだ…。\n何かを隠したのかもしれないが、もうどうでもいいことだ。見つけても、使い方はわからないだろう…。" icon="ui_game_symbol_map_trader" category_key="Quest" repeatable="true" difficulty="hard">
 		<objective type="Goto" id="HouseBurntRadiated1" value="5" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="quest_MpWaste" group_name="Rad Zone" name="Military Stach" subtitle="Military Stach" description="Finally a break through! Last night I followed some military crew, and I managed to find out their gear stach!\nI'm making this map for future reference. There was a big gunfight and I still can't believe my eyes.\nWhat I saw was... Unbelievable... Monsters, they were monsters... But i need to get that gear, it's our only ho..." offer="Finally a break through! Last night I followed some military crew, and I managed to find out their gear stach!\nI'm making this map for future reference. There was a big gunfight and I still can't believe my eyes.\nWhat I saw was... Unbelievable... Monsters, they were monsters... But i need to get that gear, it's our only ho..." icon="ui_game_symbol_map_trader" category_key="Quest" repeatable="true" difficulty="hard">
+	<quest id="quest_MpWaste" group_name="「外の世界」" name="軍用装備" subtitle="メモの場所に向かう" description="ついに革新の時だ！昨夜兵士の列をつけて、軍用装備の場所を見つけた！後で見る時のために地図を残しておこう。……であった銃撃戦は、目を疑う物だ…よ。\n…で見たものは、信じ……ないような…、化け物。そうとしか言えない……。でも、装…手に…ないと……………最……希望…(ひどく破れていて一部が読めない)" offer="ついに革新の時だ！昨夜兵士の列をつけて、軍用装備の場所を見つけた！後で見る時のために地図を残しておこう。……であった銃撃戦は、目を疑う物だ…よ。\n…で見たものは、信じ……ないような…、化け物。そうとしか言えない……。でも、装…手に…ないと……………最……希望…(ひどく破れていて一部が読めない)" icon="ui_game_symbol_map_trader" category_key="Quest" repeatable="true" difficulty="hard">
 		<objective type="Goto" id="MpWasteRadiated" value="5" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="quest_RadGarage" group_name="Burnt Garage" name="garageburnt1" subtitle="garageburnt1" description="go and find a garageburnt1" icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="quest_RadGarage" group_name="焼かれた倉庫" name="焼かれた倉庫" subtitle="焼かれた倉庫を探せ" description="焼かれた倉庫を調査しろ" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<objective type="Goto" id="garageburnt1" value="5" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="quest_MeetPacco" group_name="Meet Pacco" name="Master Armorsmith 1/2" subtitle="Master Armorsmith" description="Hello there.\nI am Pacco, and you wont find a better armorsmith anywhere!\n\nMaybe you can make me some errands and who knows...\nI may have a nice present for you..\n\nCheck your log for more information, please.\n\n\nNOTE FROM THE TEAM\n\nThis quest line was made in loving memory of our good friend René,\naka Pacco.\n\nMay he rest in peace" icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="quest_MeetPacco" group_name="Paccoとの出会い" name="鎧鍛冶の達人 1/2" subtitle="鎧鍛冶の達人" description="Hello there.\nI am Pacco, and you wont find a better armorsmith anywhere!\n\nMaybe you can make me some errands and who knows...\nI may have a nice present for you..\n\nCheck your log for more information, please.\n\n\nNOTE FROM THE TEAM\n\nThis quest line was made in loving memory of our good friend René,\naka Pacco.\n\nMay he rest in peace" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="quest_getReward" group_name="Meet Pacco" name="Master Armorsmith 2/2" subtitle="Master Armorsmith" description="Perfect.\nAs promissed, here's your reward!\n\n\nNOTE FROM THE TEAM\n\nPacco was one of the first SDX modders\nand the first person to inject weapons\nand custom entities in the game." icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="quest_getReward" group_name="Paccoとの出会い" name="鎧鍛冶の達人 2/2" subtitle="鎧鍛冶の達人" description="Perfect.\nAs promissed, here's your reward!\n\n\nNOTE FROM THE TEAM\n\nPacco was one of the first SDX modders\nand the first person to inject weapons\nand custom entities in the game." icon="ui_game_symbol_map_trader" category_key="Quest">
 		<reward type="Item" id="desertEagle" value="700" />
 	</quest>
-	<quest id="pacco_game_room0" group_name="Game Room" name="Game Room 1/2" subtitle="My Game Room" description="Actually, there's something else\nthat might interest you.\n\nI have a game room downstairs, with some nice prizes\nI'm a big collector.\nLet me unlock some receipts for you, check your log for the next step.\n\n\nNOTE FROM THE TEAM\n\nPacco was the creator of the mod HeadBanger's For Life\nand one of the creators of Starvation" icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="pacco_game_room0" group_name="ゲーム部屋" name="ゲーム部屋 1/3" subtitle="ゲーム部屋" description="Actually, there's something else\nthat might interest you.\n\nI have a game room downstairs, with some nice prizes\nI'm a big collector.\nLet me unlock some receipts for you, check your log for the next step.\n\n\nNOTE FROM THE TEAM\n\nPacco was the creator of the mod HeadBanger's For Life\nand one of the creators of Starvation" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<reward type="Recipe" id="toyBoxAction" />
 		<reward type="Recipe" id="toyBoxFun" />
 		<reward type="Quest" id="pacco_game_room1" />
 	</quest>
-	<quest id="pacco_game_room1" group_name="Game Room" name="Game Room 2/3" subtitle="My Game Room" description="I want you to make me a these two toy packages\nand i'll let you get in there.\nCome and see me when you're done." icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="pacco_game_room1" group_name="ゲーム部屋" name="ゲーム部屋 2/3" subtitle="ゲーム部屋" description="I want you to make me a these two toy packages\nand i'll let you get in there.\nCome and see me when you're done." icon="ui_game_symbol_map_trader" category_key="Quest">
 		<objective type="Craft" id="toyBoxAction" value="1" />
 		<objective type="Craft" id="toyBoxFun" value="1" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="pacco_game_room" group_name="Game Room" name="Game Room 3/3" subtitle="My Game Room" description="Perfect, I see you finally got it.\n\nYou can now enter my game room at any time\nGood luck!\n\n\nI hope this helped you to know a little bit\nabout Pacco.\nHe was a great modder\n\nAnd a great man!" icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="pacco_game_room" group_name="ゲーム部屋" name="ゲーム部屋 3/3" subtitle="ゲーム部屋" description="Perfect, I see you finally got it.\n\nYou can now enter my game room at any time\nGood luck!\n\n\nI hope this helped you to know a little bit\nabout Pacco.\nHe was a great modder\n\nAnd a great man!" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<!-- <quest id="quest_Refinery" group_name="The Refinery" name="The Refinery" subtitle="The Refinery" description="Despair! I despair! My familly, my friends... They need me!\nWe thought we were safe. We hoped... We thought we could survive through this...\nBut then they came. Worst then monsters! Those bandits came for our fuel!\nI wonder if there's still someone alive, but I'm too weak..I'm out of power for my exoskeleton and I'm too weak to try..." offer="Despair! I despair! My familly, my friends... They need me!\nWe thought we were safe. We hoped... We thought we could survive through this...\nBut then they came. Worst then monsters! Those bandits came for our fuel!\nI wonder if there's still someone alive, but I'm too weak..I'm out of power for my exoskeleton and I'm too weak to try..." icon="ui_game_symbol_map_trader" category_key="Quest"  difficulty="hard">
@@ -365,73 +365,73 @@
 		<reward type="SkillPoints" value="1" />
 	</quest> -->
 	<!--Husbandry-->
-	<quest id="Q_Husbandry" group_name="Husbandry" name="Husbandry Basics 1/4" subtitle="Make a whip" description="you could use the whip to tame wild animals" offer="Husbandry - How to tame wild animals" icon="ui_game_symbol_husbandry" repeatable="false" category_key="Quest" difficulty="easy">
+	<quest id="Q_Husbandry" group_name="畜産" name="牧場の準備1/4" subtitle="ムチの作り方" description="ムチを使えば野生の動物をてなずけることができます。" offer="畜産：野生動物のてなづけ" icon="ui_game_symbol_husbandry" repeatable="false" category_key="Quest" difficulty="easy">
 		<objective type="FetchKeep" id="leather" value="2" />
 		<objective type="FetchKeep" id="wood" value="15" />
 		<objective type="Craft" id="whip" value="1" />
 		<reward type="Quest" id="Q_Husbandry2" />
 	</quest>
-	<quest id="Q_Husbandry2" group_name="Husbandry" name="Husbandry Basics 2/4" subtitle="Tame a Pig" description="You can capture animals in the wild,  by using a taming tool - the whip\nTaming success is based on your husbandry skill.\nIf you fail a taming action,  you will hurt the animal. If you fail enough times,  you will KILL the animal." icon="ui_game_symbol_husbandry" repeatable="false" category_key="Quest" difficulty="easy">
+	<quest id="Q_Husbandry2" group_name="畜産" name="牧場の準備2/4" subtitle="ブタをてなづけろ！" description="野生の動物は専用の道具でてなづけられます。それはムチ(Whip)です。\n成功率はHusbandryスキルに依存します。\n失敗したら動物を傷つけ最後には殺してしまいます。" icon="ui_game_symbol_husbandry" repeatable="false" category_key="Quest" difficulty="easy">
 		<objective type="FetchKeep" id="pigFemaleItem" value="1" />
 		<requirement type="Holding" id="whip" />
 		<reward type="Quest" id="Q_Husbandry3" />
 	</quest>
-	<quest id="Q_Husbandry3" group_name="Husbandry" name="Husbandry Basics 3/4" subtitle="The trough" description="Build a corral out of fences or something similar\nand place a trough there for your animal" icon="ui_game_symbol_husbandry" repeatable="false" category_key="Quest" difficulty="easy">
+	<quest id="Q_Husbandry3" group_name="畜産" name="牧場の準備3/4" subtitle="初めての家畜のための放牧地とエサおけ" description="柵で囲って放牧地をつくったら、\nそこに家畜のためのエサおけ(Trough)を置きます。" icon="ui_game_symbol_husbandry" repeatable="false" category_key="Quest" difficulty="easy">
 		<objective type="FetchKeep" id="wood" value="50" />
 		<objective type="FetchKeep" id="forgedIron" value="10" />
 		<objective type="Craft" id="trough" value="1" />
 		<reward type="Quest" id="Q_Husbandry4" />
 	</quest>
-	<quest id="Q_Husbandry4" group_name="Husbandry" name="Husbandry Basics 4/4" subtitle="Animal Feed" description="Find some hay bales and craft an Animal Feed.\nPut it in the trough. Now place your animal in the stable\n\nif you put a male and a female there, they will start breeding." icon="ui_game_symbol_husbandry" repeatable="false" category_key="Quest" difficulty="easy">
+	<quest id="Q_Husbandry4" group_name="畜産" name="牧場の準備4/4" subtitle="家畜のエサ" description="どうにかワラを手に入れてAnimal Feed を作り、Troughの中に入れます。\nでは、放牧地の中に家畜を置きましょう。\nオスとメスを同じ場所に置けば、交配できます。" icon="ui_game_symbol_husbandry" repeatable="false" category_key="Quest" difficulty="easy">
 		<objective type="BlockPlace" id="trough" value="1" />
 		<objective type="Craft" id="AnimalFeed" value="100" />
 		<reward type="SkillPoints" value="1" />
 		<reward type="Quest" id="Q_Husbandry5" />
 	</quest>
-	<quest id="Q_Husbandry5" group_name="Husbandry" name="Husbandry in Action 1/7" subtitle="Wood Bucket" description="It is time to collect some turd from your animals.\nYou need a wood bucket to do this.\n\nCraft one." icon="ui_game_symbol_q_husbandry_2" repeatable="false" category_key="Quest" difficulty="medium">
+	<quest id="Q_Husbandry5" group_name="畜産" name="いざ放牧のときその1/7" subtitle="木のバケツ" description="十分にエサをやった家畜からアイテムを得ましょう。\nそのためには木のバケツが必要です。\n試しに一つ作ってください。" icon="ui_game_symbol_q_husbandry_2" repeatable="false" category_key="Quest" difficulty="medium">
 		<objective type="FetchKeep" id="wood" value="20" />
 		<objective type="FetchKeep" id="forgedIron" value="5" />
 		<objective type="Craft" id="bucketWood" value="1" />
 		<reward type="Quest" id="Q_Husbandry6" />
 	</quest>
-	<quest id="Q_Husbandry6" group_name="Husbandry" name="Husbandry in Action 2/7" subtitle="Collect Turd" description="Collect turd from your pigs.\nHit the pig holding a wood bucket in your hands.\nBut beware, hitting too much will kill your livestock." icon="ui_game_symbol_q_husbandry_2" repeatable="false" category_key="Quest" difficulty="medium">
+	<quest id="Q_Husbandry6" group_name="畜産" name="いざ放牧のときその2/7" subtitle="フンを集める" description="放牧済みの豚からフンを集めましょう。\nバケツを手にもって豚に使います。\nただし、必要以上にしすぎれば家畜は死んでしまうので気を付けましょう。\n健康な家畜であれば1日10回以上可能です。" icon="ui_game_symbol_q_husbandry_2" repeatable="false" category_key="Quest" difficulty="medium">
 		<objective type="FetchKeep" id="turd" value="1" />
 		<requirement type="Holding" id="bucketWood" />
 		<reward type="Quest" id="Q_Husbandry7" />
 	</quest>
-	<quest id="Q_Husbandry7" group_name="Husbandry" name="Husbandry in Action 3/7" subtitle="Tame a Cow" description="Ok, we know how to tame pigs and collect the turd, which surely useful in some situations...\nBut there are animals that has far more valuable output...\n\nLets find a source of the fresh milk. Yes, I definitely mean a cow." icon="ui_game_symbol_q_husbandry_2" repeatable="false" category_key="Quest" difficulty="medium">
+	<quest id="Q_Husbandry7" group_name="畜産" name="いざ放牧のときその3/7" subtitle="牝牛をしつける" description="いいでしょう、豚のしつけ方とフンの集め方はわかりましたね。フンは発酵させることで何かの役に立つでしょう。\n他にも様々な畜産物を得られる動物がいます。\n次の動物は新鮮なミルクを作り出します。そう、次は牝牛を捕まえましょう！" icon="ui_game_symbol_q_husbandry_2" repeatable="false" category_key="Quest" difficulty="medium">
 		<objective type="FetchKeep" id="cowItem" value="1" />
 		<requirement type="Holding" id="whip" />
 		<reward type="Quest" id="Q_Husbandry8" />
 	</quest>
-	<quest id="Q_Husbandry8" group_name="Husbandry" name="Husbandry in Action 4/7" subtitle="Milk a cow" description="Now place your cow at the corral and harvest some milk using a bucket wood.\nYou know how to do that, and about the need for being careful of course." icon="ui_game_symbol_q_husbandry_2" repeatable="false" category_key="Quest" difficulty="medium">
+	<quest id="Q_Husbandry8" group_name="畜産" name="いざ放牧のときその4/7" subtitle="牝牛から搾乳する" description="では、牝牛を囲いの中に放牧し、木のバケツを使って牛乳を手に入れましょう。\n覚えていると思いますが、やりすぎないように気を付けて。" icon="ui_game_symbol_q_husbandry_2" repeatable="false" category_key="Quest" difficulty="medium">
 		<objective type="FetchKeep" id="milk" value="1" />
 		<requirement type="Holding" id="bucketWood" />
 		<reward type="Quest" id="Q_Husbandry9" />
 	</quest>
-	<quest id="Q_Husbandry9" group_name="Husbandry" name="Husbandry in Action 5/7" subtitle="Tame a Sheep" description="Lets find a sheep and tame it using a whip." icon="ui_game_symbol_q_husbandry_2" repeatable="false" category_key="Quest" difficulty="medium">
+	<quest id="Q_Husbandry9" group_name="畜産" name="いざ放牧のときその5/7" subtitle="雌羊をしつける" description="雌羊を見つけて捕まえましょう。" icon="ui_game_symbol_q_husbandry_2" repeatable="false" category_key="Quest" difficulty="medium">
 		<objective type="FetchKeep" id="sheepItem" value="1" />
 		<requirement type="Holding" id="whip" />
 		<reward type="Quest" id="Q_Husbandry10" />
 	</quest>
-	<quest id="Q_Husbandry10" group_name="Husbandry" name="Husbandry in Action 6/7" subtitle="Shears" description="Sheeps are sooo fluffy...\nWe can use it, lets craft a shears." icon="ui_game_symbol_q_husbandry_2" repeatable="false" category_key="Quest" difficulty="medium">
+	<quest id="Q_Husbandry10" group_name="畜産" name="いざ放牧のときその6/7" subtitle="大ばさみ" description="羊はもっふもふですよね～\nその毛は有効活用できます。さあ、大ばさみを作りましょう。" icon="ui_game_symbol_q_husbandry_2" repeatable="false" category_key="Quest" difficulty="medium">
 		<objective type="FetchKeep" id="forgedIron" value="2" />
 		<objective type="FetchKeep" id="ductTape" value="3" />
 		<objective type="Craft" id="scissor" value="1" />
 		<reward type="Quest" id="Q_Husbandry11" />
 	</quest>
-	<quest id="Q_Husbandry11" group_name="Husbandry" name="Husbandry in Action 7/7" subtitle="Wool Collector" description="Lets shear our sheep.\n\nTip: Again, you need to be very carefull, overdoing while harvesting would kill your poor animals." icon="ui_game_symbol_q_husbandry_2" repeatable="false" category_key="Quest" difficulty="medium">
+	<quest id="Q_Husbandry11" group_name="畜産" name="いざ放牧のときその7/7" subtitle="いざ羊毛刈り" description="さあ羊毛を刈り取りましょう\n\nもう一度：やりすぎないように気を付けてください。" icon="ui_game_symbol_q_husbandry_2" repeatable="false" category_key="Quest" difficulty="medium">
 		<objective type="FetchKeep" id="cloth" value="1" />
 		<requirement type="Holding" id="scissor" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<!-- Fishing -->
-	<quest id="Q_Fishing" group_name="Fishing" name="Fishing 1/5" subtitle="Make a hook" description="How to build a hook" offer="first steps in fishing" icon="ui_game_symbol_fishing" repeatable="false" category_key="Quest" difficulty="easy">
+	<quest id="Q_Fishing" group_name="釣り" name="釣りその1" subtitle="釣り針の作り方を学ぶ" description="このご時世で釣りに興味があるのかい？\nここで会ったのも何かの縁だね、覚えていきなよ。\n釣りは難しいけど身に付ければ食には困らない。\nあんな事があっても魚は前と変わらないんだ。\n\nまずは釣り針から作ろうか。\n一番大事なところだから、しっかり練習するんだよ。" offer="釣りの初めの一歩" icon="ui_game_symbol_fishing" repeatable="false" category_key="Quest" difficulty="easy">
 		<objective type="FetchKeep" id="scrapLead" value="4" />
 		<objective type="Craft" id="hook" value="1" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="Q_Fishing2" group_name="Fishing" name="Fishing 2/5" subtitle="Make a Cane" description="How to build a cane" icon="ui_game_symbol_fishing" repeatable="false" category_key="Quest" difficulty="easy">
+	<quest id="Q_Fishing2" group_name="釣り" name="釣りその2" subtitle="釣り竿の作り方を学ぶ" description="うーん、いいんじゃないかな。\nそしたら次は釣り竿だよ。\nロッドに竹を、糸にダクトテープを使えば簡単に作れる。\n竹はその辺の森で探せば見つかるはずさ。" icon="ui_game_symbol_fishing" repeatable="false" category_key="Quest" difficulty="easy">
 		<objective type="FetchKeep" id="bambooPole" value="4" />
 		<objective type="FetchKeep" id="hook" value="1" />
 		<objective type="FetchKeep" id="ductTape" value="1" />
@@ -439,23 +439,23 @@
 		<objective type="Craft" id="cane" value="1" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="Q_Fishing3" group_name="Fishing" name="Fishing 3/5" subtitle="The bait for the cane - earthworms" description="Dig the dirt to find earthworms." icon="ui_game_symbol_fishing" repeatable="false" category_key="Quest" difficulty="easy">
+	<quest id="Q_Fishing3" group_name="釣り" name="釣りその3" subtitle="釣り餌：ミミズ" description="釣りをしたくてうずうずしてるようだね。\nでも、魚達を呼ぶには大好物を用意しないとね。\nその辺の土を掘ってミミズを捕まえるんだ。\n奴らは表面にはいないから、深めに掘るといいよ。" icon="ui_game_symbol_fishing" repeatable="false" category_key="Quest" difficulty="easy">
 		<objective type="FetchKeep" id="earthworm" value="5" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="Q_Fishing4" group_name="Fishing" name="Fishing 4/5" subtitle="Crafting lures" description="How to craft lures" icon="ui_game_symbol_fishing" repeatable="false" category_key="Quest" difficulty="easy">
+	<quest id="Q_Fishing4" group_name="釣り" name="釣りその4" subtitle="魚の食いつきをよくする：まき餌" description="ミミズくらいで嫌がってたらいけないよ。\nこれから必ず必要になってくるからね。\n狙った魚を釣るときにはまき餌が有効だよ。\n水場で右クリックすればまき餌をまけるからね。" icon="ui_game_symbol_fishing" repeatable="false" category_key="Quest" difficulty="easy">
 		<objective type="FetchKeep" id="moldyBread" value="1" />
 		<objective type="FetchKeep" id="bottledWater" value="1" />
 		<objective type="FetchKeep" id="paper" value="2" />
 		<objective type="Craft" id="fishingLure1" value="1" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="Q_Fishing5" group_name="Fishing" name="Fishing 5/5" subtitle="Now get some fishes" description="Equip your cane, and target a natural body of water\n\nNow bait the cane with the R Key, when you get a fish poke the cane will start moving and you'll hear a splash sound.\nReact quickly by pressing the left mouse button\n\nIf you catch something, you then have some seconds to grab the loot by pressing the right mouse button." icon="ui_game_symbol_fishing" repeatable="false" category_key="Quest" difficulty="easy">
+	<quest id="Q_Fishing5" group_name="釣り" name="釣りその5" subtitle="魚を釣ろう" description="竿を持ち、自然にできた水に向かいます。\n(この時釣り針のアイコンが表示されます)\nでは、Rキーでエサを付けて、魚がつついた時の\n竿の揺れと水しぶきの音を待ちましょう。\nアタリには左クリックで素早く返します。\n\n何か釣り上げたら、右クリックで針から外すことができます。" icon="ui_game_symbol_fishing" repeatable="false" category_key="Quest" difficulty="easy">
 		<objective type="FetchKeep" id="fish" value="1" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<!-- Weapons-->
-	<quest id="Q_NailWood" name="Nailed Wood" subtitle="Simple, but effective" description="Find some Wood and nails\n\nto craft a nailed wood" offer="simple....but effective" icon="ui_game_symbol_club" repeatable="false" category_key="Quest" difficulty="easy">
+	<quest id="Q_NailWood" name="アイスピック" subtitle="簡単でしかも強い武器" description="木とくぎをいくらか探して、\n\nNailed Wood(アイスピック)を作りましょう。" offer="見たまんまの・・・強さだ・・・" icon="ui_game_symbol_club" repeatable="false" category_key="Quest" difficulty="easy">
 		<objective type="FetchKeep" id="wood" value="5" />
 		<objective type="FetchKeep" id="nail" value="1" />
 		<objective type="Craft" id="nailwood" value="1" />
@@ -463,49 +463,49 @@
 		<reward type="Quest" id="Q_ChainNLocks" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="Q_ChainNLocks" name="Chain'N'Locks " subtitle="Chain'N'Locks" description="Find some Wood, forged Iron, and two Locks\n\nto craft a Chain'N'Lock" offer="a Chain, Locks and a piece of wood....sounds interesting" icon="ui_game_symbol_club" repeatable="false" category_key="Quest" difficulty="easy">
+	<quest id="Q_ChainNLocks" name="手作り鎖ムチ" subtitle="鎖、南京錠、棒っきれ・・・。これで何ができると思う？" description="木・精錬鉄・２つの錠前を集めて、\n\nChain'N'Lock(手作り鎖ムチ)を作りましょう。" offer="男ってこういうの好きでしょ・・・？" icon="ui_game_symbol_club" repeatable="false" category_key="Quest" difficulty="easy">
 		<objective type="FetchKeep" id="wood" value="4" />
 		<objective type="FetchKeep" id="forgedIron" value="4" />
 		<objective type="FetchKeep" id="padlock" value="2" />
 		<objective type="Craft" id="chainNlocks" value="1" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="Q_WoodenSpear" name="Wooden Spear" subtitle="Your first simple Spear" description="Find some Wood.\n\nand craft your Spear" offer="I´m sure you want it...." icon="ui_game_symbol_knife" repeatable="false" category_key="Quest" difficulty="easy">
+	<quest id="Q_WoodenSpear" name="木の槍" subtitle="基本の簡単な槍" description="ちょっと木材を集めて、\n\n最初の槍を作ろう。" offer="きっとこういうのが欲しかったはずさ" icon="ui_game_symbol_knife" repeatable="false" category_key="Quest" difficulty="easy">
 		<objective type="FetchKeep" id="wood" value="8" />
 		<objective type="Craft" id="woodenSpear" value="1" />
 		<reward type="Quest" id="Q_HuntingKnifeSpear" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="Q_HuntingKnifeSpear" name="Hunting Knife Spear" subtitle="An advanced Spear" description="Find some Yucca Fibers and an Hunting Knife\n\nand 'assemble' it to your wooden Spear" offer="I´m sure you want it...." icon="ui_game_symbol_knife" repeatable="false" category_key="Quest" difficulty="easy">
+	<quest id="Q_HuntingKnifeSpear" name="手作り鉄槍" subtitle="もっと強い槍" description="植物繊維とハンティングナイフを探して、\n\nWooden Spearに取り付け(Assemble)しましょう。" offer="きっとこういうのが欲しかったはずさ" icon="ui_game_symbol_knife" repeatable="false" category_key="Quest" difficulty="easy">
 		<objective type="FetchKeep" id="woodenSpear" value="1" />
 		<objective type="FetchKeep" id="yuccaFibers" value="10" />
 		<objective type="FetchKeep" id="huntingKnife" value="1" />
 		<objective type="Craft" id="huntingKnifeSpear" value="1" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="Q_NailedBat" name="Nailed Bat" subtitle="What a Weapon" description="Find a Baseball Bat\n\nand some Nails" offer="You will love it...." icon="ui_game_symbol_club" repeatable="false" category_key="Quest" difficulty="easy">
+	<quest id="Q_NailedBat" name="釘打ちバット" subtitle="こういうのを武器っていうのさ！" description="野球バットを見つけて、\n\n釘を作りましょう。" offer="男ってこういうの好きよね" icon="ui_game_symbol_club" repeatable="false" category_key="Quest" difficulty="easy">
 		<objective type="FetchKeep" id="bat" value="1" />
 		<objective type="FetchKeep" id="nail" value="25" />
 		<objective type="Craft" id="nailedBat" value="1" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<!-- Wilderness chain -->
-	<quest id="LOS" group_name="Wildlife Trial" name="Spider Infestation 1/3" subtitle="Lord of the Spiders" description="Go out and murder 5 small spiders.\n\nDon't let them bite you..." offer="Just click accept...if you are quick enough." icon="ui_game_symbol_q_spider" repeatable="false" category_key="challenge" difficulty="medium">
+	<quest id="LOS" group_name="大自然からの試練" name="蜘蛛の時代 1/3" subtitle="蜘蛛の卿" description="小柄なクモを探して、5体倒せ\n\n噛まれちゃいけないよ・・・？" offer="すぐに引き受けるといい、逃げ足に自信があるなら・・・ね。" icon="ui_game_symbol_q_spider" repeatable="false" category_key="challenge" difficulty="medium">
 		<objective type="AnimalKill" id="spiderSmall" value="5" />
 		<reward type="SkillPoints" value="1" />
 		<reward type="Quest" id="KOS" />
 	</quest>
-	<quest id="KOS" group_name="Wildlife Trial" name="Spider Infestation 2/3" subtitle="King of the Spiders" description="Time to push them back.\nGo out and murder 5 big spiders.\n\nAgain, don't let them bite you..." offer="Just click accept...if you are hard enough." icon="ui_game_symbol_q_spider" repeatable="false" category_key="challenge" difficulty="medium">
+	<quest id="KOS" group_name="大自然からの試練" name="蜘蛛の時代 2/3" subtitle="蜘蛛の王" description="奴らを追い返す時が来た。\n巨大なクモを5体倒せ\n\n忘れてないだろうね、噛まれちゃいけないよ・・・？" offer="すぐに引き受けるといい、狩りの腕に自信があるなら・・・ね。" icon="ui_game_symbol_q_spider" repeatable="false" category_key="challenge" difficulty="medium">
 		<objective type="AnimalKill" id="spider" value="5" />
 		<reward type="SkillPoints" value="2" />
 		<reward type="Quest" id="EOS" />
 	</quest>
-	<quest id="EOS" group_name="Wildlife Trial" name="Spider Infestation 3/3" subtitle="Emperor of the Spiders" description="It is time to finish off those mutants.\nGo out and raze 3 spider nests. Gather web cobs collected as an evidence.\n\nBe careful, there are many of them..." offer="Just click accept...if you are hard enough." icon="ui_game_symbol_q_spider" repeatable="false" category_key="challenge" difficulty="hard">
+	<quest id="EOS" group_name="大自然からの試練" name="蜘蛛の時代 3/3" subtitle="蜘蛛の帝" description="このミュータントを絶滅させる時が来た。\nクモの巣を3つ破壊しろ。壊した証拠として手に入る蜘蛛の巣を集めるんだ。\n\nもちろん、壊すためにはそれなりの犠牲は覚悟しろ。" offer="すぐに引き受けるといい、人の時代を取り戻したいなら・・・ね。" icon="ui_game_symbol_q_spider" repeatable="false" category_key="challenge" difficulty="hard">
 		<objective type="BlockPickup" id="cobweb" value="3" />
 		<reward type="SkillPoints" value="3" />
 		<reward type="Quest" id="GW1" />
 	</quest>
-	<quest id="GW1" group_name="Wildlife Trial" name="Gone Wild 1/2" subtitle="Show'em who is the boss" description="It is time to show who is at the top of the food chain.\n\nHunt down deadliest predators in the world." icon="ui_game_symbol_q_beast" repeatable="false" category_key="challenge" offer="No. Way. Back." difficulty="hard">
+	<quest id="GW1" group_name="大自然からの試練" name="野生への回帰 1/2" subtitle="力の証明" description="食物連鎖の頂点が誰かわからせる時が来た。\n\n世界中の不倶戴天の捕食者たちを狩れ。" icon="ui_game_symbol_q_beast" repeatable="false" category_key="challenge" offer="もう、戻れない。" difficulty="hard">
 		<objective type="AnimalKill" id="animalBear" value="1" />
 		<objective type="AnimalKill" id="rhino" value="1" />
 		<objective type="AnimalKill" id="crocodile" value="1" />
@@ -517,7 +517,7 @@
 		<reward type="SkillPoints" value="5" />
 		<reward type="Quest" id="GW2" />
 	</quest>
-	<quest id="GW2" group_name="Wildlife Trial" name="Gone Wild 2/2" subtitle="Show'em who is the boss" description="Now you know there are special 'Boss' predators, and you cannot ignore them anymore.\n\nYou need a new carpet anyway." icon="ui_game_symbol_q_beast" repeatable="false" category_key="challenge" offer="WAAAAAGHHHH!!!" difficulty="hard">
+	<quest id="GW2" group_name="大自然からの試練" name="野生への回帰 2/2" subtitle="力の証明" description="今や、捕食者の中に親玉というべきものがいることに気付いたはずだ。彼らを見逃すわけにはいかない。\n\nところで、新品の絨毯は欲しくないかい？" icon="ui_game_symbol_q_beast" repeatable="false" category_key="challenge" offer="あぁぁあああぁぁぁああああ！" difficulty="hard">
 		<objective type="AnimalKill" id="dogAlbino" value="1" />
 		<objective type="AnimalKill" id="cougarAlbino" value="1" />
 		<objective type="AnimalKill" id="hyenaBoss" value="1" />
@@ -525,7 +525,7 @@
 		<reward type="SkillPoints" value="10" />
 	</quest>
 	<!-- Weaponry quests -->
-	<quest id="Q_WAR" group_name="Archery Training" name="Archery Training 1/5" subtitle="Novice Archer" description="It seems I am doing well with bows and crossbows.\n\nNeed to train more if I want to become a master." icon="ui_game_symbol_archery" repeatable="false" category_key="challenge" offer="Arrow rain begins." difficulty="easy">
+	<quest id="Q_WAR" group_name="弓術の訓練" name="弓術の訓練 1/5" subtitle="初級弓術師" description="弓・クロスボウの使い方がやっとわかってきた。\n使いこなすにはもっと訓練が必要だろう。" icon="ui_game_symbol_archery" repeatable="false" category_key="challenge" offer="矢の雨が降り注ぐ" difficulty="easy">
 		<objective type="ZombieKill" value="10" />
 		<requirement type="Group" id="requirementGroupArchery" value="OR">
 			<requirement type="Holding" id="woodenBow" />
@@ -536,7 +536,7 @@
 		<reward type="SkillPoints" value="1" />
 		<reward type="Quest" id="Q_WAR2" />
 	</quest>
-	<quest id="Q_WAR2" group_name="Archery Training" name="Archery Training 2/5" subtitle="Student Archer" description="Need to train even more if I want to achieve something." icon="ui_game_symbol_archery" repeatable="false" category_key="challenge" offer="Arrow rain begins." difficulty="medium">
+	<quest id="Q_WAR2" group_name="弓術の訓練" name="弓術の訓練 2/5" subtitle="中級弓術師" description="何かを見出すためにはもっと訓練が必要だ。" icon="ui_game_symbol_archery" repeatable="false" category_key="challenge" offer="矢の雨が降り注ぐ" difficulty="medium">
 		<objective type="ZombieKill" value="50" />
 		<requirement type="Group" id="requirementGroupArchery" value="OR">
 			<requirement type="Holding" id="woodenBow" />
@@ -547,7 +547,7 @@
 		<reward type="SkillPoints" value="3" />
 		<reward type="Quest" id="Q_WAR3" />
 	</quest>
-	<quest id="Q_WAR3" group_name="Archery Training" name="Archery Training 3/5" subtitle="Veteran Archer" description="Cant stop my hands now. Stretch, release, stretch, release!!" icon="ui_game_symbol_archery" repeatable="false" category_key="challenge" offer="Arrow rain begins." difficulty="medium">
+	<quest id="Q_WAR3" group_name="弓術の訓練" name="弓術の訓練 3/5" subtitle="上級弓術師" description="身体が訓練を覚えてきた。引き絞って、放つ。引き絞って、放つ。" icon="ui_game_symbol_archery" repeatable="false" category_key="challenge" offer="矢の雨が降り注ぐ" difficulty="medium">
 		<objective type="ZombieKill" value="250" />
 		<requirement type="Group" id="requirementGroupArchery" value="OR">
 			<requirement type="Holding" id="woodenBow" />
@@ -558,7 +558,7 @@
 		<reward type="SkillPoints" value="5" />
 		<reward type="Quest" id="Q_WAR4" />
 	</quest>
-	<quest id="Q_WAR4" group_name="Archery Training" name="Archery Training 4/5" subtitle="Elite Archer" description="Headshots are not enough..." icon="ui_game_symbol_archery" repeatable="false" category_key="challenge" offer="Arrow rain begins." difficulty="hard">
+	<quest id="Q_WAR4" group_name="弓術の訓練" name="弓術の訓練 4/5" subtitle="熟練弓術師" description="ヘッドショットのその先を目指して。" icon="ui_game_symbol_archery" repeatable="false" category_key="challenge" offer="矢の雨が降り注ぐ" difficulty="hard">
 		<objective type="AnimalKill" id="animalZombieBear" value="5" />
 		<objective type="AnimalKill" id="animalRabbit" value="10" />
 		<objective type="AnimalKill" id="animalChicken" value="10" />
@@ -575,7 +575,7 @@
 		<reward type="Recipe" id="explodingCrossbowBolt" />
 		<reward type="Quest" id="Q_WAR5" />
 	</quest>
-	<quest id="Q_WAR5" group_name="Archery Training" name="Archery Training 5/5" subtitle="Freaking Legolas" description="Need a real challenging task to prove my skills now." icon="ui_game_symbol_archery" repeatable="false" category_key="challenge" offer="They are strong. But you have a sleeping bag." difficulty="hard">
+	<quest id="Q_WAR5" group_name="弓術の訓練" name="弓術の訓練 5/5" subtitle="弓師「アシタカ」" description="自分の練度を示すために、真の試練が必要だ。" icon="ui_game_symbol_archery" repeatable="false" category_key="challenge" offer="挑戦するといい。心折れるまで、何度でも。" difficulty="hard">
 		<objective type="ZombieKill" id="fatzombiecop" value="20" />
 		<objective type="ZombieKill" id="zombieferal" value="10" />
 		<objective type="ZombieKill" id="FirefighterZd" value="5" />
@@ -594,7 +594,7 @@
 		<reward type="Item" id="smallCrossbow" value="500" />
 		<reward type="Item" id="Q_FinalExam" />
 	</quest>
-	<quest id="Q_WBL" group_name="Blunt Weapons Training" name="Blunt Weapons 1/5" subtitle="Footman" description="It seems I am doing well with blunt weapons.\n\nNeed to train more if I want to become a master." icon="ui_game_symbol_club" repeatable="false" category_key="challenge" offer="Smash.Kill.Destroy." difficulty="easy">
+	<quest id="Q_WBL" group_name="鈍器の訓練" name="鈍器の訓練 1/5" subtitle="チンピラ" description="鈍器の使い方が分かってきた。\n使いこなすにはもっと訓練が必要だろう。" icon="ui_game_symbol_club" repeatable="false" category_key="challenge" offer="殴る・殺す・壊す" difficulty="easy">
 		<objective type="ZombieKill" value="10" />
 		<requirement type="Group" id="requirementGroupBluntWeapons" value="OR">
 			<requirement type="Holding" id="clubWood" />
@@ -614,7 +614,7 @@
 		<reward type="SkillPoints" value="1" />
 		<reward type="Quest" id="Q_WBL2" />
 	</quest>
-	<quest id="Q_WBL2" group_name="Blunt Weapons Training" name="Blunt Weapons 2/5" subtitle="Clubswinger" description="Need to train even more if I want to achieve something." icon="ui_game_symbol_club" repeatable="false" category_key="challenge" offer="Smash.Kill.Destroy." difficulty="medium">
+	<quest id="Q_WBL2" group_name="鈍器の訓練" name="鈍器の訓練 2/5" subtitle="こん棒使い" description="何かを見出すためにはもっと訓練が必要だ。" icon="ui_game_symbol_club" repeatable="false" category_key="challenge" offer="殴る・殺す・壊す" difficulty="medium">
 		<objective type="ZombieKill" value="50" />
 		<requirement type="Group" id="requirementGroupBluntWeapons" value="OR">
 			<requirement type="Holding" id="clubWood" />
@@ -634,7 +634,7 @@
 		<reward type="SkillPoints" value="3" />
 		<reward type="Quest" id="Q_WBL3" />
 	</quest>
-	<quest id="Q_WBL3" group_name="Blunt Weapons Training" name="Blunt Weapons 3/5" subtitle="Maceman" description="Smash that skulls!!" icon="ui_game_symbol_club" repeatable="false" category_key="challenge" offer="Smash.Kill.Destroy." difficulty="medium">
+	<quest id="Q_WBL3" group_name="鈍器の訓練" name="鈍器の訓練 3/5" subtitle="メイス使い" description="頭蓋骨を砕け！" icon="ui_game_symbol_club" repeatable="false" category_key="challenge" offer="殴る・殺す・壊す" difficulty="medium">
 		<objective type="ZombieKill" value="250" />
 		<requirement type="Group" id="requirementGroupBluntWeapons" value="OR">
 			<requirement type="Holding" id="clubWood" />
@@ -654,7 +654,7 @@
 		<reward type="SkillPoints" value="5" />
 		<reward type="Quest" id="Q_WBL4" />
 	</quest>
-	<quest id="Q_WBL4" group_name="Blunt Weapons Training" name="Blunt Weapons 4/5" subtitle="WarHammer Master" description="Its time to make some mashed animals!" icon="ui_game_symbol_club" repeatable="false" category_key="challenge" offer="Smash.Kill.Destroy." difficulty="hard">
+	<quest id="Q_WBL4" group_name="鈍器の訓練" name="鈍器の訓練 4/5" subtitle="戦槌使い" description="動物をミンチにする時だ！" icon="ui_game_symbol_club" repeatable="false" category_key="challenge" offer="殴る・殺す・壊す" difficulty="hard">
 		<objective type="AnimalKill" id="animalZombieBear" value="5" />
 		<objective type="AnimalKill" id="animalRabbit" value="10" />
 		<objective type="AnimalKill" id="animalChicken" value="10" />
@@ -680,7 +680,7 @@
 		<reward type="Recipe" id="sledgehammer" />
 		<reward type="Quest" id="Q_WBL5" />
 	</quest>
-	<quest id="Q_WBL5" group_name="Blunt Weapons Training" name="Blunt Weapons 5/5" subtitle="Thor's Avatar" description="Need a real challenging task to prove my skills now." icon="ui_game_symbol_club" repeatable="false" category_key="challenge" offer="They are strong. But you have a sleeping bag." difficulty="hard">
+	<quest id="Q_WBL5" group_name="鈍器の訓練" name="鈍器の訓練 5/5" subtitle="「トール」の化身" description="自分の練度を示すために、真の試練が必要だ。" icon="ui_game_symbol_club" repeatable="false" category_key="challenge" offer="挑戦するといい。心折れるまで、何度でも。" difficulty="hard">
 		<objective type="ZombieKill" id="fatzombiecop" value="20" />
 		<objective type="ZombieKill" id="zombieferal" value="10" />
 		<objective type="ZombieKill" id="FirefighterZd" value="5" />
@@ -708,7 +708,7 @@
 		<reward type="Item" id="electricSpear" value="500" />
 		<reward type="Item" id="Q_FinalExam" />
 	</quest>
-	<quest id="Q_WBA" group_name="Blade Weapons Training" name="Blade Weapons 1/5" subtitle="Knifeman" description="It seems I am doing well with Blade Weapons.\n\nNeed to train more if I want to become a master." icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer="Cut.Slash.Pierce." difficulty="easy">
+	<quest id="Q_WBA" group_name="刃物の訓練" name="刃物の訓練 1/5" subtitle="ナイフ使い" description="ナイフの使い方が分かってきた。\n使いこなすにはもっと訓練が必要だろう。" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer="斬撃・切断・刺突" difficulty="easy">
 		<objective type="ZombieKill" value="10" />
 		<requirement type="Group" id="requirementGroupBladeWeapons" value="OR">
 			<requirement type="Holding" id="boneShiv" />
@@ -724,7 +724,7 @@
 		<reward type="SkillPoints" value="1" />
 		<reward type="Quest" id="Q_WBA2" />
 	</quest>
-	<quest id="Q_WBA2" group_name="Blade Weapons Training" name="Blade Weapons 2/5" subtitle="Stabber" description="Need to train even more if I want to achieve something." icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer="Cut.Slash.Pierce." difficulty="medium">
+	<quest id="Q_WBA2" group_name="刃物の訓練" name="刃物の訓練 2/5" subtitle="剣客" description="何かを見出すためにはもっと訓練が必要だ。" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer="斬撃・切断・刺突" difficulty="medium">
 		<objective type="ZombieKill" value="50" />
 		<requirement type="Group" id="requirementGroupBladeWeapons" value="OR">
 			<requirement type="Holding" id="boneShiv" />
@@ -740,7 +740,7 @@
 		<reward type="SkillPoints" value="3" />
 		<reward type="Quest" id="Q_WBA3" />
 	</quest>
-	<quest id="Q_WBA3" group_name="Blade Weapons Training" name="Blade Weapons 3/5" subtitle="Fencer" description="Cut their throats!!" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer="Cut.Slash.Pierce." difficulty="medium">
+	<quest id="Q_WBA3" group_name="刃物の訓練" name="刃物の訓練 3/5" subtitle="フェンサー" description="首を掻っ切れ！" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer="斬撃・切断・刺突" difficulty="medium">
 		<objective type="ZombieKill" value="250" />
 		<requirement type="Group" id="requirementGroupBladeWeapons" value="OR">
 			<requirement type="Holding" id="boneShiv" />
@@ -756,7 +756,7 @@
 		<reward type="SkillPoints" value="5" />
 		<reward type="Quest" id="Q_WBA4" />
 	</quest>
-	<quest id="Q_WBA4" group_name="Blade Weapons Training" name="Blade Weapons 4/5" subtitle="Sword Master" description="Slice that meat!" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer="Cut.Slash.Pierce." difficulty="hard">
+	<quest id="Q_WBA4" group_name="刃物の訓練" name="刃物の訓練 4/5" subtitle="剣聖" description="肉を切り裂け！" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer="斬撃・切断・刺突" difficulty="hard">
 		<objective type="AnimalKill" id="animalZombieBear" value="5" />
 		<objective type="AnimalKill" id="animalRabbit" value="10" />
 		<objective type="AnimalKill" id="animalChicken" value="10" />
@@ -778,7 +778,7 @@
 		<reward type="Recipe" id="machete" />
 		<reward type="Quest" id="Q_WBA5" />
 	</quest>
-	<quest id="Q_WBA5" group_name="Blade Weapons Training" name="Blade Weapons 5/5" subtitle="Obi-Wan Kenobi" description="Need a real challenging task to prove my skills now." icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer="They are strong. But you have a sleeping bag." difficulty="hard">
+	<quest id="Q_WBA5" group_name="刃物の訓練" name="刃物の訓練 5/5" subtitle="「宮本武蔵」" description="自分の練度を示すために、真の試練が必要だ。" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer="挑戦するといい。心折れるまで、何度でも。" difficulty="hard">
 		<objective type="ZombieKill" id="fatzombiecop" value="20" />
 		<objective type="ZombieKill" id="zombieferal" value="10" />
 		<objective type="ZombieKill" id="FirefighterZd" value="5" />
@@ -802,7 +802,7 @@
 		<reward type="Item" id="lightsword" value="500" />
 		<reward type="Item" id="Q_FinalExam" />
 	</quest>
-	<quest id="Q_WPI" group_name="Pistols Training" name="Pistols 1/5" subtitle="Cowboy" description="It seems I am doing well with Pistols.\n\nNeed to train more if I want to become a master." icon="ui_game_symbol_pistol" repeatable="false" category_key="challenge" offer="Shoot'em up!" difficulty="easy">
+	<quest id="Q_WPI" group_name="ハンドガンの訓練" name="ハンドガン 1/5" subtitle="保安官" description="ハンドガンの使い方が分かってきた。\n使いこなすにはもっと訓練が必要だろう。" icon="ui_game_symbol_pistol" repeatable="false" category_key="challenge" offer="撃ち殺せ！" difficulty="easy">
 		<objective type="ZombieKill" value="10" />
 		<requirement type="Group" id="requirementGroupPistols" value="OR">
 			<requirement type="Holding" id="gunRevolver" />
@@ -814,7 +814,7 @@
 		<reward type="SkillPoints" value="1" />
 		<reward type="Quest" id="Q_WPI2" />
 	</quest>
-	<quest id="Q_WPI2" group_name="Pistols Training" name="Pistols 2/5" subtitle="Duelist" description="Need to train even more if I want to achieve something." icon="ui_game_symbol_pistol" repeatable="false" category_key="challenge" offer="Shoot'em up!" difficulty="medium">
+	<quest id="Q_WPI2" group_name="ハンドガンの訓練" name="ハンドガン 2/5" subtitle="保安官" description="何かを見出すためにはもっと訓練が必要だ。" icon="ui_game_symbol_pistol" repeatable="false" category_key="challenge" offer="撃ち殺せ！" difficulty="medium">
 		<objective type="ZombieKill" value="50" />
 		<requirement type="Group" id="requirementGroupPistols" value="OR">
 			<requirement type="Holding" id="gunRevolver" />
@@ -826,7 +826,7 @@
 		<reward type="SkillPoints" value="3" />
 		<reward type="Quest" id="Q_WPI3" />
 	</quest>
-	<quest id="Q_WPI3" group_name="Pistols Training" name="Pistols 3/5" subtitle="Pistolier" description="Do you wanna piece of me boy?!" icon="ui_game_symbol_pistol" repeatable="false" category_key="challenge" offer="Shoot'em up!" difficulty="medium">
+	<quest id="Q_WPI3" group_name="ハンドガンの訓練" name="ハンドガン 3/5" subtitle="決闘者" description="俺の弾丸を受けな！" icon="ui_game_symbol_pistol" repeatable="false" category_key="challenge" offer="撃ち殺せ！" difficulty="medium">
 		<objective type="ZombieKill" value="250" />
 		<requirement type="Group" id="requirementGroupPistols" value="OR">
 			<requirement type="Holding" id="gunRevolver" />
@@ -838,7 +838,7 @@
 		<reward type="SkillPoints" value="5" />
 		<reward type="Quest" id="Q_WPI4" />
 	</quest>
-	<quest id="Q_WPI4" group_name="Pistols Training" name="Pistols 4/5" subtitle="Reiter" description="Top 5 holland cheese recipes." icon="ui_game_symbol_pistol" repeatable="false" category_key="challenge" offer="Shoot'em up!" difficulty="hard">
+	<quest id="Q_WPI4" group_name="ハンドガンの訓練" name="ハンドガン 4/5" subtitle="ライダー" description="最高の銃使いに最高の相棒を。" icon="ui_game_symbol_pistol" repeatable="false" category_key="challenge" offer="撃ち殺せ！" difficulty="hard">
 		<objective type="AnimalKill" id="animalZombieBear" value="5" />
 		<objective type="AnimalKill" id="animalRabbit" value="10" />
 		<objective type="AnimalKill" id="animalChicken" value="10" />
@@ -856,7 +856,7 @@
 		<reward type="Skill" id="Pistols" value="5" />
 		<reward type="Quest" id="Q_WPI5" />
 	</quest>
-	<quest id="Q_WPI5" group_name="Pistols Training" name="Pistols 5/5" subtitle="Django Freeman" description="Need a real challenging task to prove my skills now." icon="ui_game_symbol_pistol" repeatable="false" category_key="challenge" offer="They are strong. But you have a sleeping bag." difficulty="hard">
+	<quest id="Q_WPI5" group_name="ハンドガンの訓練" name="ハンドガン 5/5" subtitle="007「ジェームズ・ポンド」" description="自分の練度を示すために、真の試練が必要だ。" icon="ui_game_symbol_pistol" repeatable="false" category_key="challenge" offer="挑戦するといい。心折れるまで、何度でも。" difficulty="hard">
 		<objective type="ZombieKill" id="fatzombiecop" value="20" />
 		<objective type="ZombieKill" id="zombieferal" value="10" />
 		<objective type="ZombieKill" id="FirefighterZd" value="5" />
@@ -876,7 +876,7 @@
 		<reward type="Item" id="gun44Magnum" value="500" />
 		<reward type="Item" id="Q_FinalExam" />
 	</quest>
-	<quest id="Q_WSH" group_name="Shotguns Training" name="Shotguns 1/5" subtitle="Farmer" description="It seems I am doing well with Shotguns.\n\nNeed to train more if I want to become a master." icon="ui_game_symbol_shotgun" repeatable="false" category_key="challenge" offer="Shoot'em up!" difficulty="easy">
+	<quest id="Q_WSH" group_name="ショットガンの訓練" name="ショットガン /5" subtitle="農家" description="ショットガンの使い方が分かってきた。\n使いこなすにはもっと訓練が必要だろう。" icon="ui_game_symbol_shotgun" repeatable="false" category_key="challenge" offer="撃ち殺せ！" difficulty="easy">
 		<objective type="ZombieKill" value="10" />
 		<requirement type="Group" id="requirementGroupShotguns" value="OR">
 			<requirement type="Holding" id="blunderbuss" />
@@ -888,7 +888,7 @@
 		<reward type="SkillPoints" value="1" />
 		<reward type="Quest" id="Q_WSH2" />
 	</quest>
-	<quest id="Q_WSH2" group_name="Shotguns Training" name="Shotguns 2/5" subtitle="Hunter" description="Need to train even more if I want to achieve something." icon="ui_game_symbol_shotgun" repeatable="false" category_key="challenge" offer="Shoot'em up!" difficulty="medium">
+	<quest id="Q_WSH2" group_name="ショットガンの訓練" name="ショットガン 2/5" subtitle="猟師" description="何かを見出すためにはもっと訓練が必要だ。" icon="ui_game_symbol_shotgun" repeatable="false" category_key="challenge" offer="撃ち殺せ！" difficulty="medium">
 		<objective type="ZombieKill" value="50" />
 		<requirement type="Group" id="requirementGroupShotguns" value="OR">
 			<requirement type="Holding" id="blunderbuss" />
@@ -900,7 +900,7 @@
 		<reward type="SkillPoints" value="3" />
 		<reward type="Quest" id="Q_WSH3" />
 	</quest>
-	<quest id="Q_WSH3" group_name="Shotguns Training" name="Shotguns 3/5" subtitle="Policeman" description="Freeze, dang it!! You are under arrest!" icon="ui_game_symbol_shotgun" repeatable="false" category_key="challenge" offer="Shoot'em up!" difficulty="medium">
+	<quest id="Q_WSH3" group_name="ショットガンの訓練" name="ショットガン 3/5" subtitle="警官" description="そこのお前、止まれ！あんたは法を犯した！" icon="ui_game_symbol_shotgun" repeatable="false" category_key="challenge" offer="撃ち殺せ！" difficulty="medium">
 		<objective type="ZombieKill" value="250" />
 		<requirement type="Group" id="requirementGroupShotguns" value="OR">
 			<requirement type="Holding" id="blunderbuss" />
@@ -912,7 +912,7 @@
 		<reward type="SkillPoints" value="5" />
 		<reward type="Quest" id="Q_WSH4" />
 	</quest>
-	<quest id="Q_WSH4" group_name="Shotguns Training" name="Shotguns 4/5" subtitle="Marine" description="Beasty pump action." icon="ui_game_symbol_shotgun" repeatable="false" category_key="challenge" offer="Shoot'em up!" difficulty="hard">
+	<quest id="Q_WSH4" group_name="ショットガンの訓練" name="ショットガン 4/5" subtitle="海兵" description="光速のポンプアクション！" icon="ui_game_symbol_shotgun" repeatable="false" category_key="challenge" offer="撃ち殺せ！" difficulty="hard">
 		<objective type="AnimalKill" id="animalZombieBear" value="5" />
 		<objective type="AnimalKill" id="animalRabbit" value="10" />
 		<objective type="AnimalKill" id="animalChicken" value="10" />
@@ -930,7 +930,7 @@
 		<reward type="Recipe" id="shotgunSlug" />
 		<reward type="Quest" id="Q_WSH5" />
 	</quest>
-	<quest id="Q_WSH5" group_name="Shotguns Training" name="Shotguns 5/5" subtitle="Terminator" description="Need a real challenging task to prove my skills now." icon="ui_game_symbol_shotgun" repeatable="false" category_key="challenge" offer="They are strong. But you have a sleeping bag." difficulty="hard">
+	<quest id="Q_WSH5" group_name="ショットガンの訓練" name="ショットガン 5/5" subtitle="T-800「ターミネーター」" description="自分の練度を示すために、真の試練が必要だ。" icon="ui_game_symbol_shotgun" repeatable="false" category_key="challenge" offer="挑戦するといい。心折れるまで、何度でも。" difficulty="hard">
 		<objective type="ZombieKill" id="fatzombiecop" value="20" />
 		<objective type="ZombieKill" id="zombieferal" value="10" />
 		<objective type="ZombieKill" id="FirefighterZd" value="5" />
@@ -950,7 +950,7 @@
 		<reward type="Item" id="buechse" value="500" />
 		<reward type="Item" id="Q_FinalExam" />
 	</quest>
-	<quest id="Q_WRI" group_name="Rifles Training" name="Rifles 1/5" subtitle="Gunner" description="It seems I am doing well with Rifles.\n\nNeed to train more if I want to become a master." icon="ui_game_symbol_rifle" repeatable="false" category_key="challenge" offer="Shoot'em up!" difficulty="easy">
+	<quest id="Q_WRI" group_name="ライフルの訓練" name="ライフル 1/5" subtitle="銃使い" description="ライフルの使い方が分かってきた。\n使いこなすにはもっと訓練が必要だろう。" icon="ui_game_symbol_rifle" repeatable="false" category_key="challenge" offer="撃ち殺せ！" difficulty="easy">
 		<objective type="ZombieKill" value="10" />
 		<requirement type="Group" id="requirementGroupRifles" value="OR">
 			<requirement type="Holding" id="ACW" />
@@ -970,7 +970,7 @@
 		<reward type="SkillPoints" value="1" />
 		<reward type="Quest" id="Q_WRI2" />
 	</quest>
-	<quest id="Q_WRI2" group_name="Rifles Training" name="Rifles 2/5" subtitle="Rifleman" description="Need to train even more if I want to achieve something." icon="ui_game_symbol_rifle" repeatable="false" category_key="challenge" offer="Shoot'em up!" difficulty="medium">
+	<quest id="Q_WRI2" group_name="ライフルの訓練" name="ライフル 2/5" subtitle="ライフル使い" description="何かを見出すためにはもっと訓練が必要だ。" icon="ui_game_symbol_rifle" repeatable="false" category_key="challenge" offer="撃ち殺せ！" difficulty="medium">
 		<objective type="ZombieKill" value="50" />
 		<requirement type="Group" id="requirementGroupRifles" value="OR">
 			<requirement type="Holding" id="ACW" />
@@ -990,7 +990,7 @@
 		<reward type="SkillPoints" value="3" />
 		<reward type="Quest" id="Q_WRI3" />
 	</quest>
-	<quest id="Q_WRI3" group_name="Rifles Training" name="Rifles 3/5" subtitle="Special Forces" description="Freeze, dang it!! You are under arrest!" icon="ui_game_symbol_rifle" repeatable="false" category_key="challenge" offer="Shoot'em up!" difficulty="medium">
+	<quest id="Q_WRI3" group_name="ライフルの訓練" name="ライフル 3/5" subtitle="スナイパー" description="そこのお前、止まれ！あんたは法を犯した！" icon="ui_game_symbol_rifle" repeatable="false" category_key="challenge" offer="撃ち殺せ！" difficulty="medium">
 		<objective type="ZombieKill" value="250" />
 		<requirement type="Group" id="requirementGroupRifles" value="OR">
 			<requirement type="Holding" id="ACW" />
@@ -1010,7 +1010,7 @@
 		<reward type="SkillPoints" value="5" />
 		<reward type="Quest" id="Q_WRI4" />
 	</quest>
-	<quest id="Q_WRI4" group_name="Rifles Training" name="Rifles 4/5" subtitle="Commando" description="Ultimate firepower." icon="ui_game_symbol_rifle" repeatable="false" category_key="challenge" offer="Shoot'em up!" difficulty="hard">
+	<quest id="Q_WRI4" group_name="ライフルの訓練" name="ライフル 4/5" subtitle="コマンド―" description="究極の火力" icon="ui_game_symbol_rifle" repeatable="false" category_key="challenge" offer="撃ち殺せ！" difficulty="hard">
 		<objective type="AnimalKill" id="animalZombieBear" value="5" />
 		<objective type="AnimalKill" id="animalRabbit" value="10" />
 		<objective type="AnimalKill" id="animalChicken" value="10" />
@@ -1036,7 +1036,7 @@
 		<reward type="Recipe" id="ScopePSG" />
 		<reward type="Quest" id="Q_WRI5" />
 	</quest>
-	<quest id="Q_WRI5" group_name="Rifles Training" name="Rifles 5/5" subtitle="Deadshot" description="Need a real challenging task to prove my skills now." icon="ui_game_symbol_rifle" repeatable="false" category_key="challenge" offer="They are strong. But you have a sleeping bag." difficulty="hard">
+	<quest id="Q_WRI5" group_name="ライフルの訓練" name="ライフル 5/5" subtitle="死の弾丸" description="自分の練度を示すために、真の試練が必要だ。" icon="ui_game_symbol_rifle" repeatable="false" category_key="challenge" offer="挑戦するといい。心折れるまで、何度でも。" difficulty="hard">
 		<objective type="ZombieKill" id="fatzombiecop" value="20" />
 		<objective type="ZombieKill" id="zombieferal" value="10" />
 		<objective type="ZombieKill" id="FirefighterZd" value="5" />
@@ -1065,7 +1065,7 @@
 		<reward type="Item" id="Q_FinalExam" />
 	</quest>
 	<!-- Farmer Quest Chains -->
-	<quest id="FEX" name="Final Exam" subtitle="Boss of the Bosses" description="Now you are ready for the final exam.\n\nHere is the list of the strongest abominations, created by the apocalypse itself.\n\nYou must stop them, before it is too late..." icon="ui_game_symbol_q_boss" repeatable="false" category_key="Quest" offer="You can find all of them in the radiated zones." difficulty="insane">
+	<quest id="FEX" name="最後の試練" subtitle="全ての元凶" description="今や最後の試練を受ける準備ができた。\nこの世紀末が作った最強の殺意の塊がここに書かれている。\n手遅れになる前に、奴らを止めることだ…。" icon="ui_game_symbol_q_boss" repeatable="false" category_key="Quest" offer="全ての元凶は放射能汚染区域に" difficulty="insane">
 		<objective type="AnimalKill" id="radSpider" value="10" />
 		<objective type="AnimalKill" id="radSpiderSmall" value="10" />
 		<objective type="ZombieKill" id="WallCrusher" value="5" />
@@ -1075,86 +1075,86 @@
 		<objective type="ZombieKill" id="RadBossOld" value="3" />
 		<reward type="SkillPoints" value="30" />
 	</quest>
-	<quest id="Q_Farm_A1" group_name="Newbie Farmer" name="Newbie Farmer 1/6" subtitle="First Tools" description="Collect required materials and craft gardening hoe and the shovel for your farm." icon="ui_game_symbol_q_farm1" repeatable="false" category_key="Quest" offer="First steps into farming." difficulty="easy">
+	<quest id="Q_Farm_A1" group_name="農業初心者" name="農業初心者 1/6" subtitle="最初の道具" description="材料を集めて Gardening Hoe と Iron Shovel を作りましょう。" icon="ui_game_symbol_q_farm1" repeatable="false" category_key="Quest" offer="一人前農家の最初の一歩" difficulty="easy">
 		<objective type="FetchKeep" id="forgedIron" value="32" />
 		<objective type="FetchKeep" id="wood" value="40" />
 		<objective type="Craft" id="hoeIron" value="1" />
 		<objective type="Craft" id="shovelIron" value="1" />
 		<reward type="Quest" id="Q_Farm_A2" />
 	</quest>
-	<quest id="Q_Farm_A2" group_name="Newbie Farmer" name="Newbie Farmer 2/6" subtitle="Your Bucket" description="Collect required materials and craft iron bucket to water your plants.\nYou need a workbench to craft it." icon="ui_game_symbol_q_farm1" repeatable="false" category_key="Quest" offer="First steps into farming." difficulty="easy">
+	<quest id="Q_Farm_A2" group_name="農業初心者" name="農業初心者 2/6" subtitle="バケツ" description="作物に水をやるために、材料を集めて Iron Bucket を作りましょう。\nクラフトにはワークベンチが必要です。" icon="ui_game_symbol_q_farm1" repeatable="false" category_key="Quest" offer="一人前農家の最初の一歩" difficulty="easy">
 		<objective type="FetchKeep" id="forgedIron" value="7" />
 		<objective type="FetchKeep" id="bucket" value="1" />
 		<reward type="Quest" id="Q_Farm_A3" />
 	</quest>
-	<quest id="Q_Farm_A3" group_name="Newbie Farmer" name="Newbie Farmer 3/6" subtitle="Find a Water" description="Find a source of water and fill the bucket." icon="ui_game_symbol_q_farm1" repeatable="false" category_key="Quest" offer="First steps into farming." difficulty="easy">
+	<quest id="Q_Farm_A3" group_name="農業初心者" name="農業初心者 3/6" subtitle="水を探して" description="水源を探してバケツに汲みましょう。" icon="ui_game_symbol_q_farm1" repeatable="false" category_key="Quest" offer="一人前農家の最初の一歩" difficulty="easy">
 		<reward type="Quest" id="Q_Farm_A4" />
 	</quest>
-	<quest id="Q_Farm_A4" group_name="Newbie Farmer" name="Newbie Farmer 4/6" subtitle="Find Seeds" description="Now you need to make your first seeds.\n\nBetter to start looking for the Sunflower and Goldenrod plants, as the base materials for the farming expendables.\nMake the seeds out of the Goldenrod plant, once you find one." icon="ui_game_symbol_q_farm1" repeatable="false" category_key="Quest" offer="First steps into farming." difficulty="easy">
+	<quest id="Q_Farm_A4" group_name="農業初心者" name="農業初心者 4/6" subtitle="種を見つけよう" description="さて、続いて種を見つけなけれなりません。\nSun Flower と Goldenrod から始めましょう。この二つは草原で見つかる基本的な植物です。\nGoldenrod は見つけたら種に加工しましょう。" icon="ui_game_symbol_q_farm1" repeatable="false" category_key="Quest" offer="一人前農家の最初の一歩" difficulty="easy">
 		<objective type="FetchKeep" id="sunflowerSeed" value="1" />
 		<objective type="Craft" id="plantedGoldenrod1" value="1" />
 		<reward type="Quest" id="Q_Farm_A5" />
 	</quest>
-	<quest id="Q_Farm_A5" group_name="Newbie Farmer" name="Newbie Farmer 5/6" subtitle="Plant Seeds" description="Find a spot where you want to start your farm, it should be ordinary soil.\nMake a hole nearby using a shovel and fill it with water using your bucket.\nThen you should hoe the dirt near the water source and plant your seeds on the hoed dirt." icon="ui_game_symbol_q_farm1" repeatable="false" category_key="Quest" offer="First steps into farming." difficulty="easy">
+	<quest id="Q_Farm_A5" group_name="農業初心者" name="農業初心者 5/6" subtitle="種を植えよう" description="農業を始める場所を見つけましょう、場所は土でなければなりません。\n近くに穴を掘り、バケツに汲んだ水で満たします。\n最後に水のそばの土を耕したら、種を植えましょう。" icon="ui_game_symbol_q_farm1" repeatable="false" category_key="Quest" offer="一人前農家の最初の一歩" difficulty="easy">
 		<objective type="BlockPlace" id="waterMovingBucket" value="1" />
 		<objective type="BlockPlace" id="plantedGoldenrod1" value="1" />
 		<objective type="BlockPlace" id="plantedSunflower" value="1" />
 		<reward type="Quest" id="Q_Farm_A6" />
 	</quest>
-	<quest id="Q_Farm_A6" group_name="Newbie Farmer" name="Newbie Farmer 6/6" subtitle="Time to Harvest" description="Wait until your crops will mature, and harvest them.\nDo not forget to water your plants in time, or better create a water trench, by digging the dirt and filling trench with water." icon="ui_game_symbol_q_farm1" repeatable="false" category_key="Quest" offer="First steps into farming." difficulty="easy">
+	<quest id="Q_Farm_A6" group_name="農業初心者" name="農業初心者 6/6" subtitle="収穫の時" description="作物が育ったら収穫しましょう。\n時間経過で水は減るので、深く用水路を掘って常に満たしておくのを忘れないようにしましょう。" icon="ui_game_symbol_q_farm1" repeatable="false" category_key="Quest" offer="一人前農家の最初の一歩" difficulty="easy">
 		<objective type="FetchKeep" id="goldenrodPlant" value="1" />
 		<objective type="FetchKeep" id="sunflowerSeed" value="1" />
 		<reward type="SkillPoints" value="1" />
 		<reward type="Quest" id="Q_Farm_B1" />
 		<reward type="Quest" id="Q_Orchard" />
 	</quest>
-	<quest id="Q_Farm_B1" group_name="Fertilize It!" name="Fertilize It! 1/3" subtitle="A Beaker" description="We can increase the harvest of our crops.\nAll we need is a good fertilizer for the soil.\n\nBut first, we need to find a beaker to create one." icon="ui_game_symbol_q_farm2" repeatable="false" category_key="Quest" offer="How To increase the yield of crops." difficulty="medium">
+	<quest id="Q_Farm_B1" group_name="もっと収穫しよう！" name="もっと収穫しよう！ 1/3" subtitle="ビーカー" description="農作物の収穫量は増やすことができます。\n必要なのは土壌のための良質な肥料です。\n\nしかし、まずは Beaker がなければ始まりません。" icon="ui_game_symbol_q_farm2" repeatable="false" category_key="Quest" offer="収穫量を増やすには" difficulty="medium">
 		<objective type="FetchKeep" id="beaker" value="1" />
 		<reward type="Quest" id="Q_Farm_B2" />
 	</quest>
-	<quest id="Q_Farm_B2" group_name="Fertilize It!" name="Fertilize It! 2/3" subtitle="Craft Fertilizer" description="Now, when you have a beaker, put it into your campfire and find a resources to make a fertilizer." icon="ui_game_symbol_q_farm2" repeatable="false" category_key="Quest" offer="How To increase the yield of crops." difficulty="medium">
+	<quest id="Q_Farm_B2" group_name="もっと収穫しよう！" name="もっと収穫しよう！ 2/3" subtitle="肥料を作ろう" description="ビーカーが見つかれば、キャンプファイヤに入れて肥料の材料を探しましょう。" icon="ui_game_symbol_q_farm2" repeatable="false" category_key="Quest" offer="収穫量を増やすには" difficulty="medium">
 		<objective type="FetchKeep" id="turd" value="2" />
 		<objective type="FetchKeep" id="potassiumNitratePowder" value="15" />
 		<objective type="FetchKeep" id="dirtFragment" value="3" />
 		<objective type="FetchKeep" id="fertilizer" value="1" />
 		<reward type="Quest" id="Q_Farm_B3" />
 	</quest>
-	<quest id="Q_Farm_B3" group_name="Fertilize It!" name="Fertilize It! 3/3" subtitle="Fertilize It!" description="Ok, it doesn't smell good... But all for the profit.\n\nUpgrade your farmland using a hoe." icon="ui_game_symbol_q_farm2" repeatable="false" category_key="Quest" offer="How To increase the yield of crops." difficulty="medium">
+	<quest id="Q_Farm_B3" group_name="もっと収穫しよう！" name="もっと収穫しよう！ 3/3" subtitle="肥やせ！" description="匂いはよくないかもしれないが…、収穫を増やすためです。\nクワを使って土をもっと耕しましょう。" icon="ui_game_symbol_q_farm2" repeatable="false" category_key="Quest" offer="収穫量を増やすには" difficulty="medium">
 		<objective type="BlockUpgrade" id="fertileFarmland" value="1" />
 		<reward type="SkillPoints" value="2" />
 		<reward type="Quest" id="Q_Farm_C1" />
 	</quest>
-	<quest id="Q_Farm_C1" group_name="Fight the Plague!" name="Fight the Plague! 1/7" subtitle="Natural Pesticides" description="Good farm you have there! ;)\nBut it seems those insects trying to mess with you - almost professional farmer!\n Time to fight back. Craft some Natural Pesticides at the campfire now." icon="ui_game_symbol_q_farm3" repeatable="false" category_key="Quest" offer="Those flies are so... annoying...." difficulty="medium">
+	<quest id="Q_Farm_C1" group_name="疫病と戦う" name="疫病と戦う 1/7" subtitle="自然の殺虫剤" description="最高の農地が出来上がりました！(￣▽￣)\nでも、昆虫たちがあなたを(半人前農家)を邪魔しようとしています！\n対抗するときです。たき火で防虫成分を抽出しましょう。" icon="ui_game_symbol_q_farm3" repeatable="false" category_key="Quest" offer="ハエが飛んでてやな感じ…。" difficulty="medium">
 		<objective type="FetchKeep" id="goldenrodPlant" value="1" />
 		<objective type="FetchKeep" id="yuccaFibers" value="5" />
 		<objective type="FetchKeep" id="naturalPesticides" value="1" />
 		<reward type="Quest" id="Q_Farm_C2" />
 	</quest>
-	<quest id="Q_Farm_C2" group_name="Fight the Plague!" name="Fight the Plague! 2/7" subtitle="Mortar and Pestle" description="Ok, we have a pesticide dust. Now we need a sunflower oil, to mix it with natural pesticides.\nBut first we need to craft a mortar and pestle." icon="ui_game_symbol_q_farm3" repeatable="false" category_key="Quest" offer="Those flies are so... annoying...." difficulty="medium">
+	<quest id="Q_Farm_C2" group_name="疫病と戦う" name="疫病と戦う 2/7" subtitle="すり鉢とすりこ木" description="防虫成分の粉末を手に入れました。これをヒマワリ油と調合すれば散布できます。\nまずはヒマワリ油を取り出すために、すり鉢とすりこ木を作りましょう。" icon="ui_game_symbol_q_farm3" repeatable="false" category_key="Quest" offer="ハエが飛んでてやな感じ…。" difficulty="medium">
 		<objective type="FetchKeep" id="clayLump" value="2" />
 		<objective type="FetchKeep" id="rockSmall" value="3" />
 		<objective type="Craft" id="mortarAndPestle" value="1" />
 		<reward type="Quest" id="Q_Farm_C3" />
 	</quest>
-	<quest id="Q_Farm_C3" group_name="Fight the Plague!" name="Fight the Plague! 3/7" subtitle="Sunflower Oil" description="Now when you have a mortar and pestle, you can make a sunflower oil from seeds.\nJust take 5 seeds in your hand, aim at the mortal and pestle and left-click on it to make an oil." icon="ui_game_symbol_q_farm3" repeatable="false" category_key="Quest" offer="Those flies are so... annoying...." difficulty="medium">
+	<quest id="Q_Farm_C3" group_name="疫病と戦う" name="疫病と戦う 3/7" subtitle="ヒマワリ油" description="すり鉢とすりこ木ができたので、ヒマワリの種から油を取り出せます。\nまずは種を5つだけ手にもって、すり鉢に向かって左クリックして油を取り出してください。\n（抽出作業は手に持っている種を全て使います）" icon="ui_game_symbol_q_farm3" repeatable="false" category_key="Quest" offer="ハエが飛んでてやな感じ…。" difficulty="medium">
 		<objective type="FetchKeep" id="sunflowerSeed" value="5" />
 		<objective type="BlockPlace" id="mortarAndPestle" value="1" />
 		<objective type="FetchKeep" id="sunflowerOil" value="5" />
 		<reward type="Quest" id="Q_Farm_C4" />
 	</quest>
-	<quest id="Q_Farm_C4" group_name="Fight the Plague!" name="Fight the Plague! 4/7" subtitle="Chemistry Station" description="Hmm... It seems you cannot mix components without a chemistry station.\nYou can craft one after learning the skill and collecting all required components, or... Just find it somewhere, if you are lucky enough ;) " icon="ui_game_symbol_q_farm3" repeatable="false" category_key="Quest" offer="Those flies are so... annoying...." difficulty="medium">
+	<quest id="Q_Farm_C4" group_name="疫病と戦う" name="疫病と戦う 4/7" subtitle="化学薬品作業台" description="さて、材料が集まりましたが調合するためには化学薬品作業台が必要です。\nパークと材料を入手して組み立てるか、もしくは…、運が良ければどこかで見つかるかもしれません。\n（既に入手済みの場合は、レンチで解体して再配置しましょう。）" icon="ui_game_symbol_q_farm3" repeatable="false" category_key="Quest" offer="ハエが飛んでてやな感じ…。" difficulty="medium">
 		<objective type="Craft" id="chemistryStation" value="1" />
 		<objective type="BlockPlace" id="chemistryStation" value="1" />
 		<reward type="Quest" id="Q_Farm_C5" />
 	</quest>
-	<quest id="Q_Farm_C5" group_name="Fight the Plague!" name="Fight the Plague! 5/7" subtitle="Pesticide Spray" description="Ok. So you have access to the chemistry station now.\n\nTime to craft some Pesticide Spray." icon="ui_game_symbol_q_farm3" repeatable="false" category_key="Quest" offer="Those flies are so... annoying...." difficulty="medium">
+	<quest id="Q_Farm_C5" group_name="疫病と戦う" name="疫病と戦う 5/7" subtitle="噴霧式殺虫剤" description="よし、これで化学薬品作業台を使えるようになりました。\n噴霧式殺虫剤を作りましょう。" icon="ui_game_symbol_q_farm3" repeatable="false" category_key="Quest" offer="ハエが飛んでてやな感じ…。" difficulty="medium">
 		<objective type="FetchKeep" id="bottledWater" value="1" />
 		<objective type="FetchKeep" id="naturalPesticides" value="1" />
 		<objective type="FetchKeep" id="sunflowerOil" value="5" />
 		<objective type="FetchKeep" id="pesticide" value="1" />
 		<reward type="Quest" id="Q_Farm_C6" />
 	</quest>
-	<quest id="Q_Farm_C6" group_name="Fight the Plague!" name="Fight the Plague! 6/7" subtitle="Spraying Manual Pump" description="You need a tool to spray your pesticides.\nCollect materials and craft it at the workbench." icon="ui_game_symbol_q_farm3" repeatable="false" category_key="Quest" offer="Those flies are so... annoying...." difficulty="medium">
+	<quest id="Q_Farm_C6" group_name="疫病と戦う" name="疫病と戦う 6/7" subtitle="手動噴霧器" description="殺虫剤を噴霧する噴霧器が必要です。\n材料を集めてワークベンチで作りましょう。" icon="ui_game_symbol_q_farm3" repeatable="false" category_key="Quest" offer="ハエが飛んでてやな感じ…。" difficulty="medium">
 		<objective type="FetchKeep" id="forgedIron" value="3" />
 		<objective type="FetchKeep" id="canEmpty" value="1" />
 		<objective type="FetchKeep" id="mechanicalParts" value="1" />
@@ -1162,13 +1162,13 @@
 		<objective type="FetchKeep" id="SprayItem" value="1" />
 		<reward type="Quest" id="Q_Farm_C7" />
 	</quest>
-	<quest id="Q_Farm_C7" group_name="Fight the Plague!" name="Fight the Plague! 7/7" subtitle="Use it!" description="It is time to release the dogs!\nLoad you spraying pump and use it on your crops.\nIt grants very high resistance to insect plague through the whole lifecycle of the crop." icon="ui_game_symbol_q_farm3" repeatable="false" category_key="Quest" offer="Those flies are so... annoying...." difficulty="medium">
+	<quest id="Q_Farm_C7" group_name="疫病と戦う" name="疫病と戦う 7/7" subtitle="さあ、使いましょう！" description="害虫たちを葬り去る時が来ました！\n噴霧器に殺虫剤を装填し、健康な作物に使いましょう。\nその作物の一生は、害虫に対する素晴らしい抵抗力で守られます。" icon="ui_game_symbol_q_farm3" repeatable="false" category_key="Quest" offer="ハエが飛んでてやな感じ…。" difficulty="medium">
 		<objective type="FetchKeep" id="pesticide" value="1" />
 		<objective type="FetchKeep" id="SprayItem" value="1" />
 		<reward type="SkillPoints" value="3" />
 		<reward type="Quest" id="Q_Farm_D1" />
 	</quest>
-	<quest id="Q_Farm_D1" group_name="Powered Farm" name="Powered Farm 1/4" subtitle="Diesel Power" description="You can use electric power to help against insects and rodents.\nBetter to create your own generator now.\nDiesel Generator can be created in the Mill, after reading appropriate books." icon="ui_game_symbol_q_farm4" repeatable="false" category_key="Quest" offer="Electrify your farm now." difficulty="medium">
+	<quest id="Q_Farm_D1" group_name="工業式農業" name="工業式農業 1/5" subtitle="ディーゼル式発電機" description="電力は害虫・ネズミの対抗策として使えます。\nさあ、ディーゼル発電機を使ういい時期です。\nこれはレシピを読むかパークを開放すれば粉砕機 (Mill) で作成可能です。" icon="ui_game_symbol_q_farm4" repeatable="false" category_key="Quest" offer="電力で快適農耕生活" difficulty="medium">
 		<objective type="FetchKeep" id="metalFrame" value="1" />
 		<objective type="FetchKeep" id="smallDeposit" value="1" />
 		<objective type="FetchKeep" id="mechanicalParts" value="15" />
@@ -1177,7 +1177,7 @@
 		<objective type="BlockPlace" id="smallGenerator" value="1" />
 		<reward type="Quest" id="Q_Farm_D2" />
 	</quest>
-	<quest id="Q_Farm_D2" group_name="Powered Farm" name="Powered Farm 2/4" subtitle="Insect Repellent Light" description="Craft Insect repellent device.\nIt should be wired to a power source.\nYou can craft it at the workbench." icon="ui_game_symbol_q_farm4" repeatable="false" category_key="Quest" offer="Electrify your farm now." difficulty="medium">
+	<quest id="Q_Farm_D2" group_name="工業式農業" name="工業式農業 2/5" subtitle="導線" description="発電機と装置をつなぐために導線を作りましょう。\n電線のON/OFF切り替えや延長にはナイフスイッチ (Knife Switch) かフューズ (Power Box) を使います。" icon="ui_game_symbol_q_farm4" repeatable="false" category_key="Quest" offer="電力で快適農耕生活" difficulty="medium">
 		<objective type="FetchKeep" id="forgedIron" value="2" />
 		<objective type="FetchKeep" id="shortMetalPipe" value="1" />
 		<objective type="FetchKeep" id="electricParts" value="1" />
@@ -1185,7 +1185,7 @@
 		<objective type="Craft" id="InsectLamp" value="1" />
 		<reward type="Quest" id="Q_Farm_D3" />
 	</quest>
-	<quest id="Q_Farm_D3" group_name="Powered Farm" name="Powered Farm 3/4" subtitle="Ultrasonic Rodent Repeller" description="Craft Ultrasonic Rodent Repeller device.\nIt should be wired to a power souce.\nYou can craft it at the workbench." icon="ui_game_symbol_q_farm4" repeatable="false" category_key="Quest" offer="Electrify your farm now." difficulty="medium">
+	<quest id="Q_Farm_D3" group_name="工業式農業" name="工業式農業 3/5" subtitle="防虫ライト" description="防虫装置をクラフトしましょう。\n導線につなげる、つまり導線や発電機ブロックに隣接した設置をする必要があります。\nクラフトは作業台です。" icon="ui_game_symbol_q_farm4" repeatable="false" category_key="Quest" offer="電力で快適農耕生活" difficulty="medium">
 		<objective type="FetchKeep" id="forgedIron" value="1" />
 		<objective type="FetchKeep" id="shortMetalPipe" value="2" />
 		<objective type="FetchKeep" id="electricParts" value="1" />
@@ -1193,67 +1193,67 @@
 		<objective type="Craft" id="UltraSound" value="1" />
 		<reward type="Quest" id="Q_Farm_D4" />
 	</quest>
-	<quest id="Q_Farm_D4" group_name="Powered Farm" name="Powered Farm 4/4" subtitle="Turn it on!" description="It is time to place devices you just crafted.\nEvery device should be wired to a power source and has an area of effect, protecting plants in a decent area.\nMake sure the generator has gas cans inside and powered on." icon="ui_game_symbol_q_farm4" repeatable="false" category_key="Quest" offer="Electrify your farm now." difficulty="medium">
+	<quest id="Q_Farm_D4" group_name="工業式農業" name="工業式農業 4/5" subtitle="防鼠超音波装置" description="防鼠装置をクラフトしましょう。\n導線につなげる、つまり導線や発電機ブロックに隣接した設置をする必要があります。\nクラフトは作業台です。" icon="ui_game_symbol_q_farm4" repeatable="false" category_key="Quest" offer="電力で快適農耕生活" difficulty="medium">
 		<objective type="BlockPlace" id="InsectLamp" value="1" />
 		<objective type="BlockPlace" id="UltraSound" value="1" />
 		<reward type="SkillPoints" value="4" />
 		<reward type="Quest" id="Q_Farm_E1" />
 	</quest>
-	<quest id="Q_Farm_E1" group_name="Food for Everyone" name="Survivor's Farm 1/6" subtitle="Radio Tower" description="Time to recruit survivors.\nYou can recruit survivors by turning on a radio tower.\nYou need a mill to craft one." icon="ui_game_symbol_q_farm5" repeatable="false" category_key="Quest" offer="Share your knowledge." difficulty="medium">
+	<quest id="Q_Farm_E1" group_name="皆に行き渡る食料を" name="分業式農業" subtitle="電波塔" description="生存者たちを募り、仲間にする時が来ました。\n電波塔の電源を入れれば生存者たちが集まります。\n粉砕機 (Mill) でクラフトできます。" icon="ui_game_symbol_q_farm5" repeatable="false" category_key="Quest" offer="知識を次の世代へ伝えなさい" difficulty="medium">
 		<objective type="FetchKeep" id="forgedIron" value="100" />
 		<objective type="FetchKeep" id="electricParts" value="10" />
 		<objective type="FetchKeep" id="lightBulb" value="1" />
 		<objective type="Craft" id="radioTower" value="1" />
 		<reward type="Quest" id="Q_Farm_E3" />
 	</quest>
-	<quest id="Q_Farm_E3" group_name="Food for Everyone" name="Survivor's Farm 3/6" subtitle="Turn it on!" description="It's time to connect your devices and wait for arrival of new survivors.\nMake sure you turned on the generator, it has Gas Cans inside, and Radio Tower lamp is blinking." icon="ui_game_symbol_q_farm5" repeatable="false" category_key="Quest" offer="Share your knowledge." difficulty="medium">
+	<quest id="Q_Farm_E3" group_name="皆に行き渡る食料を" name="分業式農業" subtitle="送電開始！" description="電波塔に送電して、まだ見ぬ生存者の音ズレを待ちましょう。\n発電機はONにしましたか？ガソリンは入れましたか？電波塔に電源を入れて、ライトは点灯しましたか？" icon="ui_game_symbol_q_farm5" repeatable="false" category_key="Quest" offer="知識を次の世代へ伝えなさい" difficulty="medium">
 		<objective type="BlockPlace" id="radioTowerBlock" value="1" />
 		<reward type="Quest" id="Q_Farm_E4" />
 	</quest>
-	<quest id="Q_Farm_E4" group_name="Food for Everyone" name="Survivor's Farm 4/6" subtitle="Farmer Station" description="While we waiting for survivors, we can prepare a Farmer station.\nCollect materials and craft one.\nYou need to place it near a girl survivor.\nYou can also tell her to follow you and place the station at desired destination." icon="ui_game_symbol_q_farm5" repeatable="false" category_key="Quest" offer="Share your knowledge." difficulty="medium">
+	<quest id="Q_Farm_E4" group_name="皆に行き渡る食料を" name="分業式農業" subtitle="農業作業台" description="生存者の到着を待つ間、農業作業台を作っておきましょう。\n素材を集めてクラフトしてください。\nこの作業台は少女生存者のそばに設置します。\n置きたい場所に生存者がいなければ、連れてくればいいんですよ。" icon="ui_game_symbol_q_farm5" repeatable="false" category_key="Quest" offer="知識を次の世代へ伝えなさい" difficulty="medium">
 		<objective type="FetchKeep" id="hoeIron" value="1" />
 		<objective type="FetchKeep" id="forgedIron" value="10" />
 		<objective type="FetchKeep" id="bucket" value="2" />
 		<objective type="Craft" id="farmer" value="1" />
 		<reward type="Quest" id="Q_Farm_E5" />
 	</quest>
-	<quest id="Q_Farm_E5" group_name="Food for Everyone" name="Survivor's Farm 5/6" subtitle="Farmer Storage" description="Create a storage for your farmer survivor.\nShe will take seeds from this storage, and put harvested plants inside." icon="ui_game_symbol_q_farm5" repeatable="false" category_key="Quest" offer="Share your knowledge." difficulty="medium">
+	<quest id="Q_Farm_E5" group_name="皆に行き渡る食料を" name="分業式農業" subtitle="農業収納箱" description="農家のために農業収納箱をクラフトしましょう。\n彼女はここから種を取り出し、収穫した作物をここに入れます。" icon="ui_game_symbol_q_farm5" repeatable="false" category_key="Quest" offer="知識を次の世代へ伝えなさい" difficulty="medium">
 		<objective type="FetchKeep" id="nail" value="10" />
 		<objective type="FetchKeep" id="wood" value="20" />
 		<objective type="Craft" id="cntStorageFarm" value="1" />
 		<reward type="Quest" id="Q_Farm_E6" />
 	</quest>
-	<quest id="Q_Farm_E6" group_name="Food for Everyone" name="Survivor's Farm 6/6" subtitle="Farmer Storage" description="As soon as you meet the girl survivor, place a farmer station near her and place farmer storage as close to the farmer station as possible.\nMore info about survivors and farmer can be found in the journal." icon="ui_game_symbol_q_farm5" repeatable="false" category_key="Quest" offer="Share your knowledge." difficulty="medium">
+	<quest id="Q_Farm_E6" group_name="皆に行き渡る食料を" name="分業式農業" subtitle="いざ農業！" description="少女生存者がやってきたら、農業作業台を設置して、できるだけ近くに農業収納箱を設置します。\n生存者についてのもっと詳しい情報はJOURNALで確認できます。" icon="ui_game_symbol_q_farm5" repeatable="false" category_key="Quest" offer="知識を次の世代へ伝えなさい" difficulty="medium">
 		<objective type="BlockPlace" id="farmerBlock" value="1" />
 		<objective type="BlockPlace" id="cntStorageFarm" value="1" />
 		<reward type="SkillPoints" value="5" />
 	</quest>
 	<!-- Little Animal Quests -->
-	<quest id="Q_Animals_A1" group_name="Coops and Hutches" name="Coops and Hutches 1/10" subtitle="Trap Box" description="Let's start with catching up smaller animals, like chickens and rabbits.\nAs they are small and fast, it is better to set a trap and bait it.\n\nLet's craft a trap box first." icon="ui_game_symbol_q_animals_1" repeatable="false" category_key="Quest" offer="Lets catch some animals." difficulty="easy">
+	<quest id="Q_Animals_A1" group_name="小さな家畜たち" name="小屋とケージ 1/10" subtitle="箱罠を作ろう" description="まずはウサギやニワトリ、小さな動物を捕獲することから始めましょう。\n彼らは小さく素早いですから、罠を仕掛けてエサでおびき寄せるのがいいでしょう。\n\nまずは箱罠をクラフトしましょう。" icon="ui_game_symbol_q_animals_1" repeatable="false" category_key="Quest" offer="動物を捕まえよう！" difficulty="easy">
 		<objective type="FetchKeep" id="nail" value="10" />
 		<objective type="FetchKeep" id="wood" value="20" />
 		<objective type="FetchKeep" id="spring" value="1" />
 		<objective type="Craft" id="BoxTrap" value="1" />
 		<reward type="Quest" id="Q_Animals_A2" />
 	</quest>
-	<quest id="Q_Animals_A2" group_name="Coops and Hutches" name="Coops and Hutches 2/10" subtitle="Trap Box" description="Place a trap box and bait it using a wheat.\nThe chance to capture an animal is not so high, but you can place as much trap boxes, as you like.\nJust do not forget to bait'em!" icon="ui_game_symbol_q_animals_1" repeatable="false" category_key="Quest" offer="Lets catch some animals." difficulty="easy">
+	<quest id="Q_Animals_A2" group_name="小さな家畜たち" name="小屋とケージ 2/10" subtitle="箱罠を使おう" description="箱罠を設置して、小麦 (Wheat) を仕掛けてみましょう。動物がかかる可能性は決して高くはありませんが、気が済むまでたくさん設置してやればいいのです。\n全部にエサを仕掛けるのを忘れずに！\n注意：エサはバッグの中に入れておいてください。" icon="ui_game_symbol_q_animals_1" repeatable="false" category_key="Quest" offer="動物を捕まえよう！" difficulty="easy">
 		<objective type="FetchKeep" id="wheat" value="1" />
 		<objective type="BlockPlace" id="BoxTrap" value="1" />
 		<reward type="Quest" id="Q_Animals_A3" />
 	</quest>
-	<quest id="Q_Animals_A3" group_name="Coops and Hutches" name="Coops and Hutches 3/10" subtitle="Capture Animals" description="Now you have to give it a time.\nDo not forget to check your traps constantly, maybe there is a prey waiting for you already.\nCatch two chickens and two rabbits." icon="ui_game_symbol_q_animals_1" repeatable="false" category_key="Quest" offer="Lets catch some animals." difficulty="easy">
+	<quest id="Q_Animals_A3" group_name="小さな家畜たち" name="小屋とケージ 3/10" subtitle="動物の捕獲" description="さて、動物がかかるまで待ちましょう。\n忘れずにチェックを定期的にしましょう。すでに哀れな動物があなたの帰りを待っているかもしれません。\nニワトリとウサギを2羽ずつ捕まえましょう。" icon="ui_game_symbol_q_animals_1" repeatable="false" category_key="Quest" offer="動物を捕まえよう！" difficulty="easy">
 		<objective type="FetchKeep" id="chickenItem" value="2" />
 		<objective type="FetchKeep" id="rabbitItem" value="2" />
 		<reward type="Quest" id="Q_Animals_A4" />
 	</quest>
-	<quest id="Q_Animals_A4" group_name="Coops and Hutches" name="Coops and Hutches 4/10" subtitle="Chicken Coop" description="Ok now,when you have two of each animals, you need to build them a new home.\nLets start with crafting a Chicken Coop." icon="ui_game_symbol_q_animals_1" repeatable="false" category_key="Quest" offer="Lets build a chicken coop." difficulty="easy">
+	<quest id="Q_Animals_A4" group_name="小さな家畜たち" name="小屋とケージ 4/10" subtitle="鶏小屋" description="やりましたね、2匹ずつ捕まえられたら動物たちのための家を作るときです。\n鶏のために鶏小屋をクラフトしましょう" icon="ui_game_symbol_q_animals_1" repeatable="false" category_key="Quest" offer="鶏小屋を建てよう！" difficulty="easy">
 		<objective type="FetchKeep" id="nail" value="20" />
 		<objective type="FetchKeep" id="wood" value="50" />
 		<objective type="Craft" id="trough" value="2" />
 		<objective type="Craft" id="ChickenCoop" value="1" />
 		<reward type="Quest" id="Q_Animals_A5" />
 	</quest>
-	<quest id="Q_Animals_A5" group_name="Coops and Hutches" name="Coops and Hutches 5/10" subtitle="Rabbit Hutch" description="Craft a hutch for your rabbits.\nSome parts can be crafted only at the workbench." icon="ui_game_symbol_q_animals_1" repeatable="false" category_key="Quest" offer="Lets build a rabbit hutch." difficulty="medium">
+	<quest id="Q_Animals_A5" group_name="小さな家畜たち" name="小屋とケージ 5/10" subtitle="ウサギのケージ" description="ウサギのためにケージをクラフトしましょう。\n一部の部品はクラフトにワークベンチが必要です。\n" icon="ui_game_symbol_q_animals_1" repeatable="false" category_key="Quest" offer="ウサギのケージを建てよう！" difficulty="medium">
 		<objective type="FetchKeep" id="nail" value="20" />
 		<objective type="FetchKeep" id="wood" value="50" />
 		<objective type="FetchKeep" id="bucket" value="2" />
@@ -1261,52 +1261,52 @@
 		<objective type="Craft" id="RabbitHutch" value="1" />
 		<reward type="Quest" id="Q_Animals_A6" />
 	</quest>
-	<quest id="Q_Animals_A6" group_name="Coops and Hutches" name="Coops and Hutches 6/10" subtitle="Find a Water" description="Our animals need a water to drink, as any living creature.\nCraft 2 buckets at the workbench and fill them from any source of water." icon="ui_game_symbol_q_animals_1" repeatable="false" category_key="Quest" offer="Find a water." difficulty="medium">
+	<quest id="Q_Animals_A6" group_name="小さな家畜たち" name="小屋とケージ 6/10" subtitle="水を探せ" description="あなたと同じように、家畜にも水が必要です。\n2つのバケツをワークベンチでクラフトし、どこかから水を汲んできましょう" icon="ui_game_symbol_q_animals_1" repeatable="false" category_key="Quest" offer="水を探せ" difficulty="medium">
 		<objective type="FetchKeep" id="bucket" value="2" />
 		<objective type="FetchKeep" id="bucketWater" value="2" />
 		<reward type="Quest" id="Q_Animals_A7" />
 	</quest>
-	<quest id="Q_Animals_A7" group_name="Coops and Hutches" name="Coops and Hutches 7/10" subtitle="Feed for Chickens" description="Our animals need a food as well.\nLets make some feed for our chickens first.\n\nTip: Sunflower Oil made from sunflower seeds using mortar and pestle." icon="ui_game_symbol_q_animals_1" repeatable="false" category_key="Quest" offer="Feed for Chickens." difficulty="medium">
+	<quest id="Q_Animals_A7" group_name="小さな家畜たち" name="小屋とケージ 7/10" subtitle="鶏のエサ" description="家畜にはもちろんエサも必要です。\n鶏用のエサを先に作りましょう！\n\nヒント：ヒマワリ油 (Sunflower Oil) はヒマワリの種 (Sunflower Seeds) をすり鉢とすりこ木 (Mortar and Pestle) で潰して作ります" icon="ui_game_symbol_q_animals_1" repeatable="false" category_key="Quest" offer="鶏のエサ" difficulty="medium">
 		<objective type="FetchKeep" id="wheat" value="20" />
 		<objective type="FetchKeep" id="sunflowerOil" value="20" />
 		<objective type="Craft" id="ChickenFeed" value="100" />
 		<reward type="Quest" id="Q_Animals_A8" />
 	</quest>
-	<quest id="Q_Animals_A8" group_name="Coops and Hutches" name="Coops and Hutches 8/10" subtitle="Feed for Rabbits" description="Now make some feed for our rabbits.\n\nTip: Flour made from the wheat using mortar and pestle." icon="ui_game_symbol_q_animals_1" repeatable="false" category_key="Quest" offer="Feed for Rabbits." difficulty="medium">
+	<quest id="Q_Animals_A8" group_name="小さな家畜たち" name="小屋とケージ 8/10" subtitle="ウサギのエサ" description="続いてウサギのエサです。\n\nヒント：小麦粉 (Flour) は小麦 (Wheat) をすり鉢とすりこ木 (Mortar and Pestle) で潰して作ります。" icon="ui_game_symbol_q_animals_1" repeatable="false" category_key="Quest" offer="ウサギのエサ" difficulty="medium">
 		<objective type="FetchKeep" id="flour" value="10" />
 		<objective type="FetchKeep" id="sunflowerOil" value="10" />
 		<objective type="FetchKeep" id="salad" value="10" />
 		<objective type="Craft" id="RabbitFeed" value="100" />
 		<reward type="Quest" id="Q_Animals_A9" />
 	</quest>
-	<quest id="Q_Animals_A9" group_name="Coops and Hutches" name="Coops and Hutches 9/10" subtitle="Animal Farm" description="Now you have all required materials to start your own farm.\nPlace both chicken coop and a rabbit hutch.\nPlace chickens and rabbits inside accordingly with their food and a bucket of water for each building.\nYou should check them from time to time to drop new food/water and collect resources they give.\nThey will also breed, until their number reach 4.\nProduction speed will increase accordingly, but they will not bring new breed anymore, unless you remove one or two." icon="ui_game_symbol_q_animals_1" repeatable="false" category_key="Quest" offer="Place a chicken coop and a Rabbit hutch." difficulty="easy">
+	<quest id="Q_Animals_A9" group_name="小さな家畜たち" name="小屋とケージ 9/10" subtitle="飼育小屋" description="さて、家畜を育てる準備は全て終わりました。鶏小屋とウサギのケージを両方設置しましょう。\nそれぞれに動物と正しいエサ、水バケツを入れます。\n飼育施設はたびたび確認してエサ・水を冷蔵庫から移してやり、畜産物を回収しましょう。\n施設一つあたり４匹まで飼うことができ、つがいを入れると繁殖します。\n各施設の畜産物生産スピードはその中の家畜の数に比例しますが、一杯になると1~2匹取り出すまで繁殖が止まります。" icon="ui_game_symbol_q_animals_1" repeatable="false" category_key="Quest" offer="鶏小屋とウサギのケージを設置しましょう" difficulty="easy">
 		<objective type="BlockPlace" id="ChickenCoop" value="1" />
 		<objective type="BlockPlace" id="RabbitHutch" value="1" />
 		<reward type="Quest" id="Q_Animals_A10" />
 	</quest>
-	<quest id="Q_Animals_A10" group_name="Coops and Hutches" name="Coops and Hutches 10/10" subtitle="Profit!" description="Time for profit!\n\nCollect resources from your animals." icon="ui_game_symbol_q_animals_1" repeatable="false" category_key="Quest" offer="Collector" difficulty="easy">
+	<quest id="Q_Animals_A10" group_name="小さな家畜たち" name="小屋とケージ 10/10" subtitle="自然の恵みだ！" description="自然の恵みを受け取るときです。\n動物から畜産物を回収しましょう。" icon="ui_game_symbol_q_animals_1" repeatable="false" category_key="Quest" offer="収集のとき" difficulty="easy">
 		<objective type="FetchKeep" id="egg" value="3" />
 		<objective type="FetchKeep" id="feather" value="3" />
 		<objective type="FetchKeep" id="turd" value="3" />
 		<reward type="SkillPoints" value="3" />
 	</quest>
 	<!-- Your own Orchard -->
-	<quest id="Q_Orchard" group_name="Orchard" name="Orchard Basics 1/4" subtitle="Find an Avocado" description="Now you know how to make seeds and water your plants.\nThere are a lot of fruit trees in the world. Collect a fruit to make your own orchard.\nThey say there are a lot of avocado trees at the Pine Forest.\nBetter start looking there.\nYou collect fruits using your bare hands." offer="Fruity World." icon="ui_game_symbol_q_orchard" repeatable="false" category_key="Quest" difficulty="easy">
+	<quest id="Q_Orchard" group_name="我が家の果樹園" name="果樹園の基本 1/4" subtitle="アボカドを探せ" description="さて、種の取り出し方と作物に水をやる方法はわかったと思います。\n世界には果樹がたくさんあります。種を集めれば、あなただけの果樹園が作れるでしょう。\nその中でアボカドは針葉樹林に自生していると言われています。\nまずはこのバイオームから探索を始めましょう。\n果物は素手で優しく収穫してください。収穫の時かどうかはやってみるとわかります。" offer="果物派の楽園" icon="ui_game_symbol_q_orchard" repeatable="false" category_key="Quest" difficulty="easy">
 		<objective type="FetchKeep" id="avocado" value="1" />
 		<requirement type="Holding" id="" />
 		<reward type="Quest" id="Q_Orchard2" />
 	</quest>
-	<quest id="Q_Orchard2" group_name="Orchard" name="Orchard Basics 2/4" subtitle="Avocado Seed" description="Craft an Avocado tree seed from the fruit now." offer="Fruity World." icon="ui_game_symbol_q_orchard" repeatable="false" category_key="Quest" difficulty="easy">
+	<quest id="Q_Orchard2" group_name="我が家の果樹園" name="果樹園の基本 2/4" subtitle="アボカドの種" description="見つかりましたね、ではその場で果物からアボカドの樹の種をクラフトしましょう。" offer="果物派の楽園" icon="ui_game_symbol_q_orchard" repeatable="false" category_key="Quest" difficulty="easy">
 		<objective type="Craft" id="avocadoSeed" value="1" />
 		<reward type="Quest" id="Q_Orchard3" />
 	</quest>
-	<quest id="Q_Orchard3" group_name="Orchard" name="Orchard Basics 3/4" subtitle="Plant it" description="Plant your seed now, make a water trench nearby, and fill it using a bucket." offer="Fruity World." icon="ui_game_symbol_q_orchard" repeatable="false" category_key="Quest" difficulty="easy">
+	<quest id="Q_Orchard3" group_name="我が家の果樹園" name="果樹園の基本 3/4" subtitle="植えましょう" description="用水路を掘ったらバケツで水を流し、種を植えましょう。" offer="果物派の楽園" icon="ui_game_symbol_q_orchard" repeatable="false" category_key="Quest" difficulty="easy">
 		<objective type="BlockPlace" id="plantedAvocadoTree" value="1" />
 		<objective type="FetchKeep" id="bucketWater" value="1" />
 		<objective type="BlockPlace" id="waterMovingBucket" value="1" />
 		<reward type="Quest" id="Q_Orchard4" />
 	</quest>
-	<quest id="Q_Orchard4" group_name="Orchard" name="Orchard Basics 4/4" subtitle="Plant it" description="Now just wait for tree to mature. make sure there is always a water nearby, otherwise you tree will not grow\n.Harvest your fruits barehandly when time comes." offer="Fruity World." icon="ui_game_symbol_q_orchard" repeatable="false" category_key="Quest" difficulty="easy">
+	<quest id="Q_Orchard4" group_name="我が家の果樹園" name="果樹園の基本 4/4" subtitle="収穫の時" description="樹が成熟するまで待ちましょう。水が無くなってないかどうかにはいつも気をかけてください。そうしないと、樹の成長は止まってしまいます。\n時が来たらまた素手で収穫をしましょう。" offer="果物派の楽園" icon="ui_game_symbol_q_orchard" repeatable="false" category_key="Quest" difficulty="easy">
 		<objective type="FetchKeep" id="avocado" value="3" />
 		<requirement type="Holding" id="" />
 		<reward type="SkillPoints" value="1" />

@@ -3385,10 +3385,10 @@
 		<!-- (<xxx>) means optional -->
 		<!-- param1="<skillName>,<skillLevel>" -->
 		<!-- param2="<Command>,(<questName>),(<previousQuestName>)" -->
-		<property name="Dialog1" value="Follow me" param1="Barter,10" param2="Follow" />
-		<property name="Dialog2" value="Come with me or i'll\nshoot you in the head" param1="Barter, 80" param2="Follow" />
-		<property name="Dialog3" value="Patrol" param1="Barter, 10" param2="Patrol" />
-		<property name="Dialog4" value="Let me see what you have" param1="Barter, 20" param2="Inv" />
+		<property name="Dialog1" value="ついてこい" param1="Barter,10" param2="Follow" />
+		<property name="Dialog2" value="俺に従うか、ここで死ぬかだ" param1="Barter, 80" param2="Follow" />
+		<property name="Dialog3" value="辺りの安全を確保しろ" param1="Barter, 10" param2="Patrol" />
+		<property name="Dialog4" value="持ち物を見せてくれ" param1="Barter, 20" param2="Inv" />
 		<!-- Blocking properties -->
 		<!-- If the dialog fails, it will block all the referenced dialogs FOREVER -->
 		<!-- param1 can be Attack (player) or Flee (from player) or leave it blank -->
@@ -3521,12 +3521,12 @@
 		<!-- (<xxx>) means optional -->
 		<!-- param1="<skillName>,<skillLevel>" -->
 		<!-- param2="<Command>,(<questName>),(<previousQuestName>)" -->
-		<property name="Dialog1" value="Hello? Who are you?" param1="Barter,0" param2="Quest,quest_MeetPacco" />
+		<property name="Dialog1" value="やあ、君の名前は？" param1="Barter,0" param2="Quest,quest_MeetPacco" />
 		<!-- start a quest chain -->
-		<property name="Dialog2" value="I did everything\nyou asked." param1="Barter,0" param2="Quest,quest_getReward,quest_MeetPacco" />
+		<property name="Dialog2" value="君の言うとおりにしたよ。" param1="Barter,0" param2="Quest,quest_getReward,quest_MeetPacco" />
 		<!-- gives a quest that only rewards the prize -->
-		<property name="Dialog3" value="Anything else?" param1="Barter,0" param2="Quest,pacco_game_room0,quest_getReward" />
-		<property name="Dialog4" value="Here, I got\nyour packages" param1="Barter,0" param2="Quest,pacco_game_room,pacco_game_room1" />
+		<property name="Dialog3" value="他にもあるのかい？" param1="Barter,0" param2="Quest,pacco_game_room0,quest_getReward" />
+		<property name="Dialog4" value="ほら、君のゲームケースだ" param1="Barter,0" param2="Quest,pacco_game_room,pacco_game_room1" />
 		<!-- <property name="Dialog2" value="Ok, i got it!"  param1="Barter,0" param2 = "Quest,quest_theCure1,quest_theCure"/>
 		<property name="Dialog3" value="I'm sorry to inform..."  param1="Barter,0" param2 = "Quest,quest_theCure2,quest_theCure1"/> -->
 		<!-- Blocking properties -->
@@ -3554,9 +3554,9 @@
 		<!-- (<xxx>) means optional -->
 		<!-- param1="<skillName>,<skillLevel>" -->
 		<!-- param2="<Command>,(<questName>),(<previousQuestName>)" -->
-		<property name="Dialog1" value="Hello? Who are you?" param1="Barter,0" param2="Quest,quest_PrepareForTheCure" />
-		<property name="Dialog2" value="Ok, i got it!" param1="Barter,0" param2="Quest,quest_theCure1,quest_theCure" />
-		<property name="Dialog3" value="I'm sorry to inform..." param1="Barter,0" param2="Quest,quest_theCure2,quest_theCure1" />
+		<property name="Dialog1" value="やあ、どうしたんだい？" param1="Barter,0" param2="Quest,quest_PrepareForTheCure" />
+		<property name="Dialog2" value="よし、引き受けるよ！" param1="Barter,0" param2="Quest,quest_theCure1,quest_theCure" />
+		<property name="Dialog3" value="伝えづらいことだけど・・・" param1="Barter,0" param2="Quest,quest_theCure2,quest_theCure1" />
 		<!-- Blocking properties -->
 		<!-- If the dialog fails, it will block all the referenced dialogs FOREVER -->
 		<!-- param1 can be Attack (player) or Flee (from player) or leave it blank -->
@@ -3588,11 +3588,11 @@
 		<!-- (<xxx>) means optional -->
 		<!-- param1="<skillName>,<skillLevel>" -->
 		<!-- param2="<Command>,(<questName>),(<previousQuestName>)" -->
-		<property name="Dialog1" value="What are you\ndoing here?" param1="Barter,0" param2="Quest,quest_farmer1" />
-		<property name="Dialog2" value="Here you go!" param1="Barter,0" param2="Spawn,quest_farmer2,quest_farmer1" />
+		<property name="Dialog1" value="ここで何してるんだい？" param1="Barter,0" param2="Quest,quest_farmer1" />
+		<property name="Dialog2" value="ほら、これを使いな！" param1="Barter,0" param2="Spawn,quest_farmer2,quest_farmer1" />
 		<!-- Extra actions -->
 		<property name="Spawn" value="FarmerQuest" param1="5" param2="15" />
-		<property name="SpawnText" value="Perfect... But this damn zeds keep destroying my plants!\nI'm just not strong enough... Could you help me?\n\nYou do this for me,\nand I'll get you a nice ass!\n\n\nAre you ready?" />
+		<property name="SpawnText" value="完璧だ！…でもゾンビ達が畑を荒らしやがる\n腕に自信が無いんだ…、頼むよ\nもし引き受けてくれれば\n最高の相棒を紹介しよう\n\n引き受けてくれるよね？" />
 		<!-- Blocking properties -->
 		<!-- If the dialog fails, it will block all the referenced dialogs FOREVER -->
 		<!-- param1 can be Attack (player) or Flee (from player) or leave it blank -->
@@ -3619,12 +3619,12 @@
 		<!-- (<xxx>) means optional -->
 		<!-- param1="<skillName>,<skillLevel>" -->
 		<!-- param2="<Command>,(<questName>),(<previousQuestName>)" -->
-		<property name="Dialog1" value="Come with me or i'll\nshoot you in the head" param1="Barter, 80" param2="Follow" />
-		<property name="Dialog2" value="I heard some rumors\nabout a nuclear plant?" param1="Barter,20" param2="Quest,quest_nuclearPlant1" />
-		<property name="Dialog3" value="You have it?\nLet's see it!" param1="Barter,20" param2="Quest,quest_nuclearPlant4,quest_nuclearPlant2" />
-		<property name="Dialog4" value="Perfect Plutonium!" param1="Barter,20" param2="Quest,quest_nuclearPlant5,quest_nuclearPlant4" />
-		<property name="Dialog5" value="Follow me" param1="Barter,10" param2="Follow,quest_nuclearPlant5" />
-		<property name="Dialog6" value="Patrol" param1="Barter, 10" param2="Patrol,quest_nuclearPlant5" />
+		<property name="Dialog1" value="俺に従うか、ここで死ぬかだ" param1="Barter, 80" param2="Follow" />
+		<property name="Dialog2" value="原子力発電所のうわさを聞いたんだが" param1="Barter,20" param2="Quest,quest_nuclearPlant1" />
+		<property name="Dialog3" value="知っているのか？じゃあ動かしてくれ！" param1="Barter,20" param2="Quest,quest_nuclearPlant4,quest_nuclearPlant2" />
+		<property name="Dialog4" value="ついてこい" param1="Barter,20" param2="Quest,quest_nuclearPlant5,quest_nuclearPlant4" />
+		<property name="Dialog5" value="辺りの安全を確保しろ" param1="Barter,10" param2="Follow,quest_nuclearPlant5" />
+		<property name="Dialog6" value="荷物運ぶの手伝ってくれるよな？" param1="Barter, 10" param2="Patrol,quest_nuclearPlant5" />
 		<property name="Dialog7" value="Help me carry some shit\nwill ya?" param1="Barter, 20" param2="Inv,quest_nuclearPlant5" />
 		<!-- Blocking properties -->
 		<!-- If the dialog fails, it will block all the referenced dialogs FOREVER -->
@@ -3635,13 +3635,13 @@
 		<property name="Mesh" value="#female2?FemaleGuard" />
 		<property name="MaxHealth" value="500" />
 		<property name="HandItem" value="handMichone" />
-		<property name="Dialog1" value="Come with me or i'll\nshoot you in the head" param1="Barter, 80" param2="Follow" />
-		<property name="Dialog2" value="Is there something\ni can do for you?" param1="Barter,20" param2="Quest,quest_repairKatana1" />
-		<property name="Dialog3" value="Perfect, thank you!\nBut I need something else" param1="Barter,20" param2="Quest,quest_repairKatana2,quest_repairKatana1" />
-		<property name="Dialog4" value="Awesome work\nHave another Job for you" param1="Barter,20" param2="Quest,quest_repairKatana3,quest_repairKatana2" />
-		<property name="Dialog5" value="Patrol" param1="Barter, 10" param2="Patrol,quest_repairKatana2" />
-		<property name="Dialog6" value="Follow me" param1="Barter,10" param2="Follow,quest_repairKatana2" />
-		<property name="Dialog7" value="Would you help me\ncarrying some stuff?" param1="Barter, 20" param2="Inv,quest_repairKatana2" />
+		<property name="Dialog1" value="俺に従うか、ここで死ぬかだ" param1="Barter, 80" param2="Follow" />
+		<property name="Dialog2" value="何か俺に手伝えることはないか？" param1="Barter,20" param2="Quest,quest_repairKatana1" />
+		<property name="Dialog3" value="完璧だ、ありがとう！\nだけどまだ足りないな" param1="Barter,20" param2="Quest,quest_repairKatana2,quest_repairKatana1" />
+		<property name="Dialog4" value="素晴らしい！\n他の仕事もあるんだが" param1="Barter,20" param2="Quest,quest_repairKatana3,quest_repairKatana2" />
+		<property name="Dialog5" value="辺りの安全を確保しろ" param1="Barter, 10" param2="Patrol,quest_repairKatana2" />
+		<property name="Dialog6" value="ついてこい" param1="Barter,10" param2="Follow,quest_repairKatana2" />
+		<property name="Dialog7" value="荷物を持ってくれないか？" param1="Barter, 20" param2="Inv,quest_repairKatana2" />
 		<!-- Blocking properties -->
 		<!-- If the dialog fails, it will block all the referenced dialogs FOREVER -->
 		<!-- param1 can be Attack (player) or Flee (from player) or leave it blank -->
@@ -3668,8 +3668,8 @@
 		<!-- (<xxx>) means optional -->
 		<!-- param1="<skillName>,<skillLevel>" -->
 		<!-- param2="<Command>,(<questName>),(<previousQuestName>)" -->
-		<property name="Dialog1" value="Hello? Are you alone?" param1="Barter,20" param2="Quest,quest_militaryAid" />
-		<property name="Dialog2" value="I got them!" param1="Barter,20" param2="Quest,quest_militaryReward,quest_militaryAid" />
+		<property name="Dialog1" value="やあ、ひとりかい？" param1="Barter,20" param2="Quest,quest_militaryAid" />
+		<property name="Dialog2" value="見つけたぞ！" param1="Barter,20" param2="Quest,quest_militaryReward,quest_militaryAid" />
 		<!-- Blocking properties -->
 		<!-- If the dialog fails, it will block all the referenced dialogs FOREVER -->
 		<!-- param1 can be Attack (player) or Flee (from player) or leave it blank -->
@@ -3696,14 +3696,14 @@
 		<!-- (<xxx>) means optional -->
 		<!-- param1="<skillName>,<skillLevel>" if player level is lower then the requirement, the NPC will have a probability to refuse the request. -->
 		<!-- param2="<Command>,(<questName>),(<previousQuestName>)" -->
-		<property name="Dialog1" value="Come with me or i'll\nshoot you in the head" param1="Barter, 80" param2="Follow" />
-		<property name="Dialog2" value="I see you like to fish...\nHow about some lessons?" param1="Barter,20" param2="Quest,Q_Fishing" />
-		<property name="Dialog3" value="Done with the hook.\nWhat's next?" param1="Barter,20" param2="Quest,Q_Fishing2,Q_Fishing" />
-		<property name="Dialog4" value="I got my cane.\nWhat now?" param1="Barter,20" param2="Quest,Q_Fishing3,Q_Fishing2" />
-		<property name="Dialog5" value="Yuck, got the earthworms\nCan we fucking fish now?" param1="Barter,20" param2="Quest,Q_Fishing4,Q_Fishing3" />
-		<property name="Dialog6" value="Yea yea, done with the bait!\nLet's just fish... PLEASE!" param1="Barter,20" param2="Quest,Q_Fishing5,Q_Fishing4" />
-		<property name="Dialog7" value="Will you follow me?" param1="Barter,50" param2="Follow,Q_Fishing5" />
-		<property name="Dialog8" value="Patrol" param1="Barter, 80" param2="Patrol,Q_Fishing5" />
+		<property name="Dialog1" value="俺に従うか、ここで死ぬかだ" param1="Barter, 80" param2="Follow" />
+		<property name="Dialog2" value="釣り好きみたいだけど…、\n俺にも教えてくれないか？" param1="Barter,20" param2="Quest,Q_Fishing" />
+		<property name="Dialog3" value="釣り針はできたよ\n次はどうすればいい？" param1="Barter,20" param2="Quest,Q_Fishing2,Q_Fishing" />
+		<property name="Dialog4" value="釣り竿もできた\nそれじゃ、次は？" param1="Barter,20" param2="Quest,Q_Fishing3,Q_Fishing2" />
+		<property name="Dialog5" value="うぅ、ミミズも捕まえた\nもうこんなのは要らないよな？" param1="Barter,20" param2="Quest,Q_Fishing4,Q_Fishing3" />
+		<property name="Dialog6" value="よしよし、エサも付けた\n釣りの仕方を教えてくれよ!!" param1="Barter,20" param2="Quest,Q_Fishing5,Q_Fishing4" />
+		<property name="Dialog7" value="ついてきてくれないか？" param1="Barter,50" param2="Follow,Q_Fishing5" />
+		<property name="Dialog8" value="辺りの安全を確保しろ" param1="Barter, 80" param2="Patrol,Q_Fishing5" />
 		<!-- Blocking properties -->
 		<!-- If the dialog fails, it will block all the referenced dialogs FOREVER -->
 		<!-- param1 can be Attack (player) or Flee (from player) or leave it blank -->
@@ -3789,9 +3789,9 @@
 		<!-- (<xxx>) means optional -->
 		<!-- param1="<skillName>,<skillLevel>" -->
 		<!-- param2="<Command>,(<questName>),(<previousQuestName>)" -->
-		<property name="Dialog1" value="Here boy, follow!" param1="Husbandry,5" param2="Follow" />
-		<property name="Dialog2" value="Stay and defend!" param1="Husbandry,5" param2="Patrol" />
-		<property name="Dialog3" value="Let's look at your backpack." param1="Husbandry, 10" param2="Inv" />
+		<property name="Dialog1" value="ほら、いい子だからこっちに来な！" param1="Husbandry,5" param2="Follow" />
+		<property name="Dialog2" value="ここで荷物を守っててくれ！" param1="Husbandry,5" param2="Patrol" />
+		<property name="Dialog3" value="荷物持ってくれよ" param1="Husbandry, 10" param2="Inv" />
 		<property name="Dialog4" value="Magic pocket Donkey" param1="Husbandry, 5" param2="PickUp" />
 		<!-- Plays random sounds -->
 		<property name="RandomSounds" value="false" />
