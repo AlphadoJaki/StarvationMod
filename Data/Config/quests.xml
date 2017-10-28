@@ -219,22 +219,21 @@
 		<reward type="SkillPoints" value="1" />
 		<reward type="Quest" id="challenge_junkhunt2" />
 	</quest>
-	<quest id="quest_nuclearPlant1" group_name="原子力発電所" name="原子力発電所" subtitle="原子力発電所" description="えっと…、\nキミはいいやつみたいだから、俺が地図に\n近くの原子力発電所を書いておいてやった。\n\n気を付けて近づくことだ。\n\n見つけたら戻ってきてくれ、話がある。" icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="quest_nuclearPlant1" group_name="原子力発電所" name="原子力発電所" subtitle="原子力発電所" description="えっと…、キミはかなりやり手みたいだね\nどこかに生きてる原発があるって聞いたんだ。\nほら、この改造ガイガーカウンタを持っていけ。きっと役に立つ\n原発の汚染レベルでも反応できるように調整したのさ。\n\n気を付けていくんだよ。\nもし見つけたら、再稼働させてプルトニウムを持ってきてほしいんだ。\n方法だって？さあ、僕にもわからないよ。\nただ僕は、やってくれれば良い物をやるよ、って言ってるだけさ。" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<reward type="Item" id="findPlant" />
 		<reward type="Quest" id="quest_nuclearPlant2" />
 	</quest>
-	<quest id="quest_nuclearPlant2" group_name="原子力発電所" name="再稼働だ！" subtitle="再稼働だ！" description="良かった、残ってたみたいだな！\n\nあれを起動して、生成されたプルトニウムを取ってきてくれ。\nきっと使い方や燃料はどこかに残っているはずだ。\n\n戻ったら面白いことを教えてやれるはずさ。" icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="quest_nuclearPlant2" group_name="原子力発電所" name="再稼働だ！" subtitle="再稼働だ！" description="さあ、原子力発電所を見つけてプルトニウムを生成しよう。" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<objective type="FetchKeep" id="plutonium" value="1" />
 		<reward type="Quest" id="quest_nuclearPlant3" />
 	</quest>
-	<quest id="quest_nuclearPlant3" group_name="Nuclear Plant" name="Power it UP" subtitle="Power it UP" description="Ok, I got the plutonium. Let's get back to madmole and test this thing." icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="quest_nuclearPlant3" group_name="原子力発電所" name="再稼働だ！" subtitle="再稼働だ！" description="よし、プルトニウムを手に入れた。Madmoleのもとに帰って、これを調査してもらおう。" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<objective type="FetchKeep" id="certificate" value="1" />
-		<reward type="Quest" id="quest_nuclearPlant5" />
 	</quest>
-	<quest id="quest_nuclearPlant4" group_name="Nuclear Plant" name="Power it UP" subtitle="Power it UP" description="Hmmm! Optimum quality!" icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="quest_nuclearPlant4" group_name="原子力発電所" name="再稼働だ！" subtitle="再稼働だ！" description="おおぉぉぉ！！良い品質だ！" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<reward type="Item" id="certificate" />
 	</quest>
-	<quest id="quest_nuclearPlant5" group_name="Nuclear Plant" name="Power it UP" subtitle="Power it UP" description="Perfect, so you finally got some plutonium... That's awsome man!\n\n Here, take this, make good use of it!" icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="quest_nuclearPlant5" group_name="原子力発電所" name="再稼働だ！" subtitle="再稼働だ！" description="完璧だ、ついにプルトニウムを手に入れた様だね。\nキミって最高だよ！\nほら、これを受け取ってくれ、キミなら役に立つはずさ！" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<reward type="Item" id="exoHelmet" />
 	</quest>
 	<quest id="quest_repairKatana1" group_name_key="刀の修理" name="刀の修理" name_key="刀の修理1" subtitle="修理素材を集めてくれ" description="色々と物には困っていないみたいだね。\n私になめし皮と精錬鉄を持ってきて\nくれないか、刀の修理に必要なんだ。\n\n見つかったら持ってきてくれ！" icon="ui_game_symbol_hammer" category_key="Quest">
@@ -341,23 +340,24 @@
 		<objective type="Goto" id="garageburnt1" value="5" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="quest_MeetPacco" group_name="Paccoとの出会い" name="鎧鍛冶の達人 1/2" subtitle="鎧鍛冶の達人" description="Hello there.\nI am Pacco, and you wont find a better armorsmith anywhere!\n\nMaybe you can make me some errands and who knows...\nI may have a nice present for you..\n\nCheck your log for more information, please.\n\n\nNOTE FROM THE TEAM\n\nThis quest line was made in loving memory of our good friend René,\naka Pacco.\n\nMay he rest in peace" icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="quest_MeetPacco" group_name="Paccoとの出会い" name="鎧鍛冶の達人 1/2" subtitle="鎧鍛冶の達人" description="やあ、旅人さん。私はPaccoさ、\n私以上の鎧鍛冶はこの世にいないよ！\nきっと君なら私のお願いを聞いてくれるんじゃないかな？うまく行けば・・・。\n君のためにプレゼントを用意するよ。\n詳しくはクエストを読んでくれないか？\n\n[87cefa]開発チームより[-]\nこのクエストシリーズは我々の親友René、もといPaccoとの\n尊い記憶を思い出して作ったものです。\n\n彼の安らかな眠りを祈って。" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<reward type="SkillPoints" value="1" />
+		<objective type="Craft" id="steelArmorPlate" value="1" />
 	</quest>
-	<quest id="quest_getReward" group_name="Paccoとの出会い" name="鎧鍛冶の達人 2/2" subtitle="鎧鍛冶の達人" description="Perfect.\nAs promissed, here's your reward!\n\n\nNOTE FROM THE TEAM\n\nPacco was one of the first SDX modders\nand the first person to inject weapons\nand custom entities in the game." icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="quest_getReward" group_name="Paccoとの出会い" name="鎧鍛冶の達人 2/2" subtitle="鎧鍛冶の達人" description="完璧だ。約束通り、これが報酬だよ。\n\n[87cefa]開発チームより[-]\nPaccoは黎明期のSDX MOD開発者で、\n他に先駆けて自作の武器を導入し、\n自作のEntityをゲーム内で動かしました。" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<reward type="Item" id="desertEagle" value="700" />
 	</quest>
-	<quest id="pacco_game_room0" group_name="ゲーム部屋" name="ゲーム部屋 1/3" subtitle="ゲーム部屋" description="Actually, there's something else\nthat might interest you.\n\nI have a game room downstairs, with some nice prizes\nI'm a big collector.\nLet me unlock some receipts for you, check your log for the next step.\n\n\nNOTE FROM THE TEAM\n\nPacco was the creator of the mod HeadBanger's For Life\nand one of the creators of Starvation" icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="pacco_game_room0" group_name="ゲーム部屋" name="ゲーム部屋 1/3" subtitle="ゲーム部屋" description="実は、君の興味を引きそうなものがもう一つある。\n下の階に賞品を置いたゲーム部屋があってね、\n私は収集家でもあるんだ。\nいくつかレシピを教えよう。これをどうするのかはクエストを見てくれ。\n\n[87cefa]開発チームより[-]\nPaccoはHead Banger's For Lifeの作者で、\nStarvationの作者の一人でもあります。" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<reward type="Recipe" id="toyBoxAction" />
 		<reward type="Recipe" id="toyBoxFun" />
 		<reward type="Quest" id="pacco_game_room1" />
 	</quest>
-	<quest id="pacco_game_room1" group_name="ゲーム部屋" name="ゲーム部屋 2/3" subtitle="ゲーム部屋" description="I want you to make me a these two toy packages\nand i'll let you get in there.\nCome and see me when you're done." icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="pacco_game_room1" group_name="ゲーム部屋" name="ゲーム部屋 2/3" subtitle="ゲーム部屋" description="君には二つのおもちゃ箱を作ってもらいたい。\n私の部屋に行って梱包してきてほしい。\n終わったら私のところに来てほしい。" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<objective type="Craft" id="toyBoxAction" value="1" />
 		<objective type="Craft" id="toyBoxFun" value="1" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="pacco_game_room" group_name="ゲーム部屋" name="ゲーム部屋 3/3" subtitle="ゲーム部屋" description="Perfect, I see you finally got it.\n\nYou can now enter my game room at any time\nGood luck!\n\n\nI hope this helped you to know a little bit\nabout Pacco.\nHe was a great modder\n\nAnd a great man!" icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="pacco_game_room" group_name="ゲーム部屋" name="ゲーム部屋 3/3" subtitle="ゲーム部屋" description="完璧だ、君は私のお使いをすべてこなしてくれたみたいだね。\nこれからは私の部屋にいつでも入ってもらって構わない。\nじゃあ、元気でね！\n\n[87cefa]開発チームより[-]\nこのクエストがPaccoの存在を知るきっかけに\nなってくれればと祈っています。\n彼は素晴らしいMOD開発者で\n素晴らしい人でした。" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<!-- <quest id="quest_Refinery" group_name="The Refinery" name="The Refinery" subtitle="The Refinery" description="Despair! I despair! My familly, my friends... They need me!\nWe thought we were safe. We hoped... We thought we could survive through this...\nBut then they came. Worst then monsters! Those bandits came for our fuel!\nI wonder if there's still someone alive, but I'm too weak..I'm out of power for my exoskeleton and I'm too weak to try..." offer="Despair! I despair! My familly, my friends... They need me!\nWe thought we were safe. We hoped... We thought we could survive through this...\nBut then they came. Worst then monsters! Those bandits came for our fuel!\nI wonder if there's still someone alive, but I'm too weak..I'm out of power for my exoskeleton and I'm too weak to try..." icon="ui_game_symbol_map_trader" category_key="Quest"  difficulty="hard">

@@ -3621,9 +3621,9 @@
 		<!-- param2="<Command>,(<questName>),(<previousQuestName>)" -->
 		<property name="Dialog1" value="俺に従うか、ここで死ぬかだ" param1="Barter, 80" param2="Follow" />
 		<property name="Dialog2" value="原子力発電所のうわさを聞いたんだが" param1="Barter,20" param2="Quest,quest_nuclearPlant1" />
-		<property name="Dialog3" value="知っているのか？じゃあ動かしてくれ！" param1="Barter,20" param2="Quest,quest_nuclearPlant4,quest_nuclearPlant2" />
-		<property name="Dialog4" value="ついてこい" param1="Barter,20" param2="Quest,quest_nuclearPlant5,quest_nuclearPlant4" />
-		<property name="Dialog5" value="辺りの安全を確保しろ" param1="Barter,10" param2="Follow,quest_nuclearPlant5" />
+		<property name="Dialog3" value="見つけたのか？見せてくれ！" param1="Barter,20" param2="Quest,quest_nuclearPlant4,quest_nuclearPlant2" />
+		<property name="Dialog4" value="完璧だ！プルトニウムだ！" param1="Barter,20" param2="Quest,quest_nuclearPlant5,quest_nuclearPlant4" />
+		<property name="Dialog5" value="ついてこい" param1="Barter,10" param2="Follow,quest_nuclearPlant5" />
 		<property name="Dialog6" value="荷物運ぶの手伝ってくれるよな？" param1="Barter, 10" param2="Patrol,quest_nuclearPlant5" />
 		<property name="Dialog7" value="Help me carry some shit\nwill ya?" param1="Barter, 20" param2="Inv,quest_nuclearPlant5" />
 		<!-- Blocking properties -->
