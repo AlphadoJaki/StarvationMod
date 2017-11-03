@@ -1214,7 +1214,7 @@
 		<objective type="FetchKeep" id="hoeIron" value="1" />
 		<objective type="FetchKeep" id="forgedIron" value="10" />
 		<objective type="FetchKeep" id="bucket" value="2" />
-		<objective type="Craft" id="farmer" value="1" />
+		<objective type="Craft" id="farmerBlock" value="1" />
 		<reward type="Quest" id="Q_Farm_E5" />
 	</quest>
 	<quest id="Q_Farm_E5" group_name="皆に行き渡る食料を" name="分業式農業" subtitle="農業収納箱" description="農家のために農業収納箱をクラフトしましょう。\n彼女はここから種を取り出し、収穫した作物をここに入れます。" icon="ui_game_symbol_q_farm5" repeatable="false" category_key="Quest" offer="知識を次の世代へ伝えなさい" difficulty="medium">
