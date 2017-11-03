@@ -5653,6 +5653,7 @@
 		<property name="HoldType" value="23" />
 		<property name="Stacknumber" value="500" />
 		<property name="foodSpoilImmune" value="30" />
+		<property name="Buff" value="fruity" />
 		<property name="EconomicValue" value="10" />
 		<property name="EconomicBundleSize" value="5" />
 		<property name="CraftingIngredientTime" value="8" />
@@ -8022,7 +8023,7 @@
 	<item id="908" name="electronicBrokenIPad">
 		<property name="Extends" value="itemMaster" />
 		<property name="Material" value="MelectronicParts" />
-		<property name="CustomIcon" value="ui_game_symbol_electronicBrokenIPad" />
+		<property name="CustomIcon" value="ui_game_symbol_electronicBrokenIpad" />
 		<property name="DescriptionKey" value="electronicBrokenIPadDesc" />
 		<property name="Weight" value="5" />
 	</item>

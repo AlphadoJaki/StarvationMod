@@ -13,25 +13,25 @@
 		</rect>
 	</slider>
 	<togglebutton>
-		<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|200}" height="${height|32}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="ToggleButton">
+		<rect name="name" depth="depth|3" pos="pos|0,0" width="width|200" height="height|32" enabled_font_color="enabled_font_color|[labelColor]" disabled_font_color="disabled_font_color|[disabledLabelColor]" controller="ToggleButton">
 			<button name="clickable" sprite="menu_empty" defaultcolor="[mediumGrey]" hoversprite="ui_game_select_row" hovercolor="[white]" type="sliced" hoverscale="1.0" />
 			<sprite depth="1" name="border" sprite="menu_empty2px" color="[black]" type="sliced" fillcenter="false" />
-			<sprite depth="2" name="tickbox" width="${height-6|26}" height="${height-6|26}" pos="7,-4" color="[darkGrey]" sprite="Highlight - Shadowed" type="sliced" />
-			<sprite depth="3" name="tickmark" width="${height-12|20}" height="${height-12|20}" pos="10,-7" color="[iconColor]" sprite="ui_game_symbol_check" visible="{value}" />
-			<label depth="2" name="btnLabel" width="${width-height-8|160}" height="${height-2|30}" pos="${6+height|38},${Round(-height/2,0)|-16}" justify="left" text="${caption|}" text_key="${caption_key|}" effect="outline" pivot="left" font_size="${font_size|28}" />
+			<sprite depth="2" name="tickbox" width="height-6|26" height="height-6|26" pos="7,-4" color="[darkGrey]" sprite="Highlight - Shadowed" type="sliced" />
+			<sprite depth="3" name="tickmark" width="height-12|20" height="height-12|20" pos="10,-7" color="[iconColor]" sprite="ui_game_symbol_check" visible="{value}" />
+			<label depth="2" name="btnLabel" width="width-height-8|160" height="height-2|30" pos="6+height|38,Round(-height/2,0)|-16" justify="left" text="caption|" text_key="caption_key|" effect="outline" pivot="left" font_size="font_size|28" />
 		</rect>
 	</togglebutton>
 	<simplebutton>
-		<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|200}" height="${height|32}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="SimpleButton">
-			<sprite depth="1" name="border" sprite="menu_empty2px" pos="0,${Round(-height/2,0)|-16}" color="[black]" type="sliced" fillcenter="false" pivot="${pivot|left}" />
-			<button name="clickable" sprite="menu_empty" pos="0,${Round(-height/2,0)|-16}" defaultcolor="[mediumGrey]" hoversprite="ui_game_select_row" hovercolor="[white]" type="sliced" hoverscale="1.0" pivot="${pivot|left}" />
-			<label depth="2" name="btnLabel" width="${width-4|196}" height="${height-2|30}" pos="2,${Round(-height/2,0)|-16}" justify="center" text="${caption|}" text_key="${caption_key|}" effect="outline" pivot="${pivot|left}" font_size="${font_size|28}" />
+		<rect name="name" depth="depth|3" pos="pos|0,0" width="width|200" height="height|32" enabled_font_color="enabled_font_color|[labelColor]" disabled_font_color="disabled_font_color|[disabledLabelColor]" controller="SimpleButton">
+			<sprite depth="1" name="border" sprite="menu_empty2px" pos="0,Round(-height/2,0)|-16" color="[black]" type="sliced" fillcenter="false" pivot="pivot|left" />
+			<button name="clickable" sprite="menu_empty" pos="0,Round(-height/2,0)|-16" defaultcolor="[mediumGrey]" hoversprite="ui_game_select_row" hovercolor="[white]" type="sliced" hoverscale="1.0" pivot="pivot|left" />
+			<label depth="2" name="btnLabel" width="width-4|196" height="height-2|30" pos="2,Round(-height/2,0)|-16" justify="center" text="caption|" text_key="caption_key|" effect="outline" pivot="pivot|left" font_size="font_size|28" />
 		</rect>
 	</simplebutton>
 	<textfield>
-		<panel name="${name}" depth="${depth|3}" controller="TextInput" pos="${pos|0,0}" width="${width|200}" height="${height|32}" value="${value|}" active_text_color="${active_text_color|[white]}" caret_color="${caret_color|[white]}" selection_color="${selection_color|[mediumGrey_half_alpha]}" character_limit="${character_limit|0}" validation="${validation|none}" backgroundcolor="${backgroundcolor|[black]}" on_press="true" snapCursor="true" virtual_keyboard_prompt="${virtual_keyboard_prompt|}" disableautobackground="true" pivot="${pivot|topleft}">
-			<sprite depth="0" name="background" color="${backgroundcolor|[black]}" type="sliced" pivot="${pivot|topleft}" />
-			<label depth="1" name="text" justify="center" font_size="${height|32}" pivot="${pivot|topleft}" />
+		<panel name="name" depth="depth|3" controller="TextInput" pos="pos|0,0" width="width|200" height="height|32" value="value|" active_text_color="active_text_color|[white]" caret_color="caret_color|[white]" selection_color="selection_color|[mediumGrey_half_alpha]" character_limit="character_limit|0" validation="validation|none" backgroundcolor="backgroundcolor|[black]" on_press="true" snapCursor="true" virtual_keyboard_prompt="virtual_keyboard_prompt|" disableautobackground="true" pivot="pivot|topleft">
+			<sprite depth="0" name="background" color="backgroundcolor|[black]" type="sliced" pivot="pivot|topleft" />
+			<label depth="1" name="text" justify="center" font_size="height|32" pivot="pivot|topleft" />
 		</panel>
 	</textfield>
 	<color_picker>
@@ -540,10 +540,10 @@
 		</rect>
 	</lsystem_random_entry>
 	<world_list_entry>
-		<rect height="${height|30}" style="press, hover, scroll" on_doubleclick="true" disabled_font_color="[disabledLabelColor]" enabled_font_color="[labelColor]" sound="[recipe_click]" controller="WorldListEntry">
-			<sprite depth="3" name="backgroundMain" sprite="menu_empty2px" height="${1+height|31}" pos="2,0" width="${width-4|250}" color="[black]" type="sliced" fillcenter="false" />
-			<sprite depth="2" name="background" color="[darkGrey]" pos="2,0" width="${width-4|250}" type="sliced" />
-			<label depth="4" name="Name" pos="8,${Round(-height/2,0)|-15}" width="${width-8|242}" height="${height-4|26}" text="{name}" font_size="${height-4|26}" justify="left" pivot="left" />
+		<rect height="height|30" style="press, hover, scroll" on_doubleclick="true" disabled_font_color="[disabledLabelColor]" enabled_font_color="[labelColor]" sound="[recipe_click]" controller="WorldListEntry">
+			<sprite depth="3" name="backgroundMain" sprite="menu_empty2px" height="1+height|31" pos="2,0" width="width-4|250" color="[black]" type="sliced" fillcenter="false" />
+			<sprite depth="2" name="background" color="[darkGrey]" pos="2,0" width="width-4|250" type="sliced" />
+			<label depth="4" name="Name" pos="8,Round(-height/2,0)|-15" width="width-8|242" height="height-4|26" text="{name}" font_size="height-4|26" justify="left" pivot="left" />
 		</rect>
 	</world_list_entry>
 </controls>
