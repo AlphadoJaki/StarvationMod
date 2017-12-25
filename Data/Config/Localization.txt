@@ -1651,7 +1651,7 @@ trophy2,items,Item,KgNone,Lead Trophy,Lead Trophy,Bleitrophäe,,Trofeo de plomo
 trophy2Desc,items,Item,KgNone,鉛製（lead）のアイテムです。分解するかフォージで溶解しましょう。,Lead objects can be scrapped into scrap lead in your backpack or smelted in a forge as a core resource.,"Gegenstände aus Blei können in deinem Rucksack zerlegt werden, um Bleistücke zu erhalten. Sie können auch in der Schmiede eingeschmolzen werden, um den Rohstoff selbst zu erhalten.",,Los objetos de plomo se pueden despedazar para tener chatarra de plomo en tu mochila o fundir en la fragua para obtener recursos básicos.
 trophy3,items,Item,KgNone,Tungsten Trophy,Tungsten Trophy,Wolframtrophäe,,Trofeo de tungsteno
 trophyDesc,items,Item,KgNone,真鍮（brass）製のアイテムです。分解するかフォージで溶解しましょう。,Brass objects can be scrapped into scrap brass in your backpack or smelted in a forge as a core resource.,"Gegenstände aus Messing können in deinem Rucksack zerlegt werden, um Messingstücke zu erhalten. Sie können auch in der Schmiede eingeschmolzen werden, um den Rohstoff selbst zu erhalten.",,Los objetos de latón se pueden despedazar para tener chatarra de latón en tu mochila o fundir en la fragua para obtener recursos básicos.
-turd,items,Item,KgNone,A human turd,A human turd,Menschliche Scheiße,,Una mierda humana
+turd,items,Item,KgNone,A human turd,A human turd,Scheiße,,Una mierda
 turdDesc,items,Item,KgNone,ウンコ（human turd）です。友人やゾンビに投げつけろ！,A disgusting turd. Only pick up on the clean end. It can be thrown at your friends or to distract zombies.,Ekelhafte Scheiße. Heb sie nur am sauberen Ende auf. Du kannst sie auf deine Freunde werfen oder damit Zombies ablenken.,,"Una mierda asquerosa. Recógela por la parte limpia. Se la puedes lanzar a tus amigos, o a los zombis para distraerlos."
 wood,items,Item,KgNone,Wood,Wood,Holz,,Madera
 woodDesc,items,Item,KgNone,木材（wood）。素晴らしいツールも素晴らしい建築もこれから作られます。,A piece of wood. Great for building tools and constructing wood frames for building.,"Ein Stück Holz. Ideal, um Werkzeuge und Holzrahmen für den Bau herzustellen.",,Un trozo de madera. Ideal para construir herramientas y estructuras de madera para edificios.
@@ -6029,6 +6029,37 @@ glassPane,,,,Glass Plates,Glass Plates,,,
 glassPaneDesc,,,,コーティング済み「ガラス板」。[e62020]Solar Cell[-]大量生産のめどは立った・・・。,"Coated glass plates, ready to use for the manufacturing of solar cells",,,
 pendulum,,,,Pedulum,Pedulum,,,  
 pendulumDesc,,,,「ペンデュラムブレード」思い付きで作った電気式罠です。巨大な刃を振り子のように振り回します。\n [ Workbenchクラフト ],Electrical contraption which holds a large blade in the shape of a pendulum.\n [ Crafted in Workbench. ],,,
+oreScanner,,,,Ore Scanner,Ore Scanner,,,  
+oreScannerDesc,,,,「鉱石スキャナー」この電気機器はあなたの真下岩盤までの鉱石を探知します。ただし水平方向は3mの範囲です。,This electronic device will scan for ore directly under you down to bedrock in a radius of 3 meters.,,,
+praseodymiumFragment,,,,Praseodymium Fragment,Praseodymium Fragment,,,  
+praseodymiumFragmentDesc,,,,「プラセオジム鉱」は自然界では貴重な鉱石で、剛性の高い金属を作るのに使われます。,Praseodymium is a natural rare ore that can be used to create high-strength metals,,,
+lanthanumFragment,,,,Lanthanum Fragment,Lanthanum Fragment,,,  
+lanthanumFragmentDesc,,,,「ランタン鉱」は光の屈折作用に優れていて、工学機器の部品には完璧です。,"Lanthanum light refraction properties are impressive, making them perfect for optical processes",,,
+neodymiumFragment,,,,Neodymium Fragment,Neodymium Fragment,,,  
+neodymiumFragmentDesc,,,,「ネオジウム磁鉱」は最強の磁鉱石であり、高等技術の武器には当たり前のように使われるものです。,"Neodymium magnets are the strongest, and are usually used in high tech weaponry",,,
+rawLarimar,,,,Larimar Gem,Larimar Gem,,,  
+rawLarimarDesc,,,,「ラリマーの宝玉」はペクトライト鉱の中でもとても貴重な青色の宝石で、鮮明に光を一点に集めます。,Larimar Gem is a very rare blue variety of the mineral pectolite and has impressive light concentration properties,,,
+rawBenitoite,,,,Benitoite Crystal,Benitoite Crystal,,,  
+rawBenitoiteDesc,,,,「ベニト石の結晶」は大変貴重です。ベニト石で覆われた表面は傷ひとつなくなり、武器の攻撃力を上げるのに使えます。,"Benitoite Crystals are very rare. Benitoite covered surfaces are extreamly clean, and it can be used to improve weapons damage to entities",,,
+rawHessonite,,,,Hessonite Crystal,Hessonite Crystal,,,  
+rawHessoniteDesc,,,,「ザクロ石の結晶」は大変貴重です。ザクロ石は強く、流線形の表面を持っており、武器の対物ダメージを上げるには完璧な素材です。,Hessonite Crystals are very rare. Hessonite strong and wavy surface is perfect to increase weapons damage to blocks,,,
+rawRuby,,,,Ruby Crystal,Ruby Crystal,,,  
+rawRubyDesc,,,,「ルビーの結晶」はレーザー工学によって重要性は失われたようですが、武器の対物ダメージを上げるのに使えます。,"Ruby Crystals may have lost its importance in the laser industry, but they can still be used to improve weapons damage to blocks",,,
+rawPainite,,,,Painite Crystal,Painite Crystal,,,  
+rawPainiteDesc,,,,「ペイン石の結晶」は大変貴重です。その特性は武器の攻撃力を上げるものです。,Painite Crystals are very rare. Painite properties make it useful to increase weapons damage to entities,,,
+freezingStomp,,,,Freezing Stomp,Freezing Stomp,,,
+freezingStompDesc,,,,あなたはあの忌々しい雪男に凍らされてしまいました。,You've been frozen by an abominable snow man.,,,
+freezingStompToolTip,,,,Freezing Stomp,Freezing Stomp,,,
+xmasGift,,,,Christmas Present,Christmas Present,,,  
+xmasGiftDesc,,,,サンタのくれた「プレゼント」。中身はなんだろうね！,Santa gave you a present. I wonder what it is!,,,
+ControlBox,,,,Miner Control Box,Miner Control Box,,,
+ControlBoxDesc,,,,この一級品の操作盤は自動掘削機の操作に使えます。\n[ Science Workstationクラフト ],This top notch control box is used to control miners.\n [ Crafted in Science Workstation. ],,,
+MinerArm,,,,Miner Arm,Miner Arm,,,
+MinerArmDesc,,,,自動「掘削機の駆動アーム」[ Millクラフト ],A miner mechanical arm\n [ Crafted in Mill. ],,,
+MinerBlade,,,,Miner Blade,Miner Blade,,,
+MinerBladeDesc,,,,自動「掘削機の刃」\n[ Latheクラフト ],A miner blade\n [ Crafted in Lathe. ],,,
+miner,,,,Miner Base,Miner Base,,,
+minerDesc,,,,自動「掘削機の金属フレーム」\n[ Millクラフト ],Metalic Base for a Miner\n [ Crafted in Mill. ],,,
 signRoughSurface,,,,Rough Surface Ahead,Rough Surface Ahead,,,
 aloeSeedDesc,,,,ｱﾛｴの種（Aloe Vera Seed）。肥沃な土に植えてください。,Plant aloe vera seeds in fertile dirt to grow aloe vera plants.,,,
 yuccaSeedDesc,,,,ﾕｯｶの種（Yucca Seed）。肥沃な土に植えてください。,Plant yucca seeds in fertile dirt to grow yucca plants.,,,
