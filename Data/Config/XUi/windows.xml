@@ -125,7 +125,7 @@
 		<rect name="position" pos="-20,25">
 			<texture style="time.window.compass.texture" name="compassTexture" rect_size="0.25,1" rect_offset=".8,0" />
 			<texture name="ItemBG" depth="1" size="250,60" texture="[time]" material="Materials/Transparent Colored" pos="0,18" />
-			<label depth="20" pos="5,-2" width="250" height="30" text="{daytitle}: {day|always}  {timetitle}: {time|always}" font_size="20" effect="outline" upper_case="true" justify="center" />
+			<label depth="20" pos="5,-2" width="250" height="30" text="{day|always}{daytitle}  {timetitle}: {time|always}" font_size="20" effect="outline" upper_case="true" justify="center" />
 		</rect>
 	</window>
 	<window name="windowCompass" style="compass.window" controller="CompassWindow">
