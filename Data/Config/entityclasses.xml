@@ -61,7 +61,6 @@
 		<property name="SoundPlayerLandThump" value="PlayerLandThump" />
 	</entity_class>
 	<entity_class name="zombieTemplateMale">
-		<!-- New zed edits for sleeper sense and sight distance-->
 		<property name="EntityType" value="Zombie" />
 		<property name="Mesh" value="Zombies/zombieStandardBoeRagdoll" />
 		<property name="AvatarController" value="AvatarZombie01Controller" />
@@ -103,41 +102,25 @@
 		<property name="PanicSpeed" value="0.55" />
 		<property name="CanClimbLadders" value="true" />
 		<property name="IsEnemyEntity" value="true" />
-		<!-- Stealth settings -->
 		<property name="SightRange" value="50" />
-		<!-- distance in m -->
-		<!-- up from 30 to compensate for smell not working -->
 		<property name="SightScale" value="-25,125" />
-		<!-- how well lit you have to be for the zombie to see you at min,max range -->
-		<!-- up from -2,150 to compensate for smell not working -->
 		<property name="SleeperWakeupSightDetectionMin" value="-25,0" />
-		<!-- Indiv.Random. sight capability - "I see you" light value at point blank -->
 		<property name="SleeperWakeupSightDetectionMax" value="0,55" />
-		<!-- Indiv.Random. "I see you" light value at "SightRange" -->
 		<property name="SleeperSenseSightDetectionMin" value="-15,10" />
-		<!-- same for groaning, not waking -->
 		<property name="SleeperSenseSightDetectionMax" value="99,100" />
 		<property name="SleeperNoiseSenseThreshold" value="2,13" />
-		<!-- Indiv.Random. hearing capability - "I hear something" noise value -->
 		<property name="SleeperNoiseWakeThreshold" value="5,15" />
 		<property name="SleeperSmellSenseThreshold" value="10,30" />
-		<!-- Indiv.Random. smell capability - "I smell something" player smell value -->
 		<property name="SoundSleeperSenseChance" value=".5" />
-		<!-- the chance to play "SoundSleeperSense" when "SleeperSmellSenseThreshold" is triggered -->
 		<property name="SleeperSmellWakeThreshold" value="20,70" />
 		<property name="NoiseAlertThreshold" value="30" />
-		<!-- for awake zombies -->
 		<property name="SmellAlertThreshold" value="40" />
-		<!-- for awake zombies -->
 		<property name="SurfaceCategory" value="organic" />
-		<!-- determines the particle effect played on hit -->
 		<property name="WalkType" value="7" />
 		<property name="ParticleOnDeath" value="blood_death" />
 		<property name="SoundRandomTime" value="60.0" />
-		<!-- It will play the roam every 60/30 seconds -->
 		<property name="SoundRandom" value="Enemies/Base_Zombie_Male/zombiemaleroam" />
 		<property name="SoundAlertTime" value="25.0" />
-		<!-- It will play the roam every 25/12.5 seconds-->
 		<property name="SoundAlert" value="Enemies/Base_Zombie_Male/zombiemalealert" />
 		<property name="SoundSense" value="Enemies/Base_Zombie_Male/zombiemalesense" />
 		<property name="SoundHurt" value="Enemies/Base_Zombie_Male/zombiemalepain" />
@@ -147,20 +130,17 @@
 		<property name="SoundSleeperBackToSleep" value="sleeperbacktosleep" />
 		<property name="TimeStayAfterDeath" value="30" />
 		<property name="AttackTimeoutDay" value="1.5" />
-		<!-- in s -->
 		<property name="AttackTimeoutNight" value="1.1" />
 		<property name="LootListOnDeath" value="15" />
 		<property name="CorpseBlock" value="GoreBlock1Prefab" />
 		<property name="CorpseBlockChance" value="1" />
 		<property name="ExperienceGain" value="679" />
 		<property name="DeadBodyHitPoints" value="350" />
-		<!-- For harvesting -->
 		<property name="RootMotion" value="true" />
 		<property name="HasDeathAnim" value="true" />
 		<property name="HeadDismemberBaseChance" value="0" />
 		<property name="HeadDismemberBonusChance" value="0.08" />
 		<property name="HeadDismemberThreshold" value="0.23" />
-		<!-- if the total damage exceeds that value, there is a chance for dismemberment -->
 		<property name="LowerLegDismemberThreshold" value="0.175" />
 		<property name="LowerLegDismemberBaseChance" value="0" />
 		<property name="LowerLegDismemberBonusChance" value="0.9" />
@@ -174,7 +154,6 @@
 		<property name="UpperArmDismemberBaseChance" value="0" />
 		<property name="UpperArmDismemberBonusChance" value="0.9" />
 		<property name="LegCrawlerThreshold" value="0" />
-		<!-- at like .175 nearly every zombie knocked down from a leg hit turns into a crawler -->
 		<property name="LegCrippleThreshold" value="0.01" />
 		<property name="KnockdownProneDamageThreshold" value="0.5" />
 		<property name="KnockdownProneStunDuration" value="4,6" />
@@ -186,7 +165,6 @@
 		<property name="ArmsExplosionDamageMultiplier" value="1" />
 		<property name="HeadExplosionDamageMultiplier" value="1" />
 		<property name="ChestExplosionDamageMultiplier" value="1" />
-		<!-- percentual -->
 		<property name="HeadBoost" value="50.0" />
 		<property name="BodyNerf" value="95.0" />
 	</entity_class>
@@ -1719,13 +1697,8 @@
 		<property name="NPCID" value="traderric" />
 	</entity_class>
 	<entity_class name="SDXTemplate" extends="zombieTemplateMale">
-		<!-- For fun, let's use the zombie transmogrifier class -->
-		<!--property name="Class" value="EntityZombieSDX, Mods" /-->
-		<!-- We are using the Animal Animation, since the BipedAnimation is a bit wonky with the hit animation -->
 		<property name="AvatarController" value="AnimationSDX, Mods" />
-		<!-- With RootMotion true, the zombie just kind of chills out in one place. Set to false to watch it move. -->
 		<property name="RootMotion" value="false" />
-		<!-- Baseline Speed is way too slow, so we need to bump it up a notch or 5 -->
 		<property name="WanderSpeed" value="0.8" />
 		<property name="ApproachSpeed" value="0.8" />
 		<property name="NightWanderSpeed" value="0.8" />
@@ -1733,7 +1706,6 @@
 		<property name="HasRagdoll" value="false" />
 	</entity_class>
 	<entity_class name="rhino">
-		<!-- Mesh and class properties -->
 		<property name="Mesh" value="#Rhino?RHINO" />
 		<property name="ModelType" value="Standard" />
 		<property name="Prefab" value="NPC" />
@@ -1745,7 +1717,6 @@
 		<property name="IsEntityAnimal" value="true" />
 		<property name="PhysicsBody" value="Stag" />
 		<property name="HandItem" value="handRhino" />
-		<!-- AI properties -->
 		<property name="AITask-1" value="BreakDoor" />
 		<property name="AITask-2" value="BreakBlock" />
 		<property name="AITask-3" value="Territorial" />
@@ -1766,10 +1737,10 @@
 		<property name="AITarget-8" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
 		<property name="AITarget-9" value="SetNearestEntityAsTarget" param1="EntityNPC" />
 		<property name="AITarget-10" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" />
+		<property name="MaxTurnSpeed" value="230" />
 		<property name="MaxViewAngle" value="270" />
 		<property name="CanClimbLadders" value="false" />
-		<!-- General entity properties -->
-		<property name="MaxHealth" value="1000" />
+		<property name="MaxHealth" value="2000" />
 		<property name="WanderSpeed" value="0.25" />
 		<property name="PanicSpeed" value="2.0" />
 		<property name="ApproachSpeed" value="1.3" />
@@ -1777,7 +1748,6 @@
 		<property name="NightApproachSpeed" value="1.4" />
 		<property name="SoundRandomTime" value="45.0" />
 		<property name="SoundAlertTime" value="25.0" />
-		<!-- This decides on the particle effect played on hit -->
 		<property name="SurfaceCategory" value="organic" />
 		<property name="ParticleOnDeath" value="blood_death" />
 		<property name="SoundHurt" value="rhinoHurt" />
@@ -1790,10 +1760,8 @@
 		<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep" />
 		<property name="TimeStayAfterDeath" value="300" />
 		<property name="DeadBodyHitPoints" value="450" />
-		<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 		<property name="IsEnemyEntity" value="false" />
 		<property name="ExperienceGain" value="1500" />
-		<!-- For harvesting -->
 		<drop event="Harvest" name="rawMeat" count="2" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
@@ -1801,12 +1769,11 @@
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="3" prob=".5" />
 		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="1" prob=".4" />
 		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="3" />
-		<!-- Average harvest results:  stag  5 meat  9 hide  4.5 fat,  pig  6m  7h  6f,  bear 7m  14h  7f -->
 	</entity_class>
 	<entity_class name="crocodile" extends="rhino">
 		<property name="Mesh" value="#croc?CROCO" />
 		<property name="HandItem" value="handCroco" />
-		<property name="MaxHealth" value="900" />
+		<property name="MaxHealth" value="1100" />
 		<property name="SoundHurt" value="crocoHurt" />
 		<property name="SoundDeath" value="crocoDeath" />
 		<property name="SoundRandom" value="crocoRandom" />
@@ -1822,10 +1789,14 @@
 		<drop event="Harvest" name="CrocoSkin" tool_category="Butcher" count="2" />
 		<drop event="Harvest" name="CrocoSkin" tool_category="Butcher" count="1" prob=".5" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="0" />
-		<!-- Average harvest results:  stag  5 meat  9 hide  4.5 fat,  pig  6m  7h  6f,  bear 7m  14h  7f -->
 	</entity_class>
 	<entity_class name="Ape" extends="crocodile">
 		<property name="Mesh" value="#Ape?Ape" />
+		<property name="WanderSpeed" value="0.25" />
+		<property name="PanicSpeed" value="2.0" />
+		<property name="ApproachSpeed" value="1.4" />
+		<property name="NightWanderSpeed" value="0.25" />
+		<property name="NightApproachSpeed" value="1.5" />
 		<property name="SoundHurt" value="apeHurt" />
 		<property name="SoundDeath" value="apeDeath" />
 		<property name="SoundRandom" value="apeRandom" />
@@ -1844,6 +1815,12 @@
 	<entity_class name="radApe" extends="Ape">
 		<property name="Mesh" value="#Ape?ApeRad" />
 		<property name="HandItem" value="handAnimalZombieBear" />
+		<property name="WanderSpeed" value="0.25" />
+		<property name="PanicSpeed" value="2.0" />
+		<property name="ApproachSpeed" value="1.4" />
+		<property name="NightWanderSpeed" value="0.25" />
+		<property name="NightApproachSpeed" value="1.5" />
+		<property name="MaxHealth" value="2200" />
 	</entity_class>
 	<entity_class name="spider">
 		<property name="Mesh" value="#Spider?spider" />
@@ -1867,6 +1844,7 @@
 		<property name="AITarget-2" value="BlockingTargetTask" />
 		<property name="AITarget-3" value="SetNearestCorpseAsTarget" param1="EntityPlayer" />
 		<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
+		<property name="MaxTurnSpeed" value="230" />
 		<property name="MaxViewAngle" value="270" />
 		<property name="CanClimbLadders" value="true" />
 		<property name="CanClimbVertical" value="true" />
@@ -1909,7 +1887,6 @@
 		<property name="NightApproachSpeed" value="1.2" />
 		<property name="PanicSpeed" value="1.2" />
 		<property name="ExperienceGain" value="300" />
-		<!-- For harvesting -->
 		<drop event="Harvest" name="rottingFlesh" count="1" />
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="1" prob=".5" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="1" prob=".5" />
@@ -1937,6 +1914,7 @@
 		<property name="AITarget-2" value="BlockingTargetTask" />
 		<property name="AITarget-3" value="SetNearestCorpseAsTarget" param1="EntityPlayer" />
 		<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
+		<property name="MaxTurnSpeed" value="230" />
 		<property name="MaxViewAngle" value="270" />
 		<property name="CanClimbLadders" value="false" />
 		<property name="WanderSpeed" value="0.3" />
@@ -1975,7 +1953,6 @@
 		<property name="NightApproachSpeed" value="1.1" />
 		<property name="PanicSpeed" value="0.9" />
 		<property name="ExperienceGain" value="500" />
-		<!-- For harvesting -->
 		<drop event="Harvest" name="rottingFlesh" count="1" />
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="1" />
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="1" prob=".5" />
@@ -1993,8 +1970,7 @@
 		<property name="ApproachSpeed" value="1.2" />
 		<property name="NightApproachSpeed" value="1.2" />
 		<property name="PanicSpeed" value="1.2" />
-		<property name="ExperienceGain" value="4000" />
-		<!-- For harvesting -->
+		<property name="ExperienceGain" value="1500" />
 		<drop event="Harvest" name="rottingFlesh" count="1" />
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="1" />
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="1" prob=".5" />
@@ -2018,7 +1994,6 @@
 		<property name="IsEnemyEntity" value="true" />
 		<property name="ExperienceGain" value="2000" />
 		<property name="DeadBodyHitPoints" value="300" />
-		<!-- For harvesting -->
 		<drop event="Harvest" name="rawMeat" count="2" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
@@ -2078,7 +2053,6 @@
 		<property name="ExperienceGain" value="2500" />
 		<property name="PhysicsBody" value="zombieDog" />
 		<property name="DeadBodyHitPoints" value="350" />
-		<!-- For harvesting -->
 		<drop event="Harvest" name="rawMeat" count="2" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
@@ -2100,7 +2074,6 @@
 		<property name="IsEntityAnimal" value="true" />
 		<property name="SurfaceCategory" value="organic" />
 		<property name="AttackTimeoutDay" value="1.5" />
-		<!-- in s -->
 		<property name="AttackTimeoutNight" value="1.1" />
 		<property name="Prefab" value="Dog" />
 		<property name="WalkType" value="0" />
@@ -2129,7 +2102,6 @@
 		<property name="SoundDrink" value="dogDrink" />
 		<property name="SoundEat" value="dogEat" />
 		<property name="ExperienceGain" value="2000" />
-		<!-- AI properties -->
 		<property name="AITask-1" value="BreakDoor" />
 		<property name="AITask-2" value="BreakBlock" />
 		<property name="AITask-3" value="Territorial" />
@@ -2151,19 +2123,14 @@
 		<property name="AITarget-9" value="SetNearestEntityAsTarget" param1="EntityNPC" />
 		<property name="AITarget-10" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" />
 		<property name="CanClimbLadders" value="false" />
-		<!-- General entity properties -->
+		<property name="MaxTurnSpeed" value="230" />
 		<property name="MaxViewAngle" value="270" />
-		<!-- This decides on the particle effect played on hit -->
 		<property name="ParticleOnDeath" value="blood_death" />
 		<property name="TimeStayAfterDeath" value="180" />
 		<property name="DeadBodyHitPoints" value="350" />
-		<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 		<property name="IsEnemyEntity" value="true" />
-		<!-- For harvesting -->
 		<property name="PhysicsBody" value="zombieDog" />
 		<property name="ParticleOnDestroy" value="blood_death" />
-		<!-- For harvesting -->
-		<!-- For harvesting -->
 		<drop event="Harvest" name="rawMeat" count="1" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
@@ -2176,7 +2143,6 @@
 	</entity_class>
 	<entity_class name="hyena1" extends="hyena">
 		<property name="Mesh" value="#hyena?Hyena1" />
-		<!-- For harvesting -->
 		<drop event="Harvest" name="rawMeat" count="1" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
@@ -2191,7 +2157,6 @@
 		<property name="Mesh" value="#hyena?Hyena2" />
 		<property name="MeshScale" value="1.3,1.3" />
 		<property name="AttackTimeoutDay" value="1.1" />
-		<!-- in s -->
 		<property name="HandItem" value="handAnimalZombieBear" />
 		<property name="ApproachSpeed" value="1.8" />
 		<property name="NightApproachSpeed" value="1.8" />
@@ -2233,7 +2198,6 @@
 		<property name="SoundHurt" value="tigerHurt" />
 		<property name="SoundDeath" value="tigerDeath" />
 		<property name="SoundAttack" value="tigerAttack" />
-		<!-- For harvesting -->
 		<drop event="Harvest" name="rawMeat" count="2" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
@@ -2248,7 +2212,6 @@
 	<entity_class name="tigerBrown" extends="tiger">
 		<property name="Mesh" value="#tiger?TigerBrown" />
 		<drop event="Destroy" name="tigerItem" tool_category="Butcher" count="1" prob=".05" />
-		<!-- For harvesting -->
 		<drop event="Harvest" name="rawMeat" count="2" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
@@ -2276,7 +2239,6 @@
 		<drop event="Destroy" name="tigerAlbinoItem" tool_category="Butcher" count="1" prob=".02" />
 	</entity_class>
 	<entity_class name="Rat">
-		<!-- Mesh and class properties -->
 		<property name="Mesh" value="#Rat?rat" />
 		<property name="ModelType" value="Standard" />
 		<property name="Prefab" value="NPC" />
@@ -2288,7 +2250,6 @@
 		<property name="IsEntityAnimal" value="true" />
 		<property name="PhysicsBody" value="Stag" />
 		<property name="HandItem" value="handRat" />
-		<!-- AI properties -->
 		<property name="AITask-1" value="BreakDoor" />
 		<property name="AITask-2" value="BreakBlock" />
 		<property name="AITask-3" value="Territorial" param1="10" />
@@ -2299,8 +2260,8 @@
 		<property name="AITarget-2" value="BlockingTargetTask" />
 		<property name="AITarget-3" value="SetNearestCorpseAsTarget" param1="EntityPlayer" />
 		<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
+		<property name="MaxTurnSpeed" value="230" />
 		<property name="MaxViewAngle" value="270" />
-		<!-- General entity properties -->
 		<property name="WanderSpeed" value="0.5" />
 		<property name="ApproachSpeed" value="1.1" />
 		<property name="NightWanderSpeed" value="0.3" />
@@ -2320,17 +2281,13 @@
 		<property name="ExperienceGain" value="100" />
 		<property name="Immunity" value="sickness;disease;bleeding;wellness" />
 		<property name="MaxViewAngle" value="180" />
-		<!-- This decides on the particle effect played on hit -->
 		<property name="SurfaceCategory" value="organic" />
 		<property name="ParticleOnDeath" value="blood_death" />
 		<property name="TimeStayAfterDeath" value="300" />
-		<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 		<property name="IsEnemyEntity" value="false" />
 		<property name="DeadBodyHitPoints" value="20" />
-		<!-- For harvesting -->
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="1" prob=".5" />
 		<drop event="Destroy" name="ratItem" tool_category="Butcher" count="1" prob=".2" />
-		<!-- Average harvest results:  stag  5 meat  9 hide  4.5 fat,  pig  6m  7h  6f,  bear 7m  14h  7f -->
 	</entity_class>
 	<entity_class name="Snake" extends="Rat">
 		<property name="Mesh" value="#Snake?Snake" />
@@ -2350,7 +2307,6 @@
 		<property name="SoundHurt" value="aSnakeHurt" />
 		<property name="SoundDeath" value="aSnakeDeath" />
 		<property name="SoundAttack" value="aSnakeAttack" />
-		<!-- For harvesting -->
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="1" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2" prob=".5" />
@@ -2413,9 +2369,7 @@
 		<drop event="Destroy" name="snakeItem" tool_category="Butcher" count="1" prob=".2" />
 	</entity_class>
 	<entity_class name="TalkingHead">
-		<!-- This one decides for scoring -->
 		<property name="EntityType" value="Player" />
-		<!-- Mesh and class properties -->
 		<property name="Mesh" value="#talkinghead?TalkingHead1" />
 		<property name="Class" value="EntityAnimalClown, Mods" />
 		<property name="AvatarController" value="BipedAnimations, Mods" />
@@ -2423,15 +2377,8 @@
 		<property name="HasRagdoll" value="false" />
 		<property name="Prefab" value="NPC" />
 		<property name="Parent" value="Players" />
-		<!-- <property name="PhysicsBody" value="zombieStandard" /> -->
-		<!-- AI properties -->
 		<property name="AITask-1" value="Territorial" param1="1" />
 		<property name="AITarget-1" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
-		<!--property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalBear" /-->
-		<!--property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityAnimalStag" /-->
-		<!--property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityAnimalBear" /-->
-		<!--property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" /-->
-		<!-- General entity properties -->
 		<property name="MaxHealth" value="500" />
 		<property name="MaxViewAngle" value="360" />
 		<property name="HandItem" value="handAxeZombie" />
@@ -2444,15 +2391,12 @@
 		<property name="PanicSpeed" value="0" />
 		<property name="CanClimbLadders" value="false" />
 		<property name="IsEnemyEntity" value="false" />
-		<!-- This decides on the particle effect played on hit -->
 		<property name="SurfaceCategory" value="organic" />
 		<property name="WalkType" value="7" />
 		<property name="ParticleOnDeath" value="blood_death" />
 		<property name="SoundRandomTime" value="60.0" />
-		<!-- It will play the roam every 60/30 seconds -->
 		<property name="SoundRandom" value="headrandom" />
 		<property name="SoundAlertTime" value="220.0" />
-		<!-- It will play the roam every 25/12.5 seconds-->
 		<property name="SoundAlert" value="headalert" />
 		<property name="SoundSense" value="headsense" />
 		<property name="SoundHurt" value="headhurt" />
@@ -2460,22 +2404,18 @@
 		<property name="SoundAttack" value="Enemies/Base_Zombie_Male/zombiemaleattack" />
 		<property name="TimeStayAfterDeath" value="8" />
 		<property name="AttackTimeoutDay" value="1.5" />
-		<!-- in s -->
 		<property name="AttackTimeoutNight" value="1.1" />
 		<property name="LootListAlive" value="108" />
 		<property name="LootListAliveMP" value="108" />
 		<property name="CorpseBlock" value="GoreBlock1Prefab" />
 		<property name="CorpseBlockChance" value="0" />
 		<property name="DeadBodyHitPoints" value="0" />
-		<!-- For harvesting -->
 		<property name="RootMotion" value="false" />
 		<property name="HasDeathAnim" value="true" />
 		<property name="ExperienceGain" value="100" />
 	</entity_class>
 	<entity_class name="FirefighterZd">
-		<!-- This one decides for scoring -->
 		<property name="EntityType" value="Zombie" />
-		<!-- Mesh and class properties -->
 		<property name="Mesh" value="#pacco?fireman" />
 		<property name="Class" value="EntityAnimalClown, Mods" />
 		<property name="AvatarController" value="BipedAnimations, Mods" />
@@ -2483,8 +2423,6 @@
 		<property name="HasRagdoll" value="false" />
 		<property name="Prefab" value="NPC" />
 		<property name="Parent" value="Enemies" />
-		<!-- <property name="PhysicsBody" value="zombieStandard" /> -->
-		<!-- AI properties -->
 		<property name="MaxTurnSpeed" value="360" />
 		<property name="AITask-1" value="BreakDoor" />
 		<property name="AITask-2" value="BreakBlock" />
@@ -2505,7 +2443,6 @@
 		<property name="AITarget-8" value="SetNearestEntityAsTarget" param1="EntityNPC" />
 		<property name="AITarget-9" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" />
 		<property name="MaxViewAngle" value="270" />
-		<!-- General entity properties -->
 		<property name="MaxHealth" value="500" />
 		<property name="HandItem" value="handAxeZombie" />
 		<property name="Weight" value="70" />
@@ -2517,15 +2454,12 @@
 		<property name="PanicSpeed" value="0.55" />
 		<property name="CanClimbLadders" value="true" />
 		<property name="IsEnemyEntity" value="true" />
-		<!-- This decides on the particle effect played on hit -->
 		<property name="SurfaceCategory" value="organic" />
 		<property name="WalkType" value="7" />
 		<property name="ParticleOnDeath" value="blood_death" />
 		<property name="SoundRandomTime" value="60.0" />
-		<!-- It will play the roam every 60/30 seconds -->
 		<property name="SoundRandom" value="Enemies/Base_Zombie_Male/zombiemaleroam" />
 		<property name="SoundAlertTime" value="25.0" />
-		<!-- It will play the roam every 25/12.5 seconds-->
 		<property name="SoundAlert" value="Enemies/Base_Zombie_Male/zombiemalealert" />
 		<property name="SoundSense" value="Enemies/Base_Zombie_Male/zombiemalesense" />
 		<property name="SoundHurt" value="Enemies/Base_Zombie_Male/zombiemalepain" />
@@ -2533,30 +2467,24 @@
 		<property name="SoundAttack" value="Enemies/Base_Zombie_Male/zombiemaleattack" />
 		<property name="TimeStayAfterDeath" value="300" />
 		<property name="AttackTimeoutDay" value="1.5" />
-		<!-- in s -->
 		<property name="AttackTimeoutNight" value="1.1" />
 		<property name="LootListOnDeath" value="103" />
 		<property name="CorpseBlock" value="GoreBlock1Prefab" />
 		<property name="CorpseBlockChance" value="1" />
 		<property name="DeadBodyHitPoints" value="150" />
-		<!-- For harvesting -->
 		<property name="RootMotion" value="false" />
 		<property name="HasDeathAnim" value="true" />
 		<property name="ExperienceGain" value="1500" />
-		<!-- percentual -->
 		<property name="HeadBoost" value="50.0" />
 		<property name="BodyNerf" value="90.0" />
 	</entity_class>
 	<entity_class name="Fireman" extends="FirefighterZd">
 		<property name="Mesh" value="#Fireman?fireman" />
-		<!-- percentual -->
 		<property name="HeadBoost" value="0.0" />
 		<property name="BodyNerf" value="0.0" />
 	</entity_class>
 	<entity_class name="PoliceZd">
-		<!-- This one decides for scoring -->
 		<property name="EntityType" value="Zombie" />
-		<!-- Mesh and class properties -->
 		<property name="Mesh" value="#Copzombie?Copzombie" />
 		<property name="Class" value="EntityAnimalClown, Mods" />
 		<property name="AvatarController" value="BipedAnimations, Mods" />
@@ -2564,8 +2492,6 @@
 		<property name="HasRagdoll" value="false" />
 		<property name="Prefab" value="NPC" />
 		<property name="Parent" value="Enemies" />
-		<!-- <property name="PhysicsBody" value="zombieStandard" /> -->
-		<!-- AI properties -->
 		<property name="AITask-1" value="BreakDoor" />
 		<property name="AITask-2" value="BreakBlock" />
 		<property name="AITask-3" value="Territorial" />
@@ -2585,7 +2511,6 @@
 		<property name="AITarget-8" value="SetNearestEntityAsTarget" param1="EntityNPC" />
 		<property name="AITarget-9" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" />
 		<property name="MaxViewAngle" value="270" />
-		<!-- General entity properties -->
 		<property name="MaxHealth" value="800" />
 		<property name="MaxViewAngle" value="260" />
 		<property name="HandItem" value="handPoliceZombie" />
@@ -2598,15 +2523,12 @@
 		<property name="PanicSpeed" value="0.55" />
 		<property name="CanClimbLadders" value="true" />
 		<property name="IsEnemyEntity" value="true" />
-		<!-- This decides on the particle effect played on hit -->
 		<property name="SurfaceCategory" value="organic" />
 		<property name="WalkType" value="7" />
 		<property name="ParticleOnDeath" value="blood_death" />
 		<property name="SoundRandomTime" value="60.0" />
-		<!-- It will play the roam every 60/30 seconds -->
 		<property name="SoundRandom" value="Enemies/Base_Zombie_Male/zombiemaleroam" />
 		<property name="SoundAlertTime" value="25.0" />
-		<!-- It will play the roam every 25/12.5 seconds-->
 		<property name="SoundAlert" value="Enemies/Base_Zombie_Male/zombiemalealert" />
 		<property name="SoundSense" value="Enemies/Base_Zombie_Male/zombiemalesense" />
 		<property name="SoundHurt" value="Enemies/Base_Zombie_Male/zombiemalepain" />
@@ -2614,24 +2536,19 @@
 		<property name="SoundAttack" value="Enemies/Base_Zombie_Male/zombiemaleattack" />
 		<property name="TimeStayAfterDeath" value="300" />
 		<property name="AttackTimeoutDay" value="1.5" />
-		<!-- in s -->
 		<property name="AttackTimeoutNight" value="1.1" />
 		<property name="LootListOnDeath" value="104" />
 		<property name="CorpseBlock" value="GoreBlock1Prefab" />
 		<property name="CorpseBlockChance" value="1" />
 		<property name="DeadBodyHitPoints" value="150" />
-		<!-- For harvesting -->
 		<property name="RootMotion" value="false" />
 		<property name="HasDeathAnim" value="true" />
 		<property name="ExperienceGain" value="1600" />
-		<!-- percentual -->
 		<property name="HeadBoost" value="50.0" />
 		<property name="BodyNerf" value="90.0" />
 	</entity_class>
 	<entity_class name="MilitaryZd">
-		<!-- This one decides for scoring -->
 		<property name="EntityType" value="Zombie" />
-		<!-- Mesh and class properties -->
 		<property name="Mesh" value="#pacco?MilitaryZd" />
 		<property name="Class" value="EntityAnimalClown, Mods" />
 		<property name="AvatarController" value="BipedAnimations, Mods" />
@@ -2639,8 +2556,6 @@
 		<property name="HasRagdoll" value="false" />
 		<property name="Prefab" value="NPC" />
 		<property name="Parent" value="Enemies" />
-		<!-- <property name="PhysicsBody" value="zombieStandard" /> -->
-		<!-- AI properties -->
 		<property name="AITask-1" value="BreakDoor" />
 		<property name="AITask-2" value="BreakBlock" />
 		<property name="AITask-3" value="Territorial" />
@@ -2660,7 +2575,6 @@
 		<property name="AITarget-8" value="SetNearestEntityAsTarget" param1="EntityNPC" />
 		<property name="AITarget-9" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" />
 		<property name="MaxViewAngle" value="270" />
-		<!-- General entity properties -->
 		<property name="MaxHealth" value="1000" />
 		<property name="MaxViewAngle" value="260" />
 		<property name="HandItem" value="handAxeZombie" />
@@ -2673,15 +2587,12 @@
 		<property name="PanicSpeed" value="0.55" />
 		<property name="CanClimbLadders" value="true" />
 		<property name="IsEnemyEntity" value="true" />
-		<!-- This decides on the particle effect played on hit -->
 		<property name="SurfaceCategory" value="organic" />
 		<property name="WalkType" value="7" />
 		<property name="ParticleOnDeath" value="blood_death" />
 		<property name="SoundRandomTime" value="60.0" />
-		<!-- It will play the roam every 60/30 seconds -->
 		<property name="SoundRandom" value="Enemies/Base_Zombie_Male/zombiemaleroam" />
 		<property name="SoundAlertTime" value="25.0" />
-		<!-- It will play the roam every 25/12.5 seconds-->
 		<property name="SoundAlert" value="Enemies/Base_Zombie_Male/zombiemalealert" />
 		<property name="SoundSense" value="Enemies/Base_Zombie_Male/zombiemalesense" />
 		<property name="SoundHurt" value="Enemies/Base_Zombie_Male/zombiemalepain" />
@@ -2689,24 +2600,19 @@
 		<property name="SoundAttack" value="Enemies/Base_Zombie_Male/zombiemaleattack" />
 		<property name="TimeStayAfterDeath" value="300" />
 		<property name="AttackTimeoutDay" value="1.5" />
-		<!-- in s -->
 		<property name="AttackTimeoutNight" value="1.1" />
 		<property name="LootListOnDeath" value="105" />
 		<property name="CorpseBlock" value="GoreBlock1Prefab" />
 		<property name="CorpseBlockChance" value="1" />
 		<property name="DeadBodyHitPoints" value="150" />
-		<!-- For harvesting -->
 		<property name="RootMotion" value="false" />
 		<property name="HasDeathAnim" value="true" />
 		<property name="ExperienceGain" value="2000" />
-		<!-- percentual -->
 		<property name="HeadBoost" value="20.0" />
 		<property name="BodyNerf" value="90.0" />
 	</entity_class>
 	<entity_class name="BikiniZd">
-		<!-- This one decides for scoring -->
 		<property name="EntityType" value="Zombie" />
-		<!-- Mesh and class properties -->
 		<property name="Mesh" value="#pacco?BikiniZd" />
 		<property name="Class" value="EntityAnimalClown, Mods" />
 		<property name="AvatarController" value="BipedAnimations, Mods" />
@@ -2714,8 +2620,6 @@
 		<property name="HasRagdoll" value="false" />
 		<property name="Prefab" value="NPC" />
 		<property name="Parent" value="Enemies" />
-		<!-- <property name="PhysicsBody" value="zombieStandard" /> -->
-		<!-- AI properties -->
 		<property name="AITask-1" value="BreakDoor" />
 		<property name="AITask-2" value="BreakBlock" />
 		<property name="AITask-3" value="Territorial" />
@@ -2735,7 +2639,6 @@
 		<property name="AITarget-8" value="SetNearestEntityAsTarget" param1="EntityNPC" />
 		<property name="AITarget-9" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" />
 		<property name="MaxViewAngle" value="270" />
-		<!-- General entity properties -->
 		<property name="MaxHealth" value="1300" />
 		<property name="MaxViewAngle" value="260" />
 		<property name="HandItem" value="handZombieStrong" />
@@ -2748,15 +2651,12 @@
 		<property name="PanicSpeed" value="0.55" />
 		<property name="CanClimbLadders" value="true" />
 		<property name="IsEnemyEntity" value="true" />
-		<!-- This decides on the particle effect played on hit -->
 		<property name="SurfaceCategory" value="organic" />
 		<property name="WalkType" value="7" />
 		<property name="ParticleOnDeath" value="blood_death" />
 		<property name="SoundRandomTime" value="60.0" />
-		<!-- It will play the roam every 60/30 seconds -->
 		<property name="SoundRandom" value="Enemies/Base_Zombie_Male/zombiemaleroam" />
 		<property name="SoundAlertTime" value="25.0" />
-		<!-- It will play the roam every 25/12.5 seconds-->
 		<property name="SoundAlert" value="Enemies/Base_Zombie_Male/zombiemalealert" />
 		<property name="SoundSense" value="Enemies/Base_Zombie_Male/zombiemalesense" />
 		<property name="SoundHurt" value="Enemies/Base_Zombie_Male/zombiemalepain" />
@@ -2764,42 +2664,34 @@
 		<property name="SoundAttack" value="Enemies/Base_Zombie_Male/zombiemaleattack" />
 		<property name="TimeStayAfterDeath" value="300" />
 		<property name="AttackTimeoutDay" value="1.5" />
-		<!-- in s -->
 		<property name="AttackTimeoutNight" value="1.1" />
 		<property name="LootListOnDeath" value="15" />
 		<property name="CorpseBlock" value="GoreBlock1Prefab" />
 		<property name="CorpseBlockChance" value="1" />
 		<property name="DeadBodyHitPoints" value="150" />
-		<!-- For harvesting -->
 		<property name="RootMotion" value="false" />
 		<property name="HasDeathAnim" value="true" />
 		<property name="ExperienceGain" value="2600" />
-		<!-- percentual -->
 		<property name="HeadBoost" value="40.0" />
 		<property name="BodyNerf" value="90.0" />
 	</entity_class>
 	<entity_class name="RadBoss" extends="zombieWightFeralRadiated">
 		<property name="ExperienceGain" value="500" />
-		<!-- percentual -->
 		<property name="HeadBoost" value="40.0" />
 		<property name="BodyNerf" value="90.0" />
 	</entity_class>
 	<entity_class name="RadBossOld" extends="zombieWightFeralRadiated">
 		<property name="ExperienceGain" value="500" />
-		<!-- percentual -->
 		<property name="HeadBoost" value="40.0" />
 		<property name="BodyNerf" value="90.0" />
 	</entity_class>
 	<entity_class name="Bubbles" extends="PoliceZd">
 		<property name="Mesh" value="#bubbles?bubblesFBX" />
-		<!-- percentual -->
 		<property name="HeadBoost" value="40.0" />
 		<property name="BodyNerf" value="90.0" />
 	</entity_class>
 	<entity_class name="DocZd">
-		<!-- This one decides for scoring -->
 		<property name="EntityType" value="Zombie" />
-		<!-- Mesh and class properties -->
 		<property name="Mesh" value="#newdoczd?DoctorZdNew" />
 		<property name="Class" value="EntityAnimalClown, Mods" />
 		<property name="AvatarController" value="BipedAnimations, Mods" />
@@ -2807,8 +2699,6 @@
 		<property name="HasRagdoll" value="false" />
 		<property name="Prefab" value="NPC" />
 		<property name="Parent" value="Enemies" />
-		<!-- <property name="PhysicsBody" value="zombieStandard" /> -->
-		<!-- AI properties -->
 		<property name="AITask-1" value="BreakDoor" />
 		<property name="AITask-2" value="BreakBlock" />
 		<property name="AITask-3" value="Territorial" />
@@ -2828,7 +2718,6 @@
 		<property name="AITarget-8" value="SetNearestEntityAsTarget" param1="EntityNPC" />
 		<property name="AITarget-9" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" />
 		<property name="MaxViewAngle" value="270" />
-		<!-- General entity properties -->
 		<property name="MaxHealth" value="2500" />
 		<property name="MaxViewAngle" value="260" />
 		<property name="HandItem" value="handDocZombie" />
@@ -2841,15 +2730,12 @@
 		<property name="PanicSpeed" value="0.55" />
 		<property name="CanClimbLadders" value="true" />
 		<property name="IsEnemyEntity" value="true" />
-		<!-- This decides on the particle effect played on hit -->
 		<property name="SurfaceCategory" value="organic" />
 		<property name="WalkType" value="7" />
 		<property name="ParticleOnDeath" value="blood_death" />
 		<property name="SoundRandomTime" value="60.0" />
-		<!-- It will play the roam every 60/30 seconds -->
 		<property name="SoundRandom" value="docRoam" />
 		<property name="SoundAlertTime" value="25.0" />
-		<!-- It will play the roam every 25/12.5 seconds-->
 		<property name="SoundAlert" value="docAlert" />
 		<property name="SoundSense" value="docSense" />
 		<property name="SoundHurt" value="docHurt" />
@@ -2857,24 +2743,19 @@
 		<property name="SoundAttack" value="docAttack" />
 		<property name="TimeStayAfterDeath" value="300" />
 		<property name="AttackTimeoutDay" value="1.5" />
-		<!-- in s -->
 		<property name="AttackTimeoutNight" value="1.1" />
 		<property name="LootListOnDeath" value="106" />
 		<property name="CorpseBlock" value="GoreBlock1Prefab" />
 		<property name="CorpseBlockChance" value="1" />
 		<property name="DeadBodyHitPoints" value="150" />
-		<!-- For harvesting -->
 		<property name="RootMotion" value="false" />
 		<property name="HasDeathAnim" value="true" />
 		<property name="ExperienceGain" value="5000" />
-		<!-- percentual -->
 		<property name="HeadBoost" value="30.0" />
 		<property name="BodyNerf" value="90.0" />
 	</entity_class>
 	<entity_class name="GirlZd">
-		<!-- This one decides for scoring -->
 		<property name="EntityType" value="Zombie" />
-		<!-- Mesh and class properties -->
 		<property name="Mesh" value="#girlZd1?girlzd1" />
 		<property name="Class" value="EntityAnimalClown, Mods" />
 		<property name="AvatarController" value="BipedAnimations, Mods" />
@@ -2882,8 +2763,6 @@
 		<property name="HasRagdoll" value="false" />
 		<property name="Prefab" value="NPC" />
 		<property name="Parent" value="Enemies" />
-		<!-- <property name="PhysicsBody" value="zombieStandard" /> -->
-		<!-- AI properties -->
 		<property name="AITask-1" value="BreakDoor" />
 		<property name="AITask-2" value="BreakBlock" />
 		<property name="AITask-3" value="Territorial" />
@@ -2903,7 +2782,6 @@
 		<property name="AITarget-8" value="SetNearestEntityAsTarget" param1="EntityNPC" />
 		<property name="AITarget-9" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" />
 		<property name="MaxViewAngle" value="270" />
-		<!-- General entity properties -->
 		<property name="MaxHealth" value="1500" />
 		<property name="MaxViewAngle" value="260" />
 		<property name="HandItem" value="handZombieStrong" />
@@ -2916,15 +2794,12 @@
 		<property name="PanicSpeed" value="0.45" />
 		<property name="CanClimbLadders" value="true" />
 		<property name="IsEnemyEntity" value="true" />
-		<!-- This decides on the particle effect played on hit -->
 		<property name="SurfaceCategory" value="organic" />
 		<property name="WalkType" value="7" />
 		<property name="ParticleOnDeath" value="blood_death" />
 		<property name="SoundRandomTime" value="60.0" />
-		<!-- It will play the roam every 60/30 seconds -->
 		<property name="SoundRandom" value="girlroam" />
 		<property name="SoundAlertTime" value="25.0" />
-		<!-- It will play the roam every 25/12.5 seconds-->
 		<property name="SoundAlert" value="girlalert" />
 		<property name="SoundSense" value="girlsense" />
 		<property name="SoundHurt" value="girlhurt" />
@@ -2932,17 +2807,14 @@
 		<property name="SoundAttack" value="girlattack" />
 		<property name="TimeStayAfterDeath" value="300" />
 		<property name="AttackTimeoutDay" value="1.5" />
-		<!-- in s -->
 		<property name="AttackTimeoutNight" value="1.1" />
 		<property name="LootListOnDeath" value="15" />
 		<property name="CorpseBlock" value="GoreBlock1Prefab" />
 		<property name="CorpseBlockChance" value="1" />
 		<property name="DeadBodyHitPoints" value="150" />
-		<!-- For harvesting -->
 		<property name="RootMotion" value="false" />
 		<property name="HasDeathAnim" value="true" />
 		<property name="ExperienceGain" value="3000" />
-		<!-- percentual -->
 		<property name="HeadBoost" value="50.0" />
 		<property name="BodyNerf" value="90.0" />
 	</entity_class>
@@ -2960,23 +2832,18 @@
 		<property name="ExperienceGain" value="3000" />
 	</entity_class>
 	<entity_class name="WallCrusher">
-		<!-- This one decides for scoring -->
 		<property name="EntityType" value="Zombie" />
-		<!-- Mesh and class properties -->
 		<property name="Mesh" value="#WallCrusher?WallCrusher" />
-		<!--property name="MeshScale" value="1.5,2" /-->
 		<property name="Class" value="EntityZedBoss, Mods" />
 		<property name="AvatarController" value="BipedAnimations, Mods" />
 		<property name="Hability" value="Regen" />
-		<property name="HabilityChance" value="70" />
+		<property name="HabilityChance" value="75" />
 		<property name="HabilityBuff" value="BossRegen" />
 		<property name="HabilitySound" value="regenSound" />
 		<property name="ModelType" value="Standard" />
 		<property name="HasRagdoll" value="false" />
 		<property name="Prefab" value="NPC" />
 		<property name="Parent" value="Enemies" />
-		<!-- <property name="PhysicsBody" value="zombieStandard" /> -->
-		<!-- AI properties -->
 		<property name="AITask-1" value="BreakDoor" />
 		<property name="AITask-2" value="BreakBlock" />
 		<property name="AITask-3" value="Territorial" />
@@ -2996,8 +2863,7 @@
 		<property name="AITarget-8" value="SetNearestEntityAsTarget" param1="EntityNPC" />
 		<property name="AITarget-9" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" />
 		<property name="MaxViewAngle" value="270" />
-		<!-- General entity properties -->
-		<property name="MaxHealth" value="3500" />
+		<property name="MaxHealth" value="4500" />
 		<property name="HandItem" value="handWallCrusher" />
 		<property name="Weight" value="7000" />
 		<property name="Immunity" value="sickness;disease;bleeding;wellness" />
@@ -3008,15 +2874,12 @@
 		<property name="PanicSpeed" value="0.45" />
 		<property name="CanClimbLadders" value="true" />
 		<property name="IsEnemyEntity" value="true" />
-		<!-- This decides on the particle effect played on hit -->
 		<property name="SurfaceCategory" value="organic" />
 		<property name="WalkType" value="7" />
 		<property name="ParticleOnDeath" value="blood_death" />
 		<property name="SoundRandomTime" value="60.0" />
-		<!-- It will play the roam every 60/30 seconds -->
 		<property name="SoundRandom" value="CrusherRoam" />
 		<property name="SoundAlertTime" value="25.0" />
-		<!-- It will play the roam every 25/12.5 seconds-->
 		<property name="SoundAlert" value="Crusheralert" />
 		<property name="SoundSense" value="Crushersense" />
 		<property name="SoundHurt" value="Crusherhurt" />
@@ -3024,19 +2887,21 @@
 		<property name="SoundAttack" value="Crusherattack" />
 		<property name="TimeStayAfterDeath" value="300" />
 		<property name="AttackTimeoutDay" value="1.5" />
-		<!-- in s -->
 		<property name="AttackTimeoutNight" value="1.1" />
 		<property name="LootListOnDeath" value="120" />
 		<property name="CorpseBlock" value="GoreBlock1Prefab" />
 		<property name="CorpseBlockChance" value="1" />
 		<property name="DeadBodyHitPoints" value="150" />
-		<!-- For harvesting -->
 		<property name="RootMotion" value="false" />
 		<property name="HasDeathAnim" value="true" />
 		<property name="ExperienceGain" value="10000" />
-		<!-- percentual -->
 		<property name="HeadBoost" value="20.0" />
 		<property name="BodyNerf" value="90.0" />
+		<drop event="Harvest" name="rottingFlesh" count="2" />
+		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="1" />
+		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="1" prob=".5" />
+		<drop event="Destroy" name="femur" tool_category="Butcher" count="2" />
+		<drop event="Destroy" name="glandWalcrusher" tool_category="Butcher" count="1" prob=".01" />
 	</entity_class>
 	<entity_class name="ParasiteMinion" extends="WallCrusher">
 		<property name="HandItem" value="handAxeZombie" />
@@ -3050,10 +2915,8 @@
 		<property name="NightApproachSpeed" value="1.1" />
 		<property name="LootListOnDeath" value="10" />
 		<property name="SoundRandomTime" value="60.0" />
-		<!-- It will play the roam every 60/30 seconds -->
 		<property name="SoundRandom" value="ParasiteRoam" />
 		<property name="SoundAlertTime" value="25.0" />
-		<!-- It will play the roam every 25/12.5 seconds-->
 		<property name="SoundAlert" value="Parasitealert" />
 		<property name="SoundSense" value="Parasitesense" />
 		<property name="SoundHurt" value="Parasitehurt" />
@@ -3079,18 +2942,21 @@
 		<property name="NightApproachSpeed" value="1.0" />
 		<property name="Mesh" value="#ParasiteZd?ParasiteZd" />
 		<property name="SoundRandomTime" value="60.0" />
-		<!-- It will play the roam every 60/30 seconds -->
 		<property name="SoundRandom" value="ParasiteRoam" />
 		<property name="SoundAlertTime" value="25.0" />
-		<!-- It will play the roam every 25/12.5 seconds-->
 		<property name="SoundAlert" value="Parasitealert" />
 		<property name="SoundSense" value="Parasitesense" />
 		<property name="SoundHurt" value="Parasitehurt" />
 		<property name="SoundDeath" value="Parasitedeath" />
 		<property name="SoundAttack" value="Parasiteattack" />
-		<!-- percentual -->
 		<property name="HeadBoost" value="20.0" />
 		<property name="BodyNerf" value="90.0" />
+		<drop event="Harvest" name="rottingFlesh" count="2" />
+		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="1" />
+		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="1" prob=".5" />
+		<drop event="Destroy" name="femur" tool_category="Butcher" count="2" />
+		<drop event="Destroy" name="glandWalcrusher" tool_category="Butcher" count="0" prob="0" />
+		<drop event="Destroy" name="glandParasite" tool_category="Butcher" count="1" prob=".01" />
 	</entity_class>
 	<entity_class name="Mortelentus" extends="WallCrusher">
 		<property name="Mesh" value="#pacco?MortelentusZD" />
@@ -3111,16 +2977,19 @@
 		<property name="NightApproachSpeed" value="1.5" />
 		<property name="SoundRandom" value="morteRandom" />
 		<property name="SoundAlertTime" value="25.0" />
-		<!-- It will play the roam every 25/12.5 seconds-->
 		<property name="SoundAlert" value="morteAlert" />
 		<property name="SoundSense" value="morteSense" />
 		<property name="SoundDeath" value="Parasitehurt" />
 		<property name="SoundAttack" value="morteAttack" />
 		<property name="LootListOnDeath" value="66" />
-		<!-- percentual -->
 		<property name="HeadBoost" value="20.0" />
 		<property name="BodyNerf" value="90.0" />
-		<!--property name="AITask-7" value="ApproachAndAt3tackTarget" param1="EntityPacco" /-->
+		<drop event="Harvest" name="rottingFlesh" count="2" />
+		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="1" />
+		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="1" prob=".5" />
+		<drop event="Destroy" name="femur" tool_category="Butcher" count="2" />
+		<drop event="Destroy" name="glandWalcrusher" tool_category="Butcher" count="0" prob="0" />
+		<drop event="Destroy" name="glandParasite" tool_category="Butcher" count="1" prob=".01" />
 	</entity_class>
 	<entity_class name="RezBoss" extends="WallCrusher">
 		<property name="HandItem" value="handDocZombie" />
@@ -3136,45 +3005,44 @@
 		<property name="NightApproachSpeed" value="0.8" />
 		<property name="Mesh" value="#Resurector?Resurector" />
 		<property name="SoundRandomTime" value="60.0" />
-		<!-- It will play the roam every 60/30 seconds -->
 		<property name="SoundRandom" value="ParasiteRoam" />
 		<property name="SoundAlertTime" value="25.0" />
-		<!-- It will play the roam every 25/12.5 seconds-->
 		<property name="SoundAlert" value="Parasitealert" />
 		<property name="SoundSense" value="Parasitesense" />
 		<property name="SoundHurt" value="Parasitehurt" />
 		<property name="SoundDeath" value="Parasitedeath" />
 		<property name="SoundAttack" value="Parasiteattack" />
+		<drop event="Harvest" name="rottingFlesh" count="2" />
+		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="1" />
+		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="1" prob=".5" />
+		<drop event="Destroy" name="femur" tool_category="Butcher" count="2" />
+		<drop event="Destroy" name="glandWalcrusher" tool_category="Butcher" count="0" prob="0" />
+		<drop event="Destroy" name="glandParasite" tool_category="Butcher" count="0" prob="0" />
+		<drop event="Destroy" name="glandRezzer" tool_category="Butcher" count="1" prob=".01" />
 	</entity_class>
 	<entity_class name="TruckSoldier" extends="zombieSoldier">
 		<property name="LootListOnDeath" value="10" />
 		<property name="MaxHealth" value="500" />
 		<property name="ExperienceGain" value="0" />
 		<property name="WalkType" value="7" />
-		<!-- percentual -->
 		<property name="HeadBoost" value="20.0" />
 		<property name="BodyNerf" value="90.0" />
 	</entity_class>
 	<entity_class name="TruckMaleHazmat" extends="zombieMaleHazmat">
 		<property name="ExperienceGain" value="0" />
 		<property name="LootListOnDeath" value="10" />
-		<!-- percentual -->
 		<property name="HeadBoost" value="50.0" />
 		<property name="BodyNerf" value="90.0" />
 	</entity_class>
 	<entity_class name="TruckFemaleHazmat" extends="zombieMaleHazmat">
 		<property name="ExperienceGain" value="0" />
 		<property name="LootListOnDeath" value="10" />
-		<!-- percentual -->
 		<property name="HeadBoost" value="50.0" />
 		<property name="BodyNerf" value="90.0" />
 	</entity_class>
 	<entity_class name="Beastmaster">
-		<!-- This one decides for scoring -->
 		<property name="EntityType" value="Zombie" />
-		<!-- Mesh and class properties -->
 		<property name="Mesh" value="#Beastmaster?Beastmaster" />
-		<!--property name="MeshScale" value="1.5,2" /-->
 		<property name="Class" value="EntityZedBoss, Mods" />
 		<property name="AvatarController" value="BipedAnimations, Mods" />
 		<property name="Hability" value="Spawn" />
@@ -3188,8 +3056,6 @@
 		<property name="HasRagdoll" value="false" />
 		<property name="Prefab" value="NPC" />
 		<property name="Parent" value="Enemies" />
-		<!-- <property name="PhysicsBody" value="zombieStandard" /> -->
-		<!-- AI properties -->
 		<property name="AITask-1" value="BreakDoor" />
 		<property name="AITask-2" value="BreakBlock" />
 		<property name="AITask-3" value="Territorial" />
@@ -3209,7 +3075,7 @@
 		<property name="AITarget-8" value="SetNearestEntityAsTarget" param1="EntityNPC" />
 		<property name="AITarget-9" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" />
 		<property name="MaxViewAngle" value="270" />
-		<property name="MaxHealth" value="3500" />
+		<property name="MaxHealth" value="5000" />
 		<property name="HandItem" value="handAxeZombie" />
 		<property name="Weight" value="7000" />
 		<property name="Immunity" value="sickness;disease;bleeding;wellness" />
@@ -3220,16 +3086,12 @@
 		<property name="PanicSpeed" value="0.45" />
 		<property name="CanClimbLadders" value="true" />
 		<property name="IsEnemyEntity" value="true" />
-		<!-- This decides on the particle effect played on hit -->
 		<property name="SurfaceCategory" value="organic" />
 		<property name="WalkType" value="7" />
 		<property name="ParticleOnDeath" value="blood_death" />
 		<property name="SoundRandomTime" value="60.0" />
-		<!-- It will play the roam every 60/30 seconds -->
-		<!-- It will play the roam every 60/30 seconds -->
 		<property name="SoundRandom" value="ParasiteRoam" />
 		<property name="SoundAlertTime" value="25.0" />
-		<!-- It will play the roam every 25/12.5 seconds-->
 		<property name="SoundAlert" value="Parasitealert" />
 		<property name="SoundSense" value="Parasitesense" />
 		<property name="SoundHurt" value="Parasitehurt" />
@@ -3237,23 +3099,25 @@
 		<property name="SoundAttack" value="Parasiteattack" />
 		<property name="TimeStayAfterDeath" value="300" />
 		<property name="AttackTimeoutDay" value="1.5" />
-		<!-- in s -->
 		<property name="AttackTimeoutNight" value="1.1" />
 		<property name="LootListOnDeath" value="106" />
 		<property name="CorpseBlock" value="GoreBlock1Prefab" />
 		<property name="CorpseBlockChance" value="1" />
 		<property name="DeadBodyHitPoints" value="150" />
-		<!-- For harvesting -->
 		<property name="RootMotion" value="false" />
 		<property name="HasDeathAnim" value="true" />
 		<property name="ExperienceGain" value="10000" />
-		<!-- percentual -->
 		<property name="HeadBoost" value="15.0" />
 		<property name="BodyNerf" value="90.0" />
+		<drop event="Harvest" name="rottingFlesh" count="2" />
+		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="1" />
+		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="1" prob=".5" />
+		<drop event="Destroy" name="femur" tool_category="Butcher" count="2" />
+		<drop event="Destroy" name="glandWalcrusher" tool_category="Butcher" count="1" prob=".01" />
+		<drop event="Destroy" name="glandParasite" tool_category="Butcher" count="1" prob=".01" />
+		<drop event="Destroy" name="glandRezzer" tool_category="Butcher" count="1" prob=".01" />
 	</entity_class>
-	<!-- Event Entities -->
 	<entity_class name="zombieTemplateEvent">
-		<!-- New zed edits for sleeper sense and sight distance-->
 		<property name="EntityType" value="Zombie" />
 		<property name="Mesh" value="Zombies/zombieStandardBoeRagdoll" />
 		<property name="AvatarController" value="AvatarZombie01Controller" />
@@ -3295,41 +3159,25 @@
 		<property name="PanicSpeed" value="0.55" />
 		<property name="CanClimbLadders" value="true" />
 		<property name="IsEnemyEntity" value="true" />
-		<!-- Stealth settings -->
 		<property name="SightRange" value="50" />
-		<!-- distance in m -->
-		<!-- up from 30 to compensate for smell not working -->
 		<property name="SightScale" value="-25,125" />
-		<!-- how well lit you have to be for the zombie to see you at min,max range -->
-		<!-- up from -2,150 to compensate for smell not working -->
 		<property name="SleeperWakeupSightDetectionMin" value="-25,0" />
-		<!-- Indiv.Random. sight capability - "I see you" light value at point blank -->
 		<property name="SleeperWakeupSightDetectionMax" value="0,55" />
-		<!-- Indiv.Random. "I see you" light value at "SightRange" -->
 		<property name="SleeperSenseSightDetectionMin" value="-15,10" />
-		<!-- same for groaning, not waking -->
 		<property name="SleeperSenseSightDetectionMax" value="99,100" />
 		<property name="SleeperNoiseSenseThreshold" value="2,13" />
-		<!-- Indiv.Random. hearing capability - "I hear something" noise value -->
 		<property name="SleeperNoiseWakeThreshold" value="5,15" />
 		<property name="SleeperSmellSenseThreshold" value="10,30" />
-		<!-- Indiv.Random. smell capability - "I smell something" player smell value -->
 		<property name="SoundSleeperSenseChance" value=".5" />
-		<!-- the chance to play "SoundSleeperSense" when "SleeperSmellSenseThreshold" is triggered -->
 		<property name="SleeperSmellWakeThreshold" value="20,70" />
 		<property name="NoiseAlertThreshold" value="30" />
-		<!-- for awake zombies -->
 		<property name="SmellAlertThreshold" value="40" />
-		<!-- for awake zombies -->
 		<property name="SurfaceCategory" value="organic" />
-		<!-- determines the particle effect played on hit -->
 		<property name="WalkType" value="7" />
 		<property name="ParticleOnDeath" value="blood_death" />
 		<property name="SoundRandomTime" value="60.0" />
-		<!-- It will play the roam every 60/30 seconds -->
 		<property name="SoundRandom" value="Enemies/Base_Zombie_Male/zombiemaleroam" />
 		<property name="SoundAlertTime" value="25.0" />
-		<!-- It will play the roam every 25/12.5 seconds-->
 		<property name="SoundAlert" value="Enemies/Base_Zombie_Male/zombiemalealert" />
 		<property name="SoundSense" value="Enemies/Base_Zombie_Male/zombiemalesense" />
 		<property name="SoundHurt" value="Enemies/Base_Zombie_Male/zombiemalepain" />
@@ -3339,20 +3187,17 @@
 		<property name="SoundSleeperBackToSleep" value="sleeperbacktosleep" />
 		<property name="TimeStayAfterDeath" value="30" />
 		<property name="AttackTimeoutDay" value="1.5" />
-		<!-- in s -->
 		<property name="AttackTimeoutNight" value="1.1" />
 		<property name="LootListOnDeath" value="15" />
 		<property name="CorpseBlock" value="GoreBlock1Prefab" />
 		<property name="CorpseBlockChance" value="1" />
 		<property name="ExperienceGain" value="679" />
 		<property name="DeadBodyHitPoints" value="350" />
-		<!-- For harvesting -->
 		<property name="RootMotion" value="true" />
 		<property name="HasDeathAnim" value="true" />
 		<property name="HeadDismemberBaseChance" value="0" />
 		<property name="HeadDismemberBonusChance" value="0.08" />
 		<property name="HeadDismemberThreshold" value="0.23" />
-		<!-- if the total damage exceeds that value, there is a chance for dismemberment -->
 		<property name="LowerLegDismemberThreshold" value="0.175" />
 		<property name="LowerLegDismemberBaseChance" value="0" />
 		<property name="LowerLegDismemberBonusChance" value="0.9" />
@@ -3366,7 +3211,6 @@
 		<property name="UpperArmDismemberBaseChance" value="0" />
 		<property name="UpperArmDismemberBonusChance" value="0.9" />
 		<property name="LegCrawlerThreshold" value="0" />
-		<!-- at like .175 nearly every zombie knocked down from a leg hit turns into a crawler -->
 		<property name="LegCrippleThreshold" value="0.01" />
 		<property name="KnockdownProneDamageThreshold" value="0.5" />
 		<property name="KnockdownProneStunDuration" value="4,6" />
@@ -3378,7 +3222,6 @@
 		<property name="ArmsExplosionDamageMultiplier" value="1" />
 		<property name="HeadExplosionDamageMultiplier" value="1" />
 		<property name="ChestExplosionDamageMultiplier" value="1" />
-		<!-- percentual -->
 		<property name="HeadBoost" value="50.0" />
 		<property name="BodyNerf" value="95.0" />
 	</entity_class>
@@ -3400,8 +3243,199 @@
 		<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1" />
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0" />
 	</entity_class>
+	<entity_class name="abominableRange" extends="SDXTemplate">
+		<property name="Mesh" value="#Snowman?Snowman_X" />
+		<property name="AvatarController" value="AnimationSDXM, Mods" />
+		<property name="LootListOnDeath" value="61" />
+		<property name="MaxHealth" value="900" />
+		<property name="MaxTurnSpeed" value="230" />
+		<property name="MaxViewAngle" value="270" />
+		<property name="WanderSpeed" value="0.3" />
+		<property name="ApproachSpeed" value="0.8" />
+		<property name="NightWanderSpeed" value="0.3" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.6" />
+		<property name="AnimationIdle" value="Idle" />
+		<property name="AnimationMainAttack" value="Attack" />
+		<property name="AnimationSecondAttack" value="Attack2" />
+		<property name="AnimationSpecialAttack" value="Toss" />
+		<property name="AnimationJump" value="Jump" />
+		<property name="AnimationPain" value="Pain" />
+		<property name="AnimationDeath" value="Death" />
+		<property name="AnimationRun" value="Run" />
+		<property name="AnimationWalk" value="Walk" />
+		<property name="SoundRandom" value="AbominableRandom" />
+		<property name="SoundAlert" value="AbominableAlert" />
+		<property name="SoundAttack" value="AbominableAttack" />
+		<property name="SoundDeath" value="AbominableDie" />
+		<property name="SoundHurt" value="AbominableHurt" />
+		<property name="SoundSense" value="AbominableSense" />
+		<property name="HeadBoost" value="0.0" />
+		<property name="BodyNerf" value="0.0" />
+		<property name="RightHandJointName" value="RightHand" />
+		<property name="HandItem" value="handPlasma" />
+		<property name="AITask-1" value="BreakDoor" />
+		<property name="AITask-2" value="BreakBlock" />
+		<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="5" />
+		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" />
+		<property name="AITask-5" value="ApproachSpot" />
+		<property name="AITask-6" value="Wander" />
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="10" />
+		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="15" />
+		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="7" />
+		<drop event="Harvest" name="femur" tool_category="Butcher" count="4" />
+		<drop event="Destroy" name="glandYeti" tool_category="Butcher" count="1" prob=".01" />
+	</entity_class>
+	<entity_class name="spiderBoss" extends="SDXTemplate">
+		<property name="Mesh" value="#RadSpider?RadSpider" />
+		<property name="MeshScale" value="2.0,2.0" />
+		<property name="AvatarController" value="AnimationSDXM, Mods" />
+		<property name="LootListOnDeath" value="61" />
+		<property name="MaxHealth" value="3500" />
+		<property name="MaxTurnSpeed" value="230" />
+		<property name="MaxViewAngle" value="270" />
+		<property name="WanderSpeed" value="0.3" />
+		<property name="ApproachSpeed" value="0.8" />
+		<property name="NightWanderSpeed" value="0.3" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.6" />
+		<property name="AnimationIdle" value="Idle1" />
+		<property name="AnimationMainAttack" value="Attack" />
+		<property name="AnimationSecondAttack" value="Attack2" />
+		<property name="AnimationSpecialAttack" value="Toss" />
+		<property name="AnimationJump" value="Jump" />
+		<property name="AnimationPain" value="Pain" />
+		<property name="AnimationDeath" value="Death" />
+		<property name="AnimationRun" value="Run" />
+		<property name="AnimationWalk" value="Walk" />
+		<property name="SoundRandom" value="aSpiderRandom" />
+		<property name="SoundAlert" value="aSpiderAlert" />
+		<property name="SoundHurt" value="aSpiderHurt" />
+		<property name="SoundDeath" value="aSpiderDeath" />
+		<property name="SoundAttack" value="aSpiderAttack" />
+		<property name="SoundSense" value="aSpiderAlert" />
+		<property name="HeadBoost" value="0.0" />
+		<property name="BodyNerf" value="0.0" />
+		<property name="RightHandJointName" value="ProjectileJoint" />
+		<property name="HandItem" value="handSpiderBoss" />
+		<property name="AITask-1" value="BreakDoor" />
+		<property name="AITask-2" value="BreakBlock" />
+		<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="5" />
+		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" />
+		<property name="AITask-5" value="ApproachSpot" />
+		<property name="AITask-6" value="Wander" />
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="10" />
+		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="15" />
+		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="7" />
+		<drop event="Harvest" name="femur" tool_category="Butcher" count="4" />
+		<drop event="Destroy" name="radSpiderHeart" tool_category="Butcher" count="1" prob=".01" />
+	</entity_class>
+	<entity_class name="sheBandit" extends="SDXTemplate">
+		<property name="Mesh" value="#BanditEve?BanditEve" />
+		<property name="AvatarController" value="AnimationSDXM, Mods" />
+		<property name="Parent" value="Animals" />
+		<property name="Faction" value="animals" />
+		<property name="LootListOnDeath" value="72" />
+		<property name="MaxHealth" value="600" />
+		<property name="MaxTurnSpeed" value="230" />
+		<property name="MaxViewAngle" value="270" />
+		<property name="PanicSpeed" value="0.6" />
+		<property name="WanderSpeed" value="0.3" />
+		<property name="ApproachSpeed" value="0.4" />
+		<property name="NightWanderSpeed" value="0.5" />
+		<property name="NightApproachSpeed" value="0.4" />
+		<property name="AnimationIdle" value="Idle" />
+		<property name="AnimationMainAttack" value="Firing" />
+		<property name="AnimationSecondAttack" value="Smash" />
+		<property name="AnimationPain" value="Hit" />
+		<property name="AnimationDeath" value="Die" />
+		<property name="AnimationRun" value="Run" />
+		<property name="AnimationWalk" value="Walk" />
+		<property name="AnimationJump" value="Jump" />
+		<property name="AnimationSpecialAttack" value="Firing" />
+		<property name="SoundRandom" value="Player_Female/player2LandHard" />
+		<property name="SoundAlert" value="Player_Female/player2jump" />
+		<property name="SoundSense" value="Player_Female/player2stamina" />
+		<property name="SoundHurt" value="Player_Female/player2painlg" />
+		<property name="SoundDeath" value="Player_Female/player2death" />
+		<property name="SoundAttack" value="Player_Female/player2painsm" />
+		<property name="HeadBoost" value="0.0" />
+		<property name="BodyNerf" value="0.0" />
+		<property name="RightHandJointName" value="Muzzle" />
+		<property name="HandItem" value="handMP7" />
+		<property name="AITask-1" value="BreakDoor" />
+		<property name="AITask-2" value="BreakBlock" />
+		<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="3" />
+		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityAnimalStag" param2="40" />
+		<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="25" />
+		<property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityZombie" param2="30" />
+		<property name="AITask-7" value="ApproachSpot" />
+		<property name="AITask-8" value="Wander" />
+		<property name="AITarget-1" value="SetAsTargetIfHurt" />
+		<property name="AITarget-2" value="BlockingTargetTask" />
+		<property name="AITarget-3" value="SetNearestEntityAsTarget" param1="EntityPlayer" param2="8" />
+		<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" />
+		<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityZombie" />
+		<drop event="Harvest" name="femur" tool_category="Butcher" count="4" />
+	</entity_class>
+	<entity_class name="sheBandit1" extends="sheBandit">
+		<property name="MeshScale" value="1.2,0.2" />
+		<property name="MaxHealth" value="700" />
+	</entity_class>
+	<entity_class name="sheBandit2" extends="sheBandit">
+		<property name="MeshScale" value="1.4,0.4" />
+		<property name="MaxHealth" value="800" />
+		<property name="LootListOnDeath" value="73" />
+	</entity_class>
+	<entity_class name="plasmaBoss" extends="SDXTemplate">
+		<property name="Mesh" value="#BanditBoss?BanditBoss" />
+		<property name="AvatarController" value="AnimationSDXM, Mods" />
+		<property name="Parent" value="Animals" />
+		<property name="Faction" value="animals" />
+		<property name="LootListOnDeath" value="132" />
+		<property name="MaxHealth" value="3000" />
+		<property name="MaxTurnSpeed" value="230" />
+		<property name="MaxViewAngle" value="270" />
+		<property name="PanicSpeed" value="0.6" />
+		<property name="WanderSpeed" value="0.3" />
+		<property name="ApproachSpeed" value="0.4" />
+		<property name="NightWanderSpeed" value="0.5" />
+		<property name="NightApproachSpeed" value="0.4" />
+		<property name="AnimationIdle" value="Idle" />
+		<property name="AnimationMainAttack" value="Firing" />
+		<property name="AnimationSecondAttack" value="Smash" />
+		<property name="AnimationPain" value="Hit" />
+		<property name="AnimationDeath" value="Die" />
+		<property name="AnimationRun" value="Run" />
+		<property name="AnimationWalk" value="Walk" />
+		<property name="AnimationJump" value="Jump" />
+		<property name="AnimationSpecialAttack" value="Firing" />
+		<property name="SoundRandom" value="malehateroam" />
+		<property name="SoundAlert" value="malehatealert" />
+		<property name="SoundSense" value="malehatesense" />
+		<property name="SoundHurt" value="malehatepain" />
+		<property name="SoundDeath" value="malehatedeath" />
+		<property name="SoundAttack" value="malehateattack" />
+		<property name="HeadBoost" value="0.0" />
+		<property name="BodyNerf" value="0.0" />
+		<property name="RightHandJointName" value="Muzzle" />
+		<property name="HandItem" value="handPlasma" />
+		<property name="AITask-1" value="BreakDoor" />
+		<property name="AITask-2" value="BreakBlock" />
+		<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="3" />
+		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityAnimalStag" param2="40" />
+		<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="25" />
+		<property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityZombie" param2="30" />
+		<property name="AITask-7" value="ApproachSpot" />
+		<property name="AITask-8" value="Wander" />
+		<property name="AITarget-1" value="SetAsTargetIfHurt" />
+		<property name="AITarget-2" value="BlockingTargetTask" />
+		<property name="AITarget-3" value="SetNearestEntityAsTarget" param1="EntityPlayer" param2="8" />
+		<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" />
+		<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityZombie" />
+		<drop event="Harvest" name="femur" tool_category="Butcher" count="4" />
+	</entity_class>
 	<entity_class name="survivorParent">
-		<!-- Mesh and class properties -->
 		<property name="Mesh" value="#survivorsa16?TeenGirl" />
 		<property name="ModelType" value="Standard" />
 		<property name="Prefab" value="NPC" />
@@ -3413,26 +3447,22 @@
 		<property name="IsEntityAnimal" value="false" />
 		<property name="PhysicsBody" value="Stag" />
 		<property name="HandItem" value="handGirl" />
-		<!-- AI properties -->
 		<property name="AITask-1" value="Swim" />
 		<property name="AITask-2" value="RunawayWhenHurt" />
 		<property name="AITask-3" value="Territorial" param1="10" />
-		<!-- <property name="AITask-4" value="RunawayFromEntity" param1="EntityZombie" /> -->
 		<property name="AITask-4" value="Wander" />
-		<!-- give up time -->
 		<property name="AITask-5" value="ApproachSpot" />
 		<property name="AITarget-1" value="SetAsTargetIfHurt" />
 		<property name="AITarget-2" value="BlockingTargetTask" />
 		<property name="CanClimbLadders" value="true" />
-		<!-- General entity properties -->
 		<property name="MaxHealth" value="130" />
-		<property name="MaxViewAngle" value="180" />
+		<property name="MaxTurnSpeed" value="230" />
+		<property name="MaxViewAngle" value="270" />
 		<property name="WanderSpeed" value="0.25" />
 		<property name="PanicSpeed" value="1.5" />
 		<property name="ApproachSpeed" value="1.3" />
 		<property name="NightWanderSpeed" value="0.25" />
 		<property name="NightApproachSpeed" value="1.4" />
-		<!-- This decides on the particle effect played on hit -->
 		<property name="SurfaceCategory" value="organic" />
 		<property name="ParticleOnDeath" value="blood_death" />
 		<property name="SoundHurt" value="Player_Female/player2painlg" />
@@ -3447,39 +3477,24 @@
 		<property name="SoundLandHard" value="Player_Male/player2LandHard" />
 		<property name="SoundPlayerLandThump" value="PlayerLandThump" />
 		<property name="TimeStayAfterDeath" value="300" />
-		<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 		<property name="IsEnemyEntity" value="false" />
 		<property name="ExperienceGain" value="0" />
-		<!-- <property name="CorpseBlock" value="GoreBlock1Prefab" />
-		<property name="CorpseBlockChance" value="1" /> -->
 		<property name="DeadBodyHitPoints" value="150" />
 		<property name="IsMale" value="false" />
-		<!-- FOOD CONFIGURATION - <amount of "hp" to restore>,foodItem1,foodItem2,...,foodItemn -->
-		<!-- Lower type of food - survivor looks for this if he is not hurt -->
 		<property name="FoodLow" value="1,cornBread,eggboiled" />
-		<!-- Medium type of food - survivor looks for this if he is slighlty hurt -->
 		<property name="FoodMedium" value="2,grilledMeat,boiledMeat" />
-		<!-- Higher type of food - survivor looks for this if he is badly hurt -->
 		<property name="FoodHigh" value="5,meatStew,vegetableStew" />
-		<!-- Food containers where survivors look for something to eat - NEEDS to be secureLoot -->
 		<property name="FoodContainer" value="cntFridgeTopE" />
-		<!-- Food Check interval in seconds -->
 		<property name="CheckInterval" value="200" />
-		<!-- Food check area in blocks -->
 		<property name="CheckArea" value="10" />
-		<!-- Cannot stack because it can be picked up -->
 		<property name="Stacknumber" value="1" />
 		<property name="debug" value="false" />
 		<property name="PatrolArea" value="15" />
 		<property name="StayArea" value="5" />
-		<!-- to allow interaction and/or put stuff on its inv? -->
 		<property name="LootListAlive" value="110" />
 		<property name="LootListAliveMP" value="110" />
-		<!-- Plays random sounds -->
 		<property name="RandomSounds" value="true" />
-		<!-- sleeps -->
 		<property name="DoSleep" value="true" />
-		<!-- For harvesting -->
 		<drop event="Harvest" name="rawMeat" count="3" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
@@ -3488,22 +3503,13 @@
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="4" prob=".5" />
 		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="1" prob=".4" />
 		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="4" />
-		<!-- Average harvest results:  stag  5 meat  9 hide  4.5 fat,  pig  6m  7h  6f,  bear 7m  14h  7f -->
 	</entity_class>
 	<entity_class name="Girl" extends="survivorParent">
-		<!-- Mesh and class properties -->
 		<property name="Mesh" value="#survivorsa16?TeenGirl" />
-		<!-- For dialogs -->
-		<!-- (<xxx>) means optional -->
-		<!-- param1="<skillName>,<skillLevel>" -->
-		<!-- param2="<Command>,(<questName>),(<previousQuestName>)" -->
 		<property name="Dialog1" value="ついてこい" param1="Barter,10" param2="Follow" />
 		<property name="Dialog2" value="俺に従うか、ここで死ぬかだ" param1="Barter, 80" param2="Follow" />
 		<property name="Dialog3" value="辺りの安全を確保しろ" param1="Barter, 10" param2="Patrol" />
 		<property name="Dialog4" value="持ち物を見せてくれ" param1="Barter, 20" param2="Inv" />
-		<!-- Blocking properties -->
-		<!-- If the dialog fails, it will block all the referenced dialogs FOREVER -->
-		<!-- param1 can be Attack (player) or Flee (from player) or leave it blank -->
 		<property name="Dialog2Ex" value="" param1="Flee" />
 	</entity_class>
 	<entity_class name="Female1" extends="Girl">
@@ -3530,7 +3536,8 @@
 	<entity_class name="MaleSurvivor" extends="Girl">
 		<property name="Mesh" value="#survivorsa16?MaleSurvivor" />
 		<property name="MaxHealth" value="400" />
-		<property name="MaxViewAngle" value="240" />
+		<property name="MaxTurnSpeed" value="230" />
+		<property name="MaxViewAngle" value="270" />
 		<property name="HandItem" value="handMale" />
 		<property name="IsMale" value="true" />
 		<property name="SoundHurt" value="Player_Male/player1painlg" />
@@ -3552,7 +3559,6 @@
 		<property name="Mesh" value="#survivorsa16?Bobby" />
 	</entity_class>
 	<entity_class name="Pacco">
-		<!-- Mesh and class properties -->
 		<property name="Mesh" value="#pacco?PaccoNew" />
 		<property name="ModelType" value="Standard" />
 		<property name="Prefab" value="NPC" />
@@ -3564,7 +3570,6 @@
 		<property name="IsEntityAnimal" value="false" />
 		<property name="PhysicsBody" value="Stag" />
 		<property name="HandItem" value="handGirl" />
-		<!-- AI properties -->
 		<property name="AITask-1" value="Swim" />
 		<property name="AITask-2" value="Territorial" param1="2" />
 		<property name="AITask-3" value="Wander" />
@@ -3572,47 +3577,32 @@
 		<property name="AITarget-1" value="SetAsTargetIfHurt" />
 		<property name="AITarget-2" value="BlockingTargetTask" />
 		<property name="CanClimbLadders" value="false" />
-		<!-- General entity properties -->
-		<property name="MaxViewAngle" value="180" />
+		<property name="MaxTurnSpeed" value="230" />
+		<property name="MaxViewAngle" value="270" />
 		<property name="WanderSpeed" value="0.25" />
 		<property name="PanicSpeed" value="1.5" />
 		<property name="ApproachSpeed" value="1.3" />
 		<property name="NightWanderSpeed" value="0.25" />
 		<property name="NightApproachSpeed" value="1.4" />
-		<!-- This decides on the particle effect played on hit -->
 		<property name="SurfaceCategory" value="organic" />
 		<property name="ParticleOnDeath" value="blood_death" />
 		<property name="TimeStayAfterDeath" value="300" />
-		<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 		<property name="IsEnemyEntity" value="false" />
 		<property name="ExperienceGain" value="0" />
-		<!-- <property name="CorpseBlock" value="GoreBlock1Prefab" />
-		<property name="CorpseBlockChance" value="1" /> -->
 		<property name="DeadBodyHitPoints" value="150" />
-		<!-- FOOD CONFIGURATION - <amount of "hp" to restore>,foodItem1,foodItem2,...,foodItemn -->
-		<!-- Lower type of food - survivor looks for this if he is not hurt -->
 		<property name="FoodLow" value="1,cornBread,eggboiled" />
-		<!-- Medium type of food - survivor looks for this if he is slighlty hurt -->
 		<property name="FoodMedium" value="2,grilledMeat,boiledMeat" />
-		<!-- Higher type of food - survivor looks for this if he is badly hurt -->
 		<property name="FoodHigh" value="5,meatStew,vegetableStew" />
-		<!-- Food containers where survivors look for something to eat - NEEDS to be secureLoot -->
 		<property name="FoodContainer" value="cntFridgeTopE" />
-		<!-- Food Check interval in seconds -->
 		<property name="CheckInterval" value="200" />
-		<!-- Food check area in blocks -->
 		<property name="CheckArea" value="10" />
-		<!-- Cannot stack because it can be picked up -->
 		<property name="Stacknumber" value="1" />
 		<property name="debug" value="false" />
 		<property name="PatrolArea" value="15" />
 		<property name="StayArea" value="5" />
-		<!-- to allow interaction and/or put stuff on its inv? -->
 		<property name="LootListAlive" value="110" />
 		<property name="LootListAliveMP" value="110" />
-		<!-- Plays random sounds -->
 		<property name="RandomSounds" value="true" />
-		<!-- sleeps -->
 		<property name="DoSleep" value="true" />
 		<property name="MaxHealth" value="1500" />
 		<property name="MaxViewAngle" value="240" />
@@ -3629,21 +3619,10 @@
 		<property name="SoundLandSoft" value="Player_Male/player1LandSoft" />
 		<property name="SoundLandHard" value="Player_Male/player1LandHard" />
 		<property name="SoundPlayerLandThump" value="PlayerLandThump" />
-		<!-- For dialogs -->
-		<!-- (<xxx>) means optional -->
-		<!-- param1="<skillName>,<skillLevel>" -->
-		<!-- param2="<Command>,(<questName>),(<previousQuestName>)" -->
 		<property name="Dialog1" value="やあ、君の名前は？" param1="Barter,0" param2="Quest,quest_MeetPacco" />
-		<!-- start a quest chain -->
 		<property name="Dialog2" value="君の言うとおりにしたよ。" param1="Barter,0" param2="Quest,quest_getReward,quest_MeetPacco" />
-		<!-- gives a quest that only rewards the prize -->
 		<property name="Dialog3" value="他にもあるのかい？" param1="Barter,0" param2="Quest,pacco_game_room0,quest_getReward" />
 		<property name="Dialog4" value="ほら、君のゲームケースだ" param1="Barter,0" param2="Quest,pacco_game_room,pacco_game_room1" />
-		<!-- <property name="Dialog2" value="Ok, i got it!"  param1="Barter,0" param2 = "Quest,quest_theCure1,quest_theCure"/>
-		<property name="Dialog3" value="I'm sorry to inform..."  param1="Barter,0" param2 = "Quest,quest_theCure2,quest_theCure1"/> -->
-		<!-- Blocking properties -->
-		<!-- If the dialog fails, it will block all the referenced dialogs FOREVER -->
-		<!-- param1 can be Attack (player) or Flee (from player) or leave it blank -->
 	</entity_class>
 	<entity_class name="ScientistMale" extends="survivorParent">
 		<property name="Mesh" value="#survivorsa16?Scientist2" />
@@ -3662,16 +3641,9 @@
 		<property name="SoundLandSoft" value="Player_Male/player1LandSoft" />
 		<property name="SoundLandHard" value="Player_Male/player1LandHard" />
 		<property name="SoundPlayerLandThump" value="PlayerLandThump" />
-		<!-- For dialogs -->
-		<!-- (<xxx>) means optional -->
-		<!-- param1="<skillName>,<skillLevel>" -->
-		<!-- param2="<Command>,(<questName>),(<previousQuestName>)" -->
 		<property name="Dialog1" value="やあ、どうしたんだい？" param1="Barter,0" param2="Quest,quest_PrepareForTheCure" />
 		<property name="Dialog2" value="よし、引き受けるよ！" param1="Barter,0" param2="Quest,quest_theCure1,quest_theCure" />
 		<property name="Dialog3" value="伝えづらいことだけど・・・" param1="Barter,0" param2="Quest,quest_theCure2,quest_theCure1" />
-		<!-- Blocking properties -->
-		<!-- If the dialog fails, it will block all the referenced dialogs FOREVER -->
-		<!-- param1 can be Attack (player) or Flee (from player) or leave it blank -->
 	</entity_class>
 	<entity_class name="ScientistFemale" extends="Girl">
 		<property name="Mesh" value="#survivorsa16?Scientist1" />
@@ -3696,20 +3668,11 @@
 		<property name="SoundLandSoft" value="Player_Male/player1LandSoft" />
 		<property name="SoundLandHard" value="Player_Male/player1LandHard" />
 		<property name="SoundPlayerLandThump" value="PlayerLandThump" />
-		<!-- For dialogs -->
-		<!-- (<xxx>) means optional -->
-		<!-- param1="<skillName>,<skillLevel>" -->
-		<!-- param2="<Command>,(<questName>),(<previousQuestName>)" -->
 		<property name="Dialog1" value="ここで何してるんだい？" param1="Barter,0" param2="Quest,quest_farmer1" />
 		<property name="Dialog2" value="ほら、これを使いな！" param1="Barter,0" param2="Spawn,quest_farmer2,quest_farmer1" />
-		<!-- Extra actions -->
 		<property name="Spawn" value="FarmerQuest" param1="5" param2="15" />
 		<property name="SpawnText" value="完璧だ！…でもゾンビ達が畑を荒らしやがる\n腕に自信が無いんだ…、頼むよ\nもし引き受けてくれれば\n最高の相棒を紹介しよう\n\n引き受けてくれるよね？" />
-		<!-- Blocking properties -->
-		<!-- If the dialog fails, it will block all the referenced dialogs FOREVER -->
-		<!-- param1 can be Attack (player) or Flee (from player) or leave it blank -->
 	</entity_class>
-	<!-- Will only follow for high level barter OR if you finish all nuclear quests -->
 	<entity_class name="Madmole" extends="survivorParent">
 		<property name="Mesh" value="#survivorsa16?Madmole" />
 		<property name="MaxHealth" value="500" />
@@ -3727,10 +3690,6 @@
 		<property name="SoundLandSoft" value="Player_Male/player1LandSoft" />
 		<property name="SoundLandHard" value="Player_Male/player1LandHard" />
 		<property name="SoundPlayerLandThump" value="PlayerLandThump" />
-		<!-- For dialogs -->
-		<!-- (<xxx>) means optional -->
-		<!-- param1="<skillName>,<skillLevel>" -->
-		<!-- param2="<Command>,(<questName>),(<previousQuestName>)" -->
 		<property name="Dialog1" value="俺に従うか、ここで死ぬかだ" param1="Barter, 80" param2="Follow" />
 		<property name="Dialog2" value="原子力発電所のうわさを聞いたんだが" param1="Barter,20" param2="Quest,quest_nuclearPlant1" />
 		<property name="Dialog3" value="見つけたのか？見せてくれ！" param1="Barter,20" param2="Quest,quest_nuclearPlant4,quest_nuclearPlant2" />
@@ -3738,9 +3697,6 @@
 		<property name="Dialog5" value="ついてこい" param1="Barter,10" param2="Follow,quest_nuclearPlant5" />
 		<property name="Dialog6" value="荷物運ぶの手伝ってくれるよな？" param1="Barter, 10" param2="Patrol,quest_nuclearPlant5" />
 		<property name="Dialog7" value="Help me carry some shit\nwill ya?" param1="Barter, 20" param2="Inv,quest_nuclearPlant5" />
-		<!-- Blocking properties -->
-		<!-- If the dialog fails, it will block all the referenced dialogs FOREVER -->
-		<!-- param1 can be Attack (player) or Flee (from player) or leave it blank -->
 		<property name="Dialog1Ex" value="2,3,4,5,6,7" param1="Attack" />
 	</entity_class>
 	<entity_class name="Michone" extends="survivorParent">
@@ -3754,9 +3710,6 @@
 		<property name="Dialog5" value="辺りの安全を確保しろ" param1="Barter, 10" param2="Patrol,quest_repairKatana2" />
 		<property name="Dialog6" value="ついてこい" param1="Barter,10" param2="Follow,quest_repairKatana2" />
 		<property name="Dialog7" value="荷物を持ってくれないか？" param1="Barter, 20" param2="Inv,quest_repairKatana2" />
-		<!-- Blocking properties -->
-		<!-- If the dialog fails, it will block all the referenced dialogs FOREVER -->
-		<!-- param1 can be Attack (player) or Flee (from player) or leave it blank -->
 		<property name="Dialog1Ex" value="2,3,4,5" param1="Attack" />
 	</entity_class>
 	<entity_class name="MilitaryGuy" extends="survivorParent">
@@ -3776,15 +3729,8 @@
 		<property name="SoundLandSoft" value="Player_Male/player1LandSoft" />
 		<property name="SoundLandHard" value="Player_Male/player1LandHard" />
 		<property name="SoundPlayerLandThump" value="PlayerLandThump" />
-		<!-- For dialogs -->
-		<!-- (<xxx>) means optional -->
-		<!-- param1="<skillName>,<skillLevel>" -->
-		<!-- param2="<Command>,(<questName>),(<previousQuestName>)" -->
 		<property name="Dialog1" value="やあ、ひとりかい？" param1="Barter,20" param2="Quest,quest_militaryAid" />
 		<property name="Dialog2" value="見つけたぞ！" param1="Barter,20" param2="Quest,quest_militaryReward,quest_militaryAid" />
-		<!-- Blocking properties -->
-		<!-- If the dialog fails, it will block all the referenced dialogs FOREVER -->
-		<!-- param1 can be Attack (player) or Flee (from player) or leave it blank -->
 		<property name="Dialog1Ex" value="2" param1="Attack" />
 	</entity_class>
 	<entity_class name="Fisherman" extends="survivorParent">
@@ -3804,10 +3750,6 @@
 		<property name="SoundLandSoft" value="Player_Male/player1LandSoft" />
 		<property name="SoundLandHard" value="Player_Male/player1LandHard" />
 		<property name="SoundPlayerLandThump" value="PlayerLandThump" />
-		<!-- For dialogs -->
-		<!-- (<xxx>) means optional -->
-		<!-- param1="<skillName>,<skillLevel>" if player level is lower then the requirement, the NPC will have a probability to refuse the request. -->
-		<!-- param2="<Command>,(<questName>),(<previousQuestName>)" -->
 		<property name="Dialog1" value="俺に従うか、ここで死ぬかだ" param1="Barter, 80" param2="Follow" />
 		<property name="Dialog2" value="釣り好きみたいだけど…、\n俺にも教えてくれないか？" param1="Barter,20" param2="Quest,Q_Fishing" />
 		<property name="Dialog3" value="釣り針はできたよ\n次はどうすればいい？" param1="Barter,20" param2="Quest,Q_Fishing2,Q_Fishing" />
@@ -3816,14 +3758,10 @@
 		<property name="Dialog6" value="よしよし、エサも付けた\n釣りの仕方を教えてくれよ!!" param1="Barter,20" param2="Quest,Q_Fishing5,Q_Fishing4" />
 		<property name="Dialog7" value="ついてきてくれないか？" param1="Barter,50" param2="Follow,Q_Fishing5" />
 		<property name="Dialog8" value="辺りの安全を確保しろ" param1="Barter, 80" param2="Patrol,Q_Fishing5" />
-		<!-- Blocking properties -->
-		<!-- If the dialog fails, it will block all the referenced dialogs FOREVER -->
-		<!-- param1 can be Attack (player) or Flee (from player) or leave it blank -->
 		<property name="Dialog1Ex" value="2,3,4,5,6,7,8" param1="Attack" />
 		<property name="Dialog2Ex" value="2" param1="" />
 	</entity_class>
 	<entity_class name="Donkey">
-		<!-- Mesh and class properties -->
 		<property name="Mesh" value="#Donkey?Donkey" />
 		<property name="ModelType" value="Standard" />
 		<property name="Prefab" value="NPC" />
@@ -3835,26 +3773,22 @@
 		<property name="IsEntityAnimal" value="true" />
 		<property name="PhysicsBody" value="Stag" />
 		<property name="HandItem" value="handGirl" />
-		<!-- AI properties -->
 		<property name="AITask-1" value="Swim" />
 		<property name="AITask-2" value="RunawayWhenHurt" />
 		<property name="AITask-3" value="Territorial" param1="10" />
-		<!-- <property name="AITask-4" value="RunawayFromEntity" param1="EntityZombie" /> -->
 		<property name="AITask-4" value="Wander" />
-		<!-- give up time -->
 		<property name="AITask-5" value="ApproachSpot" />
 		<property name="AITarget-1" value="SetAsTargetIfHurt" />
 		<property name="AITarget-2" value="BlockingTargetTask" />
 		<property name="CanClimbLadders" value="true" />
-		<!-- General entity properties -->
 		<property name="MaxHealth" value="500" />
-		<property name="MaxViewAngle" value="180" />
+		<property name="MaxTurnSpeed" value="230" />
+		<property name="MaxViewAngle" value="270" />
 		<property name="WanderSpeed" value="0.25" />
 		<property name="PanicSpeed" value="1.7" />
 		<property name="ApproachSpeed" value="1.7" />
 		<property name="NightWanderSpeed" value="0.25" />
 		<property name="NightApproachSpeed" value="1.7" />
-		<!-- This decides on the particle effect played on hit -->
 		<property name="SurfaceCategory" value="organic" />
 		<property name="ParticleOnDeath" value="blood_death" />
 		<property name="SoundHurt" value="DonkeyHurt" />
@@ -3866,51 +3800,30 @@
 		<property name="SoundAlert" value="DonkeyAlert" />
 		<property name="SoundAttack" value="DonkeyAttack" />
 		<property name="TimeStayAfterDeath" value="300" />
-		<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 		<property name="IsEnemyEntity" value="false" />
 		<property name="ExperienceGain" value="0" />
-		<!-- <property name="CorpseBlock" value="GoreBlock1Prefab" />
-		<property name="CorpseBlockChance" value="1" /> -->
 		<property name="DeadBodyHitPoints" value="150" />
 		<property name="IsMale" value="false" />
-		<!-- FOOD CONFIGURATION - <amount of "hp" to restore>,foodItem1,foodItem2,...,foodItemn -->
-		<!-- Lower type of food - survivor looks for this if he is not hurt -->
 		<property name="FoodLow" value="1,salad,wheat" />
-		<!-- Medium type of food - survivor looks for this if he is slighlty hurt -->
 		<property name="FoodMedium" value="2,carrot" />
-		<!-- Higher type of food - survivor looks for this if he is badly hurt -->
 		<property name="FoodHigh" value="5,apple" />
-		<!-- Food containers where survivors look for something to eat - NEEDS to be secureLoot -->
 		<property name="FoodContainer" value="cntFridgeTopE" />
-		<!-- Food Check interval in seconds -->
 		<property name="CheckInterval" value="600" />
-		<!-- Food check area in blocks -->
 		<property name="CheckArea" value="10" />
-		<!-- Cannot stack because it can be picked up -->
 		<property name="Stacknumber" value="1" />
-		<!-- if you define this value, the survivor will stay within that area -->
-		<!-- this value defaults to 10 -->
 		<property name="PatrolArea" value="15" />
 		<property name="StayArea" value="5" />
 		<property name="debug" value="false" />
 		<property name="MapIcon" value="ui_game_symbol_minibike" />
-		<!-- to allow interaction and/or put stuff on its inv? -->
 		<property name="LootListAlive" value="10" />
 		<property name="LootListAliveMP" value="10" />
-		<!-- For dialogs -->
-		<!-- (<xxx>) means optional -->
-		<!-- param1="<skillName>,<skillLevel>" -->
-		<!-- param2="<Command>,(<questName>),(<previousQuestName>)" -->
 		<property name="Dialog1" value="ほら、いい子だからこっちに来な！" param1="Husbandry,5" param2="Follow" />
 		<property name="Dialog2" value="ここで荷物を守っててくれ！" param1="Husbandry,5" param2="Patrol" />
 		<property name="Dialog3" value="荷物持ってくれよ" param1="Husbandry, 10" param2="Inv" />
 		<property name="Dialog4" value="Magic pocket Donkey" param1="Husbandry, 5" param2="PickUp" />
-		<!-- Plays random sounds -->
 		<property name="RandomSounds" value="false" />
-		<!-- sleeps -->
 		<property name="DoSleep" value="false" />
 		<property name="entityItem" value="donkeyItem" />
-		<!-- For harvesting -->
 		<drop event="Harvest" name="rawMeat" count="3" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
@@ -3919,10 +3832,8 @@
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="4" prob=".5" />
 		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="1" prob=".4" />
 		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="4" />
-		<!-- Average harvest results:  stag  5 meat  9 hide  4.5 fat,  pig  6m  7h  6f,  bear 7m  14h  7f -->
 	</entity_class>
 	<entity_class name="Santa">
-		<!-- Mesh and class properties -->
 		<property name="Class" value="EntitySurvivorMod, Mods" />
 		<property name="Faction" value="animals" />
 		<property name="EntityType" value="Player" />
@@ -3930,7 +3841,6 @@
 		<property name="AvatarController" value="AnimationSDX, Mods" />
 		<property name="PanicSpeed" value="0.6" />
 		<property name="RootMotion" value="false" />
-		<!-- Baseline Speed is way too slow, so we need to bump it up a notch or 5 -->
 		<property name="WanderSpeed" value="0.8" />
 		<property name="ApproachSpeed" value="0.8" />
 		<property name="NightWanderSpeed" value="0.8" />
@@ -3955,7 +3865,6 @@
 		<property name="PhysicsBody" value="zombieStandard" />
 		<property name="IsEntityAnimal" value="true" />
 		<property name="HandItem" value="handMichone" />
-		<!-- AI properties -->
 		<property name="AITask-1" value="Swim" />
 		<property name="AITask-2" value="Territorial" param1="5" />
 		<property name="AITask-3" value="ApproachSpot" />
@@ -3963,15 +3872,13 @@
 		<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityZombie" />
 		<property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityNPC" />
 		<property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityEnemyAnimal" />
-		<!-- give up time -->
 		<property name="AITask-5" value="ApproachSpot" />
 		<property name="AITarget-1" value="SetAsTargetIfHurt" />
 		<property name="AITarget-2" value="BlockingTargetTask" />
 		<property name="CanClimbLadders" value="true" />
-		<!-- General entity properties -->
 		<property name="MaxHealth" value="800" />
-		<property name="MaxViewAngle" value="220" />
-		<!-- This decides on the particle effect played on hit -->
+		<property name="MaxTurnSpeed" value="230" />
+		<property name="MaxViewAngle" value="270" />
 		<property name="SurfaceCategory" value="organic" />
 		<property name="ParticleOnDeath" value="blood_death" />
 		<property name="SoundHurt" value="Player_Male/player1painlg" />
@@ -3986,79 +3893,43 @@
 		<property name="SoundLandHard" value="Player_Male/player1LandHard" />
 		<property name="SoundPlayerLandThump" value="PlayerLandThump" />
 		<property name="TimeStayAfterDeath" value="300" />
-		<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 		<property name="IsEnemyEntity" value="false" />
 		<property name="ExperienceGain" value="0" />
-		<!-- <property name="CorpseBlock" value="GoreBlock1Prefab" />
-		<property name="CorpseBlockChance" value="1" /> -->
 		<property name="DeadBodyHitPoints" value="150" />
 		<property name="IsMale" value="true" />
-		<!-- FOOD CONFIGURATION - <amount of "hp" to restore>,foodItem1,foodItem2,...,foodItemn -->
-		<!-- Lower type of food - survivor looks for this if he is not hurt -->
 		<property name="FoodLow" value="1,salad,wheat" />
-		<!-- Medium type of food - survivor looks for this if he is slighlty hurt -->
 		<property name="FoodMedium" value="2,carrot" />
-		<!-- Higher type of food - survivor looks for this if he is badly hurt -->
 		<property name="FoodHigh" value="5,apple" />
-		<!-- Food containers where survivors look for something to eat - NEEDS to be secureLoot -->
 		<property name="FoodContainer" value="cntFridgeTopE" />
-		<!-- Food Check interval in seconds -->
 		<property name="CheckInterval" value="600" />
-		<!-- Food check area in blocks -->
 		<property name="CheckArea" value="10" />
-		<!-- Cannot stack because it can be picked up -->
 		<property name="Stacknumber" value="1" />
-		<!-- if you define this value, the survivor will stay within that area -->
-		<!-- this value defaults to 10 -->
 		<property name="PatrolArea" value="15" />
 		<property name="StayArea" value="5" />
 		<property name="debug" value="false" />
 		<property name="MapIcon" value="ui_game_symbol_minibike" />
-		<!-- to allow interaction and/or put stuff on its inv? -->
 		<property name="LootListAlive" value="10" />
 		<property name="LootListAliveMP" value="10" />
 		<property name="RealName" value="Santa Claus" />
-		<!-- For events -->
 		<property name="rescueEvent" value="true" />
-		<!-- Is rescue event -->
 		<property name="rescueEventTrigger" value="20" />
-		<!-- First player in area will trigger event -->
 		<property name="rescueEventWaves" value="4" />
-		<!-- Number of waves -->
-		<!-- Wavex = GroupName,NumberToSpawn,NumberSpecial -->
 		<property name="rescueWave1" value="SantaEvent1,8,2" />
 		<property name="rescueWave2" value="SantaEvent2,10,4" />
 		<property name="rescueWave3" value="SantaEvent3,6,3" />
 		<property name="rescueWave4" value="SantaEvent4,4,3" />
-		<!-- These will always spawn randomly per wave -->
 		<property name="rescueWaveSpecial" value="SantaEventSpecial" />
-		<!-- Always spawns at the end of the event -->
 		<property name="rescueWaveBoss" value="SantaEventBoss, 1" />
-		<!-- This entity will despawn 60 seconds after an event ends -->
-		<!-- If no player is around, it will reset the event -->
 		<property name="rescueDespawnTime" value="60" />
 		<property name="helpSound" value="helpSound" />
 		<property name="waveSound" value="waveSound" />
 		<property name="thanksSound" value="thanksSound" />
 		<property name="specialSound" value="santaSound" />
-		<!-- For dialogs -->
-		<!-- (<xxx>) means optional -->
-		<!-- param1="<skillName>,<skillLevel>" -->
-		<!-- param2="<Command>,(<questName>),(<previousQuestName>)" -->
 		<property name="Dialog1" value="どうしたの？\n・・・もしかしてあなたはサンタ？" param1="Barter,1" param2="Quest,quest_Santa" />
-		<!-- Plays random sounds -->
 		<property name="RandomSounds" value="false" />
-		<!-- sleeps -->
 		<property name="DoSleep" value="false" />
 	</entity_class>
-	<!-- HUSBANDRY -->
-	<!-- Wandertime IN SECONDS is how much time the animal will idle wandering, after an action -->
-	<!-- Matingtime IN TICKS is the interval between mating tries for the males -->
-	<!-- PregnancyTime IN TICKS is the time a female will be pregnant after a successful mating -->
-	<!-- Adolesence IN TICKS is how much time an offspring will take to mature -->
-	<!-- 1 day = 24000 ticks (for 60min day) -->
 	<entity_class name="animalMalePig">
-		<!-- Mesh and class properties -->
 		<property name="Mesh" value="Animals/Pig/PIG" />
 		<property name="ModelType" value="Standard" />
 		<property name="Prefab" value="NPC" />
@@ -4071,61 +3942,44 @@
 		<property name="IsEntityAnimal" value="true" />
 		<property name="PhysicsBody" value="Stag" />
 		<property name="Class" value="EntityAnimalTameMorte, Mods" />
-		<!-- AI properties -->
 		<property name="AITask-1" value="Wander" />
 		<property name="AITask-2" value="RunawayWhenHurt" />
 		<property name="AITask-4" value="RunawayFromEntity" param1="EntityZombie" />
 		<property name="AITask-4" value="RunawayFromEntity" param1="EntityAnimalBear" />
 		<property name="AITask-5" value="Swim" />
-		<!-- <property name="AITask-5" value="RunawayFromEntity" param1="EntityPlayer" />/ -->
 		<property name="CanClimbLadders" value="false" />
-		<!-- General entity properties -->
 		<property name="MaxHealth" value="50" />
 		<property name="MaxViewAngle" value="180" />
 		<property name="WanderSpeed" value="0.3" />
-		<!-- This decides on the particle effect played on hit -->
 		<property name="SurfaceCategory" value="organic" />
 		<property name="ParticleOnDeath" value="blood_death" />
 		<property name="SoundHurt" value="Animals/pigpain" />
 		<property name="SoundDeath" value="Animals/pigdeath" />
-		<!-- custom properties -->
 		<property name="isMale" value="true" />
 		<property name="entityMale" value="animalMalePig" />
 		<property name="entityFemale" value="animalFemalePig" />
 		<property name="entityBaby" value="animalBabyPig" />
 		<property name="itemTamed" value="pigMaleItem" />
 		<property name="foodBlock" value="trough" />
-		<!-- the block they look for when hungry -->
 		<property name="foodItem" value="AnimalFeed" />
-		<!-- the item they eat -->
 		<property name="harvestItem" value="bucketWood" />
-		<!-- the item used to harvest the animal -->
 		<property name="tameItem" value="whip" />
-		<!-- the item used to tame the animal -->
 		<property name="lootItem" value="turd" />
-		<!-- the item harvested -->
 		<property name="tameSkill" value="Husbandry" />
-		<!-- the skill needed to tame -->
 		<property name="harvestSkill" value="Husbandry" />
-		<!-- the skill needed to tame -->
-		<!-- 24000 = 1 in-game day -->
 		<property name="Adolesence" value="24000" />
-		<property name="PregnancyTime" value="24000" />
+		<property name="PregnancyTime" value="12000" />
 		<property name="WanderTime" value="180" />
-		<property name="MatingTime" value="2400" />
+		<property name="MatingTime" value="1500" />
 		<property name="MaxAnimalsInArea" value="15" />
 		<property name="MaxAnimalsAreaCheck" value="40" />
 		<property name="MaxMatingAreaCheck" value="10" />
-		<!-- custom properties -->
 		<property name="TimeStayAfterDeath" value="180" />
-		<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 		<property name="IsEnemyEntity" value="false" />
-		<!-- For harvesting -->
 		<property name="DeadBodyHitPoints" value="200" />
 		<property name="PanicSpeed" value="1.2" />
 		<property name="PhysicsBody" value="pig" />
 		<property name="ExperienceGain" value="500" />
-		<!-- For harvesting -->
 		<drop event="Harvest" name="rawMeat" count="2" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
@@ -4142,10 +3996,8 @@
 	</entity_class>
 	<entity_class name="animalFemalePig" extends="animalMalePig">
 		<property name="MeshMaterial" value="#pig2?pig2" />
-		<!-- custom properties -->
 		<property name="isMale" value="false" />
 		<property name="itemTamed" value="pigFemaleItem" />
-		<!-- For harvesting -->
 		<drop event="Harvest" name="rawMeat" count="2" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
@@ -4173,15 +4025,13 @@
 		<property name="SoundHurt" value="cowMoo" />
 		<property name="SoundDeath" value="cowHurt" />
 		<property name="SoundRandom" value="cowMoo" />
-		<!-- custom properties -->
 		<property name="isMale" value="false" />
 		<property name="entityMale" value="animalBull" />
 		<property name="entityFemale" value="animalCow" />
 		<property name="entityBaby" value="animalBabyCow" />
 		<property name="itemTamed" value="cowItem" />
-		<!-- the item used to tame the animal -->
 		<property name="lootItem" value="milk" />
-		<property name="MatingTime" value="4000" />
+		<property name="MatingTime" value="2000" />
 		<drop event="Harvest" name="milk" tool_category="Butcher" count="1" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="4" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="4" />
@@ -4189,7 +4039,6 @@
 		<drop event="Destroy" name="femur" tool_category="Butcher" count="4" />
 	</entity_class>
 	<entity_class name="animalBull" extends="animalCow">
-		<!-- <property name="MeshMaterial" value="#husbandry?Bull1" /> -->
 		<property name="Mesh" value="#Animals?Bull" />
 		<property name="isMale" value="true" />
 		<property name="itemTamed" value="bullItem" />
@@ -4201,9 +4050,7 @@
 	</entity_class>
 	<entity_class name="animalBabyCow" extends="animalCow">
 		<property name="MeshScale" value="0.5,0.5" />
-		<!-- on SP it will slowly grow, but on MP it will go from this size to mature size -->
 		<property name="isBaby" value="true" />
-		<!-- baby animals cannot be "captured" -->
 		<property name="lootItem" value="turd" />
 		<property name="DeadBodyHitPoints" value="100" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" />
@@ -4216,27 +4063,21 @@
 		<property name="SoundHurt" value="sheepMee" />
 		<property name="SoundDeath" value="sheepHurt" />
 		<property name="SoundRandom" value="sheepMee" />
-		<!-- custom properties -->
 		<property name="isMale" value="false" />
 		<property name="entityMale" value="animalRam" />
 		<property name="entityFemale" value="animalSheep" />
 		<property name="entityBaby" value="animalBabySheep" />
 		<property name="itemTamed" value="sheepItem" />
 		<property name="harvestItem" value="scissor" />
-		<!-- the item used to harvest the animal -->
 		<property name="tameItem" value="whip" />
-		<!-- the item used to tame the animal -->
 		<property name="lootItem" value="cloth" />
-		<!-- the item harvested -->
-		<!-- 24000 = 1 in-game day -->
-		<property name="MatingTime" value="3500" />
+		<property name="MatingTime" value="1000" />
 		<drop event="Harvest" name="cloth" tool_category="Butcher" count="4" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="4" />
 		<drop event="Destroy" name="animalFat" tool_category="Butcher" count="4" />
 		<drop event="Destroy" name="femur" tool_category="Butcher" count="4" />
 	</entity_class>
 	<entity_class name="animalRam" extends="animalSheep">
-		<!-- <property name="MeshMaterial" value="#husbandry?Bull1" /> -->
 		<property name="Mesh" value="#sheep?SHEEPMale" />
 		<property name="isMale" value="true" />
 		<property name="itemTamed" value="ramItem" />
@@ -4252,20 +4093,7 @@
 		<drop event="Harvest" name="cloth" tool_category="Butcher" count="1" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" />
 	</entity_class>
-	<!-- HUSBANDRY -->
-	<!-- DOGSDX -->
-	<!-- Wandertime IN SECONDS is how much time the animal will idle wandering, after an action -->
-	<!-- Matingtime IN TICKS is the interval between mating tries for the males -->
-	<!-- PregnancyTime IN TICKS is the time a female will be pregnant after a successful mating -->
-	<!-- Adolesence IN TICKS is how much time an offspring will take to mature -->
-	<!-- 1 day = 24000 ticks (for 60min day) -->
 	<entity_class name="dogMale">
-		<!-- <property name="EntityType" value="Zombie" />	
-			<property name="Mesh" value="Zombies/zombieDogPrefab" />
-			<property name="MeshMaterial" value="#mydog2?myDog"/>
-			<property name="MeshMaterial1" value="#mydog2?myDog 2"/>
-			<property name="ModelType" value="Standard" /> 
-			<property name="AvatarController" value="AvatarZombieDogController" /> -->
 		<property name="Mesh" value="#Dog?DogSh" />
 		<property name="ModelType" value="Standard" />
 		<property name="AvatarController" value="GameObjectAnimalAnimationSDX, Mods" />
@@ -4275,7 +4103,6 @@
 		<property name="IsEntityAnimal" value="true" />
 		<property name="SurfaceCategory" value="organic" />
 		<property name="AttackTimeoutDay" value="1.5" />
-		<!-- in s -->
 		<property name="AttackTimeoutNight" value="1.1" />
 		<property name="Prefab" value="Dog" />
 		<property name="WalkType" value="0" />
@@ -4306,55 +4133,39 @@
 		<property name="SoundDrink" value="DogDrink" />
 		<property name="SoundEat" value="DogEat" />
 		<property name="ExperienceGain" value="300" />
-		<!-- AI properties -->
 		<property name="AITask-1" value="Swim" />
 		<property name="AITask-2" value="Wander" />
 		<property name="AITask-3" value="RunawayWhenHurt" />
-		<!-- <property name="AITask-5" value="RunawayFromEntity" param1="EntityPlayer" />/ -->
 		<property name="CanClimbLadders" value="false" />
-		<property name="MaxViewAngle" value="180" />
-		<!-- custom properties -->
+		<property name="MaxTurnSpeed" value="230" />
+		<property name="MaxViewAngle" value="270" />
 		<property name="isMale" value="true" />
 		<property name="entityMale" value="dogMale" />
 		<property name="entityFemale" value="dogFemale" />
 		<property name="entityBaby" value="dogPup" />
 		<property name="itemTamed" value="dogMaleItem" />
 		<property name="foodBlock" value="DogTrough" />
-		<!-- the block they look for when hungry -->
 		<property name="foodItem" value="DogCookie" />
-		<!-- the item they eat -->
-		<!-- <property name="emptyFoodItem" value="DogCookie" /> -->
-		<!-- the empty item they leave if you want some -->
-		<property name="waterItem" value="canMurkyWater" />
-		<!-- the item they dring -->
-		<property name="emptyWaterItem" value="canEmpty" />
-		<!-- the empty item they leave if you want some -->
+		<property name="waterItem" value="" />
+		<property name="emptyWaterItem" value="" />
 		<property name="tameItem" value="DogStaff" />
-		<!-- the item used to tame the animal -->
 		<property name="tameSkill" value="Dogtaming" />
-		<!-- the skill needed to tame -->
 		<property name="harvestSkill" value="Dogtaming" />
-		<!-- the skill needed to tame -->
-		<!-- 24000 = 1 in-game day -->
 		<property name="Adolesence" value="24000" />
-		<property name="PregnancyTime" value="24000" />
+		<property name="PregnancyTime" value="12000" />
 		<property name="WanderTime" value="250" />
-		<property name="MatingTime" value="4000" />
+		<property name="MatingTime" value="2000" />
 		<property name="MaxAnimalsInArea" value="15" />
 		<property name="MaxAnimalsAreaCheck" value="40" />
 		<property name="MaxMatingAreaCheck" value="20" />
-		<!-- custom properties -->
 		<property name="TimeStayAfterDeath" value="180" />
-		<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 		<property name="IsEnemyEntity" value="false" />
 		<property name="ExperienceGain" value="150" />
-		<!-- For harvesting -->
 		<property name="PhysicsBody" value="zombieDog" />
 		<property name="CorpseBlock" value="animalGore" />
 		<property name="CorpseBlockChance" value="0" />
 		<property name="ParticleOnDestroy" value="blood_death" />
 		<property name="TimeStayAfterDeath" value="60" />
-		<!-- For harvesting -->
 		<property name="DeadBodyHitPoints" value="200" />
 		<drop event="Harvest" name="rottingFlesh" count="2" />
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="4" />
@@ -4367,10 +4178,8 @@
 		<property name="ModelType" value="Standard" />
 		<property name="AvatarController" value="GameObjectAnimalAnimationSDX, Mods" />
 		<property name="MeshScale" value="1,1" />
-		<!-- custom properties -->
 		<property name="isMale" value="false" />
 		<property name="itemTamed" value="dogFemaleItem" />
-		<!-- For harvesting -->
 		<drop event="Harvest" name="rawMeat" count="2" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
@@ -4387,7 +4196,6 @@
 		<property name="ModelType" value="Standard" />
 		<property name="AvatarController" value="GameObjectAnimalAnimationSDX, Mods" />
 		<property name="MeshScale" value="0.4,0.6" />
-		<!-- custom properties -->
 		<property name="isBaby" value="true" />
 		<property name="SoundRandom" value="PupRoam" />
 		<property name="SoundAlert" value="PupGrowl" />
@@ -4403,12 +4211,10 @@
 		<property name="SoundHowl" value="DogHowl" />
 		<property name="SoundDrink" value="DogDrink" />
 		<property name="SoundEat" value="DogEat" />
-		<!-- For harvesting -->
 		<drop event="Harvest" name="rawMeat" count="1" />
 		<drop event="Destroy" name="femur" tool_category="Butcher" count="1" />
 	</entity_class>
 	<entity_class name="zombieBearPet">
-		<!-- Mesh and class properties -->
 		<property name="Mesh" value="Animals/Bear/animalBearStandardRagdoll" />
 		<property name="ModelType" value="Standard" />
 		<property name="MeshScale" value="0.8,0.8" />
@@ -4421,15 +4227,14 @@
 		<property name="IsEntityAnimal" value="true" />
 		<property name="PhysicsBody" value="bear" />
 		<property name="HandItem" value="handZombieBearPet" />
-		<!-- AI properties -->
 		<property name="AITask-1" value="Swim" />
 		<property name="AITask-2" value="Wander" />
 		<property name="AITarget-1" value="SetAsTargetIfHurt" />
 		<property name="AITarget-2" value="BlockingTargetTask" />
 		<property name="CanClimbLadders" value="false" />
-		<!-- General entity properties -->
 		<property name="MaxHealth" value="1500" />
-		<property name="MaxViewAngle" value="180" />
+		<property name="MaxTurnSpeed" value="230" />
+		<property name="MaxViewAngle" value="270" />
 		<property name="WanderSpeed" value="0.25" />
 		<property name="PanicSpeed" value="2.0" />
 		<property name="ApproachSpeed" value="1.3" />
@@ -4437,7 +4242,6 @@
 		<property name="NightApproachSpeed" value="1.4" />
 		<property name="SoundRandomTime" value="45.0" />
 		<property name="SoundAlertTime" value="25.0" />
-		<!-- This decides on the particle effect played on hit -->
 		<property name="SurfaceCategory" value="organic" />
 		<property name="ParticleOnDeath" value="blood_death" />
 		<property name="SoundHurt" value="Animals/Bear/bearpain" />
@@ -4457,34 +4261,22 @@
 		<property name="SoundEat" value="" />
 		<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep" />
 		<property name="TimeStayAfterDeath" value="300" />
-		<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 		<property name="IsEnemyEntity" value="true" />
 		<property name="ExperienceGain" value="1500" />
 		<property name="CorpseBlock" value="GoreBlock1Prefab" />
 		<property name="CorpseBlockChance" value="0" />
-		<!-- custom properties -->
 		<property name="isMale" value="true" />
 		<property name="entityMale" value="zombieBearPet" />
 		<property name="entityFemale" value="" />
 		<property name="entityBaby" value="" />
 		<property name="itemTamed" value="zombieBearItem" />
 		<property name="foodBlock" value="" />
-		<!-- the block they look for when hungry -->
 		<property name="foodItem" value="" />
-		<!-- the item they eat -->
-		<!-- <property name="emptyFoodItem" value="DogCookie" /> -->
-		<!-- the empty item they leave if you want some -->
 		<property name="waterItem" value="" />
-		<!-- the item they dring -->
 		<property name="emptyWaterItem" value="" />
-		<!-- the empty item they leave if you want some -->
 		<property name="tameItem" value="DogStaff" />
-		<!-- the item used to tame the animal -->
 		<property name="tameSkill" value="Dogtaming" />
-		<!-- the skill needed to tame -->
 		<property name="harvestSkill" value="Dogtaming" />
-		<!-- the skill needed to tame -->
-		<!-- 24000 = 1 in-game day -->
 		<property name="Adolesence" value="24000" />
 		<property name="PregnancyTime" value="24000" />
 		<property name="WanderTime" value="250" />
@@ -4492,8 +4284,6 @@
 		<property name="MaxAnimalsInArea" value="15" />
 		<property name="MaxAnimalsAreaCheck" value="40" />
 		<property name="MaxMatingAreaCheck" value="20" />
-		<!-- custom properties -->
-		<!-- stat intervals -->
 		<property name="Loyalty" value="8,15" />
 		<property name="Inteligence" value="5,15" />
 		<property name="Stamina" value="15,20" />
@@ -4504,8 +4294,6 @@
 		<property name="militaryDog" value="10,20" />
 		<property name="hunterDog" value="0,10" />
 		<property name="breederDog" value="0,0" />
-		<!-- stat intervals -->
-		<!-- For harvesting -->
 		<property name="DeadBodyHitPoints" value="250" />
 		<drop event="Harvest" name="rottingFlesh" count="5" />
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="1" prob=".5" />
@@ -4521,7 +4309,6 @@
 		<drop event="Destroy" name="femur" tool_category="Butcher" count="2" />
 	</entity_class>
 	<entity_class name="cougarPet">
-		<!-- Mesh and class properties -->
 		<property name="Mesh" value="#Cougar?Cougar" />
 		<property name="ModelType" value="Standard" />
 		<property name="Prefab" value="NPC" />
@@ -4533,16 +4320,14 @@
 		<property name="IsEntityAnimal" value="true" />
 		<property name="PhysicsBody" value="Stag" />
 		<property name="HandItem" value="handCougarPet" />
-		<!-- AI properties -->
-		<!-- AI properties -->
 		<property name="AITask-1" value="Swim" />
 		<property name="AITask-2" value="Wander" />
 		<property name="AITarget-1" value="SetAsTargetIfHurt" />
 		<property name="AITarget-2" value="BlockingTargetTask" />
 		<property name="CanClimbLadders" value="false" />
-		<!-- General entity properties -->
 		<property name="MaxHealth" value="300" />
-		<property name="MaxViewAngle" value="180" />
+		<property name="MaxTurnSpeed" value="230" />
+		<property name="MaxViewAngle" value="270" />
 		<property name="WanderSpeed" value="0.25" />
 		<property name="PanicSpeed" value="2.0" />
 		<property name="ApproachSpeed" value="2.0" />
@@ -4550,7 +4335,6 @@
 		<property name="NightApproachSpeed" value="2.0" />
 		<property name="SoundRandomTime" value="45.0" />
 		<property name="SoundAlertTime" value="25.0" />
-		<!-- This decides on the particle effect played on hit -->
 		<property name="SurfaceCategory" value="organic" />
 		<property name="ParticleOnDeath" value="blood_death" />
 		<property name="SoundHurt" value="cougarPetHurt" />
@@ -4568,36 +4352,23 @@
 		<property name="SoundDrink" value="" />
 		<property name="SoundEat" value="" />
 		<property name="TimeStayAfterDeath" value="300" />
-		<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 		<property name="IsEnemyEntity" value="true" />
 		<property name="ExperienceGain" value="500" />
 		<property name="CorpseBlock" value="animalGore" />
 		<property name="CorpseBlockChance" value="1" />
-		<!-- custom properties -->
 		<property name="isMale" value="true" />
 		<property name="entityMale" value="cougarPet" />
 		<property name="entityFemale" value="" />
 		<property name="entityBaby" value="" />
 		<property name="itemTamed" value="cougarItem" />
 		<property name="foodBlock" value="" />
-		<!-- the block they look for when hungry -->
 		<property name="foodItem" value="" />
-		<!-- the item they eat -->
-		<!-- <property name="emptyFoodItem" value="DogCookie" /> -->
-		<!-- the empty item they leave if you want some -->
 		<property name="waterItem" value="" />
-		<!-- the item they dring -->
 		<property name="emptyWaterItem" value="" />
-		<!-- the empty item they leave if you want some -->
 		<property name="tameItem" value="DogStaff" />
-		<!-- the item used to tame the animal -->
 		<property name="tameSkill" value="Dogtaming" />
-		<!-- the skill needed to tame -->
 		<property name="harvestSkill" value="Dogtaming" />
-		<!-- the skill needed to tame -->
 		<property name="naturalEnemy" value="Rat" />
-		<!-- pets will attack natural enemies on sight -->
-		<!-- 24000 = 1 in-game day -->
 		<property name="Adolesence" value="24000" />
 		<property name="PregnancyTime" value="24000" />
 		<property name="WanderTime" value="250" />
@@ -4605,8 +4376,6 @@
 		<property name="MaxAnimalsInArea" value="15" />
 		<property name="MaxAnimalsAreaCheck" value="40" />
 		<property name="MaxMatingAreaCheck" value="20" />
-		<!-- custom properties -->
-		<!-- stat intervals -->
 		<property name="Loyalty" value="10,20" />
 		<property name="Inteligence" value="10,15" />
 		<property name="Stamina" value="10,15" />
@@ -4617,9 +4386,7 @@
 		<property name="militaryDog" value="0,10" />
 		<property name="hunterDog" value="10,20" />
 		<property name="breederDog" value="0,0" />
-		<!-- stat intervals -->
 		<property name="DeadBodyHitPoints" value="250" />
-		<!-- For harvesting -->
 		<drop event="Harvest" name="rawMeat" count="3" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
@@ -4628,14 +4395,12 @@
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="4" prob=".5" />
 		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="1" prob=".4" />
 		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="4" />
-		<!-- Average harvest results:  stag  5 meat  9 hide  4.5 fat,  pig  6m  7h  6f,  bear 7m  14h  7f -->
 	</entity_class>
 	<entity_class name="cougarAlbinoPet" extends="cougarPet">
 		<property name="Mesh" value="#Cougar?CougarAlbino" />
 		<property name="ModelType" value="Standard" />
 		<property name="MeshScale" value="1.1,1.1" />
 		<property name="HandItem" value="handAlbinoCougarPet" />
-		<!-- custom properties -->
 		<property name="isMale" value="true" />
 		<property name="entityMale" value="cougarAlbinoPet" />
 		<property name="entityFemale" value="" />
@@ -4643,8 +4408,6 @@
 		<property name="itemTamed" value="cougarAlbinoItem" />
 		<property name="MaxHealth" value="550" />
 		<property name="naturalEnemy" value="Rat" />
-		<!-- pets will attack natural enemies on sight -->
-		<!-- stat intervals -->
 		<property name="Loyalty" value="15,20" />
 		<property name="Inteligence" value="10,20" />
 		<property name="Stamina" value="13,16" />
@@ -4655,7 +4418,6 @@
 		<property name="militaryDog" value="5,13" />
 		<property name="hunterDog" value="15,20" />
 		<property name="breederDog" value="0,0" />
-		<!-- stat intervals -->
 	</entity_class>
 	<entity_class name="dogAlbinoPet">
 		<property name="Mesh" value="#Dog?DogAlbino" />
@@ -4668,7 +4430,6 @@
 		<property name="IsEntityAnimal" value="true" />
 		<property name="SurfaceCategory" value="organic" />
 		<property name="AttackTimeoutDay" value="1.5" />
-		<!-- in s -->
 		<property name="AttackTimeoutNight" value="1.1" />
 		<property name="Prefab" value="Dog" />
 		<property name="WalkType" value="0" />
@@ -4699,38 +4460,26 @@
 		<property name="SoundDrink" value="DogDrink" />
 		<property name="SoundEat" value="DogEat" />
 		<property name="ExperienceGain" value="300" />
-		<!-- AI properties -->
 		<property name="AITask-1" value="Swim" />
 		<property name="AITask-2" value="Wander" />
 		<property name="AITarget-1" value="SetAsTargetIfHurt" />
 		<property name="AITarget-2" value="BlockingTargetTask" />
 		<property name="CanClimbLadders" value="false" />
-		<!-- <property name="AITask-5" value="RunawayFromEntity" param1="EntityPlayer" />/ -->
 		<property name="CanClimbLadders" value="false" />
-		<property name="MaxViewAngle" value="180" />
-		<!-- custom properties -->
+		<property name="MaxTurnSpeed" value="230" />
+		<property name="MaxViewAngle" value="270" />
 		<property name="isMale" value="true" />
 		<property name="entityMale" value="dogAlbinoPet" />
 		<property name="entityFemale" value="" />
 		<property name="entityBaby" value="" />
 		<property name="itemTamed" value="dogAlbinoPetItem" />
 		<property name="foodBlock" value="" />
-		<!-- the block they look for when hungry -->
 		<property name="foodItem" value="" />
-		<!-- the item they eat -->
-		<!-- <property name="emptyFoodItem" value="DogCookie" /> -->
-		<!-- the empty item they leave if you want some -->
 		<property name="waterItem" value="" />
-		<!-- the item they dring -->
 		<property name="emptyWaterItem" value="" />
-		<!-- the empty item they leave if you want some -->
 		<property name="tameItem" value="DogStaff" />
-		<!-- the item used to tame the animal -->
 		<property name="tameSkill" value="Dogtaming" />
-		<!-- the skill needed to tame -->
 		<property name="harvestSkill" value="Dogtaming" />
-		<!-- the skill needed to tame -->
-		<!-- 24000 = 1 in-game day -->
 		<property name="Adolesence" value="24000" />
 		<property name="PregnancyTime" value="24000" />
 		<property name="WanderTime" value="250" />
@@ -4738,7 +4487,6 @@
 		<property name="MaxAnimalsInArea" value="15" />
 		<property name="MaxAnimalsAreaCheck" value="40" />
 		<property name="MaxMatingAreaCheck" value="20" />
-		<!-- stat intervals -->
 		<property name="Loyalty" value="15,20" />
 		<property name="Inteligence" value="15,20" />
 		<property name="Stamina" value="13,17" />
@@ -4749,19 +4497,14 @@
 		<property name="militaryDog" value="5,13" />
 		<property name="hunterDog" value="15,20" />
 		<property name="breederDog" value="0,0" />
-		<!-- stat intervals -->
-		<!-- custom properties -->
 		<property name="TimeStayAfterDeath" value="180" />
-		<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 		<property name="IsEnemyEntity" value="false" />
 		<property name="ExperienceGain" value="150" />
-		<!-- For harvesting -->
 		<property name="PhysicsBody" value="zombieDog" />
 		<property name="CorpseBlock" value="animalGore" />
 		<property name="CorpseBlockChance" value="0" />
 		<property name="ParticleOnDestroy" value="blood_death" />
 		<property name="TimeStayAfterDeath" value="60" />
-		<!-- For harvesting -->
 		<property name="DeadBodyHitPoints" value="200" />
 		<drop event="Harvest" name="rottingFlesh" count="2" />
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="4" />
@@ -4780,7 +4523,6 @@
 		<property name="IsEntityAnimal" value="true" />
 		<property name="SurfaceCategory" value="organic" />
 		<property name="AttackTimeoutDay" value="1.2" />
-		<!-- in s -->
 		<property name="AttackTimeoutNight" value="1.1" />
 		<property name="Prefab" value="Dog" />
 		<property name="WalkType" value="0" />
@@ -4811,38 +4553,26 @@
 		<property name="SoundDrink" value="DogDrink" />
 		<property name="SoundEat" value="DogEat" />
 		<property name="ExperienceGain" value="300" />
-		<!-- AI properties -->
 		<property name="AITask-1" value="Swim" />
 		<property name="AITask-2" value="Wander" />
 		<property name="AITarget-1" value="SetAsTargetIfHurt" />
 		<property name="AITarget-2" value="BlockingTargetTask" />
 		<property name="CanClimbLadders" value="false" />
-		<!-- <property name="AITask-5" value="RunawayFromEntity" param1="EntityPlayer" />/ -->
 		<property name="CanClimbLadders" value="false" />
-		<property name="MaxViewAngle" value="180" />
-		<!-- custom properties -->
+		<property name="MaxTurnSpeed" value="230" />
+		<property name="MaxViewAngle" value="270" />
 		<property name="isMale" value="true" />
 		<property name="entityMale" value="hyenaPet" />
 		<property name="entityFemale" value="" />
 		<property name="entityBaby" value="" />
 		<property name="itemTamed" value="hyenaPetItem" />
 		<property name="foodBlock" value="" />
-		<!-- the block they look for when hungry -->
 		<property name="foodItem" value="" />
-		<!-- the item they eat -->
-		<!-- <property name="emptyFoodItem" value="DogCookie" /> -->
-		<!-- the empty item they leave if you want some -->
 		<property name="waterItem" value="" />
-		<!-- the item they dring -->
 		<property name="emptyWaterItem" value="" />
-		<!-- the empty item they leave if you want some -->
 		<property name="tameItem" value="DogStaff" />
-		<!-- the item used to tame the animal -->
 		<property name="tameSkill" value="Dogtaming" />
-		<!-- the skill needed to tame -->
 		<property name="harvestSkill" value="Dogtaming" />
-		<!-- the skill needed to tame -->
-		<!-- 24000 = 1 in-game day -->
 		<property name="Adolesence" value="24000" />
 		<property name="PregnancyTime" value="24000" />
 		<property name="WanderTime" value="250" />
@@ -4850,7 +4580,6 @@
 		<property name="MaxAnimalsInArea" value="15" />
 		<property name="MaxAnimalsAreaCheck" value="40" />
 		<property name="MaxMatingAreaCheck" value="20" />
-		<!-- stat intervals -->
 		<property name="Loyalty" value="15,20" />
 		<property name="Inteligence" value="15,15" />
 		<property name="Stamina" value="15,20" />
@@ -4861,19 +4590,14 @@
 		<property name="militaryDog" value="10,20" />
 		<property name="hunterDog" value="10,20" />
 		<property name="breederDog" value="0,0" />
-		<!-- stat intervals -->
-		<!-- custom properties -->
 		<property name="TimeStayAfterDeath" value="180" />
-		<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 		<property name="IsEnemyEntity" value="false" />
 		<property name="ExperienceGain" value="150" />
-		<!-- For harvesting -->
 		<property name="PhysicsBody" value="zombieDog" />
 		<property name="CorpseBlock" value="animalGore" />
 		<property name="CorpseBlockChance" value="0" />
 		<property name="ParticleOnDestroy" value="blood_death" />
 		<property name="TimeStayAfterDeath" value="60" />
-		<!-- For harvesting -->
 		<property name="DeadBodyHitPoints" value="200" />
 		<drop event="Harvest" name="rottingFlesh" count="2" />
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="4" />
@@ -4882,7 +4606,6 @@
 		<drop event="Destroy" name="femur" tool_category="Butcher" count="4" />
 	</entity_class>
 	<entity_class name="tigerPet">
-		<!-- Mesh and class properties -->
 		<property name="Mesh" value="#tiger?TigerBrown" />
 		<property name="ModelType" value="Standard" />
 		<property name="Prefab" value="NPC" />
@@ -4894,22 +4617,19 @@
 		<property name="IsEntityAnimal" value="true" />
 		<property name="PhysicsBody" value="Stag" />
 		<property name="HandItem" value="handTigerPet" />
-		<!-- AI properties -->
-		<!-- AI properties -->
 		<property name="AITask-1" value="Swim" />
 		<property name="AITask-2" value="Wander" />
 		<property name="AITarget-1" value="SetAsTargetIfHurt" />
 		<property name="AITarget-2" value="BlockingTargetTask" />
 		<property name="CanClimbLadders" value="false" />
-		<!-- General entity properties -->
 		<property name="MaxHealth" value="900" />
-		<property name="MaxViewAngle" value="180" />
+		<property name="MaxTurnSpeed" value="230" />
+		<property name="MaxViewAngle" value="270" />
 		<property name="WanderSpeed" value="0.25" />
 		<property name="PanicSpeed" value="2.0" />
 		<property name="ApproachSpeed" value="2.0" />
 		<property name="NightWanderSpeed" value="0.25" />
 		<property name="NightApproachSpeed" value="2.0" />
-		<!-- This decides on the particle effect played on hit -->
 		<property name="SoundRandomTime" value="45.0" />
 		<property name="SoundAlertTime" value="25.0" />
 		<property name="SurfaceCategory" value="organic" />
@@ -4929,34 +4649,22 @@
 		<property name="SoundDrink" value="" />
 		<property name="SoundEat" value="" />
 		<property name="TimeStayAfterDeath" value="300" />
-		<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 		<property name="IsEnemyEntity" value="true" />
 		<property name="ExperienceGain" value="500" />
 		<property name="CorpseBlock" value="animalGore" />
 		<property name="CorpseBlockChance" value="1" />
-		<!-- custom properties -->
 		<property name="isMale" value="true" />
 		<property name="entityMale" value="tigerPet" />
 		<property name="entityFemale" value="" />
 		<property name="entityBaby" value="" />
 		<property name="itemTamed" value="tigerItem" />
 		<property name="foodBlock" value="" />
-		<!-- the block they look for when hungry -->
 		<property name="foodItem" value="" />
-		<!-- the item they eat -->
-		<!-- <property name="emptyFoodItem" value="DogCookie" /> -->
-		<!-- the empty item they leave if you want some -->
 		<property name="waterItem" value="" />
-		<!-- the item they dring -->
 		<property name="emptyWaterItem" value="" />
-		<!-- the empty item they leave if you want some -->
 		<property name="tameItem" value="DogStaff" />
-		<!-- the item used to tame the animal -->
 		<property name="tameSkill" value="Dogtaming" />
-		<!-- the skill needed to tame -->
 		<property name="harvestSkill" value="Dogtaming" />
-		<!-- the skill needed to tame -->
-		<!-- 24000 = 1 in-game day -->
 		<property name="Adolesence" value="24000" />
 		<property name="PregnancyTime" value="24000" />
 		<property name="WanderTime" value="250" />
@@ -4964,8 +4672,6 @@
 		<property name="MaxAnimalsInArea" value="15" />
 		<property name="MaxAnimalsAreaCheck" value="40" />
 		<property name="MaxMatingAreaCheck" value="20" />
-		<!-- custom properties -->
-		<!-- stat intervals -->
 		<property name="Loyalty" value="15,20" />
 		<property name="Inteligence" value="13,16" />
 		<property name="Stamina" value="13,16" />
@@ -4976,9 +4682,7 @@
 		<property name="militaryDog" value="5,15" />
 		<property name="hunterDog" value="10,20" />
 		<property name="breederDog" value="0,0" />
-		<!-- stat intervals -->
 		<property name="DeadBodyHitPoints" value="250" />
-		<!-- For harvesting -->
 		<drop event="Harvest" name="rawMeat" count="3" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
@@ -4987,21 +4691,18 @@
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="4" prob=".5" />
 		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="1" prob=".4" />
 		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="4" />
-		<!-- Average harvest results:  stag  5 meat  9 hide  4.5 fat,  pig  6m  7h  6f,  bear 7m  14h  7f -->
 	</entity_class>
 	<entity_class name="tigerAlbinoPet" extends="tigerPet">
 		<property name="Mesh" value="#tiger?TigerAlbino" />
 		<property name="ModelType" value="Standard" />
 		<property name="MeshScale" value="1.1,1.1" />
 		<property name="HandItem" value="handAlbinoCougarPet" />
-		<!-- custom properties -->
 		<property name="isMale" value="true" />
 		<property name="entityMale" value="tigerAlbinoPet" />
 		<property name="entityFemale" value="" />
 		<property name="entityBaby" value="" />
 		<property name="itemTamed" value="tigerAlbinoItem" />
 		<property name="MaxHealth" value="1100" />
-		<!-- stat intervals -->
 		<property name="Loyalty" value="18,20" />
 		<property name="Inteligence" value="15,20" />
 		<property name="Stamina" value="15,20" />
@@ -5012,10 +4713,8 @@
 		<property name="militaryDog" value="10,18" />
 		<property name="hunterDog" value="15,20" />
 		<property name="breederDog" value="0,0" />
-		<!-- stat intervals -->
 	</entity_class>
 	<entity_class name="radSpiderPet">
-		<!-- Mesh and class properties -->
 		<property name="Mesh" value="#RadSpider?RadSpider" />
 		<property name="ModelType" value="Standard" />
 		<property name="Prefab" value="NPC" />
@@ -5027,16 +4726,14 @@
 		<property name="IsEntityAnimal" value="true" />
 		<property name="PhysicsBody" value="Stag" />
 		<property name="HandItem" value="handRadSpider" />
-		<!-- AI properties -->
-		<!-- AI properties -->
 		<property name="AITask-1" value="Swim" />
 		<property name="AITask-2" value="Wander" />
 		<property name="AITarget-1" value="SetAsTargetIfHurt" />
 		<property name="AITarget-2" value="BlockingTargetTask" />
 		<property name="CanClimbLadders" value="false" />
-		<!-- General entity properties -->
 		<property name="MaxHealth" value="1200" />
-		<property name="MaxViewAngle" value="180" />
+		<property name="MaxTurnSpeed" value="230" />
+		<property name="MaxViewAngle" value="270" />
 		<property name="WanderSpeed" value="0.5" />
 		<property name="ApproachSpeed" value="1.2" />
 		<property name="NightWanderSpeed" value="0.3" />
@@ -5044,7 +4741,6 @@
 		<property name="PanicSpeed" value="1.2" />
 		<property name="SoundRandomTime" value="45.0" />
 		<property name="SoundAlertTime" value="25.0" />
-		<!-- This decides on the particle effect played on hit -->
 		<property name="SurfaceCategory" value="organic" />
 		<property name="ParticleOnDeath" value="blood_death" />
 		<property name="SoundRandom" value="aSpiderRandom" />
@@ -5062,34 +4758,22 @@
 		<property name="SoundDrink" value="" />
 		<property name="SoundEat" value="" />
 		<property name="TimeStayAfterDeath" value="100" />
-		<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 		<property name="IsEnemyEntity" value="true" />
 		<property name="ExperienceGain" value="500" />
 		<property name="CorpseBlock" value="animalGore" />
 		<property name="CorpseBlockChance" value="1" />
-		<!-- custom properties -->
 		<property name="isMale" value="true" />
 		<property name="entityMale" value="radSpiderPet" />
 		<property name="entityFemale" value="" />
 		<property name="entityBaby" value="" />
 		<property name="itemTamed" value="radSpiderItem" />
 		<property name="foodBlock" value="" />
-		<!-- the block they look for when hungry -->
 		<property name="foodItem" value="" />
-		<!-- the item they eat -->
-		<!-- <property name="emptyFoodItem" value="DogCookie" /> -->
-		<!-- the empty item they leave if you want some -->
 		<property name="waterItem" value="" />
-		<!-- the item they dring -->
 		<property name="emptyWaterItem" value="" />
-		<!-- the empty item they leave if you want some -->
 		<property name="tameItem" value="DogStaff" />
-		<!-- the item used to tame the animal -->
 		<property name="tameSkill" value="Dogtaming" />
-		<!-- the skill needed to tame -->
 		<property name="harvestSkill" value="Dogtaming" />
-		<!-- the skill needed to tame -->
-		<!-- 24000 = 1 in-game day -->
 		<property name="Adolesence" value="24000" />
 		<property name="PregnancyTime" value="24000" />
 		<property name="WanderTime" value="250" />
@@ -5097,8 +4781,6 @@
 		<property name="MaxAnimalsInArea" value="15" />
 		<property name="MaxAnimalsAreaCheck" value="40" />
 		<property name="MaxMatingAreaCheck" value="20" />
-		<!-- custom properties -->
-		<!-- stat intervals -->
 		<property name="Loyalty" value="10,12" />
 		<property name="Inteligence" value="10,15" />
 		<property name="Stamina" value="15,20" />
@@ -5109,9 +4791,7 @@
 		<property name="militaryDog" value="15,20" />
 		<property name="hunterDog" value="10,15" />
 		<property name="breederDog" value="0,0" />
-		<!-- stat intervals -->
 		<property name="DeadBodyHitPoints" value="250" />
-		<!-- For harvesting -->
 		<drop event="Harvest" name="rottingFlesh" count="3" />
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="1" />
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="1" prob=".5" />
@@ -5119,9 +4799,124 @@
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="4" prob=".5" />
 		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="1" prob=".4" />
 		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="4" />
-		<!-- Average harvest results:  stag  5 meat  9 hide  4.5 fat,  pig  6m  7h  6f,  bear 7m  14h  7f -->
 	</entity_class>
-	<!-- DOGSDX -->
+	<entity_class name="goatMale">
+		<property name="Mesh" value="#Goat?Goat_X" />
+		<property name="ModelType" value="Standard" />
+		<property name="MeshScale" value="1.5,1.5" />
+		<property name="AvatarController" value="AnimationSDX, Mods" />
+		<property name="RootMotion" value="false" />
+		<property name="Immunity" value="disease" />
+		<property name="Parent" value="Animals" />
+		<property name="RagdollEnabled" value="false" />
+		<property name="IsEntityAnimal" value="true" />
+		<property name="SurfaceCategory" value="organic" />
+		<property name="AttackTimeoutDay" value="1.5" />
+		<property name="AttackTimeoutNight" value="1.1" />
+		<property name="Prefab" value="Dog" />
+		<property name="WalkType" value="0" />
+		<property name="HandItem" value="handMyGoat" />
+		<property name="Class" value="EntityDogMorte, Mods" />
+		<property name="MaxTurnSpeed" value="230" />
+		<property name="MaxViewAngle" value="270" />
+		<property name="WanderSpeed" value="0.3" />
+		<property name="ApproachSpeed" value="0.4" />
+		<property name="NightWanderSpeed" value="0.3" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.6" />
+		<property name="AnimationIdle" value="idleBreathe" />
+		<property name="AnimationMainAttack" value="ramAttack" />
+		<property name="AnimationPain" value="getHit" />
+		<property name="AnimationDeath" value="death" />
+		<property name="AnimationRun" value="run" />
+		<property name="AnimationWalk" value="walk" />
+		<property name="SoundRandom" value="GoatRandom" />
+		<property name="SoundAlert" value="GoatAlert" />
+		<property name="SoundAttack" value="GoatAlert" />
+		<property name="SoundDeath" value="GoatHurt" />
+		<property name="SoundHurt" value="GoatHurt" />
+		<property name="SoundSense" value="GoatSense" />
+		<property name="CanClimbLadders" value="false" />
+		<property name="RotateToGround" value="true" />
+		<property name="MaxHealth" value="100" />
+		<property name="SoundRandomTime" value="45.0" />
+		<property name="SoundAlertTime" value="25.0" />
+		<property name="SoundGiveUp" value="GoatRandom" />
+		<property name="SoundPlay" value="GoatAlert" />
+		<property name="SoundDropBall" value="GoatAlert" />
+		<property name="SoundStarve" value="GoatHurt" />
+		<property name="SoundBark" value="GoatRandom" />
+		<property name="SoundHowl" value="" />
+		<property name="SoundDrink" value="" />
+		<property name="SoundEat" value="" />
+		<property name="ExperienceGain" value="300" />
+		<property name="AITask-1" value="Swim" />
+		<property name="AITask-2" value="Wander" />
+		<property name="AITask-3" value="RunawayWhenHurt" />
+		<property name="CanClimbLadders" value="false" />
+		<property name="MaxTurnSpeed" value="230" />
+		<property name="MaxViewAngle" value="270" />
+		<property name="isMale" value="true" />
+		<property name="entityMale" value="goatMale" />
+		<property name="entityFemale" value="goatFemale" />
+		<property name="entityBaby" value="goatOffspring" />
+		<property name="itemTamed" value="goatMaleItem" />
+		<property name="foodBlock" value="trough" />
+		<property name="foodItem" value="AnimalFeed" />
+		<property name="waterItem" value="" />
+		<property name="emptyWaterItem" value="" />
+		<property name="tameItem" value="whip" />
+		<property name="tameSkill" value="Husbandry" />
+		<property name="harvestSkill" value="Husbandry" />
+		<property name="Adolesence" value="24000" />
+		<property name="PregnancyTime" value="12000" />
+		<property name="WanderTime" value="250" />
+		<property name="MatingTime" value="1200" />
+		<property name="MaxAnimalsInArea" value="15" />
+		<property name="MaxAnimalsAreaCheck" value="40" />
+		<property name="MaxMatingAreaCheck" value="20" />
+		<property name="TimeStayAfterDeath" value="180" />
+		<property name="IsEnemyEntity" value="false" />
+		<property name="ExperienceGain" value="150" />
+		<property name="PhysicsBody" value="zombieDog" />
+		<property name="CorpseBlock" value="animalGore" />
+		<property name="CorpseBlockChance" value="0" />
+		<property name="ParticleOnDestroy" value="blood_death" />
+		<property name="TimeStayAfterDeath" value="60" />
+		<property name="DeadBodyHitPoints" value="200" />
+		<drop event="Harvest" name="rottingFlesh" count="2" />
+		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="4" />
+		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2" />
+		<drop event="Destroy" name="animalFat" tool_category="Butcher" count="2" />
+		<drop event="Destroy" name="femur" tool_category="Butcher" count="4" />
+	</entity_class>
+	<entity_class name="goatFemale" extends="goatMale">
+		<property name="Mesh" value="#Goat?Goat_X" />
+		<property name="ModelType" value="Standard" />
+		<property name="MeshScale" value="1,1" />
+		<property name="AvatarController" value="AnimationSDX, Mods" />
+		<property name="isMale" value="false" />
+		<property name="itemTamed" value="goatFemaleItem" />
+		<drop event="Harvest" name="rawMeat" count="2" />
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
+		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="3" />
+		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="1" prob=".5" />
+		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="1" prob=".5" />
+		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="2" />
+		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="1" prob=".5" />
+		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="1" prob=".5" />
+		<drop event="Destroy" name="femur" tool_category="Butcher" count="2" />
+	</entity_class>
+	<entity_class name="goatOffspring" extends="goatMale">
+		<property name="Mesh" value="#Goat?Goat_X" />
+		<property name="ModelType" value="Standard" />
+		<property name="MeshScale" value="0.4,0.6" />
+		<property name="AvatarController" value="AnimationSDX, Mods" />
+		<property name="isBaby" value="true" />
+		<drop event="Harvest" name="rawMeat" count="1" />
+		<drop event="Destroy" name="femur" tool_category="Butcher" count="1" />
+	</entity_class>
 	<entity_class name="npcBanditMelee">
 		<property name="EntityType" value="Player" />
 		<property name="Mesh" value="Player/Male/player_maleRagdoll" />
@@ -5158,7 +4953,7 @@
 		<property name="SoundHurt" value="malehatepain" />
 		<property name="SoundDeath" value="malehatedeath" />
 		<property name="SoundAttack" value="malehateattack" />
-		<property name="TimeStayAfterDeath" value="15" />
+		<property name="TimeStayAfterDeath" value="1" />
 		<property name="LootListOnDeath" value="71" />
 		<property name="CorpseBlock" value="npcFollowerMeleeCorpse" />
 		<property name="CorpseBlockChance" value="1" />
@@ -5200,65 +4995,92 @@
 		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="npcPistol,npc9mmBullet" />
 		<property name="ApproachSpeed" value="1" />
 		<property name="AIPackages" value="Bandit Basic, Bandit Ranged" />
-		<property name="LootListOnDeath" value="71" />
-		<property name="CorpseBlock" value="npcFollowerMeleeCorpse" />
+		<property name="LootListOnDeath" value="72" />
+		<property name="CorpseBlock" value="npcFollowerRangedCorpse" />
 	</entity_class>
 	<entity_class name="banditFemaleDreadMagnum" extends="npcBanditFemaleMelee">
 		<property name="Archetype" value="BanditFemaleWar" />
 		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="npcMagnum,npc44MagBullet" />
 		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="npcMagnum,npc44MagBullet" />
 		<property name="AIPackages" value="Bandit Basic, Bandit Ranged" />
-		<property name="LootListOnDeath" value="71" />
-		<property name="CorpseBlock" value="npcFollowerMeleeCorpse" />
+		<property name="LootListOnDeath" value="72" />
+		<property name="CorpseBlock" value="npcFollowerRangedCorpse" />
 	</entity_class>
 	<entity_class name="banditFemaleDreadSniper" extends="npcBanditFemaleMelee">
 		<property name="Archetype" value="BanditFemaleDread" />
 		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSniperRifle,762mmRifleBanditBullet" />
 		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSniperRifle,762mmRifleBanditBullet" />
 		<property name="AIPackages" value="Bandit Basic, Bandit Ranged" />
-		<property name="LootListOnDeath" value="71" />
-		<property name="CorpseBlock" value="npcFollowerMeleeCorpse" />
+		<property name="LootListOnDeath" value="72" />
+		<property name="CorpseBlock" value="npcFollowerRangedCorpse" />
 	</entity_class>
 	<entity_class name="banditMaleDreadRifle" extends="npcBanditMelee">
 		<property name="Archetype" value="BanditRanged" />
 		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle,762mmRifleBanditBullet" />
 		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle,762mmRifleBanditBullet" />
 		<property name="AIPackages" value="Bandit Basic, Bandit Ranged" />
-		<property name="LootListOnDeath" value="71" />
-		<property name="CorpseBlock" value="npcFollowerMeleeCorpse" />
+		<property name="LootListOnDeath" value="72" />
+		<property name="CorpseBlock" value="npcFollowerRangedCorpse" />
 	</entity_class>
 	<entity_class name="banditMaleDreadMp5" extends="npcBanditMelee">
 		<property name="Archetype" value="BanditRanged" />
 		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditMP5,10mmBanditBullet" />
 		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditMP5,10mmBanditBullet" />
 		<property name="AIPackages" value="Bandit Basic, Bandit Ranged" />
-		<property name="LootListOnDeath" value="71" />
-		<property name="CorpseBlock" value="npcFollowerMeleeCorpse" />
+		<property name="LootListOnDeath" value="72" />
+		<property name="CorpseBlock" value="npcFollowerRangedCorpse" />
 	</entity_class>
 	<entity_class name="npcBanditLeader" extends="npcBanditRanged">
 		<property name="Archetype" value="BanditLeader" />
+		<property name="MaxHealth" value="600" />
 		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="npcAK47,npc762mmBullet" />
 		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="npcAK47,npc762mmBullet" />
-		<property name="LootListOnDeath" value="72" />
-		<property name="CorpseBlock" value="npcFollowerMeleeCorpse" />
+		<property name="LootListOnDeath" value="73" />
+		<property name="CorpseBlock" value="npcBanditBossCorpse" />
 	</entity_class>
 	<entity_class name="banditLeaderMP7" extends="npcBanditRanged">
 		<property name="Archetype" value="BanditDreadLeader" />
+		<property name="MaxHealth" value="600" />
 		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="npcMP7,10mmBanditBullet" />
 		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="npcMP7,10mmBanditBullet" />
-		<property name="LootListOnDeath" value="72" />
-		<property name="CorpseBlock" value="npcFollowerMeleeCorpse" />
+		<property name="LootListOnDeath" value="73" />
+		<property name="CorpseBlock" value="npcBanditBossCorpse" />
 	</entity_class>
 	<entity_class name="banditLeaderMP5" extends="npcBanditRanged">
 		<property name="Archetype" value="BanditWarLeader" />
+		<property name="MaxHealth" value="600" />
 		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditMP5,10mmBanditBullet" />
 		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditMP5,10mmBanditBullet" />
-		<property name="LootListOnDeath" value="72" />
-		<property name="CorpseBlock" value="npcFollowerMeleeCorpse" />
+		<property name="LootListOnDeath" value="73" />
+		<property name="CorpseBlock" value="npcBanditBossCorpse" />
+	</entity_class>
+	<entity_class name="banditPlasmaBoss" extends="npcBanditRanged">
+		<property name="Archetype" value="BanditDragonLeader" />
+		<property name="MaxHealth" value="3500" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="npcPlasma" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="npcPlasma" />
+		<property name="LootListOnDeath" value="132" />
+		<property name="CorpseBlock" value="npcPlasmaBossCorpse" />
+		<property name="CorpseBlockChance" value="1" />
+	</entity_class>
+	<entity_class name="banditFemaleDragonMagnum" extends="npcBanditFemaleMelee">
+		<property name="Archetype" value="BanditFemaleDragon" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="npcMagnum" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="npcMagnum" />
+		<property name="AIPackages" value="Bandit Basic, Bandit Ranged" />
+		<property name="LootListOnDeath" value="71" />
+		<property name="CorpseBlock" value="npcFollowerRangedCorpse" />
+	</entity_class>
+	<entity_class name="banditMaleDragonRifle" extends="npcBanditMelee">
+		<property name="Archetype" value="BanditMaleDragon" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle" />
+		<property name="AIPackages" value="Bandit Basic, Bandit Ranged" />
+		<property name="LootListOnDeath" value="71" />
+		<property name="CorpseBlock" value="npcFollowerRangedCorpse" />
 	</entity_class>
 	<entity_class name="zombieBoeTeste">
 		<property name="Class" value="EntityZedBlockKiller, Mods" />
-		<!-- New zed edits for sleeper sense and sight distance-->
 		<property name="EntityType" value="Zombie" />
 		<property name="Mesh" value="Zombies/zombieStandardBoeRagdoll" />
 		<property name="AvatarController" value="AvatarZombie01Controller" />
@@ -5293,41 +5115,25 @@
 		<property name="PanicSpeed" value="0.55" />
 		<property name="CanClimbLadders" value="true" />
 		<property name="IsEnemyEntity" value="true" />
-		<!-- Stealth settings -->
 		<property name="SightRange" value="50" />
-		<!-- distance in m -->
-		<!-- up from 30 to compensate for smell not working -->
 		<property name="SightScale" value="-25,125" />
-		<!-- how well lit you have to be for the zombie to see you at min,max range -->
-		<!-- up from -2,150 to compensate for smell not working -->
 		<property name="SleeperWakeupSightDetectionMin" value="-25,0" />
-		<!-- Indiv.Random. sight capability - "I see you" light value at point blank -->
 		<property name="SleeperWakeupSightDetectionMax" value="0,55" />
-		<!-- Indiv.Random. "I see you" light value at "SightRange" -->
 		<property name="SleeperSenseSightDetectionMin" value="-15,10" />
-		<!-- same for groaning, not waking -->
 		<property name="SleeperSenseSightDetectionMax" value="99,100" />
 		<property name="SleeperNoiseSenseThreshold" value="2,13" />
-		<!-- Indiv.Random. hearing capability - "I hear something" noise value -->
 		<property name="SleeperNoiseWakeThreshold" value="5,15" />
 		<property name="SleeperSmellSenseThreshold" value="10,30" />
-		<!-- Indiv.Random. smell capability - "I smell something" player smell value -->
 		<property name="SoundSleeperSenseChance" value=".5" />
-		<!-- the chance to play "SoundSleeperSense" when "SleeperSmellSenseThreshold" is triggered -->
 		<property name="SleeperSmellWakeThreshold" value="20,70" />
 		<property name="NoiseAlertThreshold" value="30" />
-		<!-- for awake zombies -->
 		<property name="SmellAlertThreshold" value="40" />
-		<!-- for awake zombies -->
 		<property name="SurfaceCategory" value="organic" />
-		<!-- determines the particle effect played on hit -->
 		<property name="WalkType" value="7" />
 		<property name="ParticleOnDeath" value="blood_death" />
 		<property name="SoundRandomTime" value="60.0" />
-		<!-- It will play the roam every 60/30 seconds -->
 		<property name="SoundRandom" value="Enemies/Base_Zombie_Male/zombiemaleroam" />
 		<property name="SoundAlertTime" value="25.0" />
-		<!-- It will play the roam every 25/12.5 seconds-->
 		<property name="SoundAlert" value="Enemies/Base_Zombie_Male/zombiemalealert" />
 		<property name="SoundSense" value="Enemies/Base_Zombie_Male/zombiemalesense" />
 		<property name="SoundHurt" value="Enemies/Base_Zombie_Male/zombiemalepain" />
@@ -5337,20 +5143,17 @@
 		<property name="SoundSleeperBackToSleep" value="sleeperbacktosleep" />
 		<property name="TimeStayAfterDeath" value="30" />
 		<property name="AttackTimeoutDay" value="1.5" />
-		<!-- in s -->
 		<property name="AttackTimeoutNight" value="1.1" />
 		<property name="LootListOnDeath" value="15" />
 		<property name="CorpseBlock" value="GoreBlock1Prefab" />
 		<property name="CorpseBlockChance" value="1" />
 		<property name="ExperienceGain" value="679" />
 		<property name="DeadBodyHitPoints" value="350" />
-		<!-- For harvesting -->
 		<property name="RootMotion" value="true" />
 		<property name="HasDeathAnim" value="true" />
 		<property name="HeadDismemberBaseChance" value="0" />
 		<property name="HeadDismemberBonusChance" value="0.08" />
 		<property name="HeadDismemberThreshold" value="0.23" />
-		<!-- if the total damage exceeds that value, there is a chance for dismemberment -->
 		<property name="LowerLegDismemberThreshold" value="0.175" />
 		<property name="LowerLegDismemberBaseChance" value="0" />
 		<property name="LowerLegDismemberBonusChance" value="0.9" />
@@ -5364,7 +5167,6 @@
 		<property name="UpperArmDismemberBaseChance" value="0" />
 		<property name="UpperArmDismemberBonusChance" value="0.9" />
 		<property name="LegCrawlerThreshold" value="0" />
-		<!-- at like .175 nearly every zombie knocked down from a leg hit turns into a crawler -->
 		<property name="LegCrippleThreshold" value="0.01" />
 		<property name="KnockdownProneDamageThreshold" value="0.5" />
 		<property name="KnockdownProneStunDuration" value="4,6" />
@@ -5376,7 +5178,6 @@
 		<property name="ArmsExplosionDamageMultiplier" value="1" />
 		<property name="HeadExplosionDamageMultiplier" value="1" />
 		<property name="ChestExplosionDamageMultiplier" value="1" />
-		<!-- percentual -->
 		<property name="HeadBoost" value="50.0" />
 		<property name="BodyNerf" value="95.0" />
 	</entity_class>
@@ -5628,5 +5429,6 @@
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="15" />
 		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="7" />
 		<drop event="Harvest" name="femur" tool_category="Butcher" count="4" />
+		<drop event="Destroy" name="glandYeti" tool_category="Butcher" count="1" prob=".01" />
 	</entity_class>
 </entity_classes>

@@ -15380,7 +15380,6 @@
 		<property name="MaxDamage" value="350" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#AirCon?AirConPrefab" />
-		<!-- Daikin by Thuc Hoang is licensed under CC Attribution(http://creativecommons.org/licenses/by/4.0/) -->
 		<property name="MultiBlockDim" value="1,2,1" />
 		<property name="Collide" value="melee,movement,bullet,arrow,rocket" />
 		<property name="CustomIcon" value="ui_game_symbol_airCon" />
@@ -15395,6 +15394,34 @@
 		<drop event="Destroy" name="scrapPlastics" count="3,5" />
 		<drop event="Destroy" name="scrapIron" count="3,6" />
 		<drop event="Destroy" count="0" />
+	</block>
+	<block id="1598" name="randomGem">
+		<property name="Class" value="Randomizer, Mods" />
+		<property name="Material" value="Msteel" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#VanillaAssets?CrystalDynamicPrefab" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="CanPickup" value="false" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="ShownInterval" value="0,12" />
+		<property class="ObjectList">
+			<property name="1" value="Shard1" />
+			<property name="2" value="Shard2" />
+			<property name="3" value="Shard3" />
+			<property name="4" value="Shard4" />
+			<property name="5" value="Shard5" />
+			<property name="6" value="Shard6" />
+			<property name="7" value="Shard7" />
+			<property name="8" value="Shard8" />
+			<property name="9" value="Shard9" />
+			<property name="10" value="Shard10" />
+			<property name="11" value="Shard11" />
+			<property name="12" value="Shard12" />
+		</property>
+		<drop event="Harvest" name="rawDiamond" count="1,3" tool_category="harvestingTools" />
+		<drop event="Harvest" name="rockSmall" count="25" tool_category="harvestingTools" />
+		<drop event="Destroy" count="0" />
+		<drop event="Fall" name="destroyedStone" count="1" prob="0.1" stick_chance="0.5" />
 	</block>
 	<block id="1495" name="glassandCeramicsStation">
 		<property name="Class" value="Forge" />
@@ -15435,11 +15462,9 @@
 		<property name="SellableToTrader" value="false" />
 	</block>
 	<block id="1442" name="MotorbikeDown">
-		<!-- All 3 motorcycles are free Unity store assets, by Artistic Mechanics -->
 		<property name="Extends" value="cntCar03SedanDamage2" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#Motorbikes?MotorbikeDownPrefab" />
-		<!-- lays flat on handlebars and pegs -->
 		<property name="CustomIcon" value="ui_game_symbol_oldMotorbikes" />
 		<property name="MultiBlockDim" value="3,1,2" />
 		<property name="BigDecorationRadius" value="3" />
@@ -15448,7 +15473,6 @@
 		<property name="Extends" value="cntCar03SedanDamage2" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#Motorbikes?MotorbikeUpStandUpPrefab" />
-		<!-- Same model, standing up with kickstand up, good for laying against a block wall -->
 		<property name="CustomIcon" value="ui_game_symbol_oldMotorbikes" />
 		<property name="MultiBlockDim" value="3,2,1" />
 		<property name="BigDecorationRadius" value="3" />
@@ -15457,17 +15481,14 @@
 		<property name="Extends" value="cntCar03SedanDamage2" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#Motorbikes?MotorbikeUpStandDownPrefab" />
-		<!-- Same model, standing Up on kickstand -->
 		<property name="CustomIcon" value="ui_game_symbol_oldMotorbikes" />
 		<property name="MultiBlockDim" value="3,2,1" />
 		<property name="BigDecorationRadius" value="3" />
 	</block>
 	<block id="1445" name="HarleyDown">
-		<!--Harley-Davidson WLA models by Antonio Rodriguez are licensed under CC Attribution -->
 		<property name="Extends" value="cntCar03SedanDamage2" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#Motorbikes?HarleyDownPrefab" />
-		<!-- lays flat on handlebars and pegs -->
 		<property name="CustomIcon" value="ui_game_symbol_oldMotorbikes" />
 		<property name="MultiBlockDim" value="3,1,2" />
 		<property name="BigDecorationRadius" value="3" />
@@ -15476,13 +15497,11 @@
 		<property name="Extends" value="cntCar03SedanDamage2" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#Motorbikes?HarleyUpPrefab" />
-		<!-- Same model, standing up -->
 		<property name="CustomIcon" value="ui_game_symbol_oldMotorbikes" />
 		<property name="MultiBlockDim" value="3,2,1" />
 		<property name="BigDecorationRadius" value="3" />
 	</block>
 	<block id="1447" name="oldSedan">
-		<!-- Old Rusty Car (Remade) by Renafox is licensed under CC Attribution-NonCommercial -->
 		<property name="Extends" value="cntCar03SedanDamage1" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#OldVehicles?OldSedanPrefab" />
@@ -15491,7 +15510,6 @@
 		<property name="BigDecorationRadius" value="6" />
 	</block>
 	<block id="1456" name="oldPickup">
-		<!-- Author unknown -->
 		<property name="Extends" value="cntCar03SedanDamage1" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#OldVehicles?OldPickupPrefab" />
@@ -15500,7 +15518,6 @@
 		<property name="BigDecorationRadius" value="6" />
 	</block>
 	<block id="1457" name="oldStationWagon">
-		<!-- Old Station Wagon by Renafox is licensed under CC Attribution-NonCommercial -->
 		<property name="Extends" value="cntCar03SedanDamage1" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#OldVehicles?OldStationWagonPrefab" />
@@ -15509,7 +15526,6 @@
 		<property name="BigDecorationRadius" value="6" />
 	</block>
 	<block id="1458" name="oldPoliceCar">
-		<!-- Old Police Car by Renafox is licensed under CC Attribution-NonCommercial -->
 		<property name="Extends" value="cntCar03SedanDamage1" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#OldVehicles?OldPoliceCarPrefab" />
@@ -15518,7 +15534,6 @@
 		<property name="BigDecorationRadius" value="6" />
 	</block>
 	<block id="1459" name="oldGazZ52">
-		<!-- Old Gaz 52 by Renafox is licensed under CC Attribution-NonCommercial -->
 		<property name="Extends" value="cntCar03SedanDamage1" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#OldVehicles?OldGazZ52Prefab" />
@@ -15532,13 +15547,11 @@
 		<property name="DamageDone" value="50" />
 		<property name="DamageReceived" value="4" />
 		<property name="BrokenPercentage" value="0.25" />
-		<!-- it simply stops doing damage at this moment, maybe should stop animating -->
 		<property name="HitLegs" value="false" />
 		<property name="Buffs" value="trapDamage1Trigger" />
 		<property name="StabilitySupport" value="true" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#Pendulum?PendulumPrefab" />
-		<!-- the blade is a free model by Dwayne Mayberry, the rest origional -->
 		<property name="CustomIcon" value="ui_game_symbol_pendulum" />
 		<property name="MultiBlockDim" value="1,4,1" />
 		<property name="isPowered" value="true" />
@@ -15561,7 +15574,6 @@
 		<property name="TakeDelay" value="10" />
 		<property name="EconomicValue" value="100" />
 	</block>
-	<!-- SLOT MACHINE -->
 	<block id="1544" name="SlotMachine">
 		<property name="Class" value="MorteSlotMachine, Mods" />
 		<property name="LootList" value="10" />
@@ -15668,8 +15680,6 @@
 			<property name="scrapIron" value="2" />
 		</property>
 	</block>
-	<!-- SLOT MACHINE -->
-	<!-- FISHING -->
 	<block id="90" name="fishWall">
 		<property name="Class" value="Morte, Mods" />
 		<property name="ModelOffset" value="0,0.1,0" />
@@ -15833,27 +15843,17 @@
 		<property name="CanPickup" value="true" param1="barge" />
 		<property name="CreativeMode" value="Dev" />
 	</block>
-	<!-- FISHING -->
-	<!-- ANIMAL COOPS -->
 	<block id="107" name="ChickenCoop">
 		<property name="Stacknumber" value="4" />
 		<property name="Class" value="AnimalCoop, Mods" />
-		<!-- This is mandatory, it's the animal item -->
 		<property name="animalName" value="chickenItem" />
-		<!-- food item, 1 unit per animal -->
 		<property name="foodName" value="ChickenFeed" />
-		<!-- Water Item, 1 unit lasts for a good while -->
 		<property name="waterName" value="bucketWater" />
 		<property name="emptyWaterName" value="bucket" />
-		<!-- Items that will be produced if there are animals present. 0 to 2 -->
 		<property name="productName" value="feather,egg" />
-		<!-- Interval in seconds to update coop status -->
 		<property name="TickRate" value="10" />
-		<!-- Interval in seconds to proccess life actions (eat, reproduce, etc) -->
 		<property name="LifeRate" value="240" />
-		<!-- when there are animals, this sound will be emitted randomly -->
 		<property name="animalSound" value="chickenSound" />
-		<!-- when there are animals, this sound will be emitted at day break - optional -->
 		<property name="wakeUpSound" value="rosterSound" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#animalCoops?ChickenHousePrefab" />
@@ -15880,8 +15880,6 @@
 		<property name="Model" value="#animalCoops?rabitCagePrefab" />
 	</block>
 	<block id="109" name="BoxTrap">
-		<!-- triggered trap -->
-		<!-- requires no power but has to be manually reseted -->
 		<property name="DescriptionKey" value="BoxTrapDesc" />
 		<property name="Class" value="TrapMorte, Mods" />
 		<property name="Material" value="wood" />
@@ -15898,23 +15896,19 @@
 		<property name="HitLegs" value="false" />
 		<property name="Baited" value="true" />
 		<property name="EntityGroup" value="AnimalsSmall" />
-		<!-- Which animals it will actually be able to capture, up to 2 -->
 		<property name="AnimalToCatch" value="animalRabbit,animalChicken" />
 		<property name="Baite" value="wheat" />
 		<property name="Loot1" value="rabbitItem" />
 		<property name="Loot2" value="chickenItem" />
-		<!-- if set to true, if the trap kills an entity (not player), it will imediatly disapear -->
 		<property name="DestroyOnDeath" value="true" />
 		<property name="OpenSound" value="boxtrap_trigger" />
 		<property name="CloseSound" value="boxtrap_trigger" />
-		<!-- until better solution this is just to allow interaction -->
 		<property name="CanPickup" value="true" />
 		<drop event="Destroy" count="0" />
 		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
 		<property name="Group" value="Tools/Traps" />
 		<property name="debug" value="false" />
 	</block>
-	<!-- ANIMAL COOPS -->
 	<block id="1172" name="BrowningBlock">
 		<property name="Class" value="MannedTurret, Mods" />
 		<property name="Stacknumber" value="1" />
@@ -15991,7 +15985,6 @@
 		<drop event="Destroy" name="OldMGTripodBlock" count="1" prob="1" tool_category="Military" />
 		<property name="EconomicValue" value="1000" />
 	</block>
-	<!-- TRAPS START -->
 	<block id="87" name="trapNail">
 		<property name="Class" value="TrapMorte, Mods" />
 		<property name="Material" value="metal" />
@@ -16003,11 +15996,9 @@
 		<property name="DamageDone" value="20" />
 		<property name="HitLegs" value="true" />
 		<property name="Baited" value="false" />
-		<!-- if set to true, if the trap kills an entity (not player), it will imediatly disapear -->
 		<property name="DestroyOnDeath" value="false" />
 		<property name="OpenSound" value="nailtrap_trigger" />
 		<property name="CloseSound" value="nailtrap_trigger" />
-		<!-- until better solution this is just to allow interaction -->
 		<property name="CanPickup" value="true" />
 		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
 		<property name="Group" value="Tools/Traps" />
@@ -16045,8 +16036,6 @@
 		<drop event="Destroy" name="trapBear" count="1" tool_category="Disassemble" />
 	</block>
 	<block id="1534" name="trapSpike">
-		<!-- this is a powwered trap -->
-		<!-- it will only work if it has enough power -->
 		<property name="Class" value="PowerTrap, Mods" />
 		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
@@ -16054,11 +16043,9 @@
 		<property name="Collide" value="movement,bullet,rocket,melee" />
 		<property name="FuelValue" value="36" />
 		<property name="powerType" value="Boiler" />
-		<!-- Boiler (heat), Gaz -->
 		<property name="DamageDone" value="20" />
 		<property name="HitLegs" value="true" />
 		<property name="Buffs" value="trapDamage1Trigger" />
-		<!-- until better solution this is just to allow interaction -->
 		<property name="CanPickup" value="false" />
 		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
 		<property name="Group" value="Tools/Traps" />
@@ -16078,8 +16065,6 @@
 		<drop event="Destroy" name="trapSpike" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="trapFire" count="1" tool_category="Disassemble" />
 	</block>
-	<!-- TRAPS END -->
-	<!-- TRANSFORMERS -->
 	<block id="83" name="gasTankEmpty">
 		<property name="CustomIcon" value="gasTank" />
 		<property name="Stacknumber" value="5000" />
@@ -16088,37 +16073,25 @@
 		<property name="Model" value="#gaztank?gaztankPrefab" />
 		<property name="Place" value="TowardsPlacer" />
 		<property name="CanPickup" value="true" />
-		<!-- <property name="ModelOffset" value="0,-0.02,0" /> -->
 	</block>
 	<block id="84" name="gasTank">
 		<property name="Extends" value="gasTankEmpty" />
 		<property name="Class" value="TNT" />
 		<property class="Explosion">
 			<property name="ParticleIndex" value="4" />
-			<!-- which prefab/particle is used -->
 			<property name="RadiusBlocks" value="2" />
-			<!-- damage radius for blocks -->
 			<property name="BlockDamage" value="500" />
-			<!-- damage for blocks in the center of the explosion -->
 			<property name="RadiusEntities" value="5" />
-			<!-- damage radius for entities -->
 			<property name="EntityDamage" value="250" />
-			<!-- damage for entities in the center of the explosion -->
 		</property>
 		<property name="EconomicValue" value="200" />
 	</block>
 	<block id="85" name="biogasDigester">
 		<property name="Class" value="Transformer, Mods" />
-		<!-- This is mandatory, catalyst used for the transformation (name, quantity) -->
 		<property name="FuelName" value="yuccaFibers,5" />
-		<!-- Raw material to be transformed, optional (name, quantity) -->
 		<property name="RawName" value="turd,1" />
-		<!-- Empty version of the end product, optional -->
 		<property name="EmptyName" value="gasTankEmpty,1" />
-		<!-- This is mandatory, and it's the object resulting from the transformation -->
 		<property name="ProductName" value="gasTank,1" />
-		<!-- transform ratio on seconds -->
-		<!-- decay and heatmap is applyed for each transform -->
 		<property name="TickRate" value="60" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#watertank?watertankPrefab" />
@@ -16129,7 +16102,6 @@
 		<property class="RepairItems">
 			<property name="scrapLead" value="10" />
 		</property>
-		<!-- <property name="ModelOffset" value="0,-0.02,0" /> -->
 		<property name="LPHardnessScale" value="8" />
 		<property name="Group" value="Decor" />
 		<property name="debug" value="false" />
@@ -16139,12 +16111,8 @@
 	</block>
 	<block id="86" name="DrillerBig">
 		<property name="Class" value="Transformer, Mods" />
-		<!-- This is mandatory, catalyst used for the transformation (name, quantity) -->
 		<property name="FuelName" value="gasCan,1" />
-		<!-- This is mandatory, and it's the object resulting from the transformation -->
 		<property name="ProductName" value="oilShale,2" />
-		<!-- transform ratio on seconds -->
-		<!-- decay and heatmap is applyed for each transform -->
 		<property name="TickRate" value="30" />
 		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
@@ -16154,7 +16122,6 @@
 		<property name="DecayRate" value="1" />
 		<property name="HeatMapStrength" value="0.1" />
 		<property name="HeatMapTime" value="200" />
-		<!-- <property name="ModelOffset" value="0,-0.02,0" /> -->
 		<property class="RepairItems">
 			<property name="scrapLead" value="10" />
 		</property>
@@ -16163,8 +16130,6 @@
 		<property name="Group" value="Decor" />
 		<property name="debug" value="false" />
 	</block>
-	<!-- TRANSFORMERS -->
-	<!-- PowerSources START -->
 	<block id="17" name="heatGenerator">
 		<property name="Class" value="Boiler, Mods" />
 		<property name="Stacknumber" value="1" />
@@ -16196,7 +16161,6 @@
 		<property name="Model" value="#Boiler?Boiler1Prefab" />
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="ParticleName" value="campfire" />
-		<!-- <property name="ModelOffset" value="0,-0.02,0" /> -->
 		<property name="ParticleOffset" value="0.5,0.5,0.5" />
 		<property name="HeatMapStrength" value="2" />
 		<property name="HeatMapTime" value="1200" />
@@ -16216,15 +16180,12 @@
 		<property name="Stacknumber" value="1" />
 		<property name="Class" value="GasTankInSecure, Mods" />
 		<property name="FuelName" value="gasTank" />
-		<!-- Fuel has to be defined -->
 		<property name="EmptyName" value="gasTankEmpty" />
-		<!-- This is optional, and it's the object resulting from used fuel -->
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#gastank?GasTank1Prefab" />
 		<property name="LootList" value="10" />
 		<property name="Material" value="Mmetal_hard" />
 		<property name="Texture" value="284" />
-		<!-- <property name="ModelOffset" value="0,-0.02,0" /> -->
 		<property class="RepairItems">
 			<property name="forgedIron" value="10" />
 		</property>
@@ -16247,7 +16208,6 @@
 		<property name="CustomIconTint" value="daa520" />
 		<property name="Class" value="PowerLine, Mods" />
 		<property name="powerType" value="Gaz" />
-		<!-- Boiler (heat), gaz, Electric -->
 		<property name="Material" value="metal" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="pipe_straight" />
@@ -16264,14 +16224,12 @@
 		<property name="CustomIconTint" value="daa520" />
 		<property name="Class" value="PowerLine, Mods" />
 		<property name="powerType" value="Gaz" />
-		<!-- Boiler (heat), gaz, Electric -->
 		<property name="Shape" value="New" />
 		<property name="LightOpacity" value="4" />
 		<property name="Model" value="pipe_corner" />
 		<property name="Texture" value="520" />
 		<property name="ImposterDontBlock" value="true" />
 		<property name="EconomicValue" value="30" />
-		<!-- disassemble value -->
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" count="0" />
 		<drop event="Destroy" name="gaslineCorner" count="1" tool_category="Disassemble" />
@@ -16289,7 +16247,6 @@
 		<property name="CustomIconTint" value="daa520" />
 		<property name="Class" value="Valve, Mods" />
 		<property name="powerType" value="Gaz" />
-		<!-- Boiler (heat), gaz, Electric -->
 		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#StopValve?StopValvePrefab" />
@@ -16306,7 +16263,6 @@
 		<property name="CustomIconTint" value="6f1414" />
 		<property name="Class" value="PowerLine, Mods" />
 		<property name="powerType" value="Boiler" />
-		<!-- Boiler (heat), gaz, Electric -->
 		<property name="Material" value="metal" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="pipe_straight" />
@@ -16332,7 +16288,6 @@
 	<block id="80" name="heatlineValve">
 		<property name="Extends" value="gaslineValve" />
 		<property name="powerType" value="Boiler" />
-		<!-- Boiler (heat), gaz, Electric -->
 		<drop event="Destroy" name="gaslineValve" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="heatlineValve" count="1" tool_category="Disassemble" />
 	</block>
@@ -16397,21 +16352,17 @@
 		<property name="TakeDelay" value="15" />
 		<property name="EconomicValue" value="500" />
 	</block>
-	<!-- PowerSources END -->
-	<!-- POWER WORKSTATIONS -->
 	<block id="81" name="mill">
 		<property name="Stacknumber" value="1" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#mill?MillPrefab" />
 		<property name="Class" value="Machine, Mods" />
 		<property name="powerType" value="Boiler" />
-		<!-- Boiler (heat), Gaz, Electric -->
 		<property name="Material" value="MmetalNoGlue" />
 		<property name="MaxDamage" value="250" />
 		<property name="HeatMapStrength" value="0.5" />
 		<property name="HeatMapTime" value="1200" />
 		<property name="HeatMapFrequency" value="25" />
-		<!-- <property name="ModelOffset" value="0,-0.02,0" /> -->
 		<property class="RepairItems">
 			<property name="wood" value="5" />
 			<property name="forgedIron" value="5" />
@@ -16421,9 +16372,6 @@
 			<property name="CraftingAreaRecipes" value="mill" />
 			<property name="Modules" value="tools,output" />
 		</property>
-		<!-- power check ration -->
-		<!-- workstation will look for power at this interval -->
-		<!-- if it is a gas powered station, it might need to consume power -->
 		<property name="TickRate" value="5" />
 		<property name="debug" value="false" />
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
@@ -16437,14 +16385,12 @@
 		<property name="Model" value="#moonshine?moonshinePrefab" />
 		<property name="Class" value="Machine, Mods" />
 		<property name="powerType" value="Gaz" />
-		<!-- Boiler (heat), Gaz, Electric -->
 		<property name="Material" value="MmetalNoGlue" />
 		<property name="MaxDamage" value="250" />
 		<property name="HeatMapStrength" value="0.5" />
 		<property name="HeatMapTime" value="1200" />
 		<property name="HeatMapFrequency" value="25" />
 		<property name="ActiveRadiusEffects" value="+heatSource(3)" />
-		<!-- <property name="ModelOffset" value="0,-0.02,0" /> -->
 		<property class="RepairItems">
 			<property name="wood" value="5" />
 			<property name="forgedIron" value="5" />
@@ -16455,9 +16401,6 @@
 			<property name="CraftingAreaRecipes" value="moonshine" />
 		</property>
 		<property name="debug" value="false" />
-		<!-- power check ration -->
-		<!-- workstation will look for power at this interval -->
-		<!-- if it is a gas powered station, it might need to consume power -->
 		<property name="TickRate" value="60" />
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" count="0" />
@@ -16468,15 +16411,12 @@
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#Lathe?LathePrefab" />
 		<property name="Class" value="Machine, Mods" />
-		<!-- Boiler (heat), gaz, Electricical Block Name -->
-		<!-- Electrical can be Power Blocks or Custom Electrical devices -->
 		<property name="powerType" value="failurerelay" />
 		<property name="Material" value="MmetalNoGlue" />
 		<property name="MaxDamage" value="250" />
 		<property name="HeatMapStrength" value="0.5" />
 		<property name="HeatMapTime" value="1200" />
 		<property name="HeatMapFrequency" value="25" />
-		<!-- <property name="ModelOffset" value="0,-0.02,0" /> -->
 		<property name="ImposterDontBlock" value="true" />
 		<property class="RepairItems">
 			<property name="wood" value="5" />
@@ -16487,16 +16427,12 @@
 			<property name="CraftingAreaRecipes" value="lathe" />
 			<property name="Modules" value="tools,output" />
 		</property>
-		<!-- power check ration -->
-		<!-- workstation will look for power at this interval -->
-		<!-- if it is a gas powered station, it might need to consume power -->
 		<property name="TickRate" value="5" />
 		<property name="debug" value="false" />
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" count="0" />
 		<drop event="Destroy" name="lathe" count="1" tool_category="Disassemble" />
 	</block>
-	<!-- POWER WORKSTATIONS -->
 	<block id="1341" name="WeaponWorkbench">
 		<property name="Class" value="AssWork, Mods" />
 		<property name="Material" value="metal" />
@@ -16527,7 +16463,6 @@
 		<drop event="Destroy" count="0" />
 		<drop event="Destroy" name="WeaponWorkbench" count="1" tool_category="Disassemble" />
 	</block>
-	<!-- CUSTOM ELECTRIC DEVICES START -->
 	<block id="21" name="UltraSound">
 		<property name="Class" value="ElectricDevice, Mods" />
 		<property name="Material" value="Mmetal_weak" />
@@ -16561,7 +16496,6 @@
 		</property>
 		<property name="RequiredPower" value="10" />
 		<property name="ImposterDontBlock" value="true" />
-		<!-- <property name="ModelOffset" value="0,-0.02,0" /> -->
 		<drop event="Destroy" name="cloth" count="5" />
 	</block>
 	<block id="112" name="failurerelay">
@@ -16570,7 +16504,6 @@
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#relay?relay1" />
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-		<!-- <property name="ModelOffset" value="0,-0.02,0" /> -->
 		<property name="ImposterDontBlock" value="true" />
 		<property name="RequiredPower" value="75" />
 		<property name="soundOn" value="none" />
@@ -16599,10 +16532,8 @@
 		</property>
 		<property name="RequiredPower" value="20" />
 		<property name="ImposterDontBlock" value="true" />
-		<!-- <property name="ModelOffset" value="0,-0.02,0" /> -->
 		<drop event="Destroy" name="cloth" count="5" />
 	</block>
-	<!-- CUSTOM ELECTRIC DEVICES END -->
 	<block id="123" name="waterStore">
 		<property name="Class" value="MorteWaterStore, Mods" />
 		<property name="Material" value="metal" />
@@ -16616,7 +16547,6 @@
 		<drop event="Destroy" count="0" />
 		<drop event="Destroy" name="waterStore" count="1" tool_category="Disassemble" />
 	</block>
-	<!-- SEEDLINGS -->
 	<block id="127" name="plantedAppleTree">
 		<property name="Model" value="Entities/Trees/Prefabs/MountainPine1mPrefab" />
 		<property name="CreativeMode" value="Dev" />
@@ -16822,7 +16752,6 @@
 		<property name="PlantGrowing.Next" value="smallWheatPlant" />
 		<property name="PlantGrowing.GrowthRate" value="60" />
 	</block>
-	<!-- Young Trees/Plants as an intermediate link -->
 	<block id="459" name="smallAppleTree">
 		<property name="CreativeMode" value="Dev" />
 		<property name="AllowSize" value="2,2,2" />
@@ -16844,7 +16773,6 @@
 		<property name="UpwardsCount" value="1" />
 		<property name="IsPlant" value="true" />
 		<property name="ParticleOnDeath" value="treeGib_burnt" />
-		<!-- uses dummy texture id from opaque atlas -->
 		<property name="FallOver" value="false" />
 		<drop event="Harvest" name="wood" count="100" prob="1" />
 		<drop event="Harvest" name="wood" count="50" prob=".5" />
@@ -16870,7 +16798,6 @@
 		<property name="UpwardsCount" value="1" />
 		<property name="IsPlant" value="true" />
 		<property name="ParticleOnDeath" value="treeGib_burnt" />
-		<!-- uses dummy texture id from opaque atlas -->
 		<property name="FallOver" value="false" />
 		<drop event="Harvest" name="wood" count="100" prob="1" />
 		<drop event="Harvest" name="wood" count="50" prob=".5" />
@@ -16951,7 +16878,6 @@
 		<drop event="Destroy" name="redwood" count="25" prob="1" />
 		<property name="IsPlant" value="true" />
 		<property name="ParticleOnDeath" value="treeGib_burnt" />
-		<!-- uses dummy texture id from opaque atlas -->
 		<property name="FallOver" value="false" />
 	</block>
 	<block id="660" name="smallCannabisPlant">
@@ -16998,7 +16924,6 @@
 		<property name="PlantGrowing.FertileLevel" value="5" />
 		<drop event="Destroy" name="" count="0" />
 	</block>
-	<!-- TREES Harvestable, Final stage -->
 	<block id="702" name="fruitTreeMaster">
 		<property name="Model" value="#AppleTree1?AppleTree1Prefab" />
 		<property name="Class" value="FruitTree, Mods" />
@@ -17116,7 +17041,6 @@
 		<drop event="Harvest" name="avocado" count="1" prob=".2" tool_category="Gardener" />
 		<drop event="Destroy" name="avocado" count="1" prob="1" />
 	</block>
-	<!-- PLANTS Harvestable, Final stage -->
 	<block id="952" name="plantMaster">
 		<property name="CreativeMode" value="Dev" />
 		<property name="Class" value="MortePlantGrown, Mods" />
@@ -17130,7 +17054,6 @@
 		<property name="IsPlant" value="true" />
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="FallOver" value="false" />
-		<!-- <drop event="Destroy" name="" count="0"/> -->
 		<drop event="Destroy" name="yuccaFibers" count="2,6" />
 		<property name="CropsGrown.BonusHarvestDivisor" value="9" />
 	</block>
@@ -17222,7 +17145,6 @@
 		<property name="ModelOffset" value="0,-0.1,0" />
 		<property name="CropsGrown.BonusHarvestDivisor" value="5" />
 	</block>
-	<!-- MISC BLOCKS -->
 	<block id="966" name="mortarAndPestle">
 		<property name="Material" value="stone" />
 		<property name="Stacknumber" value="1" />
@@ -17270,7 +17192,6 @@
 		<property name="EconomicValue" value="10" />
 	</block>
 	<block id="969" name="RadSuitChest">
-		<!-- do not rename -->
 		<property name="Class" value="Loot" />
 		<property name="CustomIcon" value="cntChest01" />
 		<property name="Material" value="wood+wood" />
@@ -17283,7 +17204,6 @@
 		<drop event="Destroy" name="wood" count="1" prob="1" />
 		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	</block>
-	<!-- HUSBANDRY -->
 	<block id="971" name="trough">
 		<property name="Class" value="Loot" />
 		<property name="Material" value="wood" />
@@ -17292,8 +17212,6 @@
 		<property name="LootList" value="10" />
 		<drop event="Destroy" count="0" />
 	</block>
-	<!-- HUSBANDRY -->
-	<!-- DOGSDX -->
 	<block id="972" name="DogTrough">
 		<property name="Class" value="UtilityContainer, Mods" />
 		<property name="LootList" value="10" />
@@ -17339,53 +17257,31 @@
 		<property name="Extends" value="dummyAnimalBlock" />
 		<property name="Model" value="#dogDummy?NewHayBoe" />
 	</block>
-	<!-- DOGSDX -->
-	<!-- SPAWNERS -->
 	<block id="970" name="spawner">
 		<property name="Class" value="Spawner, Mods" />
 		<property name="Material" value="Mmetal_hard" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Texture" value="116" />
 		<property name="Model" value="Entities/Trees/Prefabs/Stump" />
-		<!-- this determines how fast zombies are spawned (s) -->
 		<property name="TickRate" value="30" />
-		<!-- this is the spawn trigger area -->
-		<!-- if a player gets inside this are it starts spawning -->
 		<property name="SpawnRadius" value="15" />
-		<!-- spawning area it will try to spawn the entities inside this area only -->
 		<property name="SpawnArea" value="5" />
-		<!-- If you dont want it to make radiation damage, set this values to 0 -->
 		<property name="RadiationArea" value="5" />
 		<property name="RadiationDamage" value="5" />
-		<!-- If you want any buff to be applied inside the radiation area, uncomment next line -->
-		<!-- <property name="Buffs" value="radiation1" /> -->
-		<!-- spawns a maximum of 4 zombies at a time -->
 		<property name="NumberToSpawn" value="4" />
-		<!-- Maximum zombies allowed inside the spawnarea -->
 		<property name="MaxSpawned" value="8" />
-		<!-- area to check for max spawned -->
 		<property name="CheckArea" value="20" />
-		<!-- Time to Pause spawning, in minutes, after the total number of spawned zombies have reached NumberToPause -->
-		<!-- If this number is >= 999, the spawning will stop forever -->
-		<!-- this WILL NOT STOP radiation damage and buffs -->
 		<property name="PauseTime" value="0" />
-		<!-- Total number of zombies to pause the spawning. -->
 		<property name="NumberToPause" value="0" />
-		<!-- EntityGroup used to choose the entity to spawn -->
 		<property name="EntityGroup" value="ZombiesAll" />
-		<!-- Lootable -->
 		<property name="Lootable" value="false" />
 		<property name="LootList" value="10" />
-		<!-- empty since it's not lootable -->
-		<!-- What to do to particles when the nest is stopped -->
-		<!-- None, Start particles, Stop particles -->
 		<property name="ParticleAction" value="None" />
 		<property name="LPHardnessScale" value="8" />
 		<property name="Group" value="Decor" />
 		<drop event="Destroy" count="0" />
 		<property name="debug" value="false" />
 	</block>
-	<!-- TRUCKS TOP LOOT -->
 	<block id="977" name="truckMilitary">
 		<property name="Extends" value="spawner" />
 		<property name="Model" value="#DecoVehiclesPrefabs?Guntruck" />
@@ -17478,14 +17374,12 @@
 		<property name="EntityGroup" value="spiders" />
 		<property name="DowngradeBlock" value="cobweb" />
 	</block>
-	<!-- New Ores -->
 	<block id="1024" name="saltOre">
 		<property name="Material" value="Msalt" />
 		<property name="Shape" value="Terrain" />
 		<property name="Mesh" value="terrain" />
 		<property name="Texture" value="178" />
 		<property name="DropScale" value="2" />
-		<!-- <drop event="Harvest" name="salt" count="10" /> -->
 		<drop event="Destroy" name="saltOre" count="1" prob="1.0" />
 		<drop event="Fall" name="saltOre" count="1" prob=".5" stick_chance="0" />
 		<property name="CanMobsSpawnOn" value="true" />
@@ -17533,8 +17427,6 @@
 		<drop event="Fall" name="uranium" count="0" />
 		<property name="DropScale" value="2" />
 	</block>
-	<!-- New Ores -->
-	<!-- RAD MOD -->
 	<block id="5" name="radiated">
 		<property name="Material" value="dirt" />
 		<property name="Shape" value="Terrain" />
@@ -17601,20 +17493,14 @@
 		<property name="Model" value="#nukes?nuke1" />
 		<property class="Explosion">
 			<property name="ParticleIndex" value="0" />
-			<!-- which prefab/particle is used -->
 			<property name="RadiusBlocks" value="10" />
-			<!-- damage radius for blocks -->
 			<property name="BlockDamage" value="3000" />
-			<!-- damage for blocks in the center of the explosion -->
 			<property name="RadiusEntities" value="10" />
-			<!-- damage radius for entities -->
 			<property name="EntityDamage" value="100" />
-			<!-- damage for entities in the center of the explosion -->
 		</property>
 		<property name="LPHardnessScale" value="0" />
 		<property name="CanPickup" value="true" />
 		<property name="debug" value="false" />
-		<!-- disable LP for TNT blocks -->
 		<property name="Group" value="Tools/Traps" />
 	</block>
 	<block id="1083" name="RadAir">
@@ -17685,7 +17571,6 @@
 		<drop event="Destroy" name="scrapIron" count="1" prob="1.0" />
 		<drop event="Fall" name="scrapIron" count="1" prob="1.0" />
 	</block>
-	<!-- RAD MOD -->
 	<block id="1959" name="ammoWorkbench">
 		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
@@ -17710,12 +17595,9 @@
 		<property name="Class" value="Turbine, Mods" />
 		<property name="Stacknumber" value="1" />
 		<property name="FuelName" value="" />
-		<!-- looks for an atomic core 10 blocks wide -->
 		<property name="PowerEmitter" value="atomicCore,15" />
 		<property name="TickRate" value="150" />
 		<property name="ImposterDontBlock" value="true" />
-		<!-- if you lower this value too much, it can stress the system as it's constantly ticking -->
-		<!-- be careful: it WILL emmit heat everytime it consumes fuel -->
 		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#turbine?Turbine1" />
@@ -17741,24 +17623,17 @@
 	</block>
 	<block id="1047" name="atomicCore">
 		<property name="Class" value="Transformer, Mods" />
-		<!-- This is mandatory, catalyst used for the transformation (name, quantity) -->
 		<property name="FuelName" value="enrichedUranium,2" />
-		<!-- Empty version of the end product, optional -->
 		<property name="RawName" value="plutoniumRing,1" />
-		<!-- This is mandatory, and it's the object resulting from the transformation -->
 		<property name="ProductName" value="plutonium,1" />
 		<property name="MultiBlockDim" value="2,3,2" />
-		<!-- tranform ration in seconds -->
-		<!-- decay and heatmap is applyed for each transform -->
 		<property name="TickRate" value="3600" />
-		<!-- damage / buffs emission rate, in seconds -->
 		<property name="EmissionRate" value="10" />
 		<property name="RadiationArea" value="10" />
 		<property name="RadiationDamage" value="2" />
 		<property name="Buffs" value="radiation1" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#NukCore?NukCorePrefab" />
-		<!-- <property name="Model" value="#powerplant?CorePrefab" /> -->
 		<property name="LootList" value="101" />
 		<property name="Material" value="Mmetal_hard" />
 		<property name="Texture" value="284" />
@@ -17797,12 +17672,9 @@
 			<property name="Modules" value="tools,output" />
 		</property>
 		<property name="TickRate" value="1000" />
-		<!-- if you lower this value too much, it can stress the system as it's constantly ticking -->
 		<property name="debug" value="false" />
 		<property name="EconomicValue" value="1000" />
 		<drop event="Destroy" count="0" />
-		<!-- <drop event="Harvest" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" name="workbenchBig" count="1" tool_category="Disassemble" /> -->
 	</block>
 	<block id="1050" name="electronicWorkbench">
 		<property name="Material" value="metal" />
@@ -17814,7 +17686,6 @@
 		<property name="Class" value="Machine, Mods" />
 		<property name="powerType" value="failurerelay" />
 		<property name="TickRate" value="1000" />
-		<!-- if you lower this value too much, it can stress the system as it's constantly ticking -->
 		<property class="RepairItems">
 			<property name="wood" value="5" />
 			<property name="forgedIron" value="5" />
@@ -17827,8 +17698,6 @@
 		</property>
 		<property name="EconomicValue" value="1000" />
 		<drop event="Destroy" count="0" />
-		<!-- <drop event="Harvest" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" name="electronicWorkbench" count="1" tool_category="Disassemble" /> -->
 	</block>
 	<block id="1051" name="LampSideNew">
 		<property name="Material" value="Mmetal_hard" />
@@ -17883,7 +17752,6 @@
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#newgarage?GarageDoor" />
 		<property name="Collide" value="movement,melee,rocket,bullet" />
-		<!-- -rocket -->
 		<property name="Tag" value="Door" />
 		<property name="Place" value="Door" />
 		<property name="PlaceEverywhere" value="true" />
@@ -17898,7 +17766,6 @@
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 		<property name="Group" value="Building" />
 	</block>
-	<!-- MyColony -->
 	<block id="1021" name="cntFridgeTopE">
 		<property name="Class" value="Loot" />
 		<property name="CustomIcon" value="cntFridgeTop" />
@@ -17958,19 +17825,11 @@
 		<property name="WireOffset" value="0,0.5,0" />
 		<property name="CanMobsSpawnOn" value="false" />
 		<property name="CanPickup" value="true" />
-		<!-- If you set this value to true, you WILL NEED TO USE POWER MOD -->
-		<!-- If true it will require electrical power to work -->
 		<property name="isPowered" value="true" />
-		<!-- Spawn Chance in %, checked at each spawn interval -->
 		<property name="SpawnChance" value="25" />
-		<!-- Spawn interval in seconds -->
 		<property name="SpawnInterval" value="120" />
-		<!-- Spawn area in blocks -->
 		<property name="SpawnArea" value="10" />
-		<!-- EntityGroup to choose spawn -->
 		<property name="EntityGroup" value="SurvivorsTower" />
-		<!-- Max number of survivors allowed inside the spawn area -->
-		<!-- Will include advanced survivors like cooks or traders -->
 		<property name="MaxSpawn" value="5" />
 		<drop event="Destroy" count="0" prob="1" />
 		<property name="debug" value="false" />
@@ -17984,57 +17843,32 @@
 		<property name="Shape" value="ModelEntity" />
 		<property name="LootList" value="10" />
 		<property name="Model" value="#Survivors?smithPrefab" />
-		<!-- Requirement: Male/Female/Teen/Any survivor type -->
 		<property name="Requires" value="Male" />
-		<!-- CRAFTING CONFIGURATION -->
-		<!-- Used to look for the receipts the crafter will use. If it cannot find on the set section, it will look for one with no craftarea -->
-		<!-- Omit or leave blank if you want to use the first receipt for the products -->
 		<property name="CraftArea" value="smith" />
-		<!-- Lower tier of product - low skill required -->
 		<property name="LowTier" value="ironArrowHeadPack,trapNail,ceramicPlate,hoeIron,wrench,partsRevolver_frame,partsRevolver_grip,partsPumpShotgun_stock,partsPumpShotgun_barrel" />
-		<!-- Medium tier of product - some skill required (6 or higher)  -->
 		<property name="MedTier" value="steelArrowHeadPack,huntingKnife,trapBear,forgedSteel,fireaxeIron,pickaxeIron,partsHuntingRifle_stock,partsHuntingRifle_barrel,partsPistol_grip,partsPistol_barrel,partsPumpShotgun_stockShort,partsPumpShotgun_barrelShort" />
-		<!-- High tier of product - highly skilled (12 or higher)-->
 		<property name="HighTier" value="machete,garageDoorRolling,steelPlate,armorPlate,partsAK47_stock,partsAK47_barrel,partsMP5_stock,partsMP5_barrel,metalFrame,smallDeposit" />
-		<!-- Expert product - Crafter needs to be maxed out (15) -->
 		<property name="ExpertTier" value="glassPane,ceilingLight01_player,industrialLight01_player,fireaxeSteel,assaultRifleStock,assaultRifleBarrel,partsSniperRifle_stock,partsSniperRifle_barrel,genCasing,fuelDeposit" />
-		<!-- Receipts to autolearn -->
 		<property name="AutoLearn" value="industrialLight01_player,ceilingLight07_player,ironArrowHeadPack,steelArrowHeadPack,metalFrame,smallDeposit,genCasing,fuelDeposit,glassPane" />
-		<!-- Maximum of tier Default recipes the crafter can automatically know -->
 		<property name="LowTierDF" value="4" />
 		<property name="MedTierDF" value="4" />
 		<property name="HighTierDF" value="2" />
 		<property name="ExpertTierDF" value="2" />
-		<!-- Raw Materials Container - NEEDS to be secureLoot -->
 		<property name="MatContainer" value="cntStorageGeneric" />
-		<!-- Final product Container - NEEDS to be secureLoot -->
 		<property name="ItemContainer" value="cntStorageGeneric" />
-		<!-- Containers check area in blocks - default configuration require a very close container -->
 		<property name="CraftCheckArea" value="2" />
-		<!-- FOOD CONFIGURATION - <amount of "hp" to restore>,foodItem1,foodItem2,...,foodItemn -->
-		<!-- Lower type of food - survivor looks for this if he is not hurt -->
 		<property name="FoodLow" value="1,cornBread,eggboiled" />
-		<!-- Medium type of food - survivor looks for this if he is slighlty hurt -->
 		<property name="FoodMedium" value="2,grilledMeat,boiledMeat" />
-		<!-- Higher type of food - survivor looks for this if he is badly hurt -->
 		<property name="FoodHigh" value="5,vegetableStew,meatStew" />
-		<!-- Food containers where survivors look for something to eat - NEEDS to be secureLoot -->
 		<property name="FoodContainer" value="cntFridgeTopE" />
-		<!-- Food Check interval in seconds -->
 		<property name="CheckInterval" value="600" />
-		<!-- Food check area in blocks -->
 		<property name="CheckArea" value="10" />
 		<drop event="Destroy" count="0" prob="1" />
 		<property name="CanMobsSpawnOn" value="false" />
-		<!-- CUSTOM HEATMAP - emited while working -->
-		<!-- this values are similar to vanilla config -->
 		<property name="HeatStrength" value="3" />
 		<property name="HeatTime" value="1200" />
-		<!-- smell / sound - i'm not sure if zeds react differently, but I decided to let this -->
 		<property name="HeatType" value="Sound" />
-		<!-- define this in seconds -->
 		<property name="HeatInterval" value="120" />
-		<!-- WORKSOUND to play while working -->
 		<property name="WorkSound" value="anvil_sound" />
 		<property name="debug" value="false" />
 		<property name="SellableToTrader" value="false" />
@@ -18049,55 +17883,31 @@
 		<property name="Shape" value="ModelEntity" />
 		<property name="LootList" value="10" />
 		<property name="Model" value="#Survivors?cookPrefab" />
-		<!-- Requirement: Male/Female/Teen/Any survivor type -->
 		<property name="Requires" value="Female" />
-		<!-- CRAFTING CONFIGURATION -->
-		<!-- Used to look for the receipts the crafter will use. If it cannot find on the set section, it will look for one with no craftarea -->
-		<!-- Omit or leave blank if you want to use the first receipt for the products -->
 		<property name="CraftArea" value="" />
-		<!-- Lower tier of product - low skill required -->
 		<property name="LowTier" value="cornBread,eggboiled,cornOnTheCob,charredMeat" />
-		<!-- Medium tier of product - some skill required (6 or higher)  -->
 		<property name="MedTier" value="grilledMeat,boiledMeat,baconAndEggs,coffee" />
-		<!-- High tier of product - highly skilled (12 or higher)-->
 		<property name="HighTier" value="vegetableStew,goldenRodTea,redTea" />
-		<!-- Expert product - Crafter needs to be maxed out (15) -->
 		<property name="ExpertTier" value="meatStew,blueberryPie" />
-		<!-- Maximum of tier Default recipes the crafter can automatically know -->
 		<property name="LowTierDF" value="2" />
 		<property name="MedTierDF" value="2" />
 		<property name="HighTierDF" value="1" />
 		<property name="ExpertTierDF" value="1" />
-		<!-- Raw Materials Container - NEEDS to be secureLoot -->
 		<property name="MatContainer" value="cntFridgeTopE" />
-		<!-- Final product Container - NEEDS to be secureLoot -->
 		<property name="ItemContainer" value="cntFridgeTopE" />
-		<!-- Containers check area in blocks - default configuration require a very close container -->
 		<property name="CraftCheckArea" value="3" />
-		<!-- FOOD CONFIGURATION - <amount of "hp" to restore>,foodItem1,foodItem2,...,foodItemn -->
-		<!-- Lower type of food - survivor looks for this if he is not hurt -->
 		<property name="FoodLow" value="1,cornBread,eggboiled" />
-		<!-- Medium type of food - survivor looks for this if he is slighlty hurt -->
 		<property name="FoodMedium" value="2,grilledMeat,boiledMeat" />
-		<!-- Higher type of food - survivor looks for this if he is badly hurt -->
 		<property name="FoodHigh" value="5,meatStew,vegetableStew" />
-		<!-- Food containers where survivors look for something to eat - NEEDS to be secureLoot -->
 		<property name="FoodContainer" value="cntFridgeTopE" />
-		<!-- Food Check interval in seconds -->
 		<property name="CheckInterval" value="600" />
-		<!-- Food check area in blocks -->
 		<property name="CheckArea" value="10" />
 		<drop event="Destroy" count="0" prob="1" />
 		<property name="CanMobsSpawnOn" value="false" />
-		<!-- CUSTOM HEATMAP - emited while working -->
-		<!-- this values are similar to vanilla config -->
 		<property name="HeatStrength" value="1" />
 		<property name="HeatTime" value="1200" />
-		<!-- smell / sound - i'm not sure if zeds react differently, but I decided to let this -->
 		<property name="HeatType" value="Smell" />
-		<!-- define this in seconds -->
 		<property name="HeatInterval" value="120" />
-		<!-- WORKSOUND to play while working -->
 		<property name="WorkSound" value="cooking_sound" />
 		<property name="debug" value="false" />
 		<property name="SellableToTrader" value="false" />
@@ -18111,56 +17921,32 @@
 		<property name="Shape" value="ModelEntity" />
 		<property name="LootList" value="10" />
 		<property name="Model" value="#Survivors?farmerPrefab" />
-		<!-- Requirement: Male/Female/Teen/Any survivor type -->
 		<property name="Requires" value="Teen" />
-		<!-- CRAFTING CONFIGURATION -->
-		<!-- Lower tier of plants - low skill required -->
 		<property name="LowTier" value="sunflower,plantedPotato3Harvest,plantedBlueberry3Harvest,plantedCotton3Harvest" />
 		<property name="LowTierSeeds" value="sunflowerSeed,plantedPotato1,plantedBlueberry1,plantedCotton1" />
-		<!-- Medium tier of plants - some skill required (6 or higher)  -->
 		<property name="MedTier" value="carrotPlant,onionPlant,garlicPlant,plantedChrysanthemum3Harvest,plantedGoldenrod3Harvest,plantedYucca3Harvest,plantedAloe3Harvest" />
 		<property name="MedTierSeeds" value="carrotSeed,onionSeed,garlicSeed,plantedChrysanthemum1,plantedGoldenrod1,plantedHop1,plantedYucca1,plantedAloe1" />
-		<!-- High tier of plants - highly skilled (12 or higher)-->
 		<property name="HighTier" value="paprikaPlant,eggPlant,tobaccoPlant,plantedCoffee3Harvest,plantedCorn3Harvest,mushroom3Harvest" />
 		<property name="HighTierSeeds" value="paprikaSeed,eggPlantSeed,tobaccoSeed,plantedCoffee1,plantedCorn1,plantedMushroom1" />
-		<!-- Expert plants - Crafter needs to be maxed out (15) -->
 		<property name="ExpertTier" value="tomatoPlant,strawberryPlant,wheatPlant,sugarcanePlant,saladPlant,cannabisPlant" />
 		<property name="ExpertTierSeeds" value="tomatoSeed,strawberrySeed,wheat,sugarcaneSeed,saladLeaves,cannabisSeed" />
-		<!-- PLANTS WILL ONLY BE PLANTED ON fertileFarmland BLOCKS -->
-		<!-- Work area where farmer can plant and harvest stuff -->
 		<property name="WorkArea" value="8" />
-		<!-- Time between work operations in seconds - 30s minimum -->
 		<property name="WorkInterval" value="20" />
-		<!-- Raw Materials Container - NEEDS to be secureLoot -->
 		<property name="MatContainer" value="cntStorageFarmIcy" />
-		<!-- Final product Container - NEEDS to be secureLoot -->
 		<property name="ItemContainer" value="cntStorageFarmIcy" />
-		<!-- Containers check area in blocks - default configuration require a very close container -->
 		<property name="CraftCheckArea" value="5" />
-		<!-- FOOD CONFIGURATION - <amount of "hp" to restore>,foodItem1,foodItem2,...,foodItemn -->
-		<!-- Lower type of food - survivor looks for this if he is not hurt -->
 		<property name="FoodLow" value="1,cornBread,eggboiled" />
-		<!-- Medium type of food - survivor looks for this if he is slighlty hurt -->
 		<property name="FoodMedium" value="2,grilledMeat,boiledMeat" />
-		<!-- Higher type of food - survivor looks for this if he is badly hurt -->
 		<property name="FoodHigh" value="5,meatStew,vegetableStew" />
-		<!-- Food containers where survivors look for something to eat - NEEDS to be secureLoot -->
 		<property name="FoodContainer" value="cntFridgeTopE" />
-		<!-- Food Check interval in seconds -->
 		<property name="CheckInterval" value="600" />
-		<!-- Food check area in blocks -->
 		<property name="CheckArea" value="10" />
 		<drop event="Destroy" count="0" prob="1" />
 		<property name="CanMobsSpawnOn" value="false" />
-		<!-- CUSTOM HEATMAP - emited while working -->
-		<!-- this values are similar to vanilla config -->
 		<property name="HeatStrength" value="1" />
 		<property name="HeatTime" value="1200" />
-		<!-- smell / sound - i'm not sure if zeds react differently, but I decided to let this -->
 		<property name="HeatType" value="Sound" />
-		<!-- define this in seconds -->
 		<property name="HeatInterval" value="120" />
-		<!-- WORKSOUND to play while working -->
 		<property name="WorkSound" value="farming_sound" />
 		<property name="debug" value="false" />
 		<property name="SellableToTrader" value="false" />
@@ -18217,9 +18003,8 @@
 		<property class="RepairItems">
 			<property name="wood" value="20" />
 		</property>
-		<property name="UpgradeRated.ToBlock" value="cntStorageFarm">
-			<property name="UpgradeRated.Rate" value="15" />
-		</property>
+		<property name="UpgradeRated.ToBlock" value="cntStorageFarm" />
+		<property name="UpgradeRated.Rate" value="15" />
 		<property name="DowngradeBlock" value="cntStorageFarmInsecure" />
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Building" />
@@ -18235,50 +18020,28 @@
 		<property name="ModelOffset" value="0,-0.12,0" />
 		<property name="LootList" value="10" />
 		<property name="Model" value="#Survivors?guardPrefab" />
-		<!-- Requirement: Male/Female/Teen/Any survivor type -->
 		<property name="Requires" value="Male" />
-		<!-- GUARD CONFIGURATION -->
-		<!-- Used to look for the allowed guns -->
-		<!-- Leave <gun>_Sound blank to use the gun item sound -->
-		<!-- Pistol - low skill required -->
 		<property name="Pistol" value="gunPistol" />
 		<property name="Pistol_Sound" value="" />
-		<!-- Rifle Gun - medium skill (6 or higher)  -->
 		<property name="Rifle" value="" />
 		<property name="Rifle_Sound" value="" />
-		<!-- Machine Gun - medium skill (12 or higher)  -->
 		<property name="MG" value="gunMP5" />
 		<property name="MG_Sound" value="mp5_burst" />
-		<!-- Raw Materials Container - NEEDS to be secureLoot -->
 		<property name="AmmoContainer" value="cntStorageWeapons" />
-		<!-- Containers check area in blocks - default configuration require a very close container -->
 		<property name="CraftCheckArea" value="2" />
-		<!-- FOOD CONFIGURATION - <amount of "hp" to restore>,foodItem1,foodItem2,...,foodItemn -->
-		<!-- Lower type of food - survivor looks for this if he is not hurt -->
 		<property name="FoodLow" value="1,cornBread,eggboiled" />
-		<!-- Medium type of food - survivor looks for this if he is slighlty hurt -->
 		<property name="FoodMedium" value="2,grilledMeat,boiledMeat" />
-		<!-- Higher type of food - survivor looks for this if he is badly hurt -->
 		<property name="FoodHigh" value="5,meatStew,vegetableStew" />
-		<!-- Special food to stay awake - prevents sleeping but reduces HP -->
 		<property name="FoodAwake" value="1,coffee" />
-		<!-- Duration of the food for sleep prevention, in seconds -->
 		<property name="AwakeTime" value="300" />
-		<!-- Food containers where survivors look for something to eat - NEEDS to be secureLoot -->
 		<property name="FoodContainer" value="cntFridgeTopE" />
-		<!-- Food Check interval in seconds -->
 		<property name="CheckInterval" value="600" />
-		<!-- Food check area in blocks -->
 		<property name="CheckArea" value="10" />
 		<drop event="Destroy" count="0" prob="1" />
 		<property name="CanMobsSpawnOn" value="false" />
-		<!-- CUSTOM HEATMAP - emited while working -->
-		<!-- this values are similar to vanilla config -->
 		<property name="HeatStrength" value="0.1" />
 		<property name="HeatTime" value="1000" />
-		<!-- smell / sound - i'm not sure if zeds react differently, but I decided to let this -->
 		<property name="HeatType" value="Sound" />
-		<!-- define this in seconds -->
 		<property name="HeatInterval" value="120" />
 		<property name="debug" value="false" />
 		<property name="SellableToTrader" value="false" />
@@ -18292,63 +18055,37 @@
 		<property name="Shape" value="ModelEntity" />
 		<property name="LootList" value="10" />
 		<property name="Model" value="#Survivors?mechanicPrefab" />
-		<!-- Requirement: Male/Female/Teen/Any survivor type -->
 		<property name="Requires" value="Male" />
-		<!-- CRAFTING CONFIGURATION -->
-		<!-- Used to look for the receipts the crafter will use. If it cannot find on the set section, it will look for one with no craftarea -->
-		<!-- Omit or leave blank if you want to use the first receipt for the products -->
 		<property name="CraftArea" value="crafter" />
-		<!-- Lower tier of product - low skill required -->
 		<property name="LowTier" value="spring,gunNail,nailShotgun,partsHuntingRifle_parts,partsPistol_parts,partsRevolver_parts,partsPumpShotgun_receiver" />
-		<!-- Medium tier of product - some skill required (6 or higher)  -->
 		<property name="MedTier" value="bulletCasingPack,bulletTipPack,gunHuntingRifle,gunPumpShotgun,gunSawedOffPumpShotgun,gunRevolver,partsHuntingRifle_receiver,partsPistol_receiver,partsRevolver_cylinder,partsPumpShotgun_parts,buechse,smallGenerator" />
-		<!-- High tier of product - highly skilled (12 or higher)-->
 		<property name="HighTier" value="gunMP5,gunPistol,steelBoots,steelGloves,steelLegArmor,partsAK47_receiver,partsAK47_parts,partsMP5_receiver,partsMP5_parts,steampunkRevolver,airCon" />
-		<!-- Expert product - Crafter needs to be maxed out (15) -->
 		<property name="ExpertTier" value="gunAK47,ACW,MTAR,gun44Magnum,gunSniperRifle,steelChestArmor,steelHelmet,drawBridge,assaultRifleTriggerHousing,acw-r_parts,partsSniperRifle_receiver,partsSniperRifle_parts,dieselGen,solarCell,solarbank" />
-		<!-- Receipts to autolearn -->
 		<property name="AutoLearn" value="bulletCasingPack,bulletTipPack,spring,smallGenerator,dieselGen,airCon" />
-		<!-- Maximum of tier Default recipes the crafter can automatically know -->
 		<property name="LowTierDF" value="3" />
 		<property name="MedTierDF" value="5" />
 		<property name="HighTierDF" value="2" />
 		<property name="ExpertTierDF" value="2" />
-		<!-- Raw Materials Container - NEEDS to be secureLoot -->
 		<property name="MatContainer" value="cntStorageGeneric" />
-		<!-- Final product Container - NEEDS to be secureLoot -->
 		<property name="ItemContainer" value="cntStorageGeneric" />
-		<!-- Containers check area in blocks - default configuration require a very close container -->
 		<property name="CraftCheckArea" value="2" />
-		<!-- FOOD CONFIGURATION - <amount of "hp" to restore>,foodItem1,foodItem2,...,foodItemn -->
-		<!-- Lower type of food - survivor looks for this if he is not hurt -->
 		<property name="FoodLow" value="1,cornBread,eggboiled" />
-		<!-- Medium type of food - survivor looks for this if he is slighlty hurt -->
 		<property name="FoodMedium" value="2,grilledMeat,boiledMeat" />
-		<!-- Higher type of food - survivor looks for this if he is badly hurt -->
 		<property name="FoodHigh" value="5,vegetableStew,meatStew" />
-		<!-- Food containers where survivors look for something to eat - NEEDS to be secureLoot -->
 		<property name="FoodContainer" value="cntFridgeTopE" />
-		<!-- Food Check interval in seconds -->
 		<property name="CheckInterval" value="600" />
-		<!-- Food check area in blocks -->
 		<property name="CheckArea" value="10" />
 		<drop event="Destroy" count="0" prob="1" />
 		<property name="CanMobsSpawnOn" value="false" />
-		<!-- CUSTOM HEATMAP - emited while working -->
-		<!-- this values are similar to vanilla config -->
 		<property name="HeatStrength" value="4" />
 		<property name="HeatTime" value="1200" />
-		<!-- smell / sound - i'm not sure if zeds react differently, but I decided to let this -->
 		<property name="HeatType" value="Sound" />
-		<!-- define this in seconds -->
 		<property name="HeatInterval" value="120" />
-		<!-- WORKSOUND to play while working -->
 		<property name="WorkSound" value="mechanic_sound" />
 		<property name="debug" value="false" />
 		<property name="SellableToTrader" value="false" />
 		<drop event="Destroy" name="scrapIron" count="25" prob="1" />
 	</block>
-	<!-- MyColony -->
 	<block id="1151" name="kitchenWorkbench">
 		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
@@ -18454,7 +18191,6 @@
 	</block>
 	<block id="1371" name="Tanks">
 		<property name="Material" value="metal" />
-		<!--property name="Class" value="CarExplodeLoot" /-->
 		<property name="Class" value="LootMorte, Mods" />
 		<property name="LootList" value="117" />
 		<property name="Shape" value="ModelEntity" />
@@ -18495,13 +18231,11 @@
 		<drop event="Harvest" name="electronicParts" count="10" prob=".6" tool_category="Disassemble" />
 		<drop event="Harvest" name="electronicParts" count="5" prob=".4" tool_category="Disassemble" />
 		<drop event="Harvest" name="electronicParts" count="5" prob=".2" tool_category="Disassemble" />
-		<!-- <drop event="Fall" name="cntCar03BlueDamage1" count="1" prob="1.0" stick_chance="1" /> -->
 		<property name="BigDecorationRadius" value="5" />
 		<property name="CanDecorateOnSlopes" value="false" />
 	</block>
 	<block id="1372" name="TanksM">
 		<property name="Material" value="metal" />
-		<!--property name="Class" value="CarExplodeLoot" /-->
 		<property name="Class" value="LootMorte, Mods" />
 		<property name="LootList" value="117" />
 		<property name="Shape" value="ModelEntity" />
@@ -18510,7 +18244,6 @@
 		<property name="Model" value="#tanksm?TanksM" />
 		<property name="MultiBlockDim" value="2,2,6" />
 		<property name="ShowModelOnFall" value="false" />
-		<!--property name="ModelOffset" value="0,-0.1,0" /-->
 		<property name="MaxDamage" value="5000" />
 		<drop event="Harvest" name="smallEngine" count="1" prob="0.4" tool_category="Disassemble" />
 		<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tool_category="Disassemble" />
@@ -18542,7 +18275,6 @@
 		<drop event="Harvest" name="electronicParts" count="10" prob=".6" tool_category="Disassemble" />
 		<drop event="Harvest" name="electronicParts" count="5" prob=".4" tool_category="Disassemble" />
 		<drop event="Harvest" name="electronicParts" count="5" prob=".2" tool_category="Disassemble" />
-		<!-- <drop event="Fall" name="cntCar03BlueDamage1" count="1" prob="1.0" stick_chance="1" /> -->
 		<property name="BigDecorationRadius" value="5" />
 		<property name="CanDecorateOnSlopes" value="false" />
 	</block>
@@ -18554,7 +18286,6 @@
 		<property name="Extends" value="TanksM" />
 		<property name="Model" value="#tanksm?TanksT-90" />
 	</block>
-	<!-- End of Steel block conversion  -->
 	<block id="980" name="forge1">
 		<property name="Class" value="ForgeM, Mods" />
 		<property name="Material" value="Mbrick" />
@@ -18579,13 +18310,11 @@
 			<property name="CraftingAreaRecipes" value="forge1" />
 			<property name="Modules" value="output,fuel,material_input" />
 			<property name="InputMaterials" value="steel,coal,iron,clay,zinc,copper" />
-			<!-- BigForge Conversion Block edit -->
 		</property>
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" count="0" />
 		<drop event="Destroy" name="forge1" count="1" tool_category="Disassemble" />
 	</block>
-	<!-- this workstation needs no power, but only allows to make very basic metal stuff -->
 	<block id="982" name="anvil1">
 		<property name="Material" value="metal" />
 		<property name="Stacknumber" value="1" />
@@ -18606,7 +18335,6 @@
 		<drop event="Destroy" count="0" />
 		<drop event="Destroy" name="anvil1" count="1" tool_category="Disassemble" />
 	</block>
-	<!-- this workstation needs no power, but only allows to make very basic metal stuff -->
 	<block id="983" name="forgestone">
 		<property name="DescriptionKey" value="forgestoneDesc" />
 		<property name="Material" value="metal" />
@@ -18669,7 +18397,6 @@
 		<drop event="Destroy" name="yuccaFibers" count="1,3" />
 	</block>
 	<block id="1010" name="Radio">
-		<!--property name="Class" value="Radio, Mods" /-->
 		<property name="Class" value="Morte, Mods" />
 		<property name="ModelOffset" value="0,-0.04,0" />
 		<property name="Material" value="metal" />
@@ -18685,12 +18412,8 @@
 	</block>
 	<block id="1011" name="OilRig">
 		<property name="Class" value="Transformer, Mods" />
-		<!-- This is mandatory, catalyst used for the transformation (name, quantity) -->
 		<property name="FuelName" value="gasCan,6" />
-		<!-- This is mandatory, and it's the object resulting from the transformation -->
 		<property name="ProductName" value="oilShale,3" />
-		<!-- transform ratio on seconds -->
-		<!-- decay and heatmap is applyed for each transform -->
 		<property name="TickRate" value="120" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#oilrocker?OilRockerPrefab" />
@@ -18726,7 +18449,6 @@
 		<property name="MaxDamage" value="5" />
 		<drop event="Destroy" name="brokenGlass" count="5" prob="1" />
 	</block>
-	<!-- ID 2032 IN 15_Plants -->
 	<block id="1013" name="cannedFoodMachine">
 		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
@@ -18747,8 +18469,6 @@
 		<drop event="Destroy" name="cannedFoodMachine" count="1" tool_category="Disassemble" />
 	</block>
 	<block id="1014" name="RatTrap">
-		<!-- triggered trap -->
-		<!-- requires no power but has to be manually reseted -->
 		<property name="Class" value="TrapMorte, Mods" />
 		<property name="Material" value="wood" />
 		<property name="Shape" value="ModelEntity" />
@@ -18765,16 +18485,13 @@
 		<property name="HitLegs" value="false" />
 		<property name="Baited" value="true" />
 		<property name="EntityGroup" value="" />
-		<!-- Which animals it will actually be able to capture, up to 2 -->
 		<property name="AnimalToCatch" value="Rat" />
 		<property name="Baite" value="cheese" />
 		<property name="Loot1" value="ratItem" />
 		<property name="Loot2" value="" />
-		<!-- if set to true, if the trap kills an entity (not player), it will imediatly disapear -->
 		<property name="DestroyOnDeath" value="true" />
 		<property name="OpenSound" value="boxtrap_trigger" />
 		<property name="CloseSound" value="boxtrap_trigger" />
-		<!-- until better solution this is just to allow interaction -->
 		<property name="CanPickup" value="true" />
 		<drop event="Destroy" count="0" />
 		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
@@ -18822,7 +18539,6 @@
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#shutter?ShutterDoor" />
 		<property name="Collide" value="movement,melee,rocket,bullet" />
-		<!-- -rocket -->
 		<property name="Tag" value="Door" />
 		<property name="Place" value="Door" />
 		<property name="PlaceEverywhere" value="true" />
@@ -18844,7 +18560,6 @@
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#shutter?ShutterDoorV" />
 		<property name="Collide" value="movement,melee,rocket,bullet" />
-		<!-- -rocket -->
 		<property name="Tag" value="Door" />
 		<property name="Place" value="Door" />
 		<property name="PlaceEverywhere" value="true" />
@@ -18980,26 +18695,26 @@
 		<drop event="Harvest" name="femur" count="1" />
 		<drop event="Destroy" count="0" />
 	</block>
-	<!-- JZMOD NPC CORPSES -->
 	<block id="1504" name="npcFollowerMeleeCorpse">
 		<property name="Class" value="Gore" />
 		<property name="CreativeMode" value="Dev" />
 		<property name="Material" value="organic" />
+		<property name="MaxDamage" value="350" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="Entities/Gore/gore_block1_Prefab" />
 		<property name="ImposterDontBlock" value="true" />
-		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="Collide" value="melee,bullet,arrow,rocket" />
 		<property name="Place" value="TowardsPlacerInverted" />
-		<property name="IsTerrainDecoration" value="true" />
 		<property name="Tag" value="Gore" />
-		<property name="FallDamage" value="true" />
-		<property name="LootList" value="1" />
-		<property name="DowngradeBlock" value="goreBlock1BonesPrefab" />
-		<drop event="Harvest" name="femur" count="1,3" tool_category="Butcher" />
-		<drop event="Harvest" name="rottingFlesh" count="2" tool_category="Butcher" />
-		<drop event="Harvest" name="rottingFlesh" count="1" />
-		<drop event="Harvest" name="femur" count="1" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="FallDamage" value="false" />
+		<property name="LootList" value="71" />
+		<drop event="Harvest" name="rottingFlesh" count="1,3" prob="1" tool_category="Butcher" />
+		<drop event="Harvest" name="femur" count="1,2" prob="0.4" tool_category="Butcher" />
+		<drop event="Harvest" name="animalFat" count="1,2" prob="0.33" tool_category="Butcher" />
+		<drop event="Harvest" name="femur" count="1,2" prob="1" tool_category="Butcher" />
 		<drop event="Destroy" count="0" />
+		<property name="DroppedEntityClass" value="EvisceratedRemains" />
 	</block>
 	<block id="1506" name="SpawnerBanditSoldier">
 		<property name="Class" value="PrefabSpawner, Mods" />
@@ -19037,7 +18752,69 @@
 		<property name="group" value="BanditBoss" />
 		<property name="NumberToSpawn" value="1" />
 	</block>
-	<!-- toys -->
+	<block id="1599" name="npcFollowerRangedCorpse">
+		<property name="Class" value="Gore" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="Material" value="organic" />
+		<property name="MaxDamage" value="350" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="Entities/Gore/gore_block1_Prefab" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="melee,bullet,arrow,rocket" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="Tag" value="Gore" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="FallDamage" value="false" />
+		<property name="LootList" value="72" />
+		<drop event="Harvest" name="rottingFlesh" count="1,3" prob="1" tool_category="Butcher" />
+		<drop event="Harvest" name="femur" count="1,2" prob="0.4" tool_category="Butcher" />
+		<drop event="Harvest" name="animalFat" count="1,2" prob="0.33" tool_category="Butcher" />
+		<drop event="Harvest" name="femur" count="1,2" prob="1" tool_category="Butcher" />
+		<drop event="Destroy" count="0" />
+		<property name="DroppedEntityClass" value="EvisceratedRemains" />
+	</block>
+	<block id="1600" name="npcBanditBossCorpse">
+		<property name="Class" value="Gore" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="Material" value="organic" />
+		<property name="MaxDamage" value="350" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="Entities/Gore/gore_block1_Prefab" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="melee,bullet,arrow,rocket" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="Tag" value="Gore" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="FallDamage" value="false" />
+		<property name="LootList" value="73" />
+		<drop event="Harvest" name="rottingFlesh" count="1,3" prob="1" tool_category="Butcher" />
+		<drop event="Harvest" name="femur" count="1,2" prob="0.4" tool_category="Butcher" />
+		<drop event="Harvest" name="animalFat" count="1,2" prob="0.33" tool_category="Butcher" />
+		<drop event="Harvest" name="femur" count="1,2" prob="1" tool_category="Butcher" />
+		<drop event="Destroy" count="0" />
+		<property name="DroppedEntityClass" value="EvisceratedRemains" />
+	</block>
+	<block id="1601" name="npcPlasmaBossCorpse">
+		<property name="Class" value="Gore" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="Material" value="organic" />
+		<property name="MaxDamage" value="350" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="Entities/Gore/gore_block1_Prefab" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="melee,bullet,arrow,rocket" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="Tag" value="Gore" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="FallDamage" value="false" />
+		<property name="LootList" value="132" />
+		<drop event="Harvest" name="rottingFlesh" count="1,3" prob="1" tool_category="Butcher" />
+		<drop event="Harvest" name="femur" count="1,2" prob="0.4" tool_category="Butcher" />
+		<drop event="Harvest" name="animalFat" count="1,2" prob="0.33" tool_category="Butcher" />
+		<drop event="Harvest" name="femur" count="1,2" prob="1" tool_category="Butcher" />
+		<drop event="Destroy" count="0" />
+		<property name="DroppedEntityClass" value="EvisceratedRemains" />
+	</block>
 	<block id="1486" name="kennyBlock">
 		<property name="Material" value="Mplastics" />
 		<property name="Shape" value="ModelEntity" />
@@ -19243,7 +19020,6 @@
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
 	</block>
 	<block id="1596" name="fog3Particle">
-		<!-- localized POI fog, like in a graveyard 20 x 20 blocks -->
 		<property name="Material" value="air" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#Fog3Particle?Fog3Particle" />
@@ -19261,38 +19037,24 @@
 		<property name="CanPickup" value="true" />
 		<property name="Group" value="Building" />
 		<property name="CoolDownTime" value="10" />
-		<!-- Time for cooldown and stage countdown in seconds (1-15) -->
 		<property name="StageTime" value="60" />
-		<!-- Stage Duration in seconds (1-120) -->
 		<property name="MaxStages" value="4" />
-		<!-- Maximum number of stages (1-15) -->
 		<property name="MaxMinedBlocks" value="200" />
-		<!-- Maximum number of blocks the miner can mine per full event -->
 		<property name="MinerRadius" value="3" />
-		<!-- Radius of the Mining Area -->
 		<property name="SafetyRadius" value="10,3,10" />
-		<!-- Radius to check for "invalid" blocks. If there are too many man made blocks around, the miner will stop -->
-		<!-- REQUIRED PARTS -->
 		<property class="Parts">
-			<!-- name = itemName, value = transform name to show/hide, param1 = parent itemName (parent must be present for it to show in mesh) -->
 			<property name="ControlBox" value="ControlBox" param2="true" />
 			<property name="MinerArm" value="toolArmGroup" />
 			<property name="MinerBlade" value="toolBladeGroup" param1="MinerArm" />
 		</property>
-		<!-- STAGES DEFINITION -->
 		<property class="Stage1">
 			<property name="minerGroup" value="MinerZeds" />
-			<!-- Special miner entities -->
 			<property name="minerGroupMinMax" value="1,2" />
-			<!-- minimum and maximum amount to spawn on this wave -->
 			<property name="randomGroup" value="ZombiesAll" />
-			<!-- Common entities to spawn -->
 			<property name="randomGroupMinMax" value="2,5" />
 			<property name="specialGroup" value="" />
-			<!-- Special entities to spawn -->
 			<property name="specialGroupMinMax" value="0,0" />
 			<property name="bossGroup" value="" />
-			<!-- bosses to spawn -->
 			<property name="bossGroupMinMax" value="0,0" />
 		</property>
 		<property class="Stage2">
@@ -19358,7 +19120,6 @@
 		<property name="StabilitySupport" value="true" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#SteelBars?SteelBarsPrefab" />
-		<!-- All models are free assets from Unity store by KrazyFX -->
 		<property name="Collide" value="melee,movement" />
 		<property name="CustomIcon" value="ui_game_symbol_steelBars" />
 		<property class="RepairItems">
@@ -19389,15 +19150,12 @@
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
 		<property name="Model" value="LootContainers/trash_pile09" param1="main_mesh" />
-		<!-- <property name="Shape" value="ModelEntity" />
-				<property name="Model" value="#TrashBags?TrashBagsPrefab"/> -->
 		<property name="CustomIcon" value="ui_game_symbol_trashBags" />
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 		<property name="LootList" value="2" />
 		<property name="CanPickup" value="false" />
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="ImposterExchange" value="imposterCTREighth" param1="116" />
-		<!-- <property name="ImposterExchange" value="imposterCTREighth" param1="29" /> -->
 		<drop event="Destroy" count="0" />
 		<drop event="Destroy" name="scrapPlastics" count="0,2" prob="0.2" tool_category="Disassemble" />
 		<property name="BuffsWhenWalkedOn" value="flies" />

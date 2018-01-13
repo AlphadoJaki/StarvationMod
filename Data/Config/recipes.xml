@@ -2087,14 +2087,12 @@
 		<ingredient name="unit_clay" count="20" />
 	</recipe>
 	<recipe name="trapGlassBusinessSheet1x1" count="1" craft_area="glassandCeramicsStation" material_based="true">
-		<!-- trap -->
 		<ingredient name="unit_glass" count="20" />
 		<ingredient name="unit_stone" count="5" />
 		<ingredient name="unit_lead" count="5" />
 		<ingredient name="unit_clay" count="3" />
 	</recipe>
 	<recipe name="trapGlassBusinessCTRSheet1x1" count="1" craft_area="glassandCeramicsStation" material_based="true">
-		<!-- trap -->
 		<ingredient name="unit_glass" count="20" />
 		<ingredient name="unit_stone" count="5" />
 		<ingredient name="unit_lead" count="5" />
@@ -2106,15 +2104,9 @@
 	<recipe name="scrapSteel" count="1" tooltip="ttScrapMetalSteel">
 		<wildcard_forge_category />
 	</recipe>
-	<!-- 		<recipe name="scrapSteel" count="1" craft_area="blastFurnace" material_based="true" craft_time="1" craft_exp_gain="0"> - used if steel can be smelted in your mod
-				<ingredient name="unit_steel" count="1" />
-			</recipe>	-->
 	<recipe name="mechanicalParts" count="1" tooltip="ttScrapMetalBrass">
 		<wildcard_forge_category />
 	</recipe>
-	<!--		<recipe name="scrapPlastics" count="1" craft_area="blastFurnace" material_based="true" craft_time="1" craft_exp_gain="0"> - used if plastic can be smelted in your mod
-				<ingredient name="unit_plastic" count="1" />
-			</recipe>	-->
 	<recipe name="pendulum" count="1" craft_area="workbench" craft_time="250">
 		<ingredient name="mechanicalParts" count="5" />
 		<ingredient name="electricParts" count="5" />
@@ -2130,7 +2122,6 @@
 		<ingredient name="leather" count="4" />
 		<ingredient name="nail" count="8" />
 	</recipe>
-	<!-- FISHING -->
 	<recipe name="hook" count="1">
 		<ingredient name="scrapLead" count="4" />
 	</recipe>
@@ -2199,8 +2190,6 @@
 		<ingredient name="bottledWater" count="1" />
 		<ingredient name="paper" count="2" />
 	</recipe>
-	<!-- FISHING -->
-	<!-- ANIMAL COOPS -->
 	<recipe name="RabbitHutch" count="1" scrapable="False">
 		<ingredient name="nail" count="20" />
 		<ingredient name="wood" count="50" />
@@ -2240,7 +2229,6 @@
 		<ingredient name="corn" count="1" />
 		<ingredient name="sunflowerOil" count="1" />
 	</recipe>
-	<!-- ANIMAL COOPS -->
 	<recipe name="assaultRifleStock" count="1" craft_area="smith">
 		<ingredient name="spring" count="3" />
 		<ingredient name="forgedSteel" count="2" />
@@ -2397,7 +2385,6 @@
 		<ingredient name="MP7_Barrel" count="1" />
 		<ingredient name="flashlight02" count="0" />
 	</recipe>
-	<!-- TRAPS START -->
 	<recipe name="trapBear" count="1" craft_area="lathe">
 		<ingredient name="shortMetalPipe" count="5" />
 		<ingredient name="forgedIron" count="15" />
@@ -2409,7 +2396,6 @@
 		<ingredient name="wood" count="50" />
 		<ingredient name="spring" count="5" />
 	</recipe>
-	<!-- CRAFTER RECIPES -->
 	<recipe name="trapBear" count="1" craft_area="crafter">
 		<ingredient name="shortMetalPipe" count="2" />
 		<ingredient name="forgedIron" count="10" />
@@ -2427,16 +2413,12 @@
 		<ingredient name="wood" count="10" />
 		<ingredient name="spring" count="2" />
 	</recipe>
-	<!-- TRAP END -->
-	<!-- TRANSFORMERS -->
 	<recipe name="biogasDigester" count="1">
 		<ingredient name="bucket" count="4" />
 		<ingredient name="shortMetalPipe" count="5" />
 		<ingredient name="ductTape" count="5" />
 		<ingredient name="airFilter" count="1" />
 	</recipe>
-	<!-- TRANSFORMERS -->
-	<!-- PowerSources START -->
 	<recipe name="boiler" count="1">
 		<ingredient name="forgedIron" count="15" />
 		<ingredient name="shortMetalPipe" count="10" />
@@ -2500,13 +2482,6 @@
 		<ingredient name="scrapCopper" count="10" />
 		<ingredient name="smallConsole" count="1" />
 	</recipe>
-	<!-- <recipe name="dieselGen" count="1" craft_area="mill">
-		<ingredient name="forgedSteel" count="50" />
-		<ingredient name="electricParts" count="20" />
-		<ingredient name="spring" count="20" />
-		<ingredient name="mechanicalParts" count="30" />
-		<ingredient name="gauge" count="3" />
-	</recipe>  -->
 	<recipe name="garageDoorRolling" count="1" craft_area="lathe">
 		<ingredient name="spring" count="5" />
 		<ingredient name="sheave" count="3" />
@@ -2514,7 +2489,6 @@
 		<ingredient name="ductTape" count="10" />
 		<ingredient name="forgedIron" count="20" />
 	</recipe>
-	<!-- CRAFTER RECIPES -->
 	<recipe name="metalFrame" count="1" craft_area="smith">
 		<ingredient name="forgedIron" count="20" />
 	</recipe>
@@ -2555,8 +2529,6 @@
 		<ingredient name="ductTape" count="5" />
 		<ingredient name="forgedSteel" count="5" />
 	</recipe>
-	<!-- PowerSources END -->
-	<!-- POWER WORKSTATIONS START -->
 	<recipe name="moonshine" count="1">
 		<ingredient name="forgedIron" count="25" />
 		<ingredient name="scrapBrass" count="50" />
@@ -2590,8 +2562,6 @@
 	<recipe name="WeaponWorkbenchFlyer" count="1" craft_area="WeaponWorkbench">
 		<ingredient name="paper" count="1" />
 	</recipe>
-	<!-- POWER WORKSTATIONS END -->
-	<!-- FOR WEAPON WORKBENCH -->
 	<recipe name="gunRevolver" count="1" craft_area="assembly">
 		<ingredient name="flashlight02" count="0" />
 		<ingredient name="partsGunRevolver_grip" count="1" />
@@ -2676,8 +2646,6 @@
 		<ingredient name="partsSniperRifle_barrel" count="1" />
 		<ingredient name="partsHuntingRifle_parts" count="1" />
 	</recipe>
-	<!-- FOR WEAPON WORKBENCH -->
-	<!-- CUSTOM ELECTRIC DEVICES START -->
 	<recipe name="SearchLight" count="1" craft_area="workbench">
 		<ingredient name="headlight" count="1" />
 		<ingredient name="electricParts" count="8" />
@@ -2688,23 +2656,9 @@
 		<ingredient name="forgedIron" count="4" />
 		<ingredient name="electricParts" count="2" />
 	</recipe>
-	<!-- CUSTOM ELECTRIC DEVICES END -->
 	<recipe name="wood" count="2">
 		<ingredient name="redwood" count="1" />
 	</recipe>
-	<!-- <recipe name="redWoodTable" count="1">	
-		<ingredient name="nail" count="10"/>
-		<ingredient name="redwood" count="7"/>
-	</recipe>
-	<recipe name="redWoodBlock" count="1">	
-		<ingredient name="redwood" count="7"/>
-	</recipe>
-	<recipe name="redWoodPillar100" count="1">	
-		<ingredient name="redwood" count="7"/>
-	</recipe>
-	<recipe name="redWoodStairs25" count="1">	
-		<ingredient name="redwood" count="7"/>
-	</recipe> -->
 	<recipe name="waterStore" count="1">
 		<ingredient name="forgedIron" count="5" />
 		<ingredient name="wood" count="10" />
@@ -2788,7 +2742,6 @@
 		<ingredient name="paper" count="2" />
 		<ingredient name="cannabisBuds" count="2" />
 	</recipe>
-	<!-- HUSBANDRY -->
 	<recipe name="whip" count="1">
 		<ingredient name="leather" count="2" />
 		<ingredient name="wood" count="15" />
@@ -2817,7 +2770,6 @@
 		<ingredient name="yuccaFibers" count="10" />
 		<ingredient name="sunflowerOil" count="1" />
 	</recipe>
-	<!-- HUSBANDRY -->
 	<recipe name="DogStaff" count="1">
 		<ingredient name="leather" count="2" />
 		<ingredient name="forgedIron" count="10" />
@@ -2896,7 +2848,6 @@
 	<recipe name="salt" count="40" craft_area="scienceStation">
 		<ingredient name="saltOre" count="1" />
 	</recipe>
-	<!-- RAD MOD -->
 	<recipe name="scienceStation" count="1">
 		<ingredient name="scienceStationSmallParts" count="1" />
 		<ingredient name="scienceStationParts" count="1" />
@@ -3000,7 +2951,6 @@
 		<ingredient name="rubber" count="8" />
 		<ingredient name="scrapLead" count="8" />
 	</recipe>
-	<!-- RAD MOD -->
 	<recipe name="10mmBullet" count="1" craft_area="workbench">
 		<ingredient name="bulletTip" count="1" />
 		<ingredient name="gunPowder" count="2" />
@@ -3082,7 +3032,6 @@
 		<ingredient name="762mmBullet" count="50" />
 		<ingredient name="depletedUranium" count="1" />
 	</recipe>
-	<!-- MyColony  -->
 	<recipe name="steelArrowHead" count="10" craft_time="1">
 		<ingredient name="steelArrowHeadPack" count="1" />
 	</recipe>
@@ -3121,7 +3070,6 @@
 		<ingredient name="forgedIron" count="14" />
 		<ingredient name="wood" count="15" />
 	</recipe>
-	<!-- Medium Tier Receipts  -->
 	<recipe name="bulletCasingPack" count="1" craft_area="crafter" craft_time="1">
 		<ingredient name="scrapBrass" count="8" />
 		<ingredient name="clayLump" count="5" />
@@ -3278,7 +3226,6 @@
 		<ingredient name="leather" count="1" />
 		<ingredient name="ductTape" count="1" />
 	</recipe>
-	<!-- High Tier Receipts  -->
 	<recipe name="gunHuntingRifle" count="1" craft_area="crafter">
 		<ingredient name="partsHuntingRifle_barrel" count="1" />
 		<ingredient name="partsHuntingRifle_stock" count="1" />
@@ -3303,7 +3250,6 @@
 		<ingredient name="leather" count="3" />
 		<ingredient name="ductTape" count="2" />
 	</recipe>
-	<!-- Expert Tier Receipts  -->
 	<recipe name="fireaxeSteel" count="1" craft_area="smith">
 		<ingredient name="forgedSteel" count="18" />
 		<ingredient name="wood" count="18" />
@@ -3374,7 +3320,6 @@
 		<ingredient name="scrapCopper" count="5" />
 		<ingredient name="glassPane" count="1" />
 	</recipe>
-	<!-- MyColony -->
 	<recipe name="rum" count="1" craft_area="moonshine">
 		<ingredient name="rawSugar" count="3" />
 		<ingredient name="bottledRiverWater" count="1" />
@@ -3759,7 +3704,6 @@
 		<ingredient name="DryGrillItem1" count="1" />
 		<ingredient name="SlicedFruits" count="2" />
 	</recipe>
-	<!-- PAM receipts -->
 	<recipe name="bakedPotato" count="1" craft_area="bigOven" craft_tool="cookingWare">
 	  <ingredient name="potato" count="1" /></recipe>
 	<recipe name="blueberryPie" count="1" craft_area="bigOven" craft_tool="cookingWare">
@@ -3833,8 +3777,6 @@
 	  <ingredient name="corn" count="5" />
 	  <ingredient name="mushrooms" count="5" />
 	  <ingredient name="bottledWater" count="1" /></recipe>
-	<!-- PAM receipts -->
-	<!-- STARVATION STUFF  -->
 	<recipe name="toyBoxAction" count="1">
 		<ingredient name="ironManItem" count="1" />
 		<ingredient name="wolverineItem" count="1" />
@@ -3990,7 +3932,6 @@
 		<ingredient name="bottledWater" count="1" />
 		<ingredient name="sunflowerOil" count="5" />
 	</recipe>
-	<!-- BigForge Conversion Recipes start -->
 	<recipe name="forgedSteel" count="1" craft_area="forge1" craft_tool="forgeCrucible" material_based="true">
 		<ingredient name="unit_steel" count="10" />
 		<ingredient name="unit_clay" count="5" />
@@ -4019,7 +3960,6 @@
 		<ingredient name="unit_steel" count="200" />
 		<ingredient name="unit_clay" count="40" />
 	</recipe>
-	<!-- BigForge Conversion Recipes end -->
 	<recipe name="forge1" count="1">
 		<ingredient name="rockSmall" count="100" />
 		<ingredient name="clayLump" count="100" />
@@ -4080,7 +4020,6 @@
 	<recipe name="meditationCarpet" count="1">
 		<ingredient name="yuccaFibers" count="20" />
 	</recipe>
-	<!-- PLAYER MADE -->
 	<recipe name="steelArmorPlate" count="1" craft_area="anvil1" craft_tool="smithHammer">
 		<ingredient name="forgedSteel" count="5" />
 	</recipe>
@@ -4133,8 +4072,6 @@
 		<ingredient name="glassBusinessSheet" count="1" />
 		<ingredient name="scrapPlastics" count="8" />
 	</recipe>
-	<!-- PLAYER MADE -->
-	<!-- CRAFTER MADE -->
 	<recipe name="solarbank" count="1" craft_area="crafter">
 		<ingredient name="glue" count="5" />
 		<ingredient name="ductTape" count="5" />
@@ -4188,7 +4125,6 @@
 		<ingredient name="electronicParts" count="3" />
 		<ingredient name="mechanicalParts" count="2" />
 	</recipe>
-	<!-- CRAFTER MADE -->
 	<recipe name="camoDye" count="1" craft_area="scienceStation">
 		<ingredient name="grainAlcohol" count="1" />
 		<ingredient name="blueberries" count="2" />
@@ -4248,7 +4184,6 @@
 		<ingredient name="CrocoSkin" count="5" />
 		<ingredient name="cloth" count="10" />
 	</recipe>
-	<!-- STARVATION STUFF -->
 	<recipe name="MinerArm" count="1" craft_area="mill">
 		<ingredient name="forgedSteel" count="20" />
 		<ingredient name="mechanicalParts" count="20" />
@@ -4276,8 +4211,4 @@
 		<ingredient name="unit_steel" count="100" />
 		<ingredient name="unit_clay" count="20" />
 	</recipe>
-	<!--		<recipe name="cubetest" count="1" craft_area="forge" material_based="true">
-				<ingredient name="unit_stone" count="10" />
-				<ingredient name="unit_clay" count="60" />
-			</recipe> -->
 </recipes>

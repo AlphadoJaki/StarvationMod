@@ -7654,7 +7654,6 @@
 		<property name="Material" value="Mplastics" />
 		<property name="CreativeMode" value="None" />
 	</item>
-	<!-- items needed to scrap Xyth junk into -->
 	<item id="268" name="itemMaster">
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
@@ -7689,8 +7688,6 @@
 			<property name="QuestGiven" value="challenge_junkhunt1" />
 		</property>
 	</item>
-	<!-- Xyth junk items -->
-	<!-- Iron -->
 	<item id="859" name="ironScissors">
 		<property name="Extends" value="itemMaster" />
 		<property name="Material" value="metal" />
@@ -7733,7 +7730,6 @@
 		<property name="CustomIcon" value="ui_game_symbol_ironHairSpray" />
 		<property name="Weight" value="1" />
 	</item>
-	<!-- lead -->
 	<item id="865" name="leadMusketBalls">
 		<property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="ui_game_symbol_leadMusketBalls" />
@@ -7755,7 +7751,6 @@
 		<property name="Material" value="lead" />
 		<property name="Weight" value="1" />
 	</item>
-	<!-- Brass -->
 	<item id="868" name="brassHinge">
 		<property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="ui_game_symbol_brassHinge" />
@@ -7784,7 +7779,6 @@
 		<property name="Material" value="brass" />
 		<property name="Weight" value="2" />
 	</item>
-	<!-- Stone  -->
 	<item id="872" name="stonePlate">
 		<property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="ui_game_symbol_stonePlate" />
@@ -7819,7 +7813,6 @@
 		<property name="CustomIcon" value="ui_game_symbol_stoneCrackedAshTray" />
 		<property name="Weight" value="5" />
 	</item>
-	<!-- Wood  -->
 	<item id="877" name="woodSoldier">
 		<property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="ui_game_symbol_woodSoldier" />
@@ -7848,7 +7841,6 @@
 		<property name="DescriptionKey" value="woodYoyoDesc" />
 		<property name="Weight" value="5" />
 	</item>
-	<!-- Paper   -->
 	<item id="881" name="paperPlayingCards">
 		<property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="ui_game_symbol_paperPlayingCards" />
@@ -7884,7 +7876,6 @@
 		<property name="DescriptionKey" value="paperMatchesDesc" />
 		<property name="Weight" value="3" />
 	</item>
-	<!-- Cloth  -->
 	<item id="886" name="clothTeddyBear">
 		<property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="ui_game_symbol_clothTeddyBearJZ" />
@@ -7927,7 +7918,6 @@
 		<property name="DescriptionKey" value="clothChewedDogCollarDesc" />
 		<property name="Weight" value="5" />
 	</item>
-	<!-- Plastic  -->
 	<item id="892" name="plasticCds">
 		<property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="ui_game_symbol_plasticCds" />
@@ -7998,7 +7988,6 @@
 		<property name="DescriptionKey" value="plasticShoppingBagDesc" />
 		<property name="Weight" value="2" />
 	</item>
-	<!-- Electronic   -->
 	<item id="904" name="electronic3ds">
 		<property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="ui_game_symbol_electronic3ds" />
@@ -8041,7 +8030,6 @@
 		<property name="DescriptionKey" value="electronicBrokenLapTopDesc" />
 		<property name="Weight" value="10" />
 	</item>
-	<!-- Electrical  -->
 	<item id="914" name="electricShaver">
 		<property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="ui_game_symbol_electricShaver" />
@@ -8077,7 +8065,6 @@
 		<property name="DescriptionKey" value="electricBlenderDesc" />
 		<property name="Weight" value="5" />
 	</item>
-	<!-- Mechanical  -->
 	<item id="923" name="mechanicalKeyPad">
 		<property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="ui_game_symbol_mechanicalKeyPad" />
@@ -8099,7 +8086,6 @@
 		<property name="Material" value="MmechanicalParts" />
 		<property name="Weight" value="5" />
 	</item>
-	<!-- Rubber  -->
 	<item id="929" name="rubberDoll">
 		<property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="ui_game_symbol_rubberDoll" />
@@ -8134,7 +8120,6 @@
 		<property name="CustomIcon" value="ui_game_symbol_rubberOldRainBoot" />
 		<property name="Weight" value="3" />
 	</item>
-	<!-- Steel  -->
 	<item id="938" name="steelHinge">
 		<property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="ui_game_symbol_steelHinge" />
@@ -8177,7 +8162,6 @@
 		<property name="DescriptionKey" value="steelButterKnifeDesc" />
 		<property name="Weight" value="1" />
 	</item>
-	<!--  Glass  -->
 	<item id="944" name="glassPerfume">
 		<property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="ui_game_symbol_glassPurfume" />
@@ -8214,7 +8198,6 @@
 		<property name="DescriptionKey" value="glassWaterBongDesc" />
 		<property name="Weight" value="5" />
 	</item>
-	<!-- Ore Scanner -->
 	<item id="1030" name="oreScanner">
 		<property name="Meshfile" value="#Miner?MetalDetectorPrefab" />
 		<property name="Material" value="organic" />
@@ -8233,12 +8216,11 @@
 		<property name="CustomIcon" value="ui_game_symbol_bladeBat" />
 		<property name="Material" value="wood" />
 		<property name="HoldType" value="2" />
-		<property name="RepairTools" value="wood" />
+		<property name="RepairTools" value="repairKit" />
 		<property name="Degradation" value="150" param1="true" />
 		<property name="FuelValue" value="40" />
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="MeleeAt, Mods" />
 			<property name="Delay" value="1" />
 			<property name="Range" value="2.5" />
@@ -8271,14 +8253,12 @@
 		<property name="Material" value="Msteel" />
 		<property name="HoldType" value="31" />
 		<property name="Stacknumber" value="50" />
-		<!-- STK resource -->
 		<property name="Weight" value="20" />
 		<property name="EconomicValue" value="50" />
 		<property name="Group" value="Resources" />
 		<property name="Meshfile" value="#SawBlade?SawBladePrefab" />
 		<property name="CustomIcon" value="ui_game_symbol_sawBlade" />
 	</item>
-	<!-- FISHING -->
 	<item id="2" name="cane">
 		<property name="Class" value="ItemClassFishing, Mods" />
 		<property name="Meshfile" value="#fishing1?cane" />
@@ -8290,7 +8270,6 @@
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property name="FuelValue" value="30" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1.33" />
 			<property name="Range" value="0" />
@@ -8298,7 +8277,6 @@
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="0" />
 			<property name="DamageBonus.head" value="0" />
-			<!-- these are multipliers -->
 			<property name="DamageBonus.glass" value="0" />
 			<property name="ActionExp" value="0" />
 			<property name="ActionExpBonusMultiplier" value="0" />
@@ -8310,7 +8288,6 @@
 		<property name="Group" value="Tools/Traps" />
 		<property name="ActionSkillGroup" value="Fisherman" />
 		<property name="CraftingSkillGroup" value="Fisherman" />
-		<!-- <property name="PickupJournalEntry" value="fishingTip" /> -->
 		<property name="RepairExpMultiplier" value="5.5" />
 	</item>
 	<item id="3" name="improvedCane">
@@ -8325,7 +8302,6 @@
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="3" />
 		<property name="Stacknumber" value="50" />
-		<!-- STK food -->
 		<property name="CraftingIngredientTime" value="15" />
 		<property class="Action1">
 			<property name="Class" value="Eat" />
@@ -8349,7 +8325,6 @@
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="3" />
 		<property name="Stacknumber" value="50" />
-		<!-- STK food -->
 		<property name="CraftingIngredientTime" value="15" />
 		<property class="Action1">
 			<property name="Class" value="Eat" />
@@ -8381,7 +8356,6 @@
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="31" />
 		<property name="Stacknumber" value="10" />
-		<!-- STK food -->
 		<property class="Action1">
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="2.1" />
@@ -8390,7 +8364,6 @@
 			<property name="Gain_food" value="6" />
 			<property name="Gain_water" value="-2" />
 			<property name="Gain_wellness" value="0.3" />
-			<!-- <property name="Buff" value="fishy,goodFoodBuff" /> -->
 			<property name="Sound_start" value="UseActions/player_eating" />
 		</property>
 		<property name="foodSpoilImmune" value="50" />
@@ -8421,10 +8394,8 @@
 		<property name="RepairAmount" value="30" />
 		<property name="HoldType" value="17" />
 		<property name="Stacknumber" value="500" />
-		<!-- STK resource -->
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1.33" />
 			<property name="Range" value="2.2" />
@@ -8442,7 +8413,6 @@
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="500" />
-		<!-- STK resource -->
 		<property class="Action1">
 			<property name="Class" value="PlaceAsBlock" />
 			<property name="Delay" value="0.5" />
@@ -8522,7 +8492,6 @@
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="27" />
 		<property name="Stacknumber" value="1" />
-		<!-- STK torch -->
 		<property name="FuelValue" value="16" />
 		<property class="Action1">
 			<property name="Class" value="PlaceAsBlock" />
@@ -8555,7 +8524,6 @@
 		<property name="HoldType" value="27" />
 		<property name="Stacknumber" value="5" />
 		<property name="ModelOffset" value="0,0.2,0" />
-		<!-- STK torch -->
 		<property name="FuelValue" value="16" />
 		<property class="Action1">
 			<property name="Class" value="PlaceAsBlock" />
@@ -8632,9 +8600,7 @@
 		<property name="Extends" value="bambooRaft" />
 		<property name="Meshfile" value="#floatPlat?BargeS" />
 	</item>
-	<!-- FISHING -->
 	<item id="52" name="chickenItem">
-		<!-- <property name="HoldingItemHidden" value="true" /> -->
 		<property name="Meshfile" value="Animals/CHICKEN/chickenPrefab" />
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="7" />
@@ -8664,10 +8630,8 @@
 		<property name="HoldType" value="45" />
 		<property name="Material" value="organic" />
 		<property name="Stacknumber" value="1000" />
-		<!-- STK resource -->
 		<property name="FuelValue" value="2" />
 		<property name="EconomicValue" value="1" />
-		<!-- oil barrel 500 -->
 		<property name="EconomicBundleSize" value="1" />
 		<property name="CraftingSkillGroup" value="craftSkillScience" />
 		<property name="Group" value="Resources,Food/Cooking" />
@@ -8678,23 +8642,18 @@
 		<property name="HoldType" value="45" />
 		<property name="Material" value="organic" />
 		<property name="Stacknumber" value="1000" />
-		<!-- STK resource -->
 		<property name="FuelValue" value="2" />
 		<property name="EconomicValue" value="1" />
-		<!-- oil barrel 500 -->
 		<property name="EconomicBundleSize" value="1" />
 		<property name="CraftingSkillGroup" value="craftSkillScience" />
 		<property name="Group" value="Resources,Food/Cooking" />
 	</item>
-	<!-- STARVATION WEAPON BOOKS START -->
 	<item id="58" name="powerWeaponsBook">
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
 			<property name="Recipes_to_learn" value="electricBat, electricSpear" />
 		</property>
 	</item>
-	<!-- STARVATION WEAPON BOOKS END -->
-	<!-- STARVATION MELEE WEAPONS START-->
 	<item id="59" name="10mmBullet">
 		<property name="Meshfile" value="Items/Weapons/Ranged/Pistol/9mm_bulletPrefab" />
 		<property name="Material" value="brass" />
@@ -8713,7 +8672,6 @@
 		<property name="FuelValue" value="50" />
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="2.5" />
 			<property name="Range" value="3" />
@@ -8756,7 +8714,6 @@
 		<property name="SoundJammed" value="ItemNeedsRepair" />
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="2.9" />
 			<property name="Range" value="4" />
@@ -8796,7 +8753,6 @@
 		<property name="FuelValue" value="40" />
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1" />
 			<property name="Range" value="2.5" />
@@ -8836,7 +8792,6 @@
 		<property name="FuelValue" value="40" />
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1" />
 			<property name="Range" value="2.5" />
@@ -8876,7 +8831,6 @@
 		<property name="FuelValue" value="40" />
 		<property name="SoundDestroy" value="metaldestroy1" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1" />
 			<property name="Range" value="2.5" />
@@ -8916,7 +8870,6 @@
 		<property name="Degradation" value="150" param1="true" />
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="MeleeAt, Mods" />
 			<property name="Delay" value="2.20" />
 			<property name="Range" value="4" />
@@ -8976,7 +8929,6 @@
 		<property name="FuelValue" value="30" />
 		<property name="SoundDestroy" value="metaldestroy1" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1.1" />
 			<property name="Range" value="1.5" />
@@ -9012,7 +8964,6 @@
 		<property name="EconomicValue" value="30" />
 		<property name="Weight" value="24" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="0.8" />
 			<property name="Range" value="0.8" />
@@ -9046,7 +8997,6 @@
 		<property name="EconomicValue" value="30" />
 		<property name="Weight" value="24" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1" />
 			<property name="Range" value="1.0" />
@@ -9070,8 +9020,6 @@
 		<property name="CraftingSkillGroup" value="craftSkillTools" />
 		<property name="RepairExpMultiplier" value="5.5" />
 	</item>
-	<!-- STARVATION MELEE WEAPONS END-->
-	<!-- STARVATION GUNFIRE WEAPONS START-->
 	<item id="72" name="ACW">
 		<property name="Meshfile" value="#acw?ACWPrefabTest" />
 		<property name="DescriptionKey" value="ACWDesc" />
@@ -9092,27 +9040,21 @@
 			<property name="Pump" value="acw-r_parts" />
 		</property>
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="RangedAt, Mods" />
 			<property name="Delay" value="0.110" />
 			<property name="Range" value="100" />
-			<!-- Default value, can be modified -->
 			<property name="Auto_fire" value="true" />
 			<property name="Rays_per_shot" value="1" />
 			<property name="Rays_spread" value="0" />
 			<property name="Crosshair_min_distance" value="5" />
 			<property name="Crosshair_max_distance" value="30" />
 			<property name="Magazine_size" value="30" />
-			<!-- Default value, can be modified -->
 			<property name="Magazine_items" value="762mmBullet, 762mmBulletPL" />
 			<property name="Reload_time" value="4.1" />
 			<property name="Bullet_icon" value="uzi" />
 			<property name="Sound_start" value="Weapons/Ranged/AK47/ak47_fire_start" />
-			<!-- Default value, can be modified -->
 			<property name="Sound_repeat" value="Weapons/Ranged/AK47/ak47_fire_lp" />
-			<!-- Default value, can be modified -->
 			<property name="Sound_end" value="Weapons/Ranged/AK47/ak47_fire_end" />
-			<!-- Default value, can be modified -->
 			<property name="Sound_empty" value="Weapons/weapon_empty" />
 			<property name="Sound_reload" value="Weapons/Ranged/AK47/ak47_reload" />
 			<property name="Horde_meter_rate" value="3.5" />
@@ -9122,22 +9064,17 @@
 			<property name="DamageBonus.head" value="6" />
 			<property name="DamageBonus.wood" value="4" />
 			<property name="DamageBonus.glass" value="25" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT-->
 			<property name="kickbackAim" value="4" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT -->
 			<property name="kickbackHip" value="8" />
 		</property>
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="ZoomAt, Mods" />
 			<property name="Zoom_max_out" value="35" />
 			<property name="Zoom_max_in" value="35" />
 		</property>
-		<!-- Start: Needed for the attachment flashlight -->
 		<property name="LightSource" value="lightSource" />
 		<property name="ActivateObject" value="Attachments/flashlight/lightSource" />
 		<property name="AttachmentFlashlight" value="flashlight02" />
-		<!-- End: Needed for the attachment flashlight -->
 		<property name="Group" value="Ammo/Weapons" />
 		<property class="Preview">
 			<property name="Zoom" value="2" />
@@ -9209,27 +9146,21 @@
 			<property name="Pump" value="mtar_parts" />
 		</property>
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="RangedAt, Mods" />
 			<property name="Delay" value="0.110" />
 			<property name="Range" value="100" />
-			<!-- Default value, can be modified -->
 			<property name="Auto_fire" value="true" />
 			<property name="Rays_per_shot" value="1" />
 			<property name="Rays_spread" value="0" />
 			<property name="Crosshair_min_distance" value="5" />
 			<property name="Crosshair_max_distance" value="30" />
 			<property name="Magazine_size" value="30" />
-			<!-- Default value, can be modified -->
 			<property name="Magazine_items" value="762mmBullet, 762mmBulletPL" />
 			<property name="Reload_time" value="4.1" />
 			<property name="Bullet_icon" value="uzi" />
 			<property name="Sound_start" value="Weapons/Ranged/AK47/ak47_fire_start" />
-			<!-- Default value, can be modified -->
 			<property name="Sound_repeat" value="Weapons/Ranged/AK47/ak47_fire_lp" />
-			<!-- Default value, can be modified -->
 			<property name="Sound_end" value="Weapons/Ranged/AK47/ak47_fire_end" />
-			<!-- Default value, can be modified -->
 			<property name="Sound_empty" value="Weapons/weapon_empty" />
 			<property name="Sound_reload" value="Weapons/Ranged/AK47/ak47_reload" />
 			<property name="Horde_meter_rate" value="3.5" />
@@ -9239,22 +9170,17 @@
 			<property name="DamageBonus.head" value="6" />
 			<property name="DamageBonus.wood" value="4" />
 			<property name="DamageBonus.glass" value="25" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT-->
 			<property name="kickbackAim" value="4" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT -->
 			<property name="kickbackHip" value="8" />
 		</property>
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="ZoomAt, Mods" />
 			<property name="Zoom_max_out" value="35" />
 			<property name="Zoom_max_in" value="35" />
 		</property>
-		<!-- Start: Needed for the attachment flashlight -->
 		<property name="LightSource" value="lightSource" />
 		<property name="ActivateObject" value="Attachments/flashlight/lightSource" />
 		<property name="AttachmentFlashlight" value="flashlight02" />
-		<!-- End: Needed for the attachment flashlight -->
 		<property name="Group" value="Ammo/Weapons" />
 		<property class="Preview">
 			<property name="Zoom" value="2" />
@@ -9294,7 +9220,6 @@
 			<property name="Barrel" value="UMP_Barrel" />
 		</property>
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="RangedAt, Mods" />
 			<property name="Delay" value="0.150" />
 			<property name="Auto_fire" value="true" />
@@ -9324,16 +9249,13 @@
 			<property name="Buff_chance" value=".1" />
 		</property>
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="ZoomAt, Mods" />
 			<property name="Zoom_max_out" value="35" />
 			<property name="Zoom_max_in" value="35" />
 		</property>
 		<property name="LightSource" value="lightSource" />
-		<!-- Start: Needed for the attachment flashlight -->
 		<property name="ActivateObject" value="Attachments/flashlight/lightSource" />
 		<property name="AttachmentFlashlight" value="flashlight02" />
-		<!-- End: Needed for the attachment flashlight -->
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Rifles" />
 		<property name="CraftingSkillGroup" value="craftSkillGuns" />
@@ -9362,7 +9284,6 @@
 	</item>
 	<item id="120" name="UMP_LowerReceiver">
 		<property name="Extends" value="partsMaster" />
-		<!-- xxx -->
 		<property name="DescriptionKey" value="partsUMPGroupDesc" />
 		<property name="PartType" value="Pump" />
 		<property name="Weight" value="15" />
@@ -9401,7 +9322,6 @@
 			<property name="Barrel" value="HK416_Barrel" />
 		</property>
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="RangedAt, Mods" />
 			<property name="Delay" value="0.15" />
 			<property name="Range" value="150" />
@@ -9430,22 +9350,17 @@
 			<property name="DamageBonus.glass" value="25" />
 			<property name="Buff" value="critGunAK47" />
 			<property name="Buff_chance" value=".1" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT-->
 			<property name="kickbackAim" value="2" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT -->
 			<property name="kickbackHip" value="3" />
 		</property>
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="ZoomAt, Mods" />
 			<property name="Zoom_max_out" value="35" />
 			<property name="Zoom_max_in" value="35" />
 		</property>
 		<property name="LightSource" value="lightSource" />
-		<!-- Start: Needed for the attachment flashlight -->
 		<property name="ActivateObject" value="Attachments/flashlight/lightSource" />
 		<property name="AttachmentFlashlight" value="flashlight02" />
-		<!-- End: Needed for the attachment flashlight -->
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Rifles" />
 		<property name="CraftingSkillGroup" value="craftSkillGuns" />
@@ -9516,7 +9431,6 @@
 			<property name="Pump" value="MG4_LowerReceiver" />
 		</property>
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="RangedAt, Mods" />
 			<property name="Delay" value="0.12" />
 			<property name="Range" value="150" />
@@ -9543,13 +9457,10 @@
 			<property name="DamageBonus.glass" value="25" />
 			<property name="ActionExp" value="2" />
 			<property name="ActionExpBonusMultiplier" value="2" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT-->
 			<property name="kickbackAim" value="2" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT -->
 			<property name="kickbackHip" value="4" />
 		</property>
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="ZoomAt, Mods" />
 			<property name="Zoom_max_out" value="35" />
 			<property name="Zoom_max_in" value="35" />
@@ -9560,11 +9471,9 @@
 			<property name="Pos" value="-0.20,-0.40" />
 			<property name="Rot" value="0,-45,0" />
 		</property>
-		<!-- Start: Needed for the attachment flashlight -->
 		<property name="LightSource" value="lightSource" />
 		<property name="ActivateObject" value="Attachments/flashlight/lightSource" />
 		<property name="AttachmentFlashlight" value="flashlight02" />
-		<!-- End: Needed for the attachment flashlight -->
 		<property name="ActionSkillGroup" value="Rifles" />
 		<property name="CraftingSkillGroup" value="craftSkillGuns" />
 		<property name="RepairExpMultiplier" value="10.8" />
@@ -9633,7 +9542,6 @@
 			<property name="Barrel" value="partsGunRevolver_frame" />
 		</property>
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="RangedAt, Mods" />
 			<property name="Delay" value="0.34" />
 			<property name="Magazine_size" value="6" />
@@ -9655,22 +9563,17 @@
 			<property name="DamageBonus.plants" value="4" />
 			<property name="DamageBonus.earth" value=".2" />
 			<property name="DamageBonus.glass" value="25" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT-->
 			<property name="kickbackAim" value="7" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT -->
 			<property name="kickbackHip" value="10" />
 		</property>
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="ZoomAt, Mods" />
 			<property name="Zoom_max_out" value="35" />
 			<property name="Zoom_max_in" value="35" />
 		</property>
 		<property name="LightSource" value="lightSource" />
-		<!-- Start: Needed for the attachment flashlight -->
 		<property name="ActivateObject" value="Attachments/flashlight/lightSource" />
 		<property name="AttachmentFlashlight" value="flashlight02" />
-		<!-- End: Needed for the attachment flashlight -->
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Pistols" />
 		<property name="CraftingSkillGroup" value="craftSkillGuns" />
@@ -9748,7 +9651,6 @@
 			<property name="Barrel" value="partsRevolver_frame" />
 		</property>
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="RangedAt, Mods" />
 			<property name="Delay" value="0.34" />
 			<property name="Auto_fire" value="true" />
@@ -9770,22 +9672,17 @@
 			<property name="DamageBonus.plants" value="4" />
 			<property name="DamageBonus.earth" value=".2" />
 			<property name="DamageBonus.glass" value="25" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT-->
 			<property name="kickbackAim" value="15" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT -->
 			<property name="kickbackHip" value="20" />
 		</property>
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="ZoomAt, Mods" />
 			<property name="Zoom_max_out" value="35" />
 			<property name="Zoom_max_in" value="35" />
 		</property>
 		<property name="LightSource" value="lightSource" />
-		<!-- Start: Needed for the attachment flashlight -->
 		<property name="ActivateObject" value="Attachments/flashlight/lightSource" />
 		<property name="AttachmentFlashlight" value="flashlight02" />
-		<!-- End: Needed for the attachment flashlight -->
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Pistols" />
 		<property name="CraftingSkillGroup" value="craftSkillGuns" />
@@ -9850,7 +9747,6 @@
 		<property name="DegradationBreaksAfter" value="false" />
 		<property name="SoundJammed" value="Weapons/weapon_jam" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="RangedAt, Mods" />
 			<property name="Delay" value="0.8" />
 			<property name="Auto_fire" value="true" />
@@ -9877,13 +9773,10 @@
 			<property name="DamageBonus.earth" value=".2" />
 			<property name="Buff" value="shotgunWound" />
 			<property name="Buff_chance" value=".8" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT-->
 			<property name="kickbackAim" value="20" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT -->
 			<property name="kickbackHip" value="25" />
 		</property>
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="ZoomAt, Mods" />
 			<property name="Zoom_max_out" value="40" />
 			<property name="Zoom_max_in" value="40" />
@@ -9918,7 +9811,6 @@
 			<property name="Pump" value="CrossbowParts" />
 		</property>
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Launcher" />
 			<property name="Delay" value="1.8" />
 			<property name="Auto_fire" value="true" />
@@ -9934,16 +9826,13 @@
 			<property name="Sound_reload" value="Weapons/Ranged/Bows/Crossbow/crossbow_reload" />
 		</property>
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="ZoomAt, Mods" />
 			<property name="Zoom_max_out" value="45" />
 			<property name="Zoom_max_in" value="45" />
 		</property>
-		<!-- Start: Needed for the attachment flashlight -->
 		<property name="LightSource" value="lightSource" />
 		<property name="ActivateObject" value="Attachments/flashlight/lightSource" />
 		<property name="AttachmentFlashlight" value="flashlight02" />
-		<!-- End: Needed for the attachment flashlight -->
 		<property class="Attributes">
 			<property name="DegradationRate" value="1,1" />
 			<property name="DegradationMax" value="30,600" />
@@ -10358,7 +10247,6 @@
 			<property name="Barrel" value="MP7_Barrel" />
 		</property>
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="RangedAt, Mods" />
 			<property name="Delay" value="0.125" />
 			<property name="Auto_fire" value="true" />
@@ -10388,16 +10276,13 @@
 			<property name="Buff_chance" value=".1" />
 		</property>
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="ZoomAt, Mods" />
 			<property name="Zoom_max_out" value="35" />
 			<property name="Zoom_max_in" value="35" />
 		</property>
 		<property name="LightSource" value="lightSource" />
-		<!-- Start: Needed for the attachment flashlight -->
 		<property name="ActivateObject" value="Attachments/flashlight/lightSource" />
 		<property name="AttachmentFlashlight" value="flashlight02" />
-		<!-- End: Needed for the attachment flashlight -->
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Rifles" />
 		<property name="CraftingSkillGroup" value="craftSkillGuns" />
@@ -10429,7 +10314,6 @@
 	<item id="968" name="MP7_LowerReceiver">
 		<property name="Extends" value="partsMaster" />
 		<property name="CustomIcon" value="parts44Magnum_parts" />
-		<!-- xxx -->
 		<property name="DescriptionKey" value="partsUMPGroupDesc" />
 		<property name="PartType" value="Pump" />
 		<property name="Weight" value="15" />
@@ -10452,8 +10336,6 @@
 			<property name="DegradationMax" value="2000,9750" />
 		</property>
 	</item>
-	<!-- STARVATION GUNFIRE WEAPONS END-->
-	<!-- STARVATION WEAPON ATTACHMENTS START -->
 	<item id="972" name="SilencerMP7">
 		<property name="Meshfile" value="#weaponAttach?SilencerPrefab" />
 		<property name="DropMeshfile" value="#weaponAttach?SilencerPrefab" />
@@ -10465,20 +10347,13 @@
 		<property name="HoldType" value="36" />
 		<property name="Stacknumber" value="1" />
 		<property class="AttachAction0">
-			<!-- AttackAction -->
 			<property name="Sound_start" value="mp7_fire_start" />
 			<property name="Sound_repeat" value="#morteWeapons?silencedMP_lp" />
 			<property name="Sound_end" value="#morteWeapons?silencedMP_end" />
-			<!-- Base Modifier is 1, so this would reduce the base modifier by 0.1 -->
-			<!-- IF no more attachments are present the entity damage modifier would be 0.9, this reducing entity damage by 10% -->
 			<property name="Entity_Damage_Modifier" value="0.1" param1="Sub" />
-			<!-- Base Modifier is 1 -->
 			<property name="Block_Damage_Modifier" value="0.1" param1="Sub" />
-			<!-- Base Modifier is 1 -->
 			<property name="FallOff_Range_Modifier" value="0.1" param1="Sub" />
-			<!-- reduces aditional kickback while aiming -->
 			<property name="kickbackAim" value="1" param1="Sub" />
-			<!-- reduces aditional kickback on hip shot -->
 			<property name="kickbackHip" value="1" param1="Sub" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
@@ -10497,16 +10372,11 @@
 		<property name="Weight" value="20" />
 		<property name="HoldType" value="36" />
 		<property class="AttachAction0">
-			<!-- AttackAction -->
 			<property name="Sound_start" value="as_val_fire_start" />
-			<property name="Sound_repeat" value="#sfxsilencedsilenced?suppressor02" />
-			<property name="Sound_end" value="#sfxsilencedsilenced?suppressorend" />
-			<!-- Base Modifier is 1, so this would reduce the base modifier by 0.1 -->
-			<!-- IF no more attachments are present the entity damage modifier would be 0.9, this reducing entity damage by 10% -->
+			<property name="Sound_repeat" value="#zedSounds?silencedGunLoop" />
+			<property name="Sound_end" value="#zedSounds?silencedGun" />
 			<property name="Entity_Damage_Modifier" value="0.2" param1="Sub" />
-			<!-- Base Modifier is 1 -->
 			<property name="Block_Damage_Modifier" value="0.3" param1="Sub" />
-			<!-- Base Modifier is 1 -->
 			<property name="FallOff_Range_Modifier" value="0.3" param1="Sub" />
 		</property>
 		<property name="CraftingSkillGroup" value="Attachments" />
@@ -10523,10 +10393,7 @@
 		<property name="Weight" value="40" />
 		<property name="HoldType" value="36" />
 		<property class="AttachAction0">
-			<!-- AttackAction -->
-			<!-- reduces aditional kickback by 2 while aiming -->
 			<property name="kickbackAim" value="5" param1="Sub" />
-			<!-- reduces aditional kickback by 2 on hip shot -->
 			<property name="kickbackHip" value="5" param1="Sub" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
@@ -10547,10 +10414,7 @@
 		<property name="HoldType" value="36" />
 		<property name="Incompatible" value="Sight_MagnifierMG" />
 		<property class="AttachAction0">
-			<!-- AttackAction -->
-			<!-- reduces aditional kickback by 2 while aiming -->
 			<property name="kickbackAim" value="3" param1="Sub" />
-			<!-- reduces aditional kickback by 2 on hip shot -->
 			<property name="kickbackHip" value="3" param1="Sub" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
@@ -10569,21 +10433,16 @@
 		<property name="HoldType" value="36" />
 		<property name="Incompatible" value="Sight_AdvancedMG" />
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="Zoom" />
 			<property name="Zoom_overlay" value="#weaponAttach?aimpoint_zoom_overlay" />
 			<property name="Zoom_max_out" value="40" />
 			<property name="Zoom_max_in" value="15" />
 		</property>
 		<property class="AttachAction0">
-			<!-- AttackAction -->
-			<!-- Decreases aditional kickback by 4 while aiming -->
 			<property name="kickbackAim" value="2" param1="Sub" />
-			<!-- increases aditional kickback by 2 on hip shot -->
 			<property name="kickbackHip" value="2" param1="Add" />
 		</property>
 		<property class="AttachAction1">
-			<!-- UseAction -->
 			<property name="Class" value="Zoom" />
 			<property name="Zoom_overlay" value="#weaponAttach?aimpoint_zoom_overlay" />
 			<property name="Zoom_max_out" value="40" />
@@ -10605,10 +10464,7 @@
 		<property name="HoldType" value="36" />
 		<property name="Incompatible" value="SilencerMG" />
 		<property class="AttachAction0">
-			<!-- AttackAction -->
-			<!-- increases aditional kickback by 2 while aiming -->
 			<property name="kickbackAim" value="1" param1="Add" />
-			<!-- increases aditional kickback by 2 on hip shot -->
 			<property name="kickbackHip" value="1" param1="Add" />
 			<property name="Entity_Damage_Modifier" value="0.4" param1="Add" />
 			<property name="Block_Damage_Modifier" value="0.3" param1="Add" />
@@ -10631,9 +10487,7 @@
 		<property name="Weight" value="25" />
 		<property name="HoldType" value="36" />
 		<property class="AttachAction0">
-			<!-- AttackAction -->
 			<property name="Magazine_size" value="2" param1="Multiply" />
-			<!-- Applys at default value, so this means reload time will double -->
 			<property name="Reload_time" value="1.5" param1="Multiply" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
@@ -10654,10 +10508,7 @@
 		<property name="HoldType" value="36" />
 		<property name="Incompatible" value="ScopePSG" />
 		<property class="AttachAction0">
-			<!-- AttackAction -->
-			<!-- reduces aditional kickback by 2 while aiming -->
 			<property name="kickbackAim" value="6" param1="Sub" />
-			<!-- reduces aditional kickback by 2 on hip shot -->
 			<property name="kickbackHip" value="2" param1="Sub" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
@@ -10677,7 +10528,6 @@
 		<property name="Weight" value="10" />
 		<property name="HoldType" value="36" />
 		<property class="AttachAction0">
-			<!-- AttackAction -->
 			<property name="kickbackHip" value="3" param1="Sub" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
@@ -10694,12 +10544,8 @@
 		<property name="DegradationBreaksAfter" value="false" />
 		<property name="Weight" value="40" />
 		<property name="HoldType" value="36" />
-		<!-- <property name="Incompatible" value="" /> -->
 		<property class="AttachAction0">
-			<!-- AttackAction -->
-			<!-- reduces aditional kickback by 2 while aiming -->
 			<property name="kickbackAim" value="6" param1="Sub" />
-			<!-- reduces aditional kickback by 2 on hip shot -->
 			<property name="kickbackHip" value="3" param1="Sub" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
@@ -10720,24 +10566,19 @@
 		<property name="HoldType" value="36" />
 		<property name="Incompatible" value="Sight_AdvancedPSG" />
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="Zoom" />
 			<property name="Zoom_overlay" value="#weaponAttach?aimpoint_zoom_overlay" />
 			<property name="Zoom_max_out" value="40" />
 			<property name="Zoom_max_in" value="15" />
 		</property>
 		<property class="AttachAction0">
-			<!-- AttackAction -->
-			<!-- Decreases aditional kickback by 4 while aiming -->
 			<property name="kickbackAim" value="4" param1="Sub" />
-			<!-- increases aditional kickback by 2 on hip shot -->
 			<property name="kickbackHip" value="2" param1="Add" />
 			<property name="Entity_Damage_Modifier" value="0.2" param1="Add" />
 			<property name="Block_Damage_Modifier" value="0.1" param1="Add" />
 			<property name="FallOff_Range_Modifier" value="0.2" param1="Add" />
 		</property>
 		<property class="AttachAction1">
-			<!-- UseAction -->
 			<property name="Class" value="Zoom" />
 			<property name="Zoom_overlay" value="#weaponAttach?aimpoint_zoom_overlay" />
 			<property name="Zoom_max_out" value="40" />
@@ -10757,9 +10598,7 @@
 		<property name="DegradationBreaksAfter" value="false" />
 		<property name="Weight" value="15" />
 		<property name="HoldType" value="36" />
-		<!--<property name="Incompatible" value="" /> -->
 		<property class="AttachAction0">
-			<!-- AttackAction -->
 			<property name="Delay" value="0.3" param1="Replace" />
 			<property name="FallOff_Range_Modifier" value="25" param1="Add" />
 			<property name="Reload_time" value="0.8" param1="Multiply" />
@@ -10780,20 +10619,13 @@
 		<property name="HoldType" value="36" />
 		<property name="Stacknumber" value="1" />
 		<property class="AttachAction0">
-			<!-- AttackAction -->
 			<property name="Sound_start" value="as_val_fire_start" />
-			<property name="Sound_repeat" value="#sfxsilencedsilenced?suppressor02" />
-			<property name="Sound_end" value="#sfxsilencedsilenced?suppressorend" />
-			<!-- Base Modifier is 1, so this would reduce the base modifier by 0.1 -->
-			<!-- IF no more attachments are present the entity damage modifier would be 0.9, this reducing entity damage by 10% -->
+			<property name="Sound_repeat" value="#zedSounds?silencedGunLoop" />
+			<property name="Sound_end" value="#zedSounds?silencedGun" />
 			<property name="Entity_Damage_Modifier" value="0.1" param1="Sub" />
-			<!-- Base Modifier is 1 -->
 			<property name="Block_Damage_Modifier" value="0.1" param1="Sub" />
-			<!-- Base Modifier is 1 -->
 			<property name="FallOff_Range_Modifier" value="0.1" param1="Sub" />
-			<!-- reduces aditional kickback while aiming -->
 			<property name="kickbackAim" value="1" param1="Sub" />
-			<!-- reduces aditional kickback on hip shot -->
 			<property name="kickbackHip" value="1" param1="Sub" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
@@ -10811,9 +10643,7 @@
 		<property name="HoldType" value="36" />
 		<property name="Stacknumber" value="1" />
 		<property class="AttachAction0">
-			<!-- AttackAction -->
 			<property name="Magazine_size" value="30" param1="Add" />
-			<!-- Applys at default value, so this means reload time will double -->
 			<property name="Reload_time" value="1.5" param1="Multiply" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
@@ -10832,10 +10662,7 @@
 		<property name="Stacknumber" value="1" />
 		<property name="Incompatible" value="Sight_ACOG" />
 		<property class="AttachAction0">
-			<!-- AttackAction -->
-			<!-- reduces aditional kickback by 2 while aiming -->
 			<property name="kickbackAim" value="2" param1="Sub" />
-			<!-- reduces aditional kickback by 2 on hip shot -->
 			<property name="kickbackHip" value="2" param1="Sub" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
@@ -10868,24 +10695,19 @@
 		<property name="Stacknumber" value="1" />
 		<property name="Incompatible" value="Sight_Advanced" />
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="Zoom" />
 			<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
 			<property name="Zoom_max_out" value="40" />
 			<property name="Zoom_max_in" value="15" />
 		</property>
 		<property class="AttachAction0">
-			<!-- AttackAction -->
-			<!-- Decreases aditional kickback by 4 while aiming -->
 			<property name="kickbackAim" value="4" param1="Sub" />
-			<!-- increases aditional kickback by 2 on hip shot -->
 			<property name="kickbackHip" value="1" param1="Sub" />
 			<property name="Entity_Damage_Modifier" value="0.2" param1="Add" />
 			<property name="Block_Damage_Modifier" value="0.1" param1="Add" />
 			<property name="FallOff_Range_Modifier" value="0.2" param1="Add" />
 		</property>
 		<property class="AttachAction1">
-			<!-- UseAction -->
 			<property name="Class" value="Zoom" />
 			<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
 			<property name="Zoom_max_out" value="40" />
@@ -10907,10 +10729,7 @@
 		<property name="Stacknumber" value="1" />
 		<property name="Incompatible" value="Silencer" />
 		<property class="AttachAction0">
-			<!-- AttackAction -->
-			<!-- increases aditional kickback by 2 while aiming -->
 			<property name="kickbackAim" value="1" param1="Add" />
-			<!-- increases aditional kickback by 2 on hip shot -->
 			<property name="kickbackHip" value="1" param1="Add" />
 			<property name="Entity_Damage_Modifier" value="0.2" param1="Add" />
 			<property name="Block_Damage_Modifier" value="0.1" param1="Add" />
@@ -10932,24 +10751,19 @@
 		<property name="Stacknumber" value="1" />
 		<property name="Incompatible" value="Sight_Advanced,Sight_ACOG" />
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="Zoom" />
 			<property name="Zoom_overlay" value="#weaponAttach?aimpoint_zoom_overlay" />
 			<property name="Zoom_max_out" value="40" />
 			<property name="Zoom_max_in" value="15" />
 		</property>
 		<property class="AttachAction0">
-			<!-- AttackAction -->
-			<!-- Decreases aditional kickback by 4 while aiming -->
 			<property name="kickbackAim" value="4" param1="Sub" />
-			<!-- increases aditional kickback by 2 on hip shot -->
 			<property name="kickbackHip" value="1" param1="Sub" />
 			<property name="Entity_Damage_Modifier" value="0.2" param1="Add" />
 			<property name="Block_Damage_Modifier" value="0.1" param1="Add" />
 			<property name="FallOff_Range_Modifier" value="0.2" param1="Add" />
 		</property>
 		<property class="AttachAction1">
-			<!-- UseAction -->
 			<property name="Class" value="Zoom" />
 			<property name="Zoom_overlay" value="#weaponAttach?aimpoint_zoom_overlay" />
 			<property name="Zoom_max_out" value="40" />
@@ -10970,10 +10784,7 @@
 		<property name="HoldType" value="36" />
 		<property name="Stacknumber" value="1" />
 		<property class="AttachAction0">
-			<!-- AttackAction -->
-			<!-- increases aditional kickback by 2 while aiming -->
 			<property name="kickbackAim" value="3" param1="Sub" />
-			<!-- increases aditional kickback by 2 on hip shot -->
 			<property name="kickbackHip" value="6" param1="Sub" />
 			<property name="Entity_Damage_Modifier" value="0.1" param1="Add" />
 			<property name="Block_Damage_Modifier" value="0.1" param1="Add" />
@@ -10983,10 +10794,7 @@
 		<property name="ActionSkillGroup" value="" />
 		<property name="EconomicValue" value="650" />
 	</item>
-	<!-- STARVATION WEAPON ATTACHMENTS END -->
-	<!-- REPLACEMENTS FOR VANILLA WEAPONS START-->
 	<item id="40" name="gunPistol">
-		<!-- FIXED -->
 		<property name="Class" value="ItemClassAttachments, Mods" />
 		<property name="Meshfile" value="Items/Weapons/Ranged/Pistol/PistolPrefab" />
 		<property name="Material" value="metal" />
@@ -11003,7 +10811,6 @@
 			<property name="Barrel" value="partsPistol_barrel" />
 		</property>
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="RangedAt, Mods" />
 			<property name="Delay" value="0.3" />
 			<property name="Auto_fire" value="true" />
@@ -11025,22 +10832,17 @@
 			<property name="DamageBonus.plants" value="3" />
 			<property name="DamageBonus.earth" value=".4" />
 			<property name="DamageBonus.glass" value="25" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT-->
 			<property name="kickbackAim" value="3" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT -->
 			<property name="kickbackHip" value="6" />
 		</property>
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="ZoomAt, Mods" />
 			<property name="Zoom_max_out" value="35" />
 			<property name="Zoom_max_in" value="35" />
 		</property>
 		<property name="LightSource" value="lightSource" />
-		<!-- Start: Needed for the attachment flashlight -->
 		<property name="ActivateObject" value="Attachments/flashlight/lightSource" />
 		<property name="AttachmentFlashlight" value="flashlight02" />
-		<!-- End: Needed for the attachment flashlight -->
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Pistols" />
 		<property name="CraftingSkillGroup" value="craftSkillGuns" />
@@ -11048,7 +10850,6 @@
 		<property name="PickupJournalEntry" value="gunAssemblyTip,augmentGunsTip" />
 	</item>
 	<item id="42" name="gun44Magnum">
-		<!-- FIXED -->
 		<property name="Class" value="ItemClassAttachments, Mods" />
 		<property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
 		<property name="Material" value="metal" />
@@ -11065,7 +10866,6 @@
 			<property name="Barrel" value="parts44Magnum_frame" />
 		</property>
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="RangedAt, Mods" />
 			<property name="Delay" value="0.34" />
 			<property name="Auto_fire" value="true" />
@@ -11087,22 +10887,17 @@
 			<property name="DamageBonus.plants" value="4" />
 			<property name="DamageBonus.earth" value=".2" />
 			<property name="DamageBonus.glass" value="25" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT-->
 			<property name="kickbackAim" value="10" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT -->
 			<property name="kickbackHip" value="15" />
 		</property>
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="ZoomAt, Mods" />
 			<property name="Zoom_max_out" value="35" />
 			<property name="Zoom_max_in" value="35" />
 		</property>
 		<property name="LightSource" value="lightSource" />
-		<!-- Start: Needed for the attachment flashlight -->
 		<property name="ActivateObject" value="Attachments/flashlight/lightSource" />
 		<property name="AttachmentFlashlight" value="flashlight02" />
-		<!-- End: Needed for the attachment flashlight -->
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Pistols" />
 		<property name="CraftingSkillGroup" value="craftSkillGuns" />
@@ -11110,7 +10905,6 @@
 		<property name="PickupJournalEntry" value="gunAssemblyTip,augmentGunsTip" />
 	</item>
 	<item id="44" name="gunSawedOffPumpShotgun">
-		<!-- FIXED -->
 		<property name="Class" value="ItemClassAttachments, Mods" />
 		<property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/SawedOffPumpShotgunPrefab" />
 		<property name="Material" value="metal" />
@@ -11127,7 +10921,6 @@
 			<property name="Barrel" value="partsPumpShotgun_barrelShort" />
 		</property>
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="RangedAt, Mods" />
 			<property name="Delay" value="0.8" />
 			<property name="Auto_fire" value="true" />
@@ -11153,22 +10946,17 @@
 			<property name="DamageBonus.earth" value=".2" />
 			<property name="Buff" value="shotgunWound" />
 			<property name="Buff_chance" value=".8" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT-->
 			<property name="kickbackAim" value="15" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT -->
 			<property name="kickbackHip" value="20" />
 		</property>
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="ZoomAt, Mods" />
 			<property name="Zoom_max_out" value="40" />
 			<property name="Zoom_max_in" value="40" />
 		</property>
 		<property name="LightSource" value="lightSource" />
-		<!-- Start: Needed for the attachment flashlight -->
 		<property name="ActivateObject" value="Attachments/flashlight/lightSource" />
 		<property name="AttachmentFlashlight" value="flashlight02" />
-		<!-- End: Needed for the attachment flashlight -->
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Shotguns" />
 		<property name="CraftingSkillGroup" value="craftSkillGuns" />
@@ -11176,7 +10964,6 @@
 		<property name="PickupJournalEntry" value="gunAssemblyTip,augmentGunsTip" />
 	</item>
 	<item id="45" name="gunPumpShotgun">
-		<!-- FIXED -->
 		<property name="Class" value="ItemClassAttachments, Mods" />
 		<property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/PumpShotgunPrefab" />
 		<property name="Material" value="metal" />
@@ -11193,7 +10980,6 @@
 			<property name="Barrel" value="partsPumpShotgun_barrel" />
 		</property>
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="RangedAt, Mods" />
 			<property name="Delay" value="0.8" />
 			<property name="Auto_fire" value="true" />
@@ -11219,22 +11005,17 @@
 			<property name="DamageBonus.earth" value=".2" />
 			<property name="Buff" value="shotgunWound" />
 			<property name="Buff_chance" value=".8" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT-->
 			<property name="kickbackAim" value="13" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT -->
 			<property name="kickbackHip" value="16" />
 		</property>
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="ZoomAt, Mods" />
 			<property name="Zoom_max_out" value="40" />
 			<property name="Zoom_max_in" value="40" />
 		</property>
 		<property name="LightSource" value="lightSource" />
-		<!-- Start: Needed for the attachment flashlight -->
 		<property name="ActivateObject" value="Attachments/flashlight/lightSource" />
 		<property name="AttachmentFlashlight" value="flashlight02" />
-		<!-- End: Needed for the attachment flashlight -->
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Shotguns" />
 		<property name="CraftingSkillGroup" value="craftSkillGuns" />
@@ -11242,7 +11023,6 @@
 		<property name="PickupJournalEntry" value="alternateAmmoTip,gunAssemblyTip,augmentGunsTip" />
 	</item>
 	<item id="47" name="gunMP5">
-		<!-- FIXED -->
 		<property name="Class" value="ItemClassAttachments, Mods" />
 		<property name="Meshfile" value="Items/Weapons/Ranged/MP5/MP5Prefab" />
 		<property name="Material" value="metal" />
@@ -11259,7 +11039,6 @@
 			<property name="Barrel" value="partsMP5_barrel" />
 		</property>
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="RangedAt, Mods" />
 			<property name="Delay" value="0.150" />
 			<property name="Auto_fire" value="true" />
@@ -11287,22 +11066,17 @@
 			<property name="DamageBonus.glass" value="25" />
 			<property name="Buff" value="critGunMP5" />
 			<property name="Buff_chance" value=".1" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT-->
 			<property name="kickbackAim" value="3" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT -->
 			<property name="kickbackHip" value="5" />
 		</property>
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="ZoomAt, Mods" />
 			<property name="Zoom_max_out" value="35" />
 			<property name="Zoom_max_in" value="35" />
 		</property>
 		<property name="LightSource" value="lightSource" />
-		<!-- Start: Needed for the attachment flashlight -->
 		<property name="ActivateObject" value="Attachments/flashlight/lightSource" />
 		<property name="AttachmentFlashlight" value="flashlight02" />
-		<!-- End: Needed for the attachment flashlight -->
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Rifles" />
 		<property name="CraftingSkillGroup" value="craftSkillGuns" />
@@ -11310,7 +11084,6 @@
 		<property name="PickupJournalEntry" value="gunAssemblyTip,augmentGunsTip" />
 	</item>
 	<item id="48" name="gunAK47">
-		<!-- FIXED -->
 		<property name="Class" value="ItemClassAttachments, Mods" />
 		<property name="Meshfile" value="Items/Weapons/Ranged/ak47/ak47Prefab" />
 		<property name="Material" value="metal" />
@@ -11327,7 +11100,6 @@
 			<property name="Barrel" value="partsAK47_barrel" />
 		</property>
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="RangedAt, Mods" />
 			<property name="Delay" value="0.150" />
 			<property name="Range" value="150" />
@@ -11356,22 +11128,17 @@
 			<property name="DamageBonus.glass" value="25" />
 			<property name="Buff" value="critGunAK47" />
 			<property name="Buff_chance" value=".1" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT-->
 			<property name="kickbackAim" value="4" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT -->
 			<property name="kickbackHip" value="8" />
 		</property>
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="ZoomAt, Mods" />
 			<property name="Zoom_max_out" value="35" />
 			<property name="Zoom_max_in" value="35" />
 		</property>
 		<property name="LightSource" value="lightSource" />
-		<!-- Start: Needed for the attachment flashlight -->
 		<property name="ActivateObject" value="Attachments/flashlight/lightSource" />
 		<property name="AttachmentFlashlight" value="flashlight02" />
-		<!-- End: Needed for the attachment flashlight -->
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Rifles" />
 		<property name="CraftingSkillGroup" value="craftSkillGuns" />
@@ -11379,7 +11146,6 @@
 		<property name="PickupJournalEntry" value="gunAssemblyTip,augmentGunsTip" />
 	</item>
 	<item id="50" name="gunHuntingRifle">
-		<!-- FIXED -->
 		<property name="Class" value="ItemClassAttachments, Mods" />
 		<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/HuntingRiflePrefab" />
 		<property name="Material" value="metal" />
@@ -11396,7 +11162,6 @@
 			<property name="Barrel" value="partsHuntingRifle_barrel" />
 		</property>
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="RangedAt, Mods" />
 			<property name="Delay" value="0.5" />
 			<property name="Auto_fire" value="true" />
@@ -11421,22 +11186,17 @@
 			<property name="DamageBonus.plants" value="5" />
 			<property name="DamageBonus.earth" value=".2" />
 			<property name="DamageBonus.glass" value="25" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT-->
 			<property name="kickbackAim" value="6" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT -->
 			<property name="kickbackHip" value="12" />
 		</property>
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="ZoomAt, Mods" />
 			<property name="Zoom_max_out" value="35" />
 			<property name="Zoom_max_in" value="28" />
 		</property>
 		<property name="LightSource" value="lightSource" />
-		<!-- Start: Needed for the attachment flashlight -->
 		<property name="ActivateObject" value="Attachments/flashlight/lightSource" />
 		<property name="AttachmentFlashlight" value="flashlight02" />
-		<!-- End: Needed for the attachment flashlight -->
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Rifles" />
 		<property name="CraftingSkillGroup" value="craftSkillGuns" />
@@ -11444,7 +11204,6 @@
 		<property name="PickupJournalEntry" value="gunAssemblyTip,augmentGunsTip" />
 	</item>
 	<item id="51" name="gunSniperRifle">
-		<!-- FIXED -->
 		<property name="DescriptionKey" value="psgDesc" />
 		<property name="Class" value="ItemClassAttachments, Mods" />
 		<property name="Meshfile" value="#psg-1?Psg-1" />
@@ -11463,7 +11222,6 @@
 			<property name="Barrel" value="partsSniperRifle_barrel" />
 		</property>
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="RangedAt, Mods" />
 			<property name="Delay" value="1.5" />
 			<property name="Auto_fire" value="true" />
@@ -11489,23 +11247,17 @@
 			<property name="DamageBonus.wood" value="5" />
 			<property name="DamageBonus.earth" value=".2" />
 			<property name="DamageBonus.glass" value="25" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT-->
 			<property name="kickbackAim" value="4" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT -->
 			<property name="kickbackHip" value="6" />
 		</property>
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="ZoomAt, Mods" />
-			<!--property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" /-->
 			<property name="Zoom_max_out" value="40" />
 			<property name="Zoom_max_in" value="40" />
 		</property>
-		<!-- Start: Needed for the attachment flashlight -->
 		<property name="LightSource" value="lightSource" />
 		<property name="ActivateObject" value="Attachments/flashlight/lightSource" />
 		<property name="AttachmentFlashlight" value="flashlight02" />
-		<!-- End: Needed for the attachment flashlight -->
 		<property name="Group" value="Ammo/Weapons" />
 		<property class="Preview">
 			<property name="Zoom" value="1" />
@@ -11518,7 +11270,6 @@
 		<property name="PickupJournalEntry" value="gunAssemblyTip,augmentGunsTip" />
 	</item>
 	<item id="248" name="partsSniperRifle_stock">
-		<!-- FIXED -->
 		<property name="Extends" value="partsMaster" />
 		<property name="DescriptionKey" value="partsSniperRifleGroupDesc" />
 		<property name="PartType" value="Stock" />
@@ -11532,7 +11283,6 @@
 		<property name="EconomicValue" value="875" />
 	</item>
 	<item id="249" name="partsSniperRifle_receiver">
-		<!-- FIXED -->
 		<property name="Extends" value="partsMaster" />
 		<property name="DescriptionKey" value="partsSniperRifleGroupDesc" />
 		<property name="PartType" value="Receiver" />
@@ -11544,10 +11294,8 @@
 		<property name="EconomicValue" value="875" />
 	</item>
 	<item id="250" name="partsSniperRifle_parts">
-		<!-- FIXED -->
 		<property name="Extends" value="partsMaster" />
 		<property name="CustomIcon" value="partsPistol_parts" />
-		<!-- xxx -->
 		<property name="DescriptionKey" value="partsSniperRifleGroupDesc" />
 		<property name="PartType" value="Pump" />
 		<property name="Weight" value="15" />
@@ -11558,7 +11306,6 @@
 		<property name="EconomicValue" value="875" />
 	</item>
 	<item id="251" name="partsSniperRifle_barrel">
-		<!-- FIXED -->
 		<property name="Extends" value="partsMaster" />
 		<property name="DescriptionKey" value="partsSniperRifleGroupDesc" />
 		<property name="PartType" value="Barrel" />
@@ -11570,10 +11317,7 @@
 		</property>
 		<property name="EconomicValue" value="875" />
 	</item>
-	<!-- REPLACEMENTS FOR VANILLA WEAPONS END-->
-	<!-- SPECIAL MEMORIAL WEAPONS -->
 	<item id="1001" name="KSR">
-		<!-- FIXED -->
 		<property name="DescriptionKey" value="ksrDesc" />
 		<property name="Class" value="ItemClassAttachments, Mods" />
 		<property name="Meshfile" value="#morteWeapons?Sniper50Prefab" />
@@ -11592,7 +11336,6 @@
 			<property name="Barrel" value="KSR_barrel" />
 		</property>
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="RangedAt, Mods" />
 			<property name="Delay" value="1.0" />
 			<property name="Auto_fire" value="true" />
@@ -11618,12 +11361,9 @@
 			<property name="DamageBonus.wood" value="10" />
 			<property name="DamageBonus.earth" value=".2" />
 			<property name="DamageBonus.glass" value="45" />
-			<!-- if shooting standing, player suffers dmg -->
 			<property name="dmgStand" value="5" />
 			<property name="buffStand" value="stunned" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT-->
 			<property name="kickbackAim" value="6" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT -->
 			<property name="kickbackHip" value="10" />
 		</property>
 		<property class="Action1">
@@ -11632,11 +11372,9 @@
 			<property name="Zoom_max_out" value="80" />
 			<property name="Zoom_max_in" value="15" />
 		</property>
-		<!-- Start: Needed for the attachment flashlight -->
 		<property name="LightSource" value="lightSource" />
 		<property name="ActivateObject" value="Attachments/flashlight/lightSource" />
 		<property name="AttachmentFlashlight" value="flashlight02" />
-		<!-- End: Needed for the attachment flashlight -->
 		<property name="Group" value="Ammo/Weapons" />
 		<property class="Preview">
 			<property name="Zoom" value="1" />
@@ -11681,7 +11419,6 @@
 		<property name="Extends" value="partsMaster" />
 		<property name="CustomIcon" value="partsPistol_parts" />
 		<property name="CustomIconTint" value="ffffff" />
-		<!-- xxx -->
 		<property name="DescriptionKey" value="partsSniperRifleGroupDesc" />
 		<property name="PartType" value="Pump" />
 		<property name="Weight" value="15" />
@@ -11693,7 +11430,6 @@
 		<property name="EconomicValue" value="875" />
 	</item>
 	<item id="1006" name="KSR_barrel">
-		<!-- FIXED -->
 		<property name="Extends" value="partsMaster" />
 		<property name="CustomIcon" value="partsSniperRifle_barrel" />
 		<property name="CustomIconTint" value="ffffff" />
@@ -11708,7 +11444,6 @@
 		</property>
 		<property name="EconomicValue" value="875" />
 	</item>
-	<!-- SPECIAL MEMORIAL WEAPONS -->
 	<item id="241" name="desertEagle">
 		<property name="Class" value="ItemClassAttachments, Mods" />
 		<property name="Meshfile" value="#deagle?DesertEagleA16" />
@@ -11726,7 +11461,6 @@
 			<property name="Barrel" value="partsDeagle_barrel" />
 		</property>
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="RangedAt, Mods" />
 			<property name="Delay" value="0.3" />
 			<property name="Auto_fire" value="true" />
@@ -11748,22 +11482,17 @@
 			<property name="DamageBonus.plants" value="5" />
 			<property name="DamageBonus.earth" value="1.4" />
 			<property name="DamageBonus.glass" value="25" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT-->
 			<property name="kickbackAim" value="3" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT -->
 			<property name="kickbackHip" value="6" />
 		</property>
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="ZoomAt, Mods" />
 			<property name="Zoom_max_out" value="35" />
 			<property name="Zoom_max_in" value="35" />
 		</property>
 		<property name="LightSource" value="lightSource" />
-		<!-- Start: Needed for the attachment flashlight -->
 		<property name="ActivateObject" value="Attachments/flashlight/lightSource" />
 		<property name="AttachmentFlashlight" value="flashlight02" />
-		<!-- End: Needed for the attachment flashlight -->
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Pistols" />
 		<property name="CraftingSkillGroup" value="craftSkillGuns" />
@@ -11781,19 +11510,13 @@
 		<property name="HoldType" value="36" />
 		<property name="Stacknumber" value="1" />
 		<property class="AttachAction0">
-			<!-- AttackAction -->
 			<property name="Sound_start" value="silencedPistol_start" />
-			<property name="Sound_end" value="#sfxsilencedsilenced?suppressorend" />
-			<!-- Base Modifier is 1, so this would reduce the base modifier by 0.1 -->
-			<!-- IF no more attachments are present the entity damage modifier would be 0.9, this reducing entity damage by 10% -->
+			<property name="Sound_repeat" value="#zedSounds?silencedPistolLoop" />
+			<property name="Sound_end" value="#zedSounds?silencedPistol" />
 			<property name="Entity_Damage_Modifier" value="0.1" param1="Sub" />
-			<!-- Base Modifier is 1 -->
 			<property name="Block_Damage_Modifier" value="0.1" param1="Sub" />
-			<!-- Base Modifier is 1 -->
 			<property name="FallOff_Range_Modifier" value="0.1" param1="Sub" />
-			<!-- reduces aditional kickback while aiming -->
 			<property name="kickbackAim" value="1" param1="Sub" />
-			<!-- reduces aditional kickback on hip shot -->
 			<property name="kickbackHip" value="1" param1="Sub" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
@@ -11811,9 +11534,7 @@
 		<property name="HoldType" value="36" />
 		<property name="Stacknumber" value="1" />
 		<property class="AttachAction0">
-			<!-- AttackAction -->
 			<property name="Magazine_size" value="5" param1="Add" />
-			<!-- Applys at default value, so this means reload time will double -->
 			<property name="Reload_time" value="1.5" param1="Multiply" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
@@ -11883,7 +11604,6 @@
 			<property name="Barrel" value="partsSniperRifle_barrel" />
 		</property>
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="RangedAt, Mods" />
 			<property name="Delay" value="0.5" />
 			<property name="Auto_fire" value="true" />
@@ -11908,29 +11628,23 @@
 			<property name="DamageBonus.plants" value="5" />
 			<property name="DamageBonus.earth" value=".2" />
 			<property name="DamageBonus.glass" value="25" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT-->
 			<property name="kickbackAim" value="6" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT -->
 			<property name="kickbackHip" value="12" />
 		</property>
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="ZoomAt, Mods" />
 			<property name="Zoom_max_out" value="35" />
 			<property name="Zoom_max_in" value="28" />
 		</property>
 		<property name="LightSource" value="lightSource" />
-		<!-- Start: Needed for the attachment flashlight -->
 		<property name="ActivateObject" value="Attachments/flashlight/lightSource" />
 		<property name="AttachmentFlashlight" value="flashlight02" />
-		<!-- End: Needed for the attachment flashlight -->
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Rifles" />
 		<property name="CraftingSkillGroup" value="craftSkillGuns" />
 		<property name="RepairExpMultiplier" value="10.8" />
 		<property name="PickupJournalEntry" value="gunAssemblyTip,augmentGunsTip" />
 	</item>
-	<!-- TRAPS START -->
 	<item id="264" name="trapsBookHunting">
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
@@ -11944,8 +11658,6 @@
 		</property>
 		<property name="EconomicValue" value="500" />
 	</item>
-	<!-- TRAPS END -->
-	<!-- PowerSources START -->
 	<item id="285" name="powerBookSteam">
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
@@ -11965,8 +11677,6 @@
 		</property>
 		<property name="EconomicValue" value="500" />
 	</item>
-	<!-- PowerSources END -->
-	<!-- POWER WORKSTATIONS -->
 	<item id="288" name="metalFrame">
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="Material" value="metal" />
@@ -11995,15 +11705,11 @@
 	<item id="963" name="smallConsole">
 		<property name="Extends" value="metalFrame" />
 	</item>
-	<!-- POWER WORKSTATIONS -->
-	<!-- CUSTOM ELECTRIC DEVICES START -->
-	<!-- CUSTOM ELECTRIC DEVICES END -->
 	<item id="298" name="handRhino">
 		<property name="Extends" value="handMaster" />
 		<property name="CreativeMode" value="Dev" />
 		<property name="HoldType" value="46" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Delay" value="1.9" />
 			<property name="Range" value="2.9" />
 			<property name="Sphere" value="0.4" />
@@ -12018,7 +11724,6 @@
 		<property name="IsDeveloper" value="true" />
 		<property name="HoldType" value="46" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Delay" value="1.1" />
 			<property name="Range" value="1.8" />
 			<property name="Sphere" value="0.4" />
@@ -12033,7 +11738,6 @@
 		<property name="CreativeMode" value="Dev" />
 		<property name="HoldType" value="46" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Delay" value="1.5" />
 			<property name="Range" value="2.9" />
 			<property name="Sphere" value="0.4" />
@@ -12048,7 +11752,6 @@
 		<property name="CreativeMode" value="Dev" />
 		<property name="HoldType" value="46" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Delay" value="0.8" />
 			<property name="Range" value="2.0" />
 			<property name="Sphere" value="0.4" />
@@ -12063,7 +11766,6 @@
 		<property name="CreativeMode" value="Dev" />
 		<property name="HoldType" value="46" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Delay" value="1.1" />
 			<property name="Range" value="1.8" />
 			<property name="Sphere" value="0.4" />
@@ -12078,7 +11780,6 @@
 		<property name="CreativeMode" value="Dev" />
 		<property name="HoldType" value="46" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Delay" value="3.0" />
 			<property name="Range" value="2.2" />
 			<property name="Sphere" value="0.4" />
@@ -12093,7 +11794,6 @@
 		<property name="CreativeMode" value="Dev" />
 		<property name="HoldType" value="46" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Delay" value="0.6" />
 			<property name="Range" value="1.8" />
 			<property name="Sphere" value="0.4" />
@@ -12106,7 +11806,6 @@
 		<property name="CreativeMode" value="Dev" />
 		<property name="HoldType" value="46" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Delay" value="1.1" />
 			<property name="Range" value="1.8" />
 			<property name="Sphere" value="0.4" />
@@ -12142,11 +11841,123 @@
 		</property>
 		<property name="EconomicValue" value="10" />
 	</item>
+	<item id="1051" name="handPlasma">
+		<property name="Extends" value="handMaster" />
+		<property name="CreativeMode" value="None" />
+		<property name="Degradation" value="99999" param1="true" />
+		<property class="Action0">
+			<property name="Range" value="1.75" />
+			<property name="DamageEntity" value="35" />
+			<property name="DamageBlock" value="150" />
+			<property name="Buff" value="bleeding,infection,stunned" />
+			<property name="Buff_chance" value="0.2,0.2,0.4" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Vomit" />
+			<property name="Delay" value="0.192" />
+			<property name="Range" value="200" />
+			<property name="Auto_fire" value="true" />
+			<property name="Infinite_ammo" value="true" />
+			<property name="Magazine_items" value="plasmaShotProjectile" />
+			<property name="Rays_spread" value="0.5" />
+			<property name="Reload_time" value="2" />
+			<property name="Bullet_icon" value="uzi" />
+			<property name="Sound_warning" value="plasmaWarn" />
+			<property name="Sound_start" value="plasmaMulti" />
+			<property name="Sound_repeat" value="" />
+			<property name="Sound_end" value="" />
+			<property name="Sound_empty" value="" />
+			<property name="Sound_reload" value="" />
+		</property>
+	</item>
+	<item id="1050" name="plasmaShotProjectile">
+		<property name="Meshfile" value="#particles?ErekiBall2" />
+		<property name="Material" value="organic" />
+		<property name="EconomicValue" value="1500" />
+		<property class="Action1">
+			<property name="Class" value="Projectile" />
+			<property name="DamageEntity" value="5" />
+			<property name="DamageBlock" value="500" />
+			<property name="Velocity" value="40" />
+			<property name="FlyTime" value="1.2" />
+			<property name="LifeTime" value="8" />
+			<property name="CollisionRadius" value="0.95" />
+			<property name="Explosion.BlockDamage" value="0" />
+			<property name="Explosion.EntityDamage" value="0" />
+			<property name="Explosion.ParticleIndex" value="0" />
+			<property name="Explosion.RadiusBlocks" value="0" />
+			<property name="Explosion.RadiusEntities" value="0" />
+			<property name="Explosion.DamageBonus.cloth" value="30" />
+			<property name="Explosion.DamageBonus.wood" value="50" />
+		</property>
+		<property name="Group" value="Ammo/Weapons" />
+		<property class="Attributes">
+			<property name="GetQualityFromWeapon" value="true" />
+			<property name="EntityDamage" value="3,16" />
+			<property name="ApplyBuff" value="1, 1" param1="plasmaImpact" />
+		</property>
+	</item>
+	<item id="1052" name="handSpiderBoss">
+		<property name="Extends" value="handMaster" />
+		<property name="CreativeMode" value="None" />
+		<property name="Degradation" value="99999" param1="true" />
+		<property class="Action0">
+			<property name="Delay" value="0.8" />
+			<property name="Range" value="2.75" />
+			<property name="DamageEntity" value="30" />
+			<property name="DamageBlock" value="80" />
+			<property name="Buff" value="bleeding,infection,stunned,radiation1,spiderPoisoning" />
+			<property name="Buff_chance" value="0.8,0.3,0.4,1.0,0.3" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Vomit" />
+			<property name="Delay" value="0.35" />
+			<property name="Range" value="200" />
+			<property name="Auto_fire" value="true" />
+			<property name="Infinite_ammo" value="true" />
+			<property name="Magazine_items" value="webShotProjectile" />
+			<property name="Rays_spread" value="0.5" />
+			<property name="Reload_time" value="2" />
+			<property name="Bullet_icon" value="uzi" />
+			<property name="Sound_warning" value="webWarn" />
+			<property name="Sound_start" value="webShot" />
+			<property name="Sound_repeat" value="" />
+			<property name="Sound_end" value="" />
+			<property name="Sound_empty" value="" />
+			<property name="Sound_reload" value="" />
+		</property>
+	</item>
+	<item id="1053" name="webShotProjectile">
+		<property name="Meshfile" value="#particles?greenDust" />
+		<property name="Material" value="organic" />
+		<property name="EconomicValue" value="1500" />
+		<property class="Action1">
+			<property name="Class" value="Projectile" />
+			<property name="DamageEntity" value="15" />
+			<property name="DamageBlock" value="10" />
+			<property name="Velocity" value="20" />
+			<property name="FlyTime" value="0.50" />
+			<property name="LifeTime" value="4" />
+			<property name="CollisionRadius" value="0.5" />
+			<property name="Explosion.BlockDamage" value="0" />
+			<property name="Explosion.EntityDamage" value="0" />
+			<property name="Explosion.ParticleIndex" value="0" />
+			<property name="Explosion.RadiusBlocks" value="0" />
+			<property name="Explosion.RadiusEntities" value="0" />
+			<property name="Explosion.DamageBonus.cloth" value="30" />
+			<property name="Explosion.DamageBonus.wood" value="50" />
+		</property>
+		<property name="Group" value="Ammo/Weapons" />
+		<property class="Attributes">
+			<property name="GetQualityFromWeapon" value="true" />
+			<property name="EntityDamage" value="10,15" />
+			<property name="ApplyBuff" value="0.2, 0.3" param1="webbed" />
+		</property>
+	</item>
 	<item id="308" name="handPoliceZombie">
 		<property name="Extends" value="handMaster" />
 		<property name="CreativeMode" value="Dev" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="DamageEntity" value="15" />
 			<property name="DamageBlock" value="20" />
 			<property name="Buff" value="infection,stunned" />
@@ -12157,7 +11968,6 @@
 		<property name="Extends" value="handMaster" />
 		<property name="CreativeMode" value="Dev" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="DamageEntity" value="15" />
 			<property name="DamageBlock" value="20" />
 			<property name="Buff" value="bleeding,infection,stunned" />
@@ -12225,7 +12035,6 @@
 		<property name="Extends" value="handMaster" />
 		<property name="CreativeMode" value="Dev" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="DamageEntity" value="25" />
 			<property name="DamageBlock" value="20" />
 			<property name="Buff" value="infection,stunned" />
@@ -12236,7 +12045,6 @@
 		<property name="Extends" value="handMaster" />
 		<property name="CreativeMode" value="Dev" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="DamageEntity" value="20" />
 			<property name="DamageBlock" value="2500" />
 			<property name="Delay" value="1.8" />
@@ -12263,7 +12071,6 @@
 		</property>
 		<property name="EconomicValue" value="300" />
 	</item>
-	<!-- BOSS AND PET HANDS -->
 	<item id="315" name="handRadSpider">
 		<property name="Extends" value="handMaster" />
 		<property name="CreativeMode" value="Dev" />
@@ -12281,7 +12088,6 @@
 		<property name="CreativeMode" value="Dev" />
 		<property name="HoldType" value="46" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Delay" value="0.8" />
 			<property name="Range" value="1.8" />
 			<property name="Sphere" value="0.4" />
@@ -12303,7 +12109,62 @@
 		<property name="CreativeMode" value="Dev" />
 		<property name="Meshfile" value="#RadSpider?SpiderVomit" />
 	</item>
-	<!-- SEEDS -->
+	<item id="1061" name="handMP7">
+		<property name="Extends" value="handMaster" />
+		<property name="CreativeMode" value="None" />
+		<property name="Degradation" value="99999" param1="true" />
+		<property class="Action0">
+			<property name="Range" value="1.75" />
+			<property name="DamageEntity" value="20" />
+			<property name="DamageBlock" value="5" />
+			<property name="Buff" value="bleeding,infection,stunned" />
+			<property name="Buff_chance" value="0.2,0.2,0.4" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Vomit" />
+			<property name="Delay" value="0.05" />
+			<property name="Range" value="200" />
+			<property name="Auto_fire" value="true" />
+			<property name="Infinite_ammo" value="true" />
+			<property name="Magazine_items" value="projectileBullet" />
+			<property name="Rays_spread" value="0.3" />
+			<property name="Reload_time" value="0.05" />
+			<property name="Bullet_icon" value="uzi" />
+			<property name="Sound_warning" value="" />
+			<property name="Sound_start" value="mp7Hand" />
+			<property name="Sound_repeat" value="" />
+			<property name="Sound_end" value="" />
+			<property name="Sound_empty" value="" />
+			<property name="Sound_reload" value="" />
+		</property>
+	</item>
+	<item id="1062" name="projectileBullet">
+		<property name="Meshfile" value="#particles?traceBullet" />
+		<property name="Material" value="organic" />
+		<property name="EconomicValue" value="1500" />
+		<property class="Action1">
+			<property name="Class" value="Projectile" />
+			<property name="DamageEntity" value="20" />
+			<property name="DamageBlock" value="5" />
+			<property name="Velocity" value="70" />
+			<property name="FlyTime" value="1" />
+			<property name="LifeTime" value="8" />
+			<property name="CollisionRadius" value="0.5" />
+			<property name="Explosion.BlockDamage" value="0" />
+			<property name="Explosion.EntityDamage" value="0" />
+			<property name="Explosion.ParticleIndex" value="0" />
+			<property name="Explosion.RadiusBlocks" value="0" />
+			<property name="Explosion.RadiusEntities" value="0" />
+			<property name="Explosion.DamageBonus.cloth" value="30" />
+			<property name="Explosion.DamageBonus.wood" value="50" />
+		</property>
+		<property name="Group" value="Ammo/Weapons" />
+		<property class="Attributes">
+			<property name="GetQualityFromWeapon" value="true" />
+			<property name="EntityDamage" value="20,25" />
+			<property name="ApplyBuff" value="1, 1" param1="banditBonus" />
+		</property>
+	</item>
 	<item id="319" name="appleSeed">
 		<property name="DescriptionKey" value="fruitTreeSeedGroupDesc" />
 		<property name="Meshfile" value="Items/Food/seed_blueberry" />
@@ -12454,7 +12315,6 @@
 		<property name="Extends" value="appleSeed" />
 		<property name="DescriptionKey" value="sunflowerSeedDesc" />
 		<property class="Action0">
-			<!-- LMB = Exchange to Flour when focusing the Mortar and Pestle -->
 			<property name="Class" value="ExchangeItem" />
 			<property name="Delay" value="1.0" />
 			<property name="Change_item_to" value="sunflowerOil" />
@@ -12472,7 +12332,6 @@
 		<property name="Meshfile" value="#WheatGrains1?WheatGrains1Prefab" />
 		<property name="HoldType" value="23" />
 		<property class="Action0">
-			<!-- LMB = Exchange to Flour when focusing the Mortar and Pestle -->
 			<property name="Class" value="ExchangeItem" />
 			<property name="Delay" value="1.0" />
 			<property name="Change_item_to" value="flour" />
@@ -12506,7 +12365,6 @@
 		</property>
 		<property name="EconomicValue" value="5" />
 	</item>
-	<!-- FRUITS -->
 	<item id="343" name="fruitMaster">
 		<property name="CreativeMode" value="Dev" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -12514,7 +12372,6 @@
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="500" />
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="0.5" />
@@ -12599,7 +12456,6 @@
 		<property name="Material" value="organic" />
 		<property name="Stacknumber" value="500" />
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="0.5" />
@@ -12711,7 +12567,6 @@
 		<property name="HoldType" value="16" />
 		<property name="Group" value="Resources" />
 	</item>
-	<!-- MISC -->
 	<item id="413" name="hempFibres">
 		<property name="Meshfile" value="Items/Crafting/plant_fibers" />
 		<property name="Weight" value="1" />
@@ -12740,7 +12595,6 @@
 		<property name="Weight" value="5" />
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="5000" />
-		<!-- STK resource -->
 		<property name="FuelValue" value="10" />
 		<property name="Group" value="Resources,Basics" />
 		<property name="RepairAmount" value="100" />
@@ -12748,7 +12602,6 @@
 		<property name="CraftingIngredientTime" value="0.5" />
 	</item>
 	<item id="477" name="cigar">
-		<!-- FIXED -->
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="Material" value="cloth" />
 		<property name="HoldType" value="45" />
@@ -12769,7 +12622,6 @@
 		<property name="Group" value="Clothing" />
 	</item>
 	<item id="478" name="cigarette">
-		<!-- FIXED -->
 		<property name="Extends" value="cigar" />
 		<property class="UMA">
 			<property name="Mesh" value="cigarette" />
@@ -12817,7 +12669,6 @@
 		<property name="Extends" value="handMaster" />
 		<property name="CreativeMode" value="Dev" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="DamageEntity" value="5" />
 			<property name="DamageBlock" value="2" />
 		</property>
@@ -12826,7 +12677,6 @@
 		<property name="Extends" value="handMaster" />
 		<property name="CreativeMode" value="Dev" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="DamageEntity" value="10" />
 			<property name="DamageBlock" value="4" />
 		</property>
@@ -12835,7 +12685,6 @@
 		<property name="Extends" value="handMaster" />
 		<property name="CreativeMode" value="Dev" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="DamageEntity" value="13" />
 			<property name="DamageBlock" value="8" />
 		</property>
@@ -12844,7 +12693,6 @@
 		<property name="Extends" value="handMaster" />
 		<property name="CreativeMode" value="Dev" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="DamageEntity" value="15" />
 			<property name="DamageBlock" value="20" />
 		</property>
@@ -12857,11 +12705,9 @@
 		<property name="Stacknumber" value="1" />
 		<property name="Candrop" value="false" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="0.8" />
 			<property name="Range" value="2.5" />
-			<!-- This not what "clientside melee combat" means. =) This is the adjustment afterwards due to code changes. -->
 			<property name="Sphere" value="0.3" />
 			<property name="Block_range" value="3.5" />
 			<property name="DamageEntity" value="20" />
@@ -12878,11 +12724,9 @@
 		<property name="Stacknumber" value="1" />
 		<property name="Candrop" value="false" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="0.8" />
 			<property name="Range" value="2.2" />
-			<!-- This not what "clientside melee combat" means. =) This is the adjustment afterwards due to code changes. -->
 			<property name="Sphere" value="0.1" />
 			<property name="Block_range" value="3.5" />
 			<property name="DamageEntity" value="30" />
@@ -12958,7 +12802,6 @@
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="1" />
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="LearnRecipe" />
 			<property name="Title" value="CERTIFICATE" />
 			<property name="Description" value="I, Madmole, Municipal Manager of TFP clan, hereby certify that the this Plutonium is BAD ASS!!!!" />
@@ -12974,7 +12817,6 @@
 		</property>
 		<property name="DescriptionKey" value="flyerDesc" />
 	</item>
-	<!-- HUSBANDRY -->
 	<item id="433" name="cowItem">
 		<property name="Meshfile" value="Animals/Stag/STAG" />
 		<property name="MeshMaterial" value="#husbandry?Cow1" />
@@ -13039,14 +12881,12 @@
 		<property name="FuelValue" value="110" />
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1" />
 			<property name="Range" value="1.3" />
 			<property name="Sphere" value="0.8" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="1" />
-			<!--				<property name="DamageBonus.head" value="5" /> -->
 			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.plants" value="5" />
 			<property name="DamageBonus.leaves" value="5" />
@@ -13087,7 +12927,6 @@
 		<property name="Stacknumber" value="15" />
 		<property name="Weight" value="4" />
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1" />
 			<property name="Use_time" value="..." />
@@ -13113,16 +12952,12 @@
 		<property name="HoldType" value="45" />
 		<property name="Material" value="organic" />
 		<property name="Stacknumber" value="1000" />
-		<!-- STK resource -->
 		<property name="FuelValue" value="2" />
 		<property name="EconomicValue" value="1" />
-		<!-- oil barrel 500 -->
 		<property name="EconomicBundleSize" value="1" />
 		<property name="CraftingSkillGroup" value="craftSkillScience" />
 		<property name="Group" value="Resources,Food/Cooking" />
 	</item>
-	<!-- HUSBANDRY -->
-	<!-- DOGSDX -->
 	<item id="444" name="handMyDog">
 		<property name="CreativeMode" value="Dev" />
 		<property name="Material" value="organic" />
@@ -13132,7 +12967,6 @@
 		<property name="Stacknumber" value="1" />
 		<property name="Candrop" value="false" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="MeleeDog, Mods" />
 			<property name="Delay" value="0.5" />
 			<property name="Range" value="2.0" />
@@ -13238,7 +13072,6 @@
 		<property name="Degradation" value="100" param1="true" />
 		<property name="SoundDestroy" value="metaldestroy1" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1" />
 			<property name="Range" value="4" />
@@ -13270,7 +13103,6 @@
 		<property name="FuelValue" value="25" />
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1.2" />
 			<property name="Range" value="2.2" />
@@ -13303,7 +13135,6 @@
 		<property name="Stacknumber" value="1" />
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="ThrowAway" />
 			<property name="Delay" value="1.2" />
 			<property name="Throw_strength_default" value="12" />
@@ -13325,7 +13156,6 @@
 		<property name="DegradationBreaksAfter" value="false" />
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="ThrowAway" />
 			<property name="Delay" value="1.2" />
 			<property name="Throw_strength_default" value="0.8" />
@@ -13346,14 +13176,12 @@
 		<property name="HoldType" value="3" />
 		<property name="Stacknumber" value="1" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1.33" />
 			<property name="Range" value="0" />
 			<property name="Sphere" value="0" />
 			<property name="Stamina_usage" value="0" />
 			<property name="DamageBonus.head" value="0" />
-			<!-- these are multipliers -->
 			<property name="DamageBonus.glass" value="0" />
 			<property name="ActionExp" value="0" />
 			<property name="ActionExpBonusMultiplier" value="0" />
@@ -13485,11 +13313,52 @@
 			<property name="entityToSpawn" value="radSpiderPet" />
 		</property>
 	</item>
-	<!-- DOGSDX -->
-	<!-- EXOS SUIT -->
+	<item id="1044" name="goatMaleItem">
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="HoldType" value="7" />
+		<property name="Material" value="organic" />
+		<property name="Stacknumber" value="1" />
+		<property class="Action1">
+			<property name="Class" value="SpawnMorteDog, Mods" />
+			<property name="entityToSpawn" value="goatMale" />
+		</property>
+		<property class="Preview">
+			<property name="Zoom" value="28" />
+			<property name="Pos" value="0,-0.05" />
+			<property name="Rot" value="90,45,0" />
+		</property>
+		<property name="EconomicValue" value="500" />
+	</item>
+	<item id="1045" name="goatFemaleItem">
+		<property name="Extends" value="goatMaleItem" />
+		<property class="Action1">
+			<property name="entityToSpawn" value="goatFemale" />
+		</property>
+	</item>
+	<item id="1046" name="handMyGoat">
+		<property name="CreativeMode" value="Dev" />
+		<property name="Material" value="organic" />
+		<property name="Canhold" value="false" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="HoldType" value="35" />
+		<property name="Stacknumber" value="1" />
+		<property name="Candrop" value="false" />
+		<property class="Action0">
+			<property name="Class" value="MeleeDog, Mods" />
+			<property name="Delay" value="0.5" />
+			<property name="Range" value="2.0" />
+			<property name="Sphere" value="0.2" />
+			<property name="Block_range" value="2.5" />
+			<property name="DamageEntity" value="10" />
+			<property name="DamageBlock" value="25" />
+			<property name="Buff" value="stunned" />
+			<property name="Buff_chance" value=".6" />
+			<property name="DamageBonus.earth" value="4" />
+		</property>
+	</item>
 	<item id="570" name="exoGloves">
 		<property name="Class" value="ItemClassAR1, Mods" />
-		<!-- armorMasterBanditArmor -->
 		<property name="Insulation" value="0" />
 		<property name="Encumbrance" value="0.1" />
 		<property name="Material" value="metal" />
@@ -13526,7 +13395,6 @@
 		<property name="RepairExpMultiplier" value="10.8" />
 	</item>
 	<item id="577" name="exoHelmet">
-		<!-- banditArmor -->
 		<property name="Extends" value="exoGloves" />
 		<property name="EquipSlot" value="Face" />
 		<property class="UMA">
@@ -13542,7 +13410,6 @@
 		</property>
 	</item>
 	<item id="579" name="exoBoots">
-		<!-- banditArmor -->
 		<property name="Extends" value="exoGloves" />
 		<property name="EquipSlot" value="Feet" />
 		<property class="UMA">
@@ -13554,7 +13421,6 @@
 		</property>
 	</item>
 	<item id="580" name="exoLegArmor">
-		<!-- banditArmor -->
 		<property name="Extends" value="exoGloves" />
 		<property name="Weight" value="150" />
 		<property name="EconomicValue" value="700" />
@@ -13568,7 +13434,6 @@
 		</property>
 	</item>
 	<item id="581" name="exoChestArmor">
-		<!-- banditArmor -->
 		<property name="Extends" value="exoGloves" />
 		<property name="Weight" value="150" />
 		<property name="EconomicValue" value="700" />
@@ -13587,7 +13452,6 @@
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="5" />
-		<!-- STK repairKit -->
 		<property name="EconomicValue" value="286" />
 		<property name="RepairTime" value="2" />
 		<property name="RepairAmount" value="2000" />
@@ -13603,13 +13467,10 @@
 			<property name="Gain_wellness" value="0" />
 			<property name="Sound_start" value="powerUp" />
 			<property name="Buff" value="addpower" />
-			<!-- requires having a special buff -->
 			<property name="Require" value="Exoskeleton" />
 			<property name="RequireText" value="You need to wear a Exoskeleton to use this item" />
 		</property>
 	</item>
-	<!-- EXOS SUIT -->
-	<!-- EXOS GUNS -->
 	<item id="583" name="flameThrower">
 		<property name="Meshfile" value="#flamethrower?FlThrower" />
 		<property name="Material" value="metal" />
@@ -13629,7 +13490,6 @@
 			<property name="Pump" value="flameThrower_parts" />
 		</property>
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="LauncherAt, Mods" />
 			<property name="Delay" value="0.12" />
 			<property name="Auto_fire" value="true" />
@@ -13655,12 +13515,10 @@
 			<property name="DamageBonus.head" value="6" />
 			<property name="DamageBonus.wood" value="10" />
 			<property name="DamageBonus.glass" value="25" />
-			<!-- requires having a special buff -->
 			<property name="Require" value="exoGun" />
 			<property name="RequireText" value="You need to wear a powered Exoskeleton to use this weapon" />
 		</property>
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="ZoomAt, Mods" />
 			<property name="Zoom_max_out" value="40" />
 			<property name="Zoom_max_in" value="40" />
@@ -13739,7 +13597,6 @@
 			<property name="Pump" value="minigun_parts" />
 		</property>
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="RangedAt, Mods" />
 			<property name="Delay" value="0.065" />
 			<property name="Range" value="310" />
@@ -13753,9 +13610,7 @@
 			<property name="Reload_time" value="4.1" />
 			<property name="Bullet_icon" value="uzi" />
 			<property name="Sound_start" value="MinigunStartFire" />
-			<!-- Default value, can be modified -->
 			<property name="Sound_repeat" value="#minigun?Minigun_Firing1" />
-			<!-- Default value, can be modified -->
 			<property name="Sound_end" value="#minigun?Minigun_SpinDown" />
 			<property name="Sound_empty" value="Weapons/weapon_empty" />
 			<property name="Sound_reload" value="Weapons/Ranged/AK47/ak47_reload" />
@@ -13768,13 +13623,10 @@
 			<property name="DamageBonus.glass" value="25" />
 			<property name="Buff" value="critGunAK47" />
 			<property name="Buff_chance" value=".1" />
-			<!-- no aditional kickback -->
-			<!-- requires having a special buff -->
 			<property name="Require" value="exoGun" />
 			<property name="RequireText" value="You need to wear a powered Exoskeleton to use this weapon" />
 		</property>
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="Zoom" />
 			<property name="Zoom_max_out" value="35" />
 			<property name="Zoom_max_in" value="35" />
@@ -13785,11 +13637,9 @@
 			<property name="Pos" value="-0.20,-0.40" />
 			<property name="Rot" value="0,-45,0" />
 		</property>
-		<!-- Start: Needed for the attachment flashlight -->
 		<property name="LightSource" value="lightSource" />
 		<property name="ActivateObject" value="Attachments/flashlight/lightSource" />
 		<property name="AttachmentFlashlight" value="flashlight02" />
-		<!-- End: Needed for the attachment flashlight -->
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Rifles" />
 		<property name="CraftingSkillGroup" value="craftSkillGuns" />
@@ -13861,7 +13711,6 @@
 			<property name="Pump" value="partsRocketLauncher_parts" />
 		</property>
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="LauncherAt, Mods" />
 			<property name="Delay" value="0.3" />
 			<property name="Range" value="300" />
@@ -13878,12 +13727,10 @@
 			<property name="Sound_reload" value="Weapons/Ranged/M136/m136_reload" />
 			<property name="Particles_muzzle_fire" value="rocketLauncherFire" />
 			<property name="Particles_muzzle_smoke" value="nozzlesmoke_m136" />
-			<!-- requires having a special buff -->
 			<property name="Require" value="exoGun" />
 			<property name="RequireText" value="You need to wear a powered Exoskeleton to use this weapon" />
 		</property>
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="Zoom" />
 			<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
 			<property name="Zoom_max_out" value="40" />
@@ -13914,7 +13761,6 @@
 		<property name="Material" value="organic" />
 		<property name="EconomicValue" value="1500" />
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="Projectile" />
 			<property name="DamageEntity" value="20" />
 			<property name="DamageBlock" value="10" />
@@ -13923,15 +13769,10 @@
 			<property name="LifeTime" value="1.8" />
 			<property name="CollisionRadius" value="0.95" />
 			<property name="Explosion.BlockDamage" value="0" />
-			<!-- damage for blocks in the center of the explosion -->
 			<property name="Explosion.EntityDamage" value="0" />
-			<!-- damage for entities in the center of the explosion -->
 			<property name="Explosion.ParticleIndex" value="0" />
-			<!-- which prefab/particle is used -->
 			<property name="Explosion.RadiusBlocks" value="0" />
-			<!-- damage radius for blocks -->
 			<property name="Explosion.RadiusEntities" value="0" />
-			<!-- damage radius for entities -->
 			<property name="Explosion.DamageBonus.cloth" value="30" />
 			<property name="Explosion.DamageBonus.wood" value="50" />
 		</property>
@@ -13948,7 +13789,6 @@
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="500" />
 		<property name="Weight" value="1" />
-		<!-- STK ammo -->
 		<property name="CraftingSkillGroup" value="craftSkillGuns" />
 		<property name="EconomicValue" value="25" />
 		<property name="Group" value="Ammo/Weapons" />
@@ -13959,26 +13799,19 @@
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="3" />
 		<property name="Stacknumber" value="20" />
-		<!-- STK explosives -->
 		<property name="EconomicValue" value="588" />
 		<property class="Attributes">
 			<property name="GetQualityFromWeapon" value="true" />
 			<property name="EntityDamage" value="150,300" />
 			<property name="BlockDamage" value="50,200" />
-			<!-- this is not working yet, it uses damage from Action1 -->
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Projectile" />
 			<property name="Explosion.ParticleIndex" value="4" />
-			<!-- which Prefab/particle is used -->
 			<property name="Explosion.RadiusBlocks" value="3" />
-			<!-- damage radius for blocks -->
 			<property name="Explosion.BlockDamage" value="300" />
-			<!-- damage for blocks in the center of the explosion -->
 			<property name="Explosion.RadiusEntities" value="2" />
-			<!-- damage radius for entities -->
 			<property name="Explosion.EntityDamage" value="150" />
-			<!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->
 			<property name="Velocity" value="70" />
 			<property name="FlyTime" value="1.2" />
 			<property name="LifeTime" value="8" />
@@ -13986,12 +13819,209 @@
 		<property name="CraftingSkillGroup" value="craftSkillGuns" />
 		<property name="Group" value="Ammo/Weapons" />
 	</item>
+	<item id="1040" name="glandWalcrusher">
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="Mmetal_weak" />
+		<property name="Weight" value="5" />
+		<property name="Stacknumber" value="1" />
+		<property name="SellableToTrader" value="false" />
+		<property name="HoldType" value="45" />
+		<property name="DropScale" value="3" />
+		<property name="EconomicValue" value="25" />
+		<property name="EconomicBundleSize" value="5" />
+		<property class="Attributes">
+			<property name="DegradationMax" value="100,600" />
+			<property name="DegradationRate" value="3,1" />
+		</property>
+		<property class="ActiveBuff">
+			<property name="Buff" value="GlandRegen" param1="Healing" param2="50" />
+		</property>
+		<property name="Group" value="Resources" />
+	</item>
+	<item id="1041" name="glandParasite">
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="Mmetal_weak" />
+		<property name="Weight" value="5" />
+		<property name="Stacknumber" value="1" />
+		<property name="SellableToTrader" value="false" />
+		<property name="HoldType" value="45" />
+		<property name="DropScale" value="3" />
+		<property name="EconomicValue" value="25" />
+		<property name="EconomicBundleSize" value="5" />
+		<property class="Attributes">
+			<property name="DegradationMax" value="100,600" />
+			<property name="DegradationRate" value="3,1" />
+		</property>
+		<property class="ActiveBuff">
+			<property name="Buff" value="GlandSpeed" param1="Speed" param2="50" />
+		</property>
+		<property name="Group" value="Resources" />
+	</item>
+	<item id="1042" name="glandRezzer">
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="Mmetal_weak" />
+		<property name="Weight" value="5" />
+		<property name="Stacknumber" value="1" />
+		<property name="SellableToTrader" value="false" />
+		<property name="HoldType" value="45" />
+		<property name="DropScale" value="3" />
+		<property name="EconomicValue" value="25" />
+		<property name="EconomicBundleSize" value="5" />
+		<property class="Attributes">
+			<property name="DegradationMax" value="100,600" />
+			<property name="DegradationRate" value="3,1" />
+		</property>
+		<property class="ActiveBuff">
+			<property name="Buff" value="GlandRezz" param1="Rezz" param2="50" />
+		</property>
+		<property name="Group" value="Resources" />
+	</item>
+	<item id="1043" name="glandYeti">
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="Mmetal_weak" />
+		<property name="Weight" value="5" />
+		<property name="Stacknumber" value="1" />
+		<property name="SellableToTrader" value="false" />
+		<property name="HoldType" value="45" />
+		<property name="DropScale" value="3" />
+		<property name="EconomicValue" value="25" />
+		<property name="EconomicBundleSize" value="5" />
+		<property class="Attributes">
+			<property name="DegradationMax" value="100,600" />
+			<property name="DegradationRate" value="3,1" />
+		</property>
+		<property class="ActiveBuff">
+			<property name="Buff" value="GlandCool" param1="Cooling" param2="50" />
+		</property>
+		<property name="Group" value="Resources" />
+	</item>
+	<item id="1054" name="plasmaGun">
+		<property name="Class" value="ItemClassAttachments, Mods" />
+		<property name="Meshfile" value="#morteWeapons?pulserifle" />
+		<property name="Material" value="metal" />
+		<property name="HoldType" value="6" />
+		<property name="RepairTools" value="repairKit" />
+		<property name="Degradation" value="1500" param1="true" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="SoundJammed" value="Weapons/weapon_jam" />
+		<property name="Weight" value="0" />
+		<property name="EconomicValue" value="10000" />
+		<property name="CrosshairOnAim" value="true" />
+		<property name="CrosshairUpAfterShot" value="false" />
+		<property class="Parts">
+			<property name="Stock" value="plasmaGun_stock" />
+			<property name="Receiver" value="plasmaGun_receiver" />
+			<property name="Barrel" value="plasmaGun_barrel" />
+			<property name="Pump" value="plasmaGun_parts" />
+		</property>
+		<property class="Action0">
+			<property name="Class" value="VomitPower, Mods" />
+			<property name="Delay" value="0.35" />
+			<property name="Range" value="200" />
+			<property name="Auto_fire" value="true" />
+			<property name="Infinite_ammo" value="true" />
+			<property name="Magazine_items" value="plasmaShotProjectile" />
+			<property name="Rays_spread" value="0.095" />
+			<property name="Reload_time" value="2" />
+			<property name="Bullet_icon" value="uzi" />
+			<property name="Sound_warning" value="plasmaWarn" />
+			<property name="Sound_start" value="plasmaShot" />
+			<property name="Sound_repeat" value="" />
+			<property name="Sound_end" value="" />
+			<property name="Sound_empty" value="" />
+			<property name="Sound_reload" value="" />
+			<property name="Require" value="exoGun" />
+			<property name="RequireText" value="You need to wear a powered Exoskeleton to use this weapon" />
+			<property name="Powered" value="0.1" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="ZoomAt, Mods" />
+			<property name="Zoom_max_out" value="40" />
+			<property name="Zoom_max_in" value="40" />
+		</property>
+		<property name="Group" value="Ammo/Weapons" />
+		<property class="Preview">
+			<property name="Zoom" value="2" />
+			<property name="Pos" value="-0.20,-0.40" />
+			<property name="Rot" value="0,-45,0" />
+		</property>
+		<property name="ActionSkillGroup" value="Rifles" />
+		<property name="CraftingSkillGroup" value="craftSkillGuns" />
+		<property name="RepairExpMultiplier" value="10.8" />
+		<property name="PickupJournalEntry" value="gunAssemblyTip,augmentGunsTip" />
+	</item>
+	<item id="1055" name="plasmaGun_barrel">
+		<property name="Extends" value="partsMaster" />
+		<property name="DescriptionKey" value="partsFlameThrowerGroupDesc" />
+		<property name="PartType" value="Barrel" />
+		<property name="EconomicValue" value="2500" />
+		<property name="Weight" value="85" />
+		<property class="Attributes">
+			<property name="EntityDamage" value="5, 15" />
+			<property name="DegradationMax" value="3000,8000" />
+		</property>
+	</item>
+	<item id="1056" name="plasmaGun_receiver">
+		<property name="Extends" value="partsMaster" />
+		<property name="DescriptionKey" value="partsFlameThrowerGroupDesc" />
+		<property name="PartType" value="Receiver" />
+		<property name="EconomicValue" value="2500" />
+		<property name="Weight" value="75" />
+		<property class="Attributes">
+			<property name="DegradationMax" value="3000,8000" />
+		</property>
+	</item>
+	<item id="1057" name="plasmaGun_parts">
+		<property name="Extends" value="partsMaster" />
+		<property name="DescriptionKey" value="partsFlameThrowerGroupDesc" />
+		<property name="PartType" value="Pump" />
+		<property name="CustomIcon" value="partsAuger_parts" />
+		<property name="EconomicValue" value="2500" />
+		<property name="Weight" value="85" />
+		<property class="Attributes">
+			<property name="DegradationMax" value="3000,8000" />
+		</property>
+	</item>
+	<item id="1058" name="plasmaGun_stock">
+		<property name="Extends" value="partsMaster" />
+		<property name="DescriptionKey" value="partsFlameThrowerGroupDesc" />
+		<property name="PartType" value="Stock" />
+		<property name="Weight" value="120" />
+		<property name="EconomicValue" value="2500" />
+		<property class="Attributes">
+			<property name="DegradationRate" value="10,10" />
+			<property name="DegradationMax" value="3000,8000" />
+		</property>
+	</item>
+	<item id="1059" name="radSpiderHeart">
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="Mmetal_weak" />
+		<property name="Weight" value="5" />
+		<property name="Stacknumber" value="1" />
+		<property name="SellableToTrader" value="false" />
+		<property name="HoldType" value="45" />
+		<property name="DropScale" value="3" />
+		<property name="EconomicValue" value="25" />
+		<property name="EconomicBundleSize" value="5" />
+		<property class="Attributes">
+			<property name="DegradationMax" value="100,600" />
+			<property name="DegradationRate" value="3,1" />
+		</property>
+		<property class="ActiveBuff">
+			<property name="Buff" value="GlandShield" param1="Shield" param2="50" />
+		</property>
+		<property name="Group" value="Resources" />
+	</item>
 	<item id="612" name="scrapCopper">
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="Material" value="copper" />
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="5000" />
-		<!-- STK resource -->
 		<property name="Weight" value="5" />
 		<property name="Group" value="Resources" />
 	</item>
@@ -14000,7 +14030,6 @@
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="5000" />
-		<!-- STK resource -->
 		<property name="Group" value="Resources" />
 		<property name="CraftingIngredientTime" value="2" />
 	</item>
@@ -14009,7 +14038,6 @@
 		<property name="Material" value="zinc" />
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="5000" />
-		<!-- STK resource -->
 		<property name="Weight" value="5" />
 		<property name="Group" value="Resources" />
 	</item>
@@ -14051,7 +14079,6 @@
 			<property name="Rot" value="90,45,0" />
 		</property>
 	</item>
-	<!-- RAD MOD -->
 	<item id="619" name="radSyringeBook">
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
@@ -14063,8 +14090,6 @@
 		<property name="EconomicValue" value="1000" />
 	</item>
 	<item id="397" name="hazmatBoots">
-		<!-- FIXED -->
-		<!-- armorMasterHazMatArmor -->
 		<property name="Insulation" value="6" />
 		<property name="Waterproof" value="0.2" />
 		<property name="Encumbrance" value="0.03" />
@@ -14076,7 +14101,6 @@
 		<property name="EquipSlot" value="Feet" />
 		<property name="HoldType" value="45" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<!-- Armor Set Properties -->
 		<property name="ArmorSet" value="radSuit" />
 		<property name="SetNum" value="5" />
 		<property name="SetBuff" value="radSuit" />
@@ -14100,8 +14124,6 @@
 		<property name="RepairExpMultiplier" value="10.8" />
 	</item>
 	<item id="398" name="hazmatPants">
-		<!-- FIXED -->
-		<!-- hazMatArmor -->
 		<property name="Extends" value="hazmatBoots" />
 		<property name="Weight" value="10" />
 		<property name="EconomicValue" value="3200" />
@@ -14114,8 +14136,6 @@
 		</property>
 	</item>
 	<item id="399" name="hazmatShirt">
-		<!-- FIXED -->
-		<!-- hazMatArmor -->
 		<property name="Extends" value="hazmatBoots" />
 		<property name="Weight" value="10" />
 		<property name="EconomicValue" value="3200" />
@@ -14128,8 +14148,6 @@
 		</property>
 	</item>
 	<item id="400" name="hazmatGloves">
-		<!-- FIXED -->
-		<!-- hazMatArmor -->
 		<property name="Extends" value="hazmatBoots" />
 		<property name="EquipSlot" value="Hands" />
 		<property class="UMA">
@@ -14140,8 +14158,6 @@
 		</property>
 	</item>
 	<item id="401" name="hazmatMask">
-		<!-- FIXED -->
-		<!-- hazMatArmor -->
 		<property name="Extends" value="hazmatBoots" />
 		<property name="EquipSlot" value="Head" />
 		<property class="UMA">
@@ -14295,7 +14311,6 @@
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="16" />
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
@@ -14321,7 +14336,6 @@
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="23" />
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
@@ -14363,7 +14377,6 @@
 		<property name="HoldType" value="23" />
 		<property name="Stacknumber" value="15" />
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
@@ -14398,7 +14411,6 @@
 		<property name="HoldType" value="45" />
 		<property name="Material" value="metal" />
 		<property name="Stacknumber" value="10" />
-		<!-- STK loot -->
 		<property name="Group" value="Resources" />
 		<property name="CraftingSkillGroup" value="craftSkillTools" />
 	</item>
@@ -14433,7 +14445,6 @@
 		<property name="DegradationBreaksAfter" value="false" />
 		<property name="SoundDestroy" value="metaldestroy1" />
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="Repair" />
 			<property name="Delay" value="0.4" />
 			<property name="Repair_amount" value="0" />
@@ -14450,8 +14461,6 @@
 		<property name="ActionSkillGroup" value="Construction Tools" />
 		<property name="CraftingSkillGroup" value="craftSkillTools" />
 	</item>
-	<!-- RAD MOD -->
-	<!-- PowerPlantBlocks -->
 	<item id="640" name="lightBulb">
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="Material" value="metal" />
@@ -14494,19 +14503,6 @@
 			<property name="BlockDamage" value="50,100" />
 			<property name="ApplyBuff" value="1, 1" param1="radDesolation" />
 		</property>
-		<!-- <property class="Action1">
-			<property name="Class" value="Projectile" />
-			<property name="Explosion.ParticleIndex" value="4" />
-			<property name="Explosion.RadiusBlocks" value="1" />
-			<property name="Explosion.BlockDamage" value="10" />
-			<property name="Explosion.RadiusEntities" value="1" />
-			<property name="Explosion.EntityDamage" value="20" />
-			<property name="Velocity" value="200" />
-			<property name="FlyTime" value="0" />
-			<property name="LifeTime" value="8" />
-			<property name="Buff" value="radiation1" />
-			<property name="Buff_chance" value="0.5" />
-		</property> -->
 		<property name="EconomicValue" value="25" />
 	</item>
 	<item id="645" name="plutoniumRing">
@@ -14539,7 +14535,6 @@
 			<property name="Rot" value="90,45,0" />
 		</property>
 	</item>
-	<!-- PowerPlantBlocks -->
 	<item id="648" name="radioTower">
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
@@ -14602,7 +14597,6 @@
 		<property name="Stacknumber" value="500" />
 		<property name="CustomIcon" value="ironArrowHeadPack" />
 		<property name="CustomIconTint" value="ffffaf" />
-		<!-- STK resource -->
 		<property name="EconomicValue" value="80" />
 		<property name="EconomicBundleSize" value="1" />
 		<property name="Group" value="Resources,Ammo/Weapons" />
@@ -14614,7 +14608,6 @@
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="500" />
-		<!-- STK resource -->
 		<property name="EconomicValue" value="30" />
 		<property name="EconomicBundleSize" value="1" />
 		<property name="Group" value="Resources,Ammo/Weapons" />
@@ -14625,7 +14618,6 @@
 		<property name="Material" value="brass" />
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="50" />
-		<!-- STK resource -->
 		<property name="EconomicValue" value="50" />
 		<property name="EconomicBundleSize" value="1" />
 		<property name="Group" value="Resources,Ammo/Weapons" />
@@ -14637,7 +14629,6 @@
 		<property name="Material" value="lead" />
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="50" />
-		<!-- STK resource -->
 		<property name="EconomicValue" value="50" />
 		<property name="EconomicBundleSize" value="1" />
 		<property name="Group" value="Resources,Ammo/Weapons" />
@@ -14649,13 +14640,11 @@
 		<property name="Material" value="glass" />
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="50" />
-		<!-- STK resource -->
 		<property name="EconomicValue" value="50" />
 		<property name="EconomicBundleSize" value="1" />
 		<property name="Group" value="Resources" />
 		<property name="CraftingSkillGroup" value="craftSkillScience" />
 	</item>
-	<!--Juices -->
 	<item id="670" name="appleJuice">
 		<property name="Meshfile" value="Items/Food/redTeaPrefab" />
 		<property name="DescriptionKey" value="foodJuiceGroupDesc" />
@@ -14663,7 +14652,6 @@
 		<property name="HoldType" value="3" />
 		<property name="Stacknumber" value="15" />
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
@@ -14735,7 +14723,6 @@
 			<property name="Debuff" value="dysentery,flu" />
 		</property>
 	</item>
-	<!-- Milk Shakes -->
 	<item id="683" name="appleMilkShake">
 		<property name="Meshfile" value="#food1?Applemilk1shakePrefab" />
 		<property name="DescriptionKey" value="foodMilkShakeGroupDesc" />
@@ -14743,7 +14730,6 @@
 		<property name="HoldType" value="3" />
 		<property name="Stacknumber" value="15" />
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
@@ -14791,7 +14777,6 @@
 		<property name="Extends" value="appleMilkShake" />
 		<property name="Meshfile" value="#food1?Blueberrymilk1shakePrefab" />
 	</item>
-	<!-- Ice -->
 	<item id="692" name="appleIce">
 		<property name="Meshfile" value="#food1?AppleIceCreamPrefab" />
 		<property name="DescriptionKey" value="foodIceGroupDesc" />
@@ -14799,7 +14784,6 @@
 		<property name="HoldType" value="3" />
 		<property name="Stacknumber" value="15" />
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
@@ -14850,7 +14834,6 @@
 		<property name="Extends" value="appleIce" />
 		<property name="Meshfile" value="#food1?BlueberryIceCreamPrefab" />
 	</item>
-	<!-- Cakes -->
 	<item id="704" name="appleCake">
 		<property name="DescriptionKey" value="foodCakeGroupDesc" />
 		<property name="Meshfile" value="Items/Misc/parcel" />
@@ -14858,7 +14841,6 @@
 		<property name="HoldType" value="31" />
 		<property name="Stacknumber" value="50" />
 		<property class="Action1">
-			<!-- RMB = Eat -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
@@ -14895,7 +14877,6 @@
 	<item id="734" name="cocoCake">
 		<property name="Extends" value="appleCake" />
 	</item>
-	<!-- Pies -->
 	<item id="741" name="applePie">
 		<property name="DescriptionKey" value="foodPieGroupDesc" />
 		<property name="Meshfile" value="Items/Food/blueberry_pie" />
@@ -14928,7 +14909,6 @@
 			<property name="Gain_wellness" value="1.5" />
 		</property>
 	</item>
-	<!-- Cooking components -->
 	<item id="743" name="dough">
 		<property name="Meshfile" value="Items/Crafting/clay_bowl" />
 		<property name="Material" value="organic" />
@@ -14959,14 +14939,12 @@
 		<property name="Meshfile" value="#food1?HamburerBunPrefab" />
 		<property name="foodSpoilImmune" value="50" />
 	</item>
-	<!-- Food&Beverage -->
 	<item id="759" name="boiledPasta">
 		<property name="Meshfile" value="Items/Misc/parcel" />
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="31" />
 		<property name="Stacknumber" value="50" />
 		<property class="Action1">
-			<!-- RMB = Eat -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
@@ -15079,7 +15057,6 @@
 		<property name="HoldType" value="31" />
 		<property name="Stacknumber" value="50" />
 		<property class="Action1">
-			<!-- RMB = Eat -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
@@ -15128,7 +15105,6 @@
 			<property name="Gain_wellness" value="0.4" />
 		</property>
 	</item>
-	<!-- Cooking Tools -->
 	<item id="772" name="mixer">
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
@@ -15154,10 +15130,8 @@
 	</item>
 	<item id="789" name="newBreadLoafPan">
 		<property name="Extends" value="mixer" />
-		<!-- HIDDEN/NOT USED -->
 		<property name="CreativeMode" value="Dev" />
 	</item>
-	<!-- WEAPONS -->
 	<item id="790" name="pan">
 		<property name="Meshfile" value="#pan?Pan" />
 		<property name="Material" value="metal" />
@@ -15168,7 +15142,6 @@
 		<property name="SoundDestroy" value="metaldestroy1" />
 		<property name="Weight" value="24" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1" />
 			<property name="Range" value="1.8" />
@@ -15193,14 +15166,12 @@
 		<property name="CraftingSkillGroup" value="craftSkillTools" />
 		<property name="RepairExpMultiplier" value="5.5" />
 	</item>
-	<!-- DRYED FOOD -->
 	<item id="791" name="SlicedFruits">
 		<property name="Meshfile" value="#drygrill?SlicedFruits" />
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="50" />
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
@@ -15220,7 +15191,6 @@
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="50" />
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
@@ -15258,7 +15228,6 @@
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="50" />
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
@@ -15396,7 +15365,6 @@
 		<property name="Extends" value="pickaxeIron" />
 		<property name="Material" value="Msteel" />
 		<property name="Weight" value="200" />
-		<!--	<property name="MeltTimePerUnit" value="0.5" /> -->
 		<property name="Meshfile" value="Items/Tools/pickaxe_steelPrefab" />
 		<property name="HoldType" value="4" />
 		<property name="RepairTools" value="forgedSteel" />
@@ -15665,8 +15633,6 @@
 		<property name="Group" value="Resources" />
 		<property name="CraftingSkillGroup" value="craftSkillTools" />
 	</item>
-	<!-- End of steel item conversion  -->
-	<!-- STARVATION -->
 	<item id="798" name="doorBook">
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
@@ -15674,7 +15640,6 @@
 		</property>
 		<property name="EconomicValue" value="500" />
 	</item>
-	<!-- Steel Plaques armor - complicated process to make -->
 	<item id="799" name="ceramicPlate">
 		<property name="Meshfile" value="Items/Misc/paper" />
 		<property name="Material" value="Mbrick" />
@@ -15818,7 +15783,6 @@
 			<property name="UISlot" value="Gloves" />
 		</property>
 	</item>
-	<!-- Camo Dye -->
 	<item id="807" name="camoDye">
 		<property name="CustomIcon" value="bottledRiverWater" />
 		<property name="CustomIconTint" value="96d053" />
@@ -15835,7 +15799,6 @@
 		<property name="ActionSkillGroup" value="Clothing/Armor" />
 		<property name="CraftingSkillGroup" value="craftSkillArmor" />
 	</item>
-	<!-- material leather -->
 	<item id="808" name="leatherDusterCamo">
 		<property name="DescriptionKey" value="leatherClothesGroupDesc" />
 		<property name="CustomIcon" value="leatherDuster" />
@@ -15907,7 +15870,6 @@
 		<property name="ActionSkillGroup" value="Clothing" />
 		<property name="CraftingSkillGroup" value="craftSkillArmor" />
 	</item>
-	<!-- material cloth -->
 	<item id="810" name="bandanaCamo">
 		<property name="DescriptionKey" value="bandanaClothesGroupDesc" />
 		<property name="CustomIcon" value="bandana" />
@@ -16019,7 +15981,6 @@
 		<property name="ActionSkillGroup" value="Clothing/Armor" />
 		<property name="CraftingSkillGroup" value="craftSkillArmor" />
 	</item>
-	<!-- Camo Steel Armor -->
 	<item id="813" name="steelCamoBoots">
 		<property name="Extends" value="steelBoots" />
 		<property name="CustomIconTint" value="232f21" />
@@ -16065,7 +16026,6 @@
 		<property name="FuelValue" value="40" />
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1" />
 			<property name="Range" value="2.5" />
@@ -16138,7 +16098,6 @@
 	<item id="823" name="lightsword">
 		<property name="Meshfile" value="#lightswordnew?Lightsword" />
 		<property name="Class" value="ItemClassAR1, Mods" />
-		<!--property name="DescriptionKey" value="LightSwordDesc" /-->
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="17" />
 		<property name="Stacknumber" value="1" />
@@ -16151,7 +16110,6 @@
 		<property name="SoundUnholster" value="lightSword_open" />
 		<property name="SoundHolster" value="lightSword_close" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="MeleeAt, Mods" />
 			<property name="Delay" value="1.2" />
 			<property name="Range" value="2.2" />
@@ -16206,7 +16164,6 @@
 		<property name="Weight" value="90" />
 		<property name="EconomicValue" value="400" />
 		<property class="Attributes">
-			<!-- hideArmor -->
 			<property name="ConcussiveProtection" value="0.05,0.25" />
 			<property name="PunctureProtection" value="0.04,0.2" />
 			<property name="FireProtection" value="0.02,0.1" />
@@ -16222,7 +16179,6 @@
 			<property name="Mask0" value="hands" param1="outer" />
 			<property name="Mask1" value="chest" param1="middle" />
 		</property>
-		<!--property name="DescriptionKey" value="leatherClothesGroupDesc" /-->
 		<property name="Group" value="Clothing" />
 		<property name="ActionSkillGroup" value="" />
 		<property name="CraftingSkillGroup" value="craftSkillArmor" />
@@ -16238,7 +16194,6 @@
 		<property name="DegradationBreaksAfter" value="false" />
 		<property name="SoundJammed" value="Weapons/weapon_jam" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Ranged" />
 			<property name="Delay" value="1.0" />
 			<property name="Range" value="3" />
@@ -16274,7 +16229,6 @@
 		<property name="PickupJournalEntry" value="farmingTip" />
 		<property name="ActionSkillGroup" value="Mining Tools" />
 		<property name="CraftingSkillGroup" value="craftSkillTools" />
-		<!-- 15.0 workaround. Should be craftSkillGuns -->
 		<property name="RepairExpMultiplier" value="10.8" />
 	</item>
 	<item id="827" name="pesticide">
@@ -16282,7 +16236,6 @@
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="500" />
-		<!-- STK ammo -->
 		<property name="CraftingSkillGroup" value="craftSkillGuns" />
 		<property name="EconomicValue" value="15" />
 		<property name="Group" value="Ammo/Weapons" />
@@ -16327,7 +16280,6 @@
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="3" />
 		<property name="Stacknumber" value="50" />
-		<!-- STK food -->
 		<property name="CraftingIngredientTime" value="15" />
 		<property class="Action1">
 			<property name="Class" value="Eat" />
@@ -16425,14 +16377,12 @@
 		<property name="Material" value="glass" />
 		<property name="HoldType" value="3" />
 		<property name="Stacknumber" value="500" />
-		<!-- STK resource -->
 		<property name="Weight" value="10" />
 		<property name="EconomicValue" value="5" />
 		<property name="EconomicBundleSize" value="1" />
 		<property name="SellableToTrader" value="false" />
 		<property name="CraftingIngredientTime" value="10" />
 		<property class="Action1">
-			<!-- UseAction -->
 			<property name="Class" value="ExchangeItem" />
 			<property name="Delay" value="1.0" />
 			<property name="Change_item_to" value="bottledRiverWater" />
@@ -16467,7 +16417,6 @@
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="100" />
-		<!-- STK food -->
 		<property name="EconomicValue" value="5" />
 		<property name="EconomicBundleSize" value="1" />
 		<property name="SellableToTrader" value="false" />
@@ -16494,7 +16443,6 @@
 		<property name="EconomicValue" value="60" />
 		<property name="HoldType" value="3" />
 		<property name="Stacknumber" value="15" />
-		<!-- STK food -->
 		<property class="Action1">
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
@@ -16515,7 +16463,6 @@
 		<property name="EconomicValue" value="60" />
 		<property name="HoldType" value="3" />
 		<property name="Stacknumber" value="15" />
-		<!-- STK food -->
 		<property class="Action1">
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
@@ -16536,7 +16483,6 @@
 		<property name="EconomicValue" value="60" />
 		<property name="HoldType" value="3" />
 		<property name="Stacknumber" value="15" />
-		<!-- STK food -->
 		<property class="Action1">
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
@@ -16557,7 +16503,6 @@
 		<property name="Material" value="organic" />
 		<property name="Weight" value="5" />
 		<property name="Stacknumber" value="100" />
-		<!-- STK loot -->
 		<property name="Group" value="Resources" />
 		<property name="ActionSkillGroup" value="Medicine" />
 		<property name="CraftingSkillGroup" value="craftSkillScience" />
@@ -16568,7 +16513,6 @@
 		<property name="Material" value="organic" />
 		<property name="Weight" value="5" />
 		<property name="Stacknumber" value="10" />
-		<!-- STK loot -->
 		<property name="Group" value="Resources" />
 		<property name="ActionSkillGroup" value="Medicine" />
 		<property name="CraftingSkillGroup" value="craftSkillScience" />
@@ -16579,7 +16523,6 @@
 		<property name="Material" value="organic" />
 		<property name="Weight" value="5" />
 		<property name="Stacknumber" value="20" />
-		<!-- STK loot -->
 		<property name="Group" value="Resources" />
 		<property name="ActionSkillGroup" value="Medicine" />
 		<property name="CraftingSkillGroup" value="craftSkillScience" />
@@ -16590,7 +16533,6 @@
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="16" />
 		<property name="Stacknumber" value="10" />
-		<!-- STK loot -->
 		<property class="Action0">
 			<property name="Class" value="UseOther" />
 			<property name="Delay" value="1.0" />
@@ -16833,7 +16775,6 @@
 		</property>
 		<property name="EconomicValue" value="300" />
 	</item>
-	<!-- Begin BigForge conversion Items -->
 	<item id="1466" name="unit_coal">
 		<property name="Extends" value="unit_iron" />
 		<property name="CustomIcon" value="coal" />
@@ -16846,11 +16787,6 @@
 		<property name="Material" value="Msteel" />
 		<property name="CreativeMode" value="None" />
 	</item>
-	<!--	<item id="1468" name="unit_plastic">    In case we want to add smelting plastic
-		<property name="Extends" value="unit_iron" />
-		<property name="CustomIcon" value="scrapPlastics" />
-		<property name="Material" value="Mplastics" />
-	</item> -->
 	<item id="964" name="lawnMower">
 		<property name="Meshfile" value="#lawnmower?LawnMower2" />
 		<property name="DegradationBreaksAfter" value="false" />
@@ -16897,8 +16833,6 @@
 		<property name="SellableToTrader" value="true" />
 		<property name="MeltTimePerUnit" value="1.0" />
 	</item>
-	<!-- End BigForge conversion Items -->
-	<!-- STARVATION -->
 	<item id="975" name="npcPistol">
 		<property name="Meshfile" value="Items/Weapons/Ranged/Pistol/PistolPrefab" />
 		<property name="Material" value="metal" />
@@ -17216,7 +17150,6 @@
 		<property name="Degradation" value="99999" param1="true" />
 		<property name="SoundJammed" value="Weapons/weapon_jam" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Ranged" />
 			<property name="Delay" value="0.5" />
 			<property name="Auto_fire" value="false" />
@@ -17242,9 +17175,7 @@
 			<property name="DamageBonus.plants" value="5" />
 			<property name="DamageBonus.earth" value=".2" />
 			<property name="DamageBonus.glass" value="25" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT-->
 			<property name="kickbackAim" value="6" />
-			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT -->
 			<property name="kickbackHip" value="12" />
 		</property>
 		<property class="Attributes">
@@ -17268,7 +17199,6 @@
 		<property name="Degradation" value="99999" param1="true" />
 		<property name="SoundJammed" value="Weapons/weapon_jam" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Ranged" />
 			<property name="Delay" value="1.5" />
 			<property name="Auto_fire" value="false" />
@@ -17435,7 +17365,43 @@
 			<property name="DegradationRate" value="1,1" />
 		</property>
 	</item>
-	<!-- toys -->
+	<item id="1060" name="npcPlasma">
+		<property name="Meshfile" value="#morteWeapons?pulserifle" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="weaponRepairKit" />
+		<property name="HoldType" value="48" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="Candrop" value="false" />
+		<property name="CustomIcon" value="ui_game_symbol_unused" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="Degradation" value="99999" param1="true" />
+		<property name="SoundJammed" value="Weapons/weapon_jam" />
+		<property class="Action0">
+			<property name="Class" value="Launcher" />
+			<property name="Delay" value="5" />
+			<property name="Crosshair_min_distance" value="29" />
+			<property name="Crosshair_max_distance" value="34" />
+			<property name="Magazine_size" value="1" />
+			<property name="Magazine_items" value="plasmaShotProjectile" />
+			<property name="Rays_spread" value="0.095" />
+			<property name="Reload_time" value="5" />
+			<property name="Infinite_ammo" value="true" />
+			<property name="Bullet_icon" value="uzi" />
+			<property name="Sound_start" value="plasmaShot" />
+			<property name="Sound_repeat" value="" />
+			<property name="Sound_end" value="" />
+			<property name="Sound_empty" value="plasmaWarn" />
+			<property name="Sound_reload" value="plasmaWarn" />
+			<property name="Particles_muzzle_fire" value="" />
+			<property name="Particles_muzzle_smoke" value="nozzlesmoke_m136" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="40,60" />
+			<property name="BlockDamage" value="400,600" />
+			<property name="DegradationMax" value="9998,9999" />
+			<property name="DegradationRate" value="1,1" />
+		</property>
+	</item>
 	<item id="291" name="kennyItem">
 		<property name="DescriptionKey" value="toysDesc" />
 		<property name="Meshfile" value="#kenny?kennyItem" />
@@ -17655,10 +17621,6 @@
 			<property name="DegradationRate" value="3,1" />
 		</property>
 		<property class="AttachAction0">
-			<!-- AttackAction per 100 quality -->
-			<!-- Used in ranged weapons ONLY -->
-			<!-- 1 up to 100 -> 0.05 -->
-			<!-- 501 up to 600 -> 0.05 * 6 -->
 			<property name="Entity_Damage_Modifier" value="0.05" param1="Add" />
 		</property>
 		<property name="Group" value="Resources" />
@@ -17679,10 +17641,6 @@
 			<property name="DegradationRate" value="3,1" />
 		</property>
 		<property class="AttachAction0">
-			<!-- AttackAction per 100 quality -->
-			<!-- Used in ranged weapons ONLY -->
-			<!-- 1 up to 100 -> 0.05 -->
-			<!-- 501 up to 600 -> 0.05 * 6 -->
 			<property name="Block_Damage_Modifier" value="0.05" param1="Add" />
 		</property>
 		<property name="Group" value="Resources" />
@@ -17703,10 +17661,6 @@
 			<property name="DegradationRate" value="3,1" />
 		</property>
 		<property class="AttachAction0">
-			<!-- AttackAction per 100 quality -->
-			<!-- Used in melee weapons ONLY -->
-			<!-- 1 up to 100 -> 0.05 -->
-			<!-- 501 up to 600 -> 0.05 * 6 -->
 			<property name="Entity_Damage_Modifier" value="0.05" param1="Add" />
 		</property>
 		<property name="Group" value="Resources" />
@@ -17727,10 +17681,6 @@
 			<property name="DegradationRate" value="3,1" />
 		</property>
 		<property class="AttachAction0">
-			<!-- AttackAction per 100 quality -->
-			<!-- Used in melee weapons ONLY -->
-			<!-- 1 up to 100 -> 0.05 -->
-			<!-- 501 up to 600 -> 0.05 * 6 -->
 			<property name="Block_Damage_Modifier" value="0.05" param1="Add" />
 		</property>
 		<property name="Group" value="Resources" />
@@ -17738,7 +17688,6 @@
 	<item id="1039" name="xmasGift">
 		<property name="Class" value="ItemClassGiftBox, Mods" />
 		<property name="Meshfile" value="#Gifts?GiftPrefab" />
-		<!-- Present by holtkamp is licensed under CC Attribution  -->
 		<property name="DropMeshfile" value="#Gifts?GiftPrefab" />
 		<property name="Material" value="paper" />
 		<property name="HoldType" value="45" />

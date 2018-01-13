@@ -1025,58 +1025,10 @@
 				<add skill_level="3" value="1500" />
 			</effect>
 		</perk>
-		<!-- FISHING -->
-		<!-- New skill type for a16 (do not forget to remove deep water skill too)
-	<crafting_skill name="Fisherman" max_level="6" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" exp_to_level="5000000" icon="fishing" description_key="fishermanDesc" title_key="fisherman" group="Fishing">
-		<recipe name="fishingLure2" unlock_level="1" />
-		<recipe name="fishingLure5" unlock_level="2" />
-		<recipe name="fishingLure4" unlock_level="3" />
-		<recipe name="fishingLure3" unlock_level="4" />
-		<recipe name="improvedCane" unlock_level="4" />
-		<recipe name="bambooRaft" unlock_level="5" />
-		<recipe name="barge" unlock_level="6" />
-		<effect name="CraftingTime">
-			<multiply skill_level="1,2" value="1,.9" />
-			<multiply skill_level="2,3" value=".9,.8" />
-			<multiply skill_level="3,4" value=".8,.7" />
-			<multiply skill_level="4,5" value=".7,.6" />
-			<multiply skill_level="5,6" value=".6,.5" />
-		</effect>
-		<effect name="CraftingQuality">
-			<setvalue skill_level="1,2" value="50,100" />
-			<setvalue skill_level="2,3" value="100,200" />
-			<setvalue skill_level="3,4" value="200,300" />
-			<setvalue skill_level="4,5" value="300,400" />
-			<setvalue skill_level="5,6" value="400,500" />
-		</effect>
-		<effect name="RepairTime">
-			<multiply skill_level="1,2" value="1.00,.85"/>
-			<multiply skill_level="2,3" value="0.85,.70"/>
-			<multiply skill_level="3,4" value="0.70,.55"/>
-			<multiply skill_level="4,5" value="0.55,.40"/>
-			<multiply skill_level="5,6" value="0.40,.25"/>
-		</effect>
-		<effect name="RepairAmount">
-			<add skill_level="1,2" value="1,10"/>
-			<add skill_level="2,3" value="10,20"/>
-			<add skill_level="3,4" value="20,30"/>
-			<add skill_level="4,5" value="30,40"/>
-			<add skill_level="5,6" value="40,50"/>
-		</effect>
-		<effect name="RepairQualityLoss">
-			<multiply skill_level="1,2" value="1.00,0.80" />
-			<multiply skill_level="2,3" value="0.80,0.60" />
-			<multiply skill_level="3,4" value="0.60,0.40" />
-			<multiply skill_level="4,5" value="0.40,0.20" />
-			<multiply skill_level="5,6" value="0.20,0.10" />
-		</effect>
-	</crafting_skill>
-	 -->
 		<crafting_skill name="Fisherman" exp_to_level="100" icon="fishing" description_key="fishermanDesc" title_key="fisherman" group="Fishing">
 			<recipe name="fishingLure2" unlock_level="10" />
 			<recipe name="fishingLure5" unlock_level="15" />
 			<recipe name="fishingLure4" unlock_level="20" />
-			<!-- Maybe here add a better cane -->
 			<effect name="CraftingTime">
 				<multiply skill_level="1,20" value="1.00,0.76" />
 				<multiply skill_level="20,40" value="0.76,0.66" />
@@ -1129,7 +1081,6 @@
 				<multiply skill_level="90,100" value="0.14,0.10" />
 			</effect>
 		</crafting_skill>
-		<!-- I'll probably limit max quality on this one, and create a deepwater with a better cane and more quality -->
 		<crafting_skill name="Deep Water" exp_to_level="150" icon="fishing" description_key="deepWaterDesc" title_key="deepWater" max_level="7" group="Fishing">
 			<requirement skill_level="1" required_skill_name="Fisherman" required_skill_level="40" />
 			<requirement skill_level="2" required_skill_name="Fisherman" required_skill_level="50" />
@@ -1180,47 +1131,6 @@
 				<multiply skill_level="6,7" value="0.27,0.22" />
 			</effect>
 		</crafting_skill>
-		<!-- FISHING -->
-		<!-- HUSBANDRY -->
-		<!-- New skill type for a16
-		<crafting_skill name="Husbandry" max_level="6" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" exp_to_level="5000000" icon="husbandry" description_key="husbandryDesc" title_key="husbandry" group="Husbandry">
-		<effect name="CraftingTime">
-			<multiply skill_level="1,2" value="1,.9" />
-			<multiply skill_level="2,3" value=".9,.8" />
-			<multiply skill_level="3,4" value=".8,.7" />
-			<multiply skill_level="4,5" value=".7,.6" />
-			<multiply skill_level="5,6" value=".6,.5" />
-		</effect>
-		<effect name="CraftingQuality">
-			<setvalue skill_level="1,2" value="50,100" />
-			<setvalue skill_level="2,3" value="100,200" />
-			<setvalue skill_level="3,4" value="200,300" />
-			<setvalue skill_level="4,5" value="300,400" />
-			<setvalue skill_level="5,6" value="400,500" />
-		</effect>
-		<effect name="RepairTime">
-			<multiply skill_level="1,2" value="1.00,.85"/>
-			<multiply skill_level="2,3" value="0.85,.70"/>
-			<multiply skill_level="3,4" value="0.70,.55"/>
-			<multiply skill_level="4,5" value="0.55,.40"/>
-			<multiply skill_level="5,6" value="0.40,.25"/>
-		</effect>
-		<effect name="RepairAmount">
-			<add skill_level="1,2" value="1,10"/>
-			<add skill_level="2,3" value="10,20"/>
-			<add skill_level="3,4" value="20,30"/>
-			<add skill_level="4,5" value="30,40"/>
-			<add skill_level="5,6" value="40,50"/>
-		</effect>
-		<effect name="RepairQualityLoss">
-			<multiply skill_level="1,2" value="1.00,0.80" />
-			<multiply skill_level="2,3" value="0.80,0.60" />
-			<multiply skill_level="3,4" value="0.60,0.40" />
-			<multiply skill_level="4,5" value="0.40,0.20" />
-			<multiply skill_level="5,6" value="0.20,0.10" />
-		</effect>
-	</crafting_skill>
-	 -->
 		<crafting_skill name="Husbandry" exp_to_level="100" icon="husbandry" description_key="husbandryDesc" title_key="husbandry" group="Husbandry">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,20" value="1.00,0.76" />
@@ -1274,47 +1184,6 @@
 				<multiply skill_level="90,100" value="0.14,0.10" />
 			</effect>
 		</crafting_skill>
-		<!-- HUSBANDRY -->
-		<!-- DOGSDX -->
-		<!-- New skill type for a16
-		<crafting_skill name="Dogtaming" max_level="6" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" exp_to_level="5000000" icon="dogtaming" description_key="DogtamingDesc" title_key="Dogtaming" group="Dogtaming">
-			<effect name="CraftingTime">
-				<multiply skill_level="1,2" value="1,.9" />
-				<multiply skill_level="2,3" value=".9,.8" />
-				<multiply skill_level="3,4" value=".8,.7" />
-				<multiply skill_level="4,5" value=".7,.6" />
-				<multiply skill_level="5,6" value=".6,.5" />
-			</effect>
-			<effect name="CraftingQuality">
-				<setvalue skill_level="1,2" value="50,100" />
-				<setvalue skill_level="2,3" value="100,200" />
-				<setvalue skill_level="3,4" value="200,300" />
-				<setvalue skill_level="4,5" value="300,400" />
-				<setvalue skill_level="5,6" value="400,500" />
-			</effect>
-			<effect name="RepairTime">
-				<multiply skill_level="1,2" value="1.00,.85"/>
-				<multiply skill_level="2,3" value="0.85,.70"/>
-				<multiply skill_level="3,4" value="0.70,.55"/>
-				<multiply skill_level="4,5" value="0.55,.40"/>
-				<multiply skill_level="5,6" value="0.40,.25"/>
-			</effect>
-			<effect name="RepairAmount">
-				<add skill_level="1,2" value="1,10"/>
-				<add skill_level="2,3" value="10,20"/>
-				<add skill_level="3,4" value="20,30"/>
-				<add skill_level="4,5" value="30,40"/>
-				<add skill_level="5,6" value="40,50"/>
-			</effect>
-			<effect name="RepairQualityLoss">
-				<multiply skill_level="1,2" value="1.00,0.80" />
-				<multiply skill_level="2,3" value="0.80,0.60" />
-				<multiply skill_level="3,4" value="0.60,0.40" />
-				<multiply skill_level="4,5" value="0.40,0.20" />
-				<multiply skill_level="5,6" value="0.20,0.10" />
-			</effect>
-		</crafting_skill>
-		-->
 		<crafting_skill name="Dogtaming" exp_to_level="100" icon="dogtaming" description_key="DogtamingDesc" title_key="Dogtaming" group="Dogtaming">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,20" value="1.00,0.76" />
@@ -1368,7 +1237,6 @@
 				<multiply skill_level="90,100" value="0.14,0.10" />
 			</effect>
 		</crafting_skill>
-		<!-- DOGSDX -->
 		<crafting_skill name="Stress Resistence" icon="stress" description_key="StressResistanceDesc" title_key="StressResistance" exp_to_level="100" experience_multiplier="1.15" max_level="7" skill_point_cost_multiplier="0" skill_point_cost_per_level="999" group="health" passive_effect="true" />
 		<perk name="Zen Master" icon="meditate" description_key="MeditateDesc" title_key="zenmaster" max_level="7" skill_point_cost_multiplier="1" skill_point_cost_per_level="1" group="health">
 			<requirement perk_level="1" required_skill_name="Stress Resistence" required_skill_level="1" />
@@ -1385,22 +1253,5 @@
 			<requirement perk_level="2" required_skill_name="Stress Resistence" required_skill_level="6" />
 			<recipe name="shadesBlack" unlock_level="2" />
 		</perk>
-		<!-- <perk name="HeatEnergyPerk" icon="resource" description_key="powerBookSteamDesc" title_key="powerBookSteam" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="30" group="tools">
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="20" />
-		<recipe name="mill" unlock_level="1" />
-		<recipe name="boiler" unlock_level="1" />		
-	</perk>
-	<perk name="GasEnergyPerk" icon="resource" description_key="powerBookGasDesc" title_key="powerBookGas" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="30" group="tools">			
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="25" />
-		<recipe name="biogasDigester" unlock_level="1" />
-		<recipe name="gasTankSecure" unlock_level="1" />
-		<recipe name="gasTankEmpty" unlock_level="1" />
-		<recipe name="moonshine" unlock_level="1" />			
-	</perk>
-	<perk name="ElecticityEnergyPerk" icon="resource" description_key="powerBookElectricityDesc" title_key="powerBookElectricity" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="30" group="tools">
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="30" />
-		<recipe name="lathe" unlock_level="1" />
-		<recipe name="dieselGen" unlock_level="1" />		
-	</perk> -->
 	</skills>
 </progression>

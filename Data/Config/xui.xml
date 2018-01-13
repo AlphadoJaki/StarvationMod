@@ -64,12 +64,20 @@
 			<window name="itemInfoPanel" />
 			<window name="emptyInfoPanel" />
 			<window name="windowBackpack" />
+			<window name="windowTime" />
+			<window name="HUDPower" />
+			<window name="HUDLeftStatBars" anchor="LeftBottom" />
 		</window_group>
 		<window_group name="dragAndDrop" actionSet="false">
 			<window name="dragAndDropItemStack" />
 		</window_group>
 		<window_group name="compass" actionSet="false">
 			<window name="windowCompass" />
+			<window name="windowTime" />
+			<window name="HUDPower" />
+			<window name="HUDLeftStatBars" anchor="LeftBottom" />
+			<window name="EXOToolbelt" anchor="CenterBottom" />
+			<window name="EXOCompass" anchor="CenterTop" />
 		</window_group>
 		<window_group name="toolTip" actionSet="false">
 			<window name="toolTip" />
@@ -86,7 +94,7 @@
 		</window_group>
 		<window_group name="toolbelt" actionSet="false">
 			<window name="windowToolbelt" anchor="CenterBottom" />
-			<window name="HUDLeftStatBars" anchor="LeftBottom" />
+			<window name="HUDVehicle" anchor="CenterBottom" />
 			<window name="HUDRightStatBars" anchor="RightBottom" />
 			<window name="windowQuestTracker" anchor="RightTop" />
 		</window_group>
@@ -210,7 +218,6 @@
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-		<!-- KITCHEN WORKBENCH -->
 		<window_group name="workstation_kitchenWorkbench" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList" />
 			<window name="craftingInfoPanel" />
@@ -219,7 +226,6 @@
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-		<!-- BIG OVEN -->
 		<window_group name="workstation_bigOven" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList" />
 			<window name="craftingInfoPanel" />
@@ -229,7 +235,6 @@
 			<window name="windowFuel" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-		<!-- AMMO WORKBENCH -->
 		<window_group name="workstation_ammoWorkbench" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList" />
 			<window name="craftingInfoPanel" />
@@ -237,7 +242,6 @@
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-		<!-- RAD MOD -->
 		<window_group name="workstation_scienceStation" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList" />
 			<window name="craftingInfoPanel" />
@@ -247,7 +251,6 @@
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-		<!-- STEAM&GAS START -->
 		<window_group name="workstation_mill" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList" />
 			<window name="craftingInfoPanel" />
@@ -278,8 +281,6 @@
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-		<!-- STEAM&GAS END -->
-		<!-- PowerSources START -->
 		<window_group name="workstation_heatGenerator" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList" />
 			<window name="craftingInfoPanel" />
@@ -294,8 +295,6 @@
 			<window name="windowFuel" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-		<!-- PowerSources END -->
-		<!-- MACHINES -->
 		<window_group name="workstation_electronicWorkbench" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList" />
 			<window name="windowToolsEW" />
@@ -312,7 +311,6 @@
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-		<!-- Mortelentus Server -->
 		<window_group name="workstation_anvil1" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowToolsAnvil1" />
 			<window name="windowCraftingList" />
@@ -344,8 +342,6 @@
 			<window name="windowCraftingQueue" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-		<!-- Mortelentus Server -->
-		<!-- MINER -->
 		<window_group name="workstation_miner" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList" />
 			<window name="craftingInfoPanel" />

@@ -281,7 +281,6 @@
 		<modify id="2" stat="stamina" amount="-1" rate="5" />
 		<modify id="3" stat="health" amount="-0.5" rate="10" />
 	</buff>
-	<!-- FISHING -->
 	<buff id="lure1" duration="300" name_key="lure1" smell="smallSmell" description_key="lureFish" tooltip_key="lureFish" icon="ui_game_symbol_lure1" />
 	<buff id="lure2" duration="300" name_key="lure2" smell="mediumSmell" description_key="lureFish" tooltip_key="lureFish" icon="ui_game_symbol_lure2" />
 	<buff id="lure3" duration="300" name_key="lure3" smell="largeSmell" description_key="lureFish" tooltip_key="lureFish" icon="ui_game_symbol_lure3" />
@@ -289,7 +288,6 @@
 	<buff id="lure5" duration="300" name_key="lure5" smell="largeSmell" description_key="lureFish" tooltip_key="lureFish" icon="ui_game_symbol_lure5" />
 	<buff id="lure6" duration="480" name_key="lure6" smell="largeSmell" description_key="lureFish" tooltip_key="lureFish" icon="ui_game_symbol_lure6" />
 	<buff id="fishingWater" duration="0" name_key="fishingWater" description_key="fishingWaterDesc" icon="ui_game_symbol_fishing" />
-	<!-- FISHING -->
 	<buff id="electricalShock" duration="10" ffcheck="true" actions="attach(#electric?p_lightning, @impact);damage(0,1,0,1);damage(0,2,0,0)" icon="ui_game_symbol_fire" name_key="electricalShock" description_key="electricalShockDesc">
 		<modify id="1" stat="health" amount="-5" rate="1" />
 		<modify id="0" stat="speedmodifier" mulValue="0.1" />
@@ -311,14 +309,14 @@
 		<modify id="0" stat="stamina" amount="-5" rate="1" />
 		<modify id="1" stat="health" amount="-1" rate="30" />
 	</buff>
-	<buff id="BossRegen" duration="15" type="healthup" ffcheck="true" actions="attach(#effects?Fog, Graphics, 15)" icon="ui_game_symbol_fire" name_key="BossRegen" description_key="electricalShockDesc">
+	<buff id="BossRegen" duration="15" type="healthup" ffcheck="true" actions="attach(#effects?Fog, Graphics, 15)" icon="ui_game_symbol_regen" name_key="BossRegen" description_key="electricalShockDesc">
 		<modify id="1" stat="health" amount="30" rate="1" />
 	</buff>
-	<buff id="ZedRez" duration="10" type="healthup" icon="ui_game_symbol_fire" name_key="ZedRez" description_key="electricalShockDesc">
+	<buff id="ZedRez" duration="10" type="healthup" icon="ui_game_symbol_rezz" name_key="ZedRez" description_key="electricalShockDesc">
 		<modify id="1" stat="health" amount="2" rate="1" />
 	</buff>
 	<buff id="BossSpawn" duration="5" ffcheck="true" actions="attach(#effects?BloodSplatter, Graphics, 5)" icon="ui_game_symbol_fire" name_key="BossRegen" description_key="electricalShockDesc" />
-	<buff id="BossRez" duration="5" ffcheck="true" actions="attach(#effects?LightningField, Graphics, 5)" icon="ui_game_symbol_fire" name_key="BossRegen" description_key="electricalShockDesc" />
+	<buff id="BossRez" duration="5" ffcheck="true" actions="attach(#effects?LightningField, Graphics, 5)" icon="ui_game_symbol_rezz" name_key="BossRegen" description_key="electricalShockDesc" />
 	<buff id="BossVomit" duration="3" ffcheck="true" actions="attach(#RadSpider?SpiderVomit, Graphics, 3)" icon="ui_game_symbol_fire" name_key="BossRegen" description_key="electricalShockDesc" />
 	<buff id="Vomit" mutex="VomitCoolDown" onexpired="VomitCoolDown" type="sickness" actions="attach(#Vomit?Vomit, Origin/CameraNode, 0, firstperson);increment(@wellness, -0.02, 4, 0, 0)" duration="10" icon="ui_game_symbol_vomit" castsound="vomit" name_key="Vomit" description_key="VomitDesc" tooltip_key="vomitTooltip">
 		<modify id="0" stat="stamina" amount="-1" rate="1" />
@@ -329,21 +327,23 @@
 	<buff id="freezingStomp" duration="60" stack="extend" type="staminaup" icon="ui_game_symbol_freeze" name_key="freezingStomp" description_key="freezingStompDesc" tooltip_key="freezingStompToolTip">
 		<modify id="1" stat="coretemp" modifyValue="-50" />
 	</buff>
-	<!-- SCURVY DISEASE -->
-	<!-- You get 1 scurvy level every hour -->
+	<buff id="webbed" mutex="stunCooldown" duration="3" actions="increment(@wellness, -0.5, 0, 0, 1)" onexpired="stunCooldown" type="speedmodifier" icon="ui_game_symbol_web" name_key="webbed" description_key="蜘蛛の巣に取り込まれている。" tooltip_key="Webbed">
+		<modify id="0" stat="speedmodifier" mulValue="0.0" />
+	</buff>
+	<buff id="plasmaImpact" stack="extend" mutex="GlandShield" duration="1" type="Drowning" actions="attach(ParticleEffects/p_electric_shock, @impact);damage(100,1,0,0)" castsound="electric_fence_impact" onexpired="plasmaEffect" name_key="plasmaImpact">
+		<modify id="0" stat="speedmodifier" mulValue="0.5" />
+	</buff>
+	<buff id="plasmaEffect" stack="discard" mutex="GlandShield" duration="10" type="speedmodifier" actions="attach(ParticleEffects/p_electric_shock, @impact);damage(5,1,0,0)" icon="ui_game_symbol_electric_shock" name_key="plasmaEffect" description_key="強烈なエネルギーの衝撃を受けている。">
+		<modify id="0" stat="speedmodifier" mulValue="0.5" />
+	</buff>
 	<buff id="MetabolizeScurvy" mutex="fruity" buffif="+full &gt; 0" duration="0" actions="increment(scurvyLevel, 1, 100t, 0, 0)" name_key="MetabolizeScurvy" />
-	<!-- Spend 2 weeks without eating fruit, and you'll get scurvy -->
-	<!-- The longer you wait, the more fruit you'll need to heal it -->
 	<buff id="Scurvy" mutex="fruity" type="sickness" smell="smallSmell" actions="increment(@wellness, -0.02, 30t, 0, 0)" duration="0" buffif="scurvyLevel greater 336" debuffif="fatiguelevel less 337" icon="ui_game_symbol_scurvy" name_key="Scurvy" description_key="壊血病の兆しがあります。果物を食べましょう！" tooltip_key="You're showing signs of scurvy. Eat fruit!">
 		<modify id="0" stat="stamina" amount="-1" rate="1" />
 	</buff>
 	<buff id="fruity" actions="setvar(scurvyLevel, 0);debuff(Scurvy);debuff(MetabolizeScurvy)" duration="300t" onexpired="ResumeScurvy" icon="ui_game_symbol_fruity" name_key="fruity" description_key="最近果物を食べました。歯にいいことした気分です。" tooltip_key="Fruity" />
 	<buff id="ResumeScurvy" duration="1" actions="setvar(scurvyLevel, 1)" onexpired="MetabolizeScurvy" name_key="ResumeScurvy" />
-	<!-- SCURVY DISEASE -->
-	<!-- TEMPORARY -->
 	<buff id="sleeping" duration="900t" stack="reset" icon="ui_game_symbol_critical" name_key="sleeping" description_key="sleeping" tooltip_key="sleeping" />
 	<buff id="awake" duration="900t" stack="reset" icon="ui_game_symbol_critical" name_key="awake" description_key="awake" tooltip_key="awake" />
-	<!-- TEMPORARY -->
 	<buff id="critMyDog" duration="5" castsound="Buffs/critical_blunt">
 		<modify id="1" stat="health" amount="-15" rate="1" />
 	</buff>
@@ -353,7 +353,6 @@
 	<buff id="critMyCougar" duration="5" castsound="Buffs/critical_blunt">
 		<modify id="1" stat="health" amount="-30" rate="1" />
 	</buff>
-	<!-- STARVATION -->
 	<buff id="stunned" mutex="stunCooldown,painkillerBuff,Buzzed,Drunk,StrongMind" duration="4" actions="increment(@wellness, -0.5, 0, 0, 1)" onexpired="stunCooldown" type="speedmodifier" icon="ui_game_symbol_stunned" name_key="stunned" description_key="stunnedDesc" tooltip_key="stunnedTooltip">
 		<modify id="0" stat="speedmodifier" mulValue="0.1" />
 	</buff>
@@ -367,50 +366,30 @@
 		<modify id="2" stat="coretemp" modifyValue="30" />
 	</buff>
 	<buff id="fishy" duration="1500" stack="reset" icon="ui_game_symbol_fishfood" name_key="fishy" description_key="fishyDesc" tooltip_key="fishyDesc" />
-	<!-- FATIGUE DISEASE -->
-	<!-- You get 1 fatigue level every hour -->
 	<buff id="fatigue" mutex="wellrested" buffif="+full &gt; 0" duration="0" actions="increment(fatiguelevel, 1, 100t, 0, 0)" name_key="fatigue" />
-	<!-- Addiction level is always decreasing, if it's higher then 10 -->
 	<buff id="MetabolizeAddiction" buffif="addiction greater 0" debuffif="addiction less 1" actions="increment(addiction, -1, 100t, 0, 0);min(addiction, 0)" name_key="MetabolizeAddiction" />
-	<!-- If fatigue less or equal 0, get a 3h well rested buff -->
 	<buff id="wellrested" actions="setvar(fatiguelevel, 0);debuff(fatigue)" duration="300t" buffif="fatiguelevel less 1" debuffif="fatiguelevel greater 0" onexpired="ResumeFatigue" icon="ui_game_symbol_wellrested" name_key="wellrested" description_key="十分に休み、活動的になりました" tooltip_key="Well Rested">
 		<modify id="0" stat="speedmodifier" setValue="1.2" />
 	</buff>
-	<!-- More then 24 hours without mitigating fatigue, you'll get sleepy -->
 	<buff id="sleepy" mutex="fatigued" type="sickness" actions="increment(@wellness, -0.02, 30t, 0, 0)" duration="0" buffif="fatiguelevel greater 24" debuffif="fatiguelevel less 1" icon="ui_game_symbol_sleepy" name_key="sleepy" description_key="眠いです。休憩するべきでしょう。" tooltip_key="Your feel sleepy" />
-	<!-- More then 35 hours without mitigating fatigue, you'll get fatigued -->
 	<buff id="fatigued" mutex="sleepDeprived,CoffeeStaminaBoost" type="sickness" actions="increment(@wellness, -0.05, 30t, 0, 0);debuff(sleepy)" duration="0" buffif="fatiguelevel greater 35" debuffif="fatiguelevel less 25" icon="ui_game_symbol_fatigued" name_key="fatigued" description_key="疲労困憊です。ばか者！さっさと休むんだ！" tooltip_key="You're fatigued">
 		<modify id="0" stat="speedmodifier" setValue="0.90" />
 	</buff>
-	<!-- More then 48 hours without mitigating fatigue, you'll get sleepy -->
 	<buff id="sleepDeprived" type="sickness" actions="increment(@wellness, -0.25, 50t, 0, 0);debuff(fatigued);debuff(sleepy)" duration="0" buffif="fatiguelevel greater 48" debuffif="fatiguelevel less 36" icon="ui_game_symbol_deprivation" name_key="sleepDeprived" description_key="睡眠不足で最悪なことになっています！休みなさい！" tooltip_key="Sleep Deprivation">
 		<modify id="0" stat="stamina" amount="-2" rate="1" />
 		<modify id="1" stat="speedmodifier" setValue="0.75" />
 	</buff>
-	<!-- Restart Fatigue -->
 	<buff id="ResumeFatigue" duration="1" actions="setvar(fatiguelevel, 1)" onexpired="fatigue" name_key="ResumeFatigue" />
-	<!-- FATIGUE DISEASE -->
-	<!-- DRUGS AND ADDICTION -->
-	<!-- Fatigue mitigation drinks -->
 	<buff id="FatigueDrink" duration="1" actions="increment(fatiguelevel, -6, 0, 0, 1)" name_key="FatigueDrink" />
-	<!-- Fatigue mitigation soft drugs - lasts 3h during which it stops your addiction, if existing -->
 	<buff id="Cigar" duration="60" actions="attach(#SmokingParticle?SmokingParticle, Origin/CameraNode, 0, firstperson);increment(fatiguelevel, -12, 0, 0, 1);increment(addiction, 10, 0, 0, 1);debuff(addicted);debuff(drugged);increment(sanity, 0.5, 10, 0, 0)" onexpired="drugged" icon="ui_game_symbol_smoking" name_key="Cigar" description_key="あぁ…、こりゃいいタバコだ…" tooltip_key="Smoking a Cigar" />
-	<!-- Fatigue mitigation strong drugs - lasts 6h during which it stops your addiction, if existing -->
 	<buff id="Blunt" duration="60" actions="attach(#SmokingParticle?SmokingParticle, Origin/CameraNode, 0, firstperson);increment(fatiguelevel, -24, 0, 0, 1);increment(addiction, 20, 0, 0, 1);debuff(addicted);debuff(drugged);increment(sanity, 1, 10, 0, 0)" onexpired="drugged" icon="ui_game_symbol_joint" name_key="Blunt" description_key="フフッフ…こりゃ、最高だ…" tooltip_key="Smoking a Blunt" />
-	<!-- You recently took drugs, should feel gooood. This actually increses addiction by 0.5 every hour-->
 	<buff id="drugged" duration="200t" actions="debuff(addicted);increment(addiction, 1.5, 100t, 0, 0)" icon="ui_game_symbol_high" name_key="drugged" description_key="最っ高だぜ、お前よぉおおおおおお!!!" tooltip_key="Drugged" />
-	<!-- Ohoh, you got addicted -->
 	<buff id="addicted" mutex="Cigar,Blunt,drugged" type="sickness" actions="increment(@wellness, -0.05, 30t, 0, 0)" duration="0" buffif="addiction greater 60" debuffif="addiction less 61" icon="ui_game_symbol_addicted" name_key="addicted" description_key="治さなきゃ…治さなきゃ…、薬はどこだ？" tooltip_key="Addicted">
 		<modify id="0" stat="speedmodifier" setValue="0.80" />
 	</buff>
-	<!-- Syringe made from radiated mushroom... Powerful shit -->
 	<buff id="radSyringeBuff" name_key="radSyringeBuff" duration="1" actions="setvar(fatiguelevel, 0);setvar(radlevel, 0);increment(addiction, 100, 0, 0, 1);increment(health, 15, 0, 0, 1);increment(stamina, 10, 0, 0, 1)" onexpired="drugged" description_key="ンッホオオォォォ！" tooltip_key="Aaahhhh hmmmmm" icon="ui_game_symbol_resetrad" />
-	<!-- DRUGS AND ADDICTION -->
-	<!-- ADMIN - Heals Fatigue and Addiction -->
 	<buff id="healAll" duration="1" actions="setvar(fatiguelevel, 1);setvar(addiction, 1)" name_key="healAll" />
 	<buff id="addFatigue" duration="1" actions="increment(fatiguelevel, 10, 0, 0, 1)" name_key="addFatigue" />
-	<!-- SLEEP AND REST -->
-	<!-- Sleeping buffs, adapted for fatigue -->
 	<buff id="sleepingBagEffect" duration="0" buffif="CTRbedroll greater 0" debuffif="CTRbedroll less 1" actions="increment(CTRbedroll, -3, 2, 0, 0);increment(fatiguelevel, -2, 10, 0, 0);increment(sanity, 0.7, 5, 0, 0)" icon="ui_game_symbol_sleep" name_key="sleepingBagEffect" description_key="これはいい気分だ…" tooltip_key="Resting">
 		<modify id="0" stat="health" amount="1" rate="30" />
 		<modify id="1" stat="stamina" amount="1" rate="3" />
@@ -445,15 +424,13 @@
 	<buff id="meditatePassive5" mutex="meditatePassive6,meditatePassive7" duration="0" actions="increment(sanity, 0.8, 25t, 0, 0)" name_key="meditatePassive5" />
 	<buff id="meditatePassive6" mutex="meditatePassive7" duration="0" actions="increment(sanity, 0.9, 25t, 0, 0)" name_key="meditatePassive6" />
 	<buff id="meditatePassive7" duration="0" actions="increment(sanity, 1.0, 25t, 0, 1)" name_key="meditatePassive7" />
-	<!-- SANITY DEBUFFS -->
 	<buff id="sanityVerySmall" duration="4" actions="increment(sanity, -.2, 1, 0, 1)" name_key="sanityVerySmall" />
 	<buff id="sanitySmall" duration="4" actions="increment(sanity, -.35, 1, 0, 1)" name_key="sanitySmall" />
 	<buff id="sanityNormal" duration="2" actions="increment(sanity, -1, 1, 0, 1)" name_key="sanityNormal" />
 	<buff id="sanityMedium" duration="2" actions="increment(sanity, -3, 1, 0, 1)" name_key="sanityMedium" />
 	<buff id="sanityBig" duration="2" actions="increment(sanity, -50, 1, 0, 1)" name_key="sanityBig" />
-	<buff id="resetsanity" name_key="resetsanity" buffif="sanity less 0" debuffif="sanity gequal 0" duration="0" actions="min(sanity, 0)" />
-	<buff id="maxsanity" name_key="maxsanity" buffif="sanity gequal 150" debuffif="sanity less 150" duration="0" actions="max(sanity, 150)" />
-	<!-- STARVATION -->
+	<buff id="resetsanity" name_key="resetsanity" buffif="sanity less 0" debuffif="sanity gequal 0" duration="0" actions="setvar(sanity,0);min(sanity, 0)" />
+	<buff id="maxsanity" name_key="maxsanity" buffif="sanity gequal 150" debuffif="sanity less 150" duration="0" actions="setvar(sanity,149);max(sanity, 150)" />
 	<buff id="bite" mutex="infectedBite,rabies" duration="9000" onexpired="infectedBite" type="sickness" icon="ui_game_symbol_bite" name_key="bite" description_key="biteDesc" tooltip_key="biteTooltip" cures="firstAid" />
 	<buff id="infectedBite" duration="9000" actions="debuff(bite)" onexpired="rabies" type="sickness" icon="ui_game_symbol_rabies1" name_key="infectedBite" description_key="infectedBiteDesc" tooltip_key="infectedBiteTooltip" cures="foodHoney,antibiotics,herbalAntibiotics">
 		<modify id="0" stat="stamina" amount="-0.5" rate="1" />
@@ -463,7 +440,6 @@
 		<modify id="1" stat="health" amount="-1" rate="3" />
 	</buff>
 	<buff id="rabiesDie" actions="kill" icon="ui_game_symbol_rabies" name_key="rabiesDie" description_key="rabiesDieDesc" tooltip_key="rabiesDieTooltip" />
-	<!-- RAD MOD -->
 	<buff id="fullBuff" mutex="bleeding" buffif="food &gt; 0.5" debuffif="food lequal 0.5" name_key="fullBuff" description_key="fullBuffDesc" tooltip_key="" icon="ui_game_symbol_natural_healing">
 		<modify id="0" stat="health" amount="1" rate="60" />
 	</buff>
@@ -528,21 +504,30 @@
 	<buff id="resetrad" name_key="resetrad" buffif="radlevel less 0" debuffif="radlevel gequal 0" mutex="lessrad" duration="0" actions="min(radlevel, 0)" description_key="ResetRadDesc" tooltip_key="ResetRadDesc" icon="ui_game_symbol_resetrad" />
 	<buff id="removerad" name_key="removerad" duration="1" actions="increment(radlevel, -500, 0, 0, 1);increment(health, -15, 0, 0, 1);increment(stamina, -15, 0, 0, 1)" description_key="RemoveRadDesc" tooltip_key="RemoveRadDesc" icon="ui_game_symbol_resetrad" />
 	<buff id="addrad" name_key="addrad" duration="1" actions="increment(radlevel, 5, 0, 0, 1)" description_key="addrad" tooltip_key="addrad" icon="ui_game_symbol_resetrad" />
-	<!-- this buff, while on, will prevent the player to get sick from radiation -->
 	<buff id="radSuit" duration="9000" name_key="radSuit" debuffif="radlevel greater 0" description_key="radSuitDesc" tooltip_key="radSuitDesc" icon="ui_game_symbol_hazmat" />
-	<!-- RAD MOD -->
-	<!-- this buff, while on, will prevent the player to get sick from radiation -->
-	<!-- it also decreases power in time, until it reaches 0 -->
 	<buff id="exoSuit" duration="0" name_key="Exoskeleton" actions="min(powerLevel, 0);increment(powerLevel, -0.5, 50t, 0, 0)" description_key="exoSuitDesc" tooltip_key="exoSuitDesc" icon="ui_game_symbol_exosuit" />
 	<buff id="addpower" name_key="addpower" duration="1" actions="max(powerLevel, 12);increment(powerLevel, 12, 0, 0, 1)" description_key="addpower" tooltip_key="addpower" icon="ui_game_symbol_exosuit" />
-	<!-- increases speed and stamina regeneration -->
 	<buff id="exoSpeed" duration="0" name_key="exoSpeed">
 		<modify id="0" stat="stamina" amount="15" rate="1" />
-		<modify id="0" stat="speedmodifier" setValue="1.5" />
+		<modify id="0" stat="speedmodifier" mulValue="1.5" />
 	</buff>
-	<!-- decreases speed -->
 	<buff id="exoGun" duration="0" name_key="exoGun" actions="min(powerLevel, 0);increment(powerLevel, -0.25, 50t, 0, 0)">
-		<modify id="0" stat="speedmodifier" setValue="0.5" />
+		<modify id="0" stat="speedmodifier" mulValue="0.5" />
+	</buff>
+	<buff id="GlandSpeed" duration="10" type="speedmodifier" actions="attach(#effects?LightningField, @impact, 10);increment(addiction, 11, 0, 0, 1)" icon="ui_game_symbol_speedboost" castsound="inject" name_key="GlandSpeed" description_key="あなたの反応速度は人の限界を超えている。" tooltip_key="Speed Boost">
+		<modify id="1" stat="speedmodifier" mulValue="2.5" />
+	</buff>
+	<buff id="GlandRegen" duration="15" type="healthup" ffcheck="true" actions="attach(#effects?Fog, @impact, 15);increment(addiction, 10, 0, 0, 1)" icon="ui_game_symbol_regen" castsound="inject" name_key="GlandRegen" description_key="Wall Crusherの妖しい気体の雲をまとっている。驚くほど元気が湧き出る。" tooltip_key="Health Boost">
+		<modify id="1" stat="health" amount="30" rate="1" />
+	</buff>
+	<buff id="GlandRezz" duration="10" ffcheck="true" actions="attach(ParticleEffects/p_electric_shock, @impact, 10);increment(addiction, 12, 0, 0, 1)" icon="ui_game_symbol_rezz" castsound="inject" name_key="GlandRezz" description_key="極限まで放電能力を持つ雲をまとっている。止まった心臓を再起動できる。" tooltip_key="Rezz Charge">
+		<modify id="1" stat="health" amount="1" rate="5" />
+	</buff>
+	<buff id="GlandCool" duration="15" stack="extend" actions="attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson);increment(addiction, 10, 0, 0, 1)" icon="ui_game_symbol_freeze" castsound="inject" name_key="GlandCool" description_key="さ　　わ　　や　　かな冷気が嵐になって噴き出している。" tooltip_key="Cooling Air">
+		<modify id="1" stat="coretemp" modifyValue="-50" />
+	</buff>
+	<buff id="GlandShield" duration="15" stack="extend" actions="attach(#particles?shield, @impact, 15);increment(addiction, 5, 0, 0, 1)" icon="ui_game_symbol_shield" castsound="inject" name_key="GlandShield" description_key="You create a protective field, granting imunity to energy attacks" tooltip_key="Electrical Shield">
+		<modify id="1" stat="health" amount="-1" rate="5" />
 	</buff>
 	<buff id="radDesolation" duration="1" onexpired="radiation1" icon="ui_game_symbol_stunned" name_key="radDesolation" description_key="radDesolationDesc" tooltip_key="criticalBluntTooltip" castsound="Buffs/critical_blunt">
 		<modify id="0" stat="health" amount="-150" rate="1" />

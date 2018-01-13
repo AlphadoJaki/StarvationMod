@@ -1479,7 +1479,6 @@
 				<Wind min="20" max="100" prob="0.1" />
 				<ParticleEffect prefab="ParticleEffects/p_smokestorm" ChunkMargin="7" />
 			</weather>
-			<!-- Burnt Forest Sub Biome Coal and Corpses -->
 			<subbiome prob="0.02">
 				<layers>
 					<layer depth="1" blockname="radiated">
@@ -1529,7 +1528,6 @@
 					<decoration type="block" blockname="TanksM" prob="0.0002" rotatemax="3" />
 				</decorations>
 			</subbiome>
-			<!-- Burnt Forest Sub Biome Thick Grass and Shrubs-->
 			<subbiome prob="0.04">
 				<layers>
 					<layer depth="1" blockname="radiated">
@@ -1570,7 +1568,6 @@
 				</decorations>
 			</subbiome>
 			<subbiome prob="0.1551">
-				<!-- Rad Sub Biome: leadOre -->
 				<layers>
 					<layer depth="1" blockname="radiated" />
 					<layer depth="8" blockname="radiated">
@@ -1591,7 +1588,6 @@
 				</layers>
 			</subbiome>
 			<subbiome prob="0.1551">
-				<!-- Ore Sub Biome: coalOre / iron below -->
 				<layers>
 					<layer depth="1" blockname="radiated" />
 					<layer depth="8" blockname="dirt">
@@ -1618,7 +1614,6 @@
 				</layers>
 			</subbiome>
 			<subbiome prob="0.1551">
-				<!-- Ore Sub Biome: potassiumNitrate -->
 				<layers>
 					<layer depth="1" blockname="radiated" />
 					<layer depth="8" blockname="dirt">
@@ -1637,7 +1632,6 @@
 					<layer depth="3" blockname="bedrock" />
 				</layers>
 			</subbiome>
-			<!-- Block layers: Burnt Forest, Local ore: coalOre -->
 			<layers>
 				<layer filluptorg="60" blockname="water" />
 				<layer depth="1" blockname="burntForestGround">

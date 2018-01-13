@@ -272,10 +272,6 @@
 		<objective type="Wear" id="aviatorGoggles" />
 		<reward type="Item" id="MilitaryScrewer" />
 	</quest>
-	<!-- <quest id="quest_TheMGJunkyard" group_name="The Old Mg" name="Old MG Junkyard" subtitle="Find the Old MG" description="a way to the Junkyard with the old MG" icon="ui_game_symbol_map_trader" category_key="Quest">
-	  <objective type="Goto" id="junkyard_med_MG" value="5" />
-	  <reward type="SkillPoints" value="1" />
-	 </quest> -->
 	<quest id="quest_TheFarmer" group_name="農家のおっちゃん" name="農家のおっちゃん" subtitle="農家のおっちゃんを探せ" description="Farmerは一体どこに居るんだ！" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<objective type="Goto" id="FarmerPrefab" value="5" />
 		<reward type="SkillPoints" value="1" />
@@ -369,11 +365,6 @@
 	<quest id="quest_Santa" group_name="メリークリスマス" name="メリークリスマス" subtitle="ほっほっほ" description="メリークリスマス！そして2018年明けましておめでとう！" icon="ui_game_symbol_map_trader" repeatable="true" category_key="challenge">
 		<reward type="Item" id="xmasGift" />
 	</quest>
-	<!-- <quest id="quest_Refinery" group_name="The Refinery" name="The Refinery" subtitle="The Refinery" description="Despair! I despair! My familly, my friends... They need me!\nWe thought we were safe. We hoped... We thought we could survive through this...\nBut then they came. Worst then monsters! Those bandits came for our fuel!\nI wonder if there's still someone alive, but I'm too weak..I'm out of power for my exoskeleton and I'm too weak to try..." offer="Despair! I despair! My familly, my friends... They need me!\nWe thought we were safe. We hoped... We thought we could survive through this...\nBut then they came. Worst then monsters! Those bandits came for our fuel!\nI wonder if there's still someone alive, but I'm too weak..I'm out of power for my exoskeleton and I'm too weak to try..." icon="ui_game_symbol_map_trader" category_key="Quest"  difficulty="hard">
-		<objective type="Goto" id="utility_refinery_01" value="10" />
-		<reward type="SkillPoints" value="1" />
-	</quest> -->
-	<!--Husbandry-->
 	<quest id="Q_Husbandry" group_name="畜産" name="牧場の準備1/4" subtitle="ムチの作り方" description="ムチを使えば野生の動物をてなずけることができます。" offer="畜産：野生動物のてなづけ" icon="ui_game_symbol_husbandry" repeatable="false" category_key="Quest" difficulty="easy">
 		<objective type="FetchKeep" id="leather" value="2" />
 		<objective type="FetchKeep" id="wood" value="15" />
@@ -434,7 +425,6 @@
 		<requirement type="Holding" id="scissor" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
-	<!-- Fishing -->
 	<quest id="Q_Fishing" group_name="釣り" name="釣りその1" subtitle="釣り針の作り方を学ぶ" description="このご時世で釣りに興味があるのかい？\nここで会ったのも何かの縁だね、覚えていきなよ。\n釣りは難しいけど身に付ければ食には困らない。\nあんな事があっても魚は前と変わらないんだ。\n\nまずは釣り針から作ろうか。\n一番大事なところだから、しっかり練習するんだよ。" offer="釣りの初めの一歩" icon="ui_game_symbol_fishing" repeatable="false" category_key="Quest" difficulty="easy">
 		<objective type="FetchKeep" id="scrapLead" value="4" />
 		<objective type="Craft" id="hook" value="1" />
@@ -463,7 +453,6 @@
 		<objective type="FetchKeep" id="fish" value="1" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<!-- Weapons-->
 	<quest id="Q_NailWood" name="アイスピック" subtitle="簡単でしかも強い武器" description="木とくぎをいくらか探して、\n\nNailed Wood(アイスピック)を作りましょう。" offer="見たまんまの・・・強さだ・・・" icon="ui_game_symbol_club" repeatable="false" category_key="Quest" difficulty="easy">
 		<objective type="FetchKeep" id="wood" value="5" />
 		<objective type="FetchKeep" id="nail" value="1" />
@@ -498,7 +487,6 @@
 		<objective type="Craft" id="nailedBat" value="1" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<!-- Wilderness chain -->
 	<quest id="LOS" group_name="大自然からの試練" name="蜘蛛の時代 1/3" subtitle="蜘蛛の卿" description="小柄なクモを探して、5体倒せ\n\n噛まれちゃいけないよ・・・？" offer="すぐに引き受けるといい、逃げ足に自信があるなら・・・ね。" icon="ui_game_symbol_q_spider" repeatable="false" category_key="challenge" difficulty="medium">
 		<objective type="AnimalKill" id="spiderSmall" value="5" />
 		<reward type="SkillPoints" value="1" />
@@ -533,13 +521,11 @@
 		<objective type="AnimalKill" id="tigerAlbino" value="1" />
 		<reward type="SkillPoints" value="10" />
 	</quest>
-	<!-- Weaponry quests -->
 	<quest id="Q_WAR" group_name="弓術の訓練" name="弓術の訓練 1/5" subtitle="初級弓術師" description="弓・クロスボウの使い方がやっとわかってきた。\n使いこなすにはもっと訓練が必要だろう。" icon="ui_game_symbol_archery" repeatable="false" category_key="challenge" offer="矢の雨が降り注ぐ" difficulty="easy">
 		<objective type="ZombieKill" value="10" />
 		<requirement type="Group" id="requirementGroupArchery" value="OR">
 			<requirement type="Holding" id="woodenBow" />
 			<requirement type="Holding" id="crossbow" />
-			<!-- <requirement type="Holding" id="compoundBow" /> -->
 			<requirement type="Holding" id="smallCrossbow" />
 		</requirement>
 		<reward type="SkillPoints" value="1" />
@@ -550,7 +536,6 @@
 		<requirement type="Group" id="requirementGroupArchery" value="OR">
 			<requirement type="Holding" id="woodenBow" />
 			<requirement type="Holding" id="crossbow" />
-			<!-- <requirement type="Holding" id="compoundBow" /> -->
 			<requirement type="Holding" id="smallCrossbow" />
 		</requirement>
 		<reward type="SkillPoints" value="3" />
@@ -561,7 +546,6 @@
 		<requirement type="Group" id="requirementGroupArchery" value="OR">
 			<requirement type="Holding" id="woodenBow" />
 			<requirement type="Holding" id="crossbow" />
-			<!-- <requirement type="Holding" id="compoundBow" /> -->
 			<requirement type="Holding" id="smallCrossbow" />
 		</requirement>
 		<reward type="SkillPoints" value="5" />
@@ -571,13 +555,11 @@
 		<objective type="AnimalKill" id="animalZombieBear" value="5" />
 		<objective type="AnimalKill" id="animalRabbit" value="10" />
 		<objective type="AnimalKill" id="animalChicken" value="10" />
-		<!-- <objective type="ZombieKill" id="Hornet" value="10" /> -->
 		<objective type="AnimalKill" id="Snake" value="10" />
 		<objective type="ZombieKill" id="animalZombieDog" value="20" />
 		<requirement type="Group" id="requirementGroupArchery" value="OR">
 			<requirement type="Holding" id="woodenBow" />
 			<requirement type="Holding" id="crossbow" />
-			<!-- <requirement type="Holding" id="compoundBow" /> -->
 			<requirement type="Holding" id="smallCrossbow" />
 		</requirement>
 		<reward type="SkillPoints" value="10" />
@@ -598,7 +580,6 @@
 		<requirement type="Group" id="requirementGroupArchery" value="OR">
 			<requirement type="Holding" id="woodenBow" />
 			<requirement type="Holding" id="crossbow" />
-			<!-- <requirement type="Holding" id="compoundBow" /> -->
 			<requirement type="Holding" id="smallCrossbow" />
 		</requirement>
 		<reward type="SkillPoints" value="20" />
@@ -669,7 +650,6 @@
 		<objective type="AnimalKill" id="animalZombieBear" value="5" />
 		<objective type="AnimalKill" id="animalRabbit" value="10" />
 		<objective type="AnimalKill" id="animalChicken" value="10" />
-		<!-- <objective type="ZombieKill" id="Hornet" value="10" /> -->
 		<objective type="AnimalKill" id="Snake" value="10" />
 		<objective type="ZombieKill" id="animalZombieDog" value="20" />
 		<requirement type="Group" id="requirementGroupBluntWeapons" value="OR">
@@ -773,7 +753,6 @@
 		<objective type="AnimalKill" id="animalZombieBear" value="5" />
 		<objective type="AnimalKill" id="animalRabbit" value="10" />
 		<objective type="AnimalKill" id="animalChicken" value="10" />
-		<!-- <objective type="ZombieKill" id="Hornet" value="10" /> -->
 		<objective type="AnimalKill" id="Snake" value="10" />
 		<objective type="ZombieKill" id="animalZombieDog" value="20" />
 		<requirement type="Group" id="requirementGroupBladeWeapons" value="OR">
@@ -824,7 +803,6 @@
 			<requirement type="Holding" id="steampunkRevolver" />
 			<requirement type="Holding" id="gunPistol" />
 			<requirement type="Holding" id="gun44Magnum" />
-			<requirement type="Holding" id="gunNail" />
 		</requirement>
 		<reward type="SkillPoints" value="1" />
 		<reward type="Quest" id="Q_WPI2" />
@@ -836,7 +814,6 @@
 			<requirement type="Holding" id="steampunkRevolver" />
 			<requirement type="Holding" id="gunPistol" />
 			<requirement type="Holding" id="gun44Magnum" />
-			<requirement type="Holding" id="gunNail" />
 		</requirement>
 		<reward type="SkillPoints" value="3" />
 		<reward type="Quest" id="Q_WPI3" />
@@ -848,7 +825,6 @@
 			<requirement type="Holding" id="steampunkRevolver" />
 			<requirement type="Holding" id="gunPistol" />
 			<requirement type="Holding" id="gun44Magnum" />
-			<requirement type="Holding" id="gunNail" />
 		</requirement>
 		<reward type="SkillPoints" value="5" />
 		<reward type="Quest" id="Q_WPI4" />
@@ -857,7 +833,6 @@
 		<objective type="AnimalKill" id="animalZombieBear" value="5" />
 		<objective type="AnimalKill" id="animalRabbit" value="10" />
 		<objective type="AnimalKill" id="animalChicken" value="10" />
-		<!-- <objective type="ZombieKill" id="Hornet" value="10" /> -->
 		<objective type="AnimalKill" id="Snake" value="10" />
 		<objective type="ZombieKill" id="animalZombieDog" value="20" />
 		<requirement type="Group" id="requirementGroupPistols" value="OR">
@@ -865,7 +840,6 @@
 			<requirement type="Holding" id="steampunkRevolver" />
 			<requirement type="Holding" id="gunPistol" />
 			<requirement type="Holding" id="gun44Magnum" />
-			<requirement type="Holding" id="gunNail" />
 		</requirement>
 		<reward type="SkillPoints" value="10" />
 		<reward type="Skill" id="Pistols" value="5" />
@@ -887,7 +861,6 @@
 			<requirement type="Holding" id="steampunkRevolver" />
 			<requirement type="Holding" id="gunPistol" />
 			<requirement type="Holding" id="gun44Magnum" />
-			<requirement type="Holding" id="gunNail" />
 		</requirement>
 		<reward type="SkillPoints" value="20" />
 		<reward type="Item" id="gun44Magnum" value="500" />
@@ -900,7 +873,6 @@
 			<requirement type="Holding" id="buechse" />
 			<requirement type="Holding" id="gunSawedOffPumpShotgun" />
 			<requirement type="Holding" id="gunPumpShotgun" />
-			<requirement type="Holding" id="nailShotgun" />
 		</requirement>
 		<reward type="SkillPoints" value="1" />
 		<reward type="Quest" id="Q_WSH2" />
@@ -912,7 +884,6 @@
 			<requirement type="Holding" id="buechse" />
 			<requirement type="Holding" id="gunSawedOffPumpShotgun" />
 			<requirement type="Holding" id="gunPumpShotgun" />
-			<requirement type="Holding" id="nailShotgun" />
 		</requirement>
 		<reward type="SkillPoints" value="3" />
 		<reward type="Quest" id="Q_WSH3" />
@@ -924,7 +895,6 @@
 			<requirement type="Holding" id="buechse" />
 			<requirement type="Holding" id="gunSawedOffPumpShotgun" />
 			<requirement type="Holding" id="gunPumpShotgun" />
-			<requirement type="Holding" id="nailShotgun" />
 		</requirement>
 		<reward type="SkillPoints" value="5" />
 		<reward type="Quest" id="Q_WSH4" />
@@ -933,7 +903,6 @@
 		<objective type="AnimalKill" id="animalZombieBear" value="5" />
 		<objective type="AnimalKill" id="animalRabbit" value="10" />
 		<objective type="AnimalKill" id="animalChicken" value="10" />
-		<!-- <objective type="ZombieKill" id="Hornet" value="10" /> -->
 		<objective type="AnimalKill" id="Snake" value="10" />
 		<objective type="ZombieKill" id="animalZombieDog" value="20" />
 		<requirement type="Group" id="requirementGroupShotguns" value="OR">
@@ -941,7 +910,6 @@
 			<requirement type="Holding" id="buechse" />
 			<requirement type="Holding" id="gunSawedOffPumpShotgun" />
 			<requirement type="Holding" id="gunPumpShotgun" />
-			<requirement type="Holding" id="nailShotgun" />
 		</requirement>
 		<reward type="SkillPoints" value="10" />
 		<reward type="Recipe" id="shotgunSlug" />
@@ -963,7 +931,6 @@
 			<requirement type="Holding" id="buechse" />
 			<requirement type="Holding" id="gunSawedOffPumpShotgun" />
 			<requirement type="Holding" id="gunPumpShotgun" />
-			<requirement type="Holding" id="nailShotgun" />
 		</requirement>
 		<reward type="SkillPoints" value="20" />
 		<reward type="Item" id="buechse" value="500" />
@@ -1033,7 +1000,6 @@
 		<objective type="AnimalKill" id="animalZombieBear" value="5" />
 		<objective type="AnimalKill" id="animalRabbit" value="10" />
 		<objective type="AnimalKill" id="animalChicken" value="10" />
-		<!-- <objective type="ZombieKill" id="Hornet" value="10" /> -->
 		<objective type="AnimalKill" id="Snake" value="10" />
 		<objective type="ZombieKill" id="animalZombieDog" value="20" />
 		<requirement type="Group" id="requirementGroupRifles" value="OR">
@@ -1052,7 +1018,7 @@
 			<requirement type="Holding" id="minigun" />
 		</requirement>
 		<reward type="SkillPoints" value="10" />
-		<reward type="Recipe" id="ScopePSG" />
+		<reward type="Item" id="ScopePSG" />
 		<reward type="Quest" id="Q_WRI5" />
 	</quest>
 	<quest id="Q_WRI5" group_name="ライフルの訓練" name="ライフル 5/5" subtitle="死の弾丸" description="自分の練度を示すために、真の試練が必要だ。" icon="ui_game_symbol_rifle" repeatable="false" category_key="challenge" offer="挑戦するといい。心折れるまで、何度でも。" difficulty="hard">
@@ -1085,7 +1051,6 @@
 		<reward type="Item" id="mg4" value="500" />
 		<reward type="Item" id="Q_FinalExam" />
 	</quest>
-	<!-- Farmer Quest Chains -->
 	<quest id="FEX" name="最後の試練" subtitle="全ての元凶" description="今や最後の試練を受ける準備ができた。\nこの世紀末が作った最強の殺意の塊がここに書かれている。\n手遅れになる前に、奴らを止めることだ…。" icon="ui_game_symbol_q_boss" repeatable="false" category_key="Quest" offer="全ての元凶は放射能汚染区域に" difficulty="insane">
 		<objective type="AnimalKill" id="radSpider" value="10" />
 		<objective type="AnimalKill" id="radSpiderSmall" value="10" />
@@ -1249,7 +1214,6 @@
 		<objective type="BlockPlace" id="cntStorageFarm" value="1" />
 		<reward type="SkillPoints" value="5" />
 	</quest>
-	<!-- Little Animal Quests -->
 	<quest id="Q_Animals_A1" group_name="小さな家畜たち" name="小屋とケージ 1/10" subtitle="箱罠を作ろう" description="まずはウサギやニワトリ、小さな動物を捕獲することから始めましょう。\n彼らは小さく素早いですから、罠を仕掛けてエサでおびき寄せるのがいいでしょう。\n\nまずは箱罠をクラフトしましょう。" icon="ui_game_symbol_q_animals_1" repeatable="false" category_key="Quest" offer="動物を捕まえよう！" difficulty="easy">
 		<objective type="FetchKeep" id="nail" value="10" />
 		<objective type="FetchKeep" id="wood" value="20" />
@@ -1311,7 +1275,6 @@
 		<objective type="FetchKeep" id="turd" value="3" />
 		<reward type="SkillPoints" value="3" />
 	</quest>
-	<!-- Your own Orchard -->
 	<quest id="Q_Orchard" group_name="我が家の果樹園" name="果樹園の基本 1/4" subtitle="アボカドを探せ" description="さて、種の取り出し方と作物に水をやる方法はわかったと思います。\n世界には果樹がたくさんあります。種を集めれば、あなただけの果樹園が作れるでしょう。\nその中でアボカドは針葉樹林に自生していると言われています。\nまずはこのバイオームから探索を始めましょう。\n果物は素手で優しく収穫してください。収穫の時かどうかはやってみるとわかります。" offer="果物派の楽園" icon="ui_game_symbol_q_orchard" repeatable="false" category_key="Quest" difficulty="easy">
 		<objective type="FetchKeep" id="avocado" value="1" />
 		<requirement type="Holding" id="" />

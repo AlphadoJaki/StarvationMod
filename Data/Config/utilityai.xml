@@ -103,9 +103,7 @@
 				<consideration class="TargetDistance" flip_y="true" min="1" max="6" />
 			</action>
 		</ai_package>
-		<!--JZMOD ADDED-->
 		<ai_package name="Bandit Basic">
-			<!-- Basic AI -->
 			<action name="Wander" weight="1">
 				<task class="Wander" />
 			</action>
@@ -123,7 +121,6 @@
 			</action>
 		</ai_package>
 		<ai_package name="Bandit Melee">
-			<!-- Melee Attack AI -->
 			<action name="MoveToEnemy" weight="2">
 				<task class="MoveToTarget" run="false" />
 				<consideration class="TargetType" type="EntityPlayer, EntityNPC, EntityAnimalStag, EntityZombie" />
@@ -144,7 +141,6 @@
 			</action>
 		</ai_package>
 		<ai_package name="Bandit Ranged">
-			<!-- Ranged Attack AI -->
 			<action name="MoveToEnemy" weight="2" distance="6">
 				<task class="MoveToTarget" run="false" />
 				<consideration class="TargetType" type="EntityPlayer, EntityNPC, EntityAnimalStag, EntityZombie" />
@@ -172,7 +168,6 @@
 			</action>
 		</ai_package>
 		<ai_package name="Bandit Rocket">
-			<!-- Rocket Luncher Attack AI -->
 			<action name="MoveToEnemy" weight="2" distance="6">
 				<task class="MoveToTarget" run="false" />
 				<consideration class="TargetType" type="EntityPlayer, EntityNPC, EntityAnimalStag, EntityZombie" />
@@ -200,7 +195,6 @@
 			</action>
 		</ai_package>
 		<ai_package name="Bandit Chainsaw">
-			<!-- Chainsaw Attack AI -->
 			<action name="MoveToEnemy" weight="2">
 				<task class="MoveToTarget" run="false" />
 				<consideration class="TargetType" type="Block, EntityPlayer, EntityNPC, EntityAnimalStag, EntityZombie" />
