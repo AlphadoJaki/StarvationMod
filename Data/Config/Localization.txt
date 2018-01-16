@@ -6241,6 +6241,8 @@ xuiForgestoneInfoPanelText,,,,【石器作業台】\n\n単純な構造の改造�
 ttCrafter,,,,このレシピは熟練した職人にしか作ることはできません。\n電波塔を建てて生存者を呼びましょう！,,,,
 sugarcaneCane,,,,Gnarl of Sugarcane,,,,
 sugarcaneCaneDesc,,,,一節のサトウキビです。種か砂糖に加工できます。,,,,
+xuiClientVersion,,,,ローカル:v16.0.0.31日本語化,
+toModders,,,,"xuiClientVersion と XUiwindows/window[@name='emptyInfoPanel']/rect/label[@name='serverversionText'] は、サーバーとクライアントのバージョンを比較するために用意しています。もし、追加パッチのバージョンも表示したい場合は、""ローカル:v16.0.0.XX日本語化+BPE""のように書き換えてください。",,,,
 ========NEW STUFF========,,,,,,,,
 toys,,,,Toys,,,,
 ksr,,,,KSR-29,,,,
