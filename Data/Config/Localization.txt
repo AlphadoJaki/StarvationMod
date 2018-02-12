@@ -31,7 +31,7 @@ coffeeBeansDesc,items,Farming,EnChanged,焙煎されたコーヒー豆。おい�
 foodYuccaFruitDesc,items,Food,EnChanged,インディアンはサボテンを食用としていました。ウェイストランドでもそれは変わりません。ユッカフルーツ（food yucca）はサボテンから取得出来ます。,Yucca fruit is edible and can be juiced to gain a bit of water. It is harvested from cacti and yucca plants.,Die Yucca-Frucht ist essbar und kann von Kakteen geerntet werden.,,La yuca es comestible y se puede recoger de los cactus.
 moldyBreadDesc,items,Food,EnChanged,自己責任で食べてください。Chemistry Stationで[87cefa]Antibiotics[-]を作れます。\n [ Chemistry Stationクラフト ],Eat at your own risk. Can be used to craft antibiotics at a chemistry station.\n [ Crafted in Chemistry Station. ],"Auf eigene Gefahr essen. Kann benutzt werden, um am Chemietisch Antibiotika zu fertigen.",,
 blunderbussDesc,items,Gun,EnChanged,このハンドメイドの銃（blunderbuss）は、非常に近い距離での射撃でダメージが期待出来ます。,A primitive muzzle loader can be crafted from mainly forged iron. Effective at very close ranges.,Ein einfacher Vorderlader der hauptsächlich aus geschmiedetem Eisen gefertigt wird. Ist im Nahkampf sehr effektiv.,,"Se puede fabricar un arma de avancarga rudimentaria con tuberías, hierro forjado, madera y resortes. Eficaz a distancias muy cortas."
-gunMP5Desc,items,Gun,EnChanged,9mm弾のサイレンサー付きサブマシンガン。\n分解・組み立て・修理には設計図を読みましょう。\n [ 組み立てかNPCのクラフト ],This silenced submachine gun uses 9mm ammo. Can be re-assembled and repaired if you read the schematic.\n [ Crafted in assembly and crafter. ],"Diese schallgedämpfte Maschinenpistole verwendet 9 mm Munition. Kann zusammengesetzt und repariert werden, wenn du den Bauplan gelesen hast.",,Esta metralleta pateaculos utiliza munición de 9 mm. Se puede rearmar y reparar si lees el esquema.
+gunMP5Desc,items,Gun,EnChanged,9mm弾のサイレンサー付きサブマシンガン。\n分解・組み立て・修理には設計図を読みましょう。\n [ 組み立てかNPCのクラフト ],This silenced submachine gun uses 9mm ammo. Can be re-assembled and repaired if you read the schematic.\n [ Crafted by assembling parts and by Crafter NPC. ],"Diese schallgedämpfte Maschinenpistole verwendet 9 mm Munition. Kann zusammengesetzt und repariert werden, wenn du den Bauplan gelesen hast.",,Esta metralleta pateaculos utiliza munición de 9 mm. Se puede rearmar y reparar si lees el esquema.
 animalHideDesc,items,Item,EnChanged,獣の皮（Animal Hide）は衣服を作成したり、フォージ（Forge）に必要なふいご（bellows）の材料になります。,Use animal hide to make warm clothing and leather.,Tierhäute dienen dazu warme Kleidung und Leder herzustellen.,,"Una vez que hayas leído el libro del cuero, podrás usar la piel de animal para hacer ropa, fabricar fuelles para la fragua y cuero."
 bellowsDesc,items,Item,EnChanged,ふいご。高温が必要なフォージのクラフトに欠かせないアイテムです。,"Bellows made with wood, leather and pipes are needed to make a forge.","Blasebälge bestehen aus Holz, Leder und Röhren, und sind notwendig, um eine Schmiede zu bauen.",,"Se necesitan fuelles de madera, piel de animal y tuberías para construir una fragua."
 oilShaleDesc,items,Item,EnChanged,オイルシェール（oil shale）。砂漠で見つけることが出来ます。醸造器(Moonshine)で、ｶﾞｿﾘﾝの素材になります。,Oil shale can be found in the desert and crafted into gas at a chemistry station.,Ölschiefer kann in der Wüste gefunden werden und am Chemietisch zu Benzin verarbeitet werden.,,
@@ -172,7 +172,7 @@ signShopToolStoreWall,blocks,Sign,GrChanged,Sign Shop Tool Store Wall,Sign Shop 
 signShopToolStoreWallLit,blocks,Sign,GrChanged,Sign Shop Tool Store Wall Lit,Sign Shop Tool Store Wall Lit,"Werkzeugladenschild, erleuchtet, Wand",,Letrero de tienda Tienda de herramientas Pared Encendido
 snowDesc,blocks,Terrain,GrChanged,雪(snow)は植物を育てるのに適した土壌ではありません。,Snow is another source of water. Melt it at a campfire if you have some empty cans or jars.,"Schnee kann an einem Lagerfeuer geschmolzen werden, wenn du ein paar leere Dosen oder Gläser hast.",,La nieve es otra fuente de agua. Derrítela en una fogata si tienes latas o tarros vacíos.
 leatherDuster,items,Clothes,GrChanged,Leather Duster,Leather Duster,Ledermantel,,Gabardina de cuero
-baconAndEggsDesc,items,Food,GrChanged,ベーコンエッグ（bacon and egg）はウェイストランドで人気のごちそうです。\n血中コレステロールを気にすることはありません。あなたの健康値を押し上げます。\n [ CampfireとCooking Potでクラフト ],Bacon and eggs will really fill you up and boost your wellness. Cholesterol is the least of your worries now.\n [ CampfireとCooking Potでクラフト ],Schinkenspeck mit Eiern wird dich richtig satt machen und dein Wohlbefinden erhöhen. Cholesterin ist jetzt dein kleinstes Problem.,,Los huevos con tocino te saciarán e incrementarán tu bienestar. El colesterol es el último de tus problemas en estos momentos.
+baconAndEggsDesc,items,Food,GrChanged,ベーコンエッグ（bacon and egg）はウェイストランドで人気のごちそうです。\n血中コレステロールを気にすることはありません。あなたの健康値を押し上げます。\n [ CampfireとCooking Potでクラフト ],Bacon and eggs will really fill you up and boost your wellness. Cholesterol is the least of your worries now.\n [ Crafted in Campfire with a Cooking Pot. ],Schinkenspeck mit Eiern wird dich richtig satt machen und dein Wohlbefinden erhöhen. Cholesterin ist jetzt dein kleinstes Problem.,,Los huevos con tocino te saciarán e incrementarán tu bienestar. El colesterol es el último de tus problemas en estos momentos.
 betterLeadThanDeadDesc,progression,Perk,GrChanged,ただでさえ強力なライフルの攻撃力が向上するパーク。\nもうやめて！とっくにゾンビのライフはゼロよ！,This is my rifle. There are many like it but this one does more damage with every rank.,"Dies ist mein Gewehr. Es gibt viele wie dieses, aber dieses hier verursacht mit jedem Rang mehr Schaden.",,"Este es mi rifle. Hay muchos otros, pero este inflige más daño con cada nivel."
 sexualTyranosaurus,progression,Perk,GrChanged,Sexual Tyrannosaurus,Sexual Tyrannosaurus,Wie ein Wildes Tier,,Tiranosaurio sexual
 pummelPete,progression,Skill,GrChanged,Pummel Pete,Pummel Pete,Haudrauf,,Pete apalea
@@ -372,7 +372,7 @@ glassBusinessBlock,blocks,Block,KgNone,Business Glass Block,Business Glass Block
 glassBusinessCTRSheet,blocks,Block,KgNone,Business Glass Centered,Business Glass Centered,Geschäftsglasblock mittig,,Cristal de negocios centrado
 glassBusinessSheet,blocks,Block,KgNone,Business Glass Pane,Business Glass Pane,Geschäftsglasscheibe,,Panel de cristal de negocios
 glassCTRSheet,blocks,Block,KgNone,Glass Pane,Glass Pane,Glasscheibe,,Panel de cristal
-glassGroupDesc,blocks,Block,KgNone,ガラスは寒風を防ぎつつ、光を通す素晴らしい発明品です。\n [  glassandCeramicsStationクラフト ],Glass is a wonderful invention that lets light in while keeping the cold wind out.\n [  glassandCeramicsStationクラフト ],"Glas ist eine großartige Erfindung, die Licht reinlässt und den kalten Wind fernhält.",,El cristal es un invento magnífico que deja pasar la luz y mantiene a raya al viento.
+glassGroupDesc,blocks,Block,KgNone,ガラスは寒風を防ぎつつ、光を通す素晴らしい発明品です。\n [  glassandCeramicsStationクラフト ],Glass is a wonderful invention that lets light in while keeping the cold wind out.\n [ Crafted in glassandCeramicsStation. ],"Glas ist eine großartige Erfindung, die Licht reinlässt und den kalten Wind fernhält.",,El cristal es un invento magnífico que deja pasar la luz y mantiene a raya al viento.
 glassIndustrial02CTRPlate,blocks,Block,KgNone,Industrial Glass 2 Centered,Industrial Glass 2 Centered,Industrieglas 2 mittig,,Cristal industrial centrado 2
 glassIndustrialCTRPlate,blocks,Block,KgNone,Industrial Glass Centered,Industrial Glass Centered,Industrieglas mittig,,Cristal industrial centrado
 glassShowerBlock,blocks,Block,KgNone,Shower Glass Block,Shower Glass Block,Duschglasblock,,Bloque de cristal de ducha
@@ -898,7 +898,7 @@ plainsGroundDesc,blocks,Terrain,KgNone,草原の土（plains ground）です。�
 potassiumNitrate,blocks,Terrain,KgNone,Potassium Nitrate,Potassium Nitrate,Kaliumnitrat,,Nitrato de potasio
 radiated,blocks,Terrain,KgNone,Radiated Earth,Radiated Earth,Radioaktive Erde,,Tierra irradiada
 sand,blocks,Terrain,KgNone,Sand,Sand,Sand,,Arena
-sandDesc,blocks,Terrain,KgNone,岩のように見えるかもしれませんが砂(sand)です。とても細かく柔らかいです。ｶﾞﾗｽの材料になります。\n [ Crafted in Cement Mixer. ],岩のように見えるかもしれませんが砂(sand)です。とても細かく柔らかいです。ｶﾞﾗｽの材料になります。\n [ Crafted in Cement Mixer. ],Wie Steine … nur viel kleiner.,,Como rocas... Pero más pequeñas.
+sandDesc,blocks,Terrain,KgNone,岩のように見えるかもしれませんが砂(sand)です。とても細かく柔らかいです。ｶﾞﾗｽの材料になります。\n [ Crafted in Cement Mixer. ],Like rocks... Only much smaller.\n [ Crafted in Cement Mixer. ],Wie Steine … nur viel kleiner.,,Como rocas... Pero más pequeñas.
 sandStone,blocks,Terrain,KgNone,Sandstone,Sandstone,Sandstein,,Arenisca
 snow,blocks,Terrain,KgNone,Snow,Snow,Schnee,,Nieve
 sod,blocks,Terrain,KgNone,Sod,Sod,Rasenstück,,Césped
@@ -936,7 +936,7 @@ cementMixerDesc,blocks,Workstation,KgNone,セメントミキサーは、強固�
 forge,blocks,Workstation,KgNone,Forge,Forge,Schmiede,,Fragua
 forgeDesc,blocks,Workstation,EnChanged,フォージは金属の精錬に使えます。Anvil、Caliper、Tool And Die Setを置けばクラフトの幅が広がります。,"Used to smelt metals into tools and weapons. Unlock more recipes by adding an anvil, crucible or tool and die set.","Dient zum Einschmelzen von Metallen für Werkzeuge und Waffen. Schalte mehr Rezepte frei, indem du einen Amboss, einen Messschieber oder eine Werkzeugkiste hinzufügst.",,"Se usa para fundir metales y convertirlos en herramientas y armas. Añade un yunque, calibradores o herramientas y un juego de ajuste para desbloquear más recetas."
 workbench,blocks,Workstation,KgNone,Workbench,Workbench,Werkbank,,Mesa de trabajo
-workbenchDesc,,,,ﾜｰｸﾍﾞﾝﾁ（workbench）はもう一人のあなたです。バックパック上で行うクラフト作業が同じように出来ます。ニコイチ修繕は便利だぞ。,A workbench lets you craft items just like you do in your backpack and improve items for up to 100 quality points above your crafting skill.,,,
+workbenchDesc,,,,ﾜｰｸﾍﾞﾝﾁ（workbench）はもう一人のあなたです。バックパック上で行うクラフト作業が同じように出来ます。ニコイチ修繕は便利だぞ。,A workbench lets you craft [87cefa]advanced items[ffffff] and combine tools to increase its quality.,,,
 alcoholPoisoning,buffs,Buff,KgNone,アルコール毒,Inebriated,Berauscht,,Embriaguez
 alcoholPoisoningTooltip,buffs,Buff,KgNone,You have alcohol poisoning.,You have alcohol poisoning.,Du hast eine Alkoholvergiftung.,,Estás borracho.
 arrowCriticalBleedout,buffs,Buff,KgNone,出血,Bleeding,Bluten,,Sangrando
@@ -1424,7 +1424,7 @@ bottledWaterDesc,items,Food,KgNone,飲料に適した水(bottled water)。ウェ
 canBeef,items,Food,KgNone,Large Beef Ration,Large Beef Ration,Große Rindfleisch-Ration,,Gran porción de ternera
 canBeefDesc,items,Food,KgNone,失われた牛肉の味を味わえるレーションです。\n食べると空き缶が手に入ります。\n [ Canned Food Machineクラフト ],It's not from your favorite steakhouse but this can of beef will fill you up. Bon appetit!\n [ Crafted in Canned Food Machine. ],"Dein Lieblings-Steakhouse ist es nicht, aber diese Dose Rindfleisch wird deinen Bauch füllen. Guten Appetit!",,"No es de tu asador favorito, pero te saciará. ¡Buen provecho!"
 canBoiledWater,items,Food,KgNone,Boiled Water,Boiled Water,Konserve mit Wasser,,Agua hervida
-canBoiledWaterDesc,items,Food,KgNone,飲水は煮沸された水を飲むのが安全です。素材があれば、お茶等さらに効果の高い飲み物を作れます。\n [ Campfireクラフト ],Boiled water is safe to drink. Probably.\n [ Campfireクラフト ],Gekochtes Wasser kann bedenkenlos getrunken werden. Wahrscheinlich.,,El agua hervida es segura. Probablemente.
+canBoiledWaterDesc,items,Food,KgNone,飲水は煮沸された水を飲むのが安全です。素材があれば、お茶等さらに効果の高い飲み物を作れます。\n [ Campfireクラフト ],Boiled water is safe to drink. Probably.\n [ Crafted in Campfire. ],Gekochtes Wasser kann bedenkenlos getrunken werden. Wahrscheinlich.,,El agua hervida es segura. Probablemente.
 canCatfood,items,Food,KgNone,Can of Cat Food,Can of Cat Food,Dose Katzenfutter,,Lata de comida para gatos
 canCatfoodDesc,items,Food,KgNone,ネコが夢中になる味付けと、必要な栄養素をバランスよく配合したキャットフードです。\nキャットフードです。あなたが夢中にならないでください。,"A can of Meow Chow is a delicacy. For cats. You are not eating this, are you?","Eine Dose mit Katzenfutter ist eine Delikatesse. Für Katzen. Du hast nicht vor, das zu essen, oder?",,"Una lata de Whiskas es un deleite. Para gatos. No te la vas a comer, ¿o sí?"
 canChicken,items,Food,KgNone,Chicken Ration,Chicken Ration,Hühnchen-Ration,,Porción de pollo
@@ -1456,7 +1456,7 @@ canStockDesc,items,Food,KgNone,濃厚なだし汁（Stock）。ストックス�
 canTuna,items,Food,KgNone,Can of Tuna,Can of Tuna,Dose Thunfisch,,Lata de atún
 canTunaDesc,items,Food,KgNone,ツナ缶はウェイストランドのニワトリより美味しいと評判です。,A can of tuna or better known as the chicken of the wasteland.,"Eine Dose mit Thunfisch, der Standardmahlzeit aller Ödlandbewohner.",,"Una lata de atún, también conocida como el pollo del páramo."
 charredMeat,items,Food,KgNone,Charred Meat,Charred Meat,Verkohltes Wildbret,,Carne chamuscada
-charredMeatDesc,items,Food,EnChanged,こんがり肉（charred meat）。若干焦げて、喉は渇くものの、美味しく食べられます。\n持っているとニオイを発します。\n [ Campfireクラフト ],Charred meat is better than raw meat. It will dehydrate you but boost your wellness.\n [ Campfireクラフト ],"Verkohltes Wildbret ist besser als rohes Wildbret. Es wird dich dehydrieren, dafür aber dein Wohlbefinden erhöhen.",,"La carne chamuscada es mejor que la carne cruda. Te deshidrata, pero mejorará tu bienestar. Puede atraer zombis si la llevas encima."
+charredMeatDesc,items,Food,EnChanged,こんがり肉（charred meat）。若干焦げて、喉は渇くものの、美味しく食べられます。\n持っているとニオイを発します。\n [ Campfireクラフト ],Charred meat is better than raw meat. It will dehydrate you but boost your wellness.\n [ Crafted in Campfire. ],"Verkohltes Wildbret ist besser als rohes Wildbret. Es wird dich dehydrieren, dafür aber dein Wohlbefinden erhöhen.",,"La carne chamuscada es mejor que la carne cruda. Te deshidrata, pero mejorará tu bienestar. Puede atraer zombis si la llevas encima."
 coffee,items,Food,KgNone,Coffee,Coffee,Kaffee,,Café
 coffeeDesc,items,Food,KgNone,コーヒー（Coffee）は翼を授ける。飲むとぽかぽか暖かくなり、スタミナを回復し続けます。\n飲めば飲むほど時間が延長されますが、失われる水分量に注意してください。,"Coffee gives you energy, keeps your stamina up and helps you stay warm for a limited time.","Kaffee verleiht dir Energie, hält deine Ausdauer auf einem hohen Niveau und wärmt dich für begrenzte Zeit.",,"El café te da energía, aumenta tu resistencia y te ayuda a entrar en calor por un rato."
 cornBread,items,Food,KgNone,Corn Bread,Corn Bread,Maisbrot,,Pan de maíz
@@ -1477,7 +1477,7 @@ foodYuccaJuiceDesc,items,Food,KgNone,ユッカジュース（yucca juice）は�
 goldenRodTea,items,Food,KgNone,Golden Rod Tea,Golden Rod Tea,Goldrutentee,,Té de vara de oro
 goldenRodTeaDesc,items,Food,KgNone,赤痢にかかった？甘い黄金茶を飲みましょう。\nアキノキリンソウは世界で有名な抗菌作用のあるハーブです。\n [ Campfire+Cooking PotかBig Oven+Kettle. ],Got dysentery? This bottle of sweet goldenrod tea will cure it.\n [ Crafted in Campfire with a Cooking Pot and Big Oven with a Kettle. ],Hast du Dysenterie? Diese Flasche mit süßem Goldrutentee wird sie heilen.,,¿Tienes disentería? Esta botella de té de vara de oro dulce te curará.
 grainAlcohol,items,Food,KgNone,Grain Alcohol,Grain Alcohol,Spiritus,,Alcohol de grano
-grainAlcoholDesc,items,Food,KgNone,消毒アルコール（grain Alcohol）。キャンプファイアにビーカー（beaker）があれば作れます。ｶﾞｿﾘﾝや救急キットの素材になります。\n [ Crafted in Campfire with a Beaker and Big Oven with a Kettle and Moonshine. ],Grain alcohol can be made in a beaker at a campfire. Useful for homemade gas and first aid kits.\n [ Crafted in Campfire with a Beaker and Big Oven with a Kettle and Moonshine. ],Spiritus kann in einem Messbecher am Lagerfeuer gefertigt werden. Nützlich für die Fertigung von Benzin und Verbandskasten.,,Se puede elaborar alcohol de grano en un matraz en una fogata. Muy útil para el gas casero y botiquines de primeros auxilios.
+grainAlcoholDesc,items,Food,KgNone,消毒アルコール（grain Alcohol）。キャンプファイアにビーカー（beaker）があれば作れます。ｶﾞｿﾘﾝや救急キットの素材になります。\n [ Crafted in Campfire with a Beaker and Big Oven with a Kettle and Moonshine. ],Grain alcohol can be made in a beaker at a campfire. Useful for homemade gas and first aid kits.\n [ Crafted in Campfire with a Beaker or in Big Oven with a Kettle or in the Moonshine still. ],Spiritus kann in einem Messbecher am Lagerfeuer gefertigt werden. Nützlich für die Fertigung von Benzin und Verbandskasten.,,Se puede elaborar alcohol de grano en un matraz en una fogata. Muy útil para el gas casero y botiquines de primeros auxilios.
 grilledMeat,items,Food,KgNone,Grilled Meat,Grilled Meat,Gegrilltes Wildbret,,Carne a la parrilla
 grilledMeatDesc,items,Food,EnChanged,これぞ肉！余分な脂が落ちた美味しい肉（grilled meat）。もあなたの満腹度と健康値を押し上げます。ゾンビに食べられないように注意しましょう。,"Meat! Meat on fire! Good! Nutritious, filling and will boost your wellness.","Fleisch! Fleisch auf Feuer! Gut! Nahrhaft, sättigend und erhöht dein Wohlbefinden.",,"¡Carne! ¡Carne cocinada! ¡Bien! Es nutritiva, te saciará y mejorará tu bienestar. Puede atraer zombis si la llevas encima."
 meatStew,items,Food,KgNone,Meat Stew,Meat Stew,Wildbreteintopf,,Estofado de carne
@@ -1490,7 +1490,7 @@ redTeaDesc,items,Food,KgNone,古代中華でも嗜まれたという神秘の紅
 shamSandwich,items,Food,KgNone,Old Sham Sandwich,Old Sham Sandwich,Altes Sham-Sandwich,,Sándwich de jamón viejo
 shamSandwichDesc,items,Food,KgNone,薄く焼いたサクサク抹茶クッキーとホワイトチョコレートの黄金比コラボスイーツ。なわけはなく、カビに覆われたサンドウィッチです。,A really old sham sandwich made by Shamway. It will take away the hunger but there's a risk that comes with it.,"Ein wirklich altes Sham-Sandwich von Shamway. Es macht satt, kommt aber mit einigen Risiken.",,"Un sándwich de jamón Shamway muy viejo. Te saciará el hambre, pero tiene su riesgo."
 vegetableStew,items,Food,KgNone,Vegetable Stew,Vegetable Stew,Gemüseeintopf,,Guisado de verduras
-vegetableStewDesc,items,Food,KgNone,野菜メインのシチュー（vegetable stew）。ウェイストランドに放り出されてもｶｰﾁｬﾝの言いつけを守って野菜を取る君は親孝行者だ。\nありがとう。ｶｰﾁｬﾝ。\n [ Campfire+Cooking PotかBig Oven+Cooking Wareクラフト ],Your mom always said eat your vegetables. Now's your chance to make her happy and guess what? They're good for you.\n [ Crafted in Campfire with a Cooking Pot and Big Oven with a Cooking Ware. ],"Deine Mutter hat dir immer gesagt, dass du dein Gemüse essen sollst. Das ist die Gelegenheit, sie glücklich zu machen. Und weißt du was? Es ist gut für dich.",,"Tu mamá siempre te decía que te comieras las verduras. ¡Ahora es tu oportunidad de hacerla feliz! Además, ¿sabes qué? ¡Te hacen bien!"
+vegetableStewDesc,items,Food,KgNone,野菜メインのシチュー（vegetable stew）。ウェイストランドに放り出されてもｶｰﾁｬﾝの言いつけを守って野菜を取る君は親孝行者だ。\nありがとう。ｶｰﾁｬﾝ。\n [ Campfire+Cooking PotかBig Oven+Cooking Wareクラフト ],Your mom always said eat your vegetables. Now's your chance to make her happy and guess what? They're good for you.\n [ Crafted in Campfire with a Cooking Pot and Big Oven with the Cooking Ware. ],"Deine Mutter hat dir immer gesagt, dass du dein Gemüse essen sollst. Das ist die Gelegenheit, sie glücklich zu machen. Und weißt du was? Es ist gut für dich.",,"Tu mamá siempre te decía que te comieras las verduras. ¡Ahora es tu oportunidad de hacerla feliz! Además, ¿sabes qué? ¡Te hacen bien!"
 blunderbuss,items,Gun,KgNone,Blunderbuss,Blunderbuss,Donnerbüchse,,Trabuco
 crossbow,items,Gun,KgNone,Crossbow,Crossbow,Armbrust,,Ballesta
 crossbowDesc,items,Gun,KgNone,クロスボウは木の弓より大きいダメージを対象に与えます。出血によるダメージも期待できます。,A crossbow does more damage than a wooden bow. Good for hunting and not making noise. Hold reload to use alternate ammo.,"Eine Armbrust verursacht mehr Schaden als ein Holzbogen. Eignet sich gut dazu, geräuschlos zu jagen. Nachladen gedrückt halten, um zwischen Munitionsarten zu wechseln.",,Una ballesta inflige más daño que un arco de madera. Es buena para cazar y no hacer ruido. Mantén presionado recargar para usar munición alternativa.
@@ -1498,22 +1498,22 @@ dynamite,items,Gun,EnChanged,Stick of Dynamite,Stick of Dynamite (Ammo),Dynamits
 dynamiteDesc,items,Gun,KgNone,投げると数秒後に爆発します。右クリックで着火し、左クリックでその方向に投げます。\n [ Workbenchクラフト ],A stick of dynamite can be lit with the secondary action & thrown with the primary action. The throwing part is very important.\n [ Crafted in Workbench. ],Eine Dynamitstange kann mit der sekundären Aktion gezündet und mit der primären Aktion geworfen werden. Der Teil mit dem Werfen ist besonders wichtig.,,"Se puede prender un cartucho de dinamita con la acción secundaria, y lanzarlo con la acción primaria. Es muy importante lanzarlo."
 flare,items,Gun,KgNone,Flare,Flare,Leuchtfackel,,Bengala
 gun44Magnum,items,Gun,KgNone,.44 Magnum,.44 Magnum,.44 Magnum,,Magnum 44
-gun44MagnumDesc,items,Gun,KgNone,最も強力で、最も大きい音を立ててしまうハンドガンの王様。\nゾンビのわめき声にもう怯える必要はありません。やれるもんならやってみな！\n [ 組み立てかNPCのクラフト ],The .44 Magnum is the king of handguns. It's the most powerful but makes the most noise. Wield this bad boy and make Clint proud.\n [ Crafted in assembly and crafter. ],"Die .44 Magnum ist die Königin aller Handfeuerwaffen. Sie verursacht am meisten Schaden, ist aber auch am lautesten. Zieh dieses Baby und mach Clint stolz.",,"La Magnum 44 es la reina de las pistolas. Es la más poderosa, pero también la más ruidosa. Empuña esta preciosidad y haz que Clint se sienta orgulloso."
+gun44MagnumDesc,items,Gun,KgNone,最も強力で、最も大きい音を立ててしまうハンドガンの王様。\nゾンビのわめき声にもう怯える必要はありません。やれるもんならやってみな！\n [ 組み立てかNPCのクラフト ],The .44 Magnum is the king of handguns. It's the most powerful but makes the most noise. Wield this bad boy and make Clint proud.\n [ Crafted by assembling parts and by Crafter NPC. ],"Die .44 Magnum ist die Königin aller Handfeuerwaffen. Sie verursacht am meisten Schaden, ist aber auch am lautesten. Zieh dieses Baby und mach Clint stolz.",,"La Magnum 44 es la reina de las pistolas. Es la más poderosa, pero también la más ruidosa. Empuña esta preciosidad y haz que Clint se sienta orgulloso."
 gunAK47,items,Gun,KgNone,AK-47 Assault Rifle,AK-47 Assault Rifle,AK-47 Sturmgewehr,,Rifle de asalto AK-47
-gunAK47Desc,items,Gun,KgNone,ワルでカッコイイこのアサルトライフルは組立てる価値があります。\n分解・組み立て・修理には設計図を読みましょう。\n [ 組み立てかNPCのクラフト ],This badass AK-47 Assault Rifle uses 7.62mm ammo. Can be re-assembled and repaired if you read the schematic.\n [ Crafted in assembly and crafter. ],"Das krasse AK-47 Sturmgewehr verwendet 7,62 mm Munition. Kann zusammengesetzt und repariert werden, wenn du den Bauplan gelesen hast.",,Este rudo rifle de asalto AK-47 usa munición de 7.62 mm. Se puede rearmar y reparar si lees el esquema.
+gunAK47Desc,items,Gun,KgNone,ワルでカッコイイこのアサルトライフルは組立てる価値があります。\n分解・組み立て・修理には設計図を読みましょう。\n [ 組み立てかNPCのクラフト ],This badass AK-47 Assault Rifle uses 7.62mm ammo. Can be re-assembled and repaired if you read the schematic.\n [ Crafted by assembling parts and by Crafter NPC. ],"Das krasse AK-47 Sturmgewehr verwendet 7,62 mm Munition. Kann zusammengesetzt und repariert werden, wenn du den Bauplan gelesen hast.",,Este rudo rifle de asalto AK-47 usa munición de 7.62 mm. Se puede rearmar y reparar si lees el esquema.
 gunHuntingRifle,items,Gun,KgNone,Hunting Rifle,Hunting Rifle,Jagdgewehr,,Rifle de caza
 gunHuntingRifleDesc,items,Gun,KgNone,農家で一般的なハンティングライフル。7.62mm弾を使用します。\n分解・組み立て・修理には設計図を読みましょう。,"This common farmer's hunting rifle uses 7.62mm ammo. Can be assembled, repaired and augmented once you've read the schematic.","Dieses gewöhnliches Jagdgewehr eines Bauern verwendet 7,62 mm Munition. Kann zusammengesetzt, repariert und verbessert werden, wenn du den Bauplan gelesen hast.",,"Este rifle de caza normal de granjero utiliza munición de 7,62 mm. Una vez que has leído el esquema, lo puedes armar, reparar y mejorar."
 gunMP5,items,Gun,KgNone,SMG,SMG,Maschinenpistole,,Metralleta
 gunPistol,items,Gun,KgNone,Pistol,Pistol,Pistole,,Revólver
-gunPistolDesc,items,Gun,KgNone,9mm弾のサイレンサー付きサブマシンガン。\n分解・組み立て・修理には設計図を読みましょう。\n [ 組み立てかNPCのクラフト ],A basic pistol. Uses 9mm ammo. Can be re-assembled and repaired if you read the pistol book.\n [ Crafted in assembly and crafter. ],"Eine einfache Pistole. Verwendet 9 mm Munition. Kann zusammengesetzt und repariert werden, wenn du das Buch „Pistolen“ gelesen hast.",,Un revólver básico. Utiliza munición de 9 mm. Se puede rearmar y reparar si has leído el libro de la pistola.
+gunPistolDesc,items,Gun,KgNone,9mm弾のサイレンサー付きサブマシンガン。\n分解・組み立て・修理には設計図を読みましょう。\n [ 組み立てかNPCのクラフト ],A basic pistol. Uses 9mm ammo. Can be re-assembled and repaired if you read the pistol book.\n [ Crafted by assembling parts and by Crafter NPC. ],"Eine einfache Pistole. Verwendet 9 mm Munition. Kann zusammengesetzt und repariert werden, wenn du das Buch „Pistolen“ gelesen hast.",,Un revólver básico. Utiliza munición de 9 mm. Se puede rearmar y reparar si has leído el libro de la pistola.
 gunPumpShotgun,items,Gun,KgNone,Shotgun,Shotgun,Schrotflinte,,Escopeta
-gunPumpShotgunDesc,items,Gun,KgNone,ショットガン（shotgun）。射程は短いですが、エイム無しで撃っても、ゾンビに致命的なダメージを与えます。ショットガン分解・組み立て・修理には設計図を読む必要があります。\n [ 組み立てかNPCのクラフト ],A long-barreled shotgun uses shells for ammo. Can be re-assembled and repaired if you read the Shotgun Schematic.\n [ Crafted in assembly and crafter. ],"Eine Schrotflinte mit langem Lauf verwendet Flintenmunition. Kann zusammengesetzt und repariert werden, wenn du den Bauplan für Schrotflinten gelesen hast.",,Una escopeta de largo alcance utiliza cartuchos como munición. Se puede rearmar y reparar si has leído el esquema de escopeta.
+gunPumpShotgunDesc,items,Gun,KgNone,ショットガン（shotgun）。射程は短いですが、エイム無しで撃っても、ゾンビに致命的なダメージを与えます。ショットガン分解・組み立て・修理には設計図を読む必要があります。\n [ 組み立てかNPCのクラフト ],A long-barreled shotgun uses shells for ammo. Can be re-assembled and repaired if you read the Shotgun Schematic.\n [ Crafted by assembling parts and by Crafter NPC. ],"Eine Schrotflinte mit langem Lauf verwendet Flintenmunition. Kann zusammengesetzt und repariert werden, wenn du den Bauplan für Schrotflinten gelesen hast.",,Una escopeta de largo alcance utiliza cartuchos como munición. Se puede rearmar y reparar si has leído el esquema de escopeta.
 gunRocketLauncher,items,Gun,KgNone,Rocket Launcher,Rocket Launcher,Raketenwerfer,,Lanzacohetes
-gunRocketLauncherDesc,items,Gun,KgNone,ケットランチャー（rocket launcher）は対象に致命的なダメージを与えます。強化された壁であっても無事では済まないでしょう。\n分解・組み立て・修理には設計図を読みましょう。\n [ Crafted in assembly. ],A Rocket Launcher shoots rocket propelled grenades. Can be re-assembled & repaired once you've read the Rocket Launcher Schematic.\n [ Crafted in assembly. ],"Ein Raketenwerfer feuert raketengetriebene Granaten ab. Kann zusammengesetzt und repariert werden, wenn du den Bauplan für Raketenwerfer gelesen hast.",,Un lanzacohetes que lanza granadas propulsadas por cohete. Se puede rearmar y reparar una vez que has leído el esquema de lanzacohetes.
+gunRocketLauncherDesc,items,Gun,KgNone,ケットランチャー（rocket launcher）は対象に致命的なダメージを与えます。強化された壁であっても無事では済まないでしょう。\n分解・組み立て・修理には設計図を読みましょう。\n [ Crafted in assembly. ],A Rocket Launcher shoots rocket propelled grenades. Can be re-assembled & repaired once you've read the Rocket Launcher Schematic.\n [ Crafted by assembling parts. ],"Ein Raketenwerfer feuert raketengetriebene Granaten ab. Kann zusammengesetzt und repariert werden, wenn du den Bauplan für Raketenwerfer gelesen hast.",,Un lanzacohetes que lanza granadas propulsadas por cohete. Se puede rearmar y reparar una vez que has leído el esquema de lanzacohetes.
 gunSawedOffPumpShotgun,items,Gun,KgNone,Sawed-off Shotgun,Sawed-off Shotgun,Abgesägte Schrotflinte,,Escopeta recortada
-gunSawedOffPumpShotgunDesc,items,Gun,KgNone,ソードオフショットガンはShotgun Shellを使う、拡散性に優れたショットガンです。\n分解・組み立て・修理には設計図を読みましょう。\n [ 組み立てかNPCのクラフト ],A sawed-off shotgun fires shotgun shells. Can be re-assembled and repaired once you've read the schematic.\n [ Crafted in assembly and crafter. ],"Eine abgesägte Schrotflinte feuert Flintenmunition ab. Kann zusammengesetzt und repariert werden, wenn du den Bauplan gelesen hast.",,Una escopeta recortada dispara cartuchos de escopeta. Se puede rearmar y reparar una vez que has leído el esquema.
+gunSawedOffPumpShotgunDesc,items,Gun,KgNone,ソードオフショットガンはShotgun Shellを使う、拡散性に優れたショットガンです。\n分解・組み立て・修理には設計図を読みましょう。\n [ 組み立てかNPCのクラフト ],A sawed-off shotgun fires shotgun shells. Can be re-assembled and repaired once you've read the schematic.\n [ Crafted by assembling parts and by Crafter NPC. ],"Eine abgesägte Schrotflinte feuert Flintenmunition ab. Kann zusammengesetzt und repariert werden, wenn du den Bauplan gelesen hast.",,Una escopeta recortada dispara cartuchos de escopeta. Se puede rearmar y reparar una vez que has leído el esquema.
 gunSniperRifle,,,,PSG-1 Rifle,PSG-1 Rifle,,,
-gunSniperRifleDesc,items,Gun,KgNone,狙撃銃（sniper rifle）。\n銃声はあるものの、聞こえない遠くからの精密射撃が可能です。\n分解・組み立て・修理には設計図を読みましょう。\n [ 組み立てかNPCのクラフト ],A sniper rifle uses 7.62mm ammo and has a scope for zooming. Can be re-assembled and repaired once you've read the schematic.\n [ Crafted in assembly and crafter. ],"Ein Scharfschützengewehr verwendet 7,62 mm Munition und hat ein Zielfernrohr, mit dem gezoomt werden kann. Kann zusammengesetzt und repariert werden, wenn du den Bauplan gelesen hast.",,"El rifle de francotirador utiliza munición de 7,62 mm y tiene una mira para enfocar. Se puede rearmar y reparar una vez que has leído el esquema."
+gunSniperRifleDesc,items,Gun,KgNone,狙撃銃（sniper rifle）。\n銃声はあるものの、聞こえない遠くからの精密射撃が可能です。\n分解・組み立て・修理には設計図を読みましょう。\n [ 組み立てかNPCのクラフト ],A sniper rifle uses 7.62mm ammo and has a scope for zooming. Can be re-assembled and repaired once you've read the schematic.\n [ Crafted by assembling parts and by Crafter NPC. ],"Ein Scharfschützengewehr verwendet 7,62 mm Munition und hat ein Zielfernrohr, mit dem gezoomt werden kann. Kann zusammengesetzt und repariert werden, wenn du den Bauplan gelesen hast.",,"El rifle de francotirador utiliza munición de 7,62 mm y tiene una mira para enfocar. Se puede rearmar y reparar una vez que has leído el esquema."
 pipeBomb,items,Gun,EnChanged,Pipe Bomb,Pipe Bomb (Ammo),Rohrbombe (Mun),,Bomba casera
 pipeBombDesc,items,Gun,KgNone,お手製手榴弾（pipe bomb)。右クリックで点火、左クリックで投げます。\n数秒後に爆発します。,"Make pipe bombs with gun powder, pipes & plant fibers. Light them with the secondary action & throw them with the primary action.","Fertige Rohrbomben mit Schießpulver, Rohren und Pflanzenfasern. Zünde sie mit der sekundären Aktion und wirf sie mit der primären Aktion.",,"Fabrica bombas caseras con pólvora, tuberías y fibra vegetal. Enciéndalas con la acción secundaria, y lánzalas con la acción primaria."
 woodenBow,items,Gun,KgNone,Wooden Bow,Wooden Bow,Holzbogen,,Arco de madera
@@ -2758,7 +2758,7 @@ xuiInspect,UI,XUI,KgNone,使い方,INSPECT,ANSEHEN,,INSPECCIONAR
 xuiInventory,UI,XUI,KgNone,持ち物,INVENTORY,INVENTAR,,INVENTARIO
 xuiInventoryFull,UI,XUI,KgNone,"No room in inventory, crafting has been halted until space is cleared.","No room in inventory, crafting has been halted until space is cleared.","Kein Platz im Inventar, das Fertigen wurde gestoppt, bis du Platz geschaffen hast.",,"No hay espacio en el inventario, no puedes fabricar hasta que no tengas espacio libre."
 xuiInventoryFullDropping,UI,XUI,KgNone,Inventory is full. Dropping items on ground.,Inventory is full. Dropping items on ground.,Inventar ist voll. Gegenstände werden auf den Boden gelegt.,,El inventario está lleno. Soltando objetos al suelo.
-xuiInventoryFullForPickup,UI,XUI,KgNone,Inventory is full.,Inventory is full.,Inventar ist voll.,,El inventario está lleno.
+xuiInventoryFullForPickup,UI,XUI,KgNone,Inventory is full.,Inventory is full.,Inventar ist voll.,,El inventario está lleno. 
 xuiItemsCrafted,UI,XUI,KgNone,クラフト数,ITEMS CRAFTED,GEGENSTÄNDE GEFERTIGT,,OBJETOS FABRICADOS
 xuiKilometers,UI,XUI,KgNone,あとKm,Kilometers,Kilometer,,Kilómetros
 xuiKM,UI,XUI,KgNone,KM,KM,KM,,KM
@@ -4966,7 +4966,7 @@ leadMusketBalls,,,,Old Musket Balls,Old Musket Balls,,,
 leadMusketBallsDesc,,,,これは鉛でできた「大昔のマスケット弾」？[66ff00]Blunderbuss[-]に込めれば使えるんでしょうか？,Old lead MusketBalls? I wonder if these work in a blunderbuss?,,,
 leadSolder,,,,Solder,Solder,,,
 leadSolderDesc,,,,鉛の「はんだ」。えっ、鉛じゃないって？50%が鉛なら電子部品に使えるさ、いいね？,"Lead solder. Well 50% lead anyway, maybe useful in making electronics?",,,
-leadSoldier,,,,Lead Soldier Toy,Lead Solder Toy,,,
+leadSoldier,,,,Lead Soldier Toy,Lead Soldier Toy,,,
 leadSoldierDesc,,,,昔の「戦士の鉛人形」。一体全体誰が子供用のおもちゃを鉛で作ろうなんて言ったんだい？,An old lead toy soldier. Who ever thought making children's toys out of lead was a good idea?,,,
 brassHinge,,,,Door Hinge,Door Hinge,,,
 brassHingeDesc,,,,真鍮の「ちょうつがい」,A brass door hinge.,,,
@@ -4996,7 +4996,7 @@ woodYoyo,,,,Wood Yoyo,Wood Yoyo,,,
 woodYoyoDesc,,,,「木のヨーヨー」。子供のころに遊んだみたいに・・・、ありゃりゃ、これ壊れてるじゃないか。,A wood Yoyo. Just like I had when I was a kid.....too bad it seems broken.,,,
 paperPlayingCards,,,,Playing Cards,Playing Cards,,,
 paperPlayingCardsDesc,,,,何枚か折れ曲がった「トランプ」。何枚か足りないなぁ。,A few bent playing cards. Need some more for a complete set.,,,
-paperNews,,,,Old NewsPaper,Old NewsPaper,,,
+paperNews,,,,Old NewsPaper,Old NewsPaper,,, 
 paperNewsDesc,,,,「いつかの新聞」。思えばひどい世界になったものだ。,A old newspaper. And I though things were bad back then.,,,
 paperToilet,,,,Old Roll of Toilet Paper,Old Roll of Toilet Paper,,,
 paperToiletDesc,,,,「古いトイレットペーパーのロール」。このゴミは何の役に立つかな？,A roll of toilet paper. How is this junk?,,,
@@ -5004,97 +5004,97 @@ paperGoggles,,,,Goggles,Goggles,,,
 paperGogglesDesc,,,,グーグル「ゴーグル」。これは本当に使い道がないぞ・・・。,Google Goggles. Not much point to these now....,,,
 paperMatches,,,,Wet Paper Matches,Wet Paper Matches,,,
 paperMatchesDesc,,,,「ペーパーマッチ」だ！あぁ、濡れてて使えないや・・・。,"Matches! Aww, too bad they are ruined.",,,
-clothTeddyBear,,,,Dirty Teddy Bear,Dirty Teddy Bear,,,
+clothTeddyBear,,,,Dirty Teddy Bear,Dirty Teddy Bear,,, 
 clothTeddyBearDesc,,,,綿詰めの「汚れたテディベア」。少し汚れてほつれていますが、ほんのちょっとです。うーん、Fallout3に出てたやつにちょっと似てる気がする。,"A stuffed teddy bear. A little dirty and roughed up but only cosmetic scars. Hummmmm, looks a little like the one from Fallout3.",,,
-clothRags,,,,Old Rags,Old Rags,,,
+clothRags,,,,Old Rags,Old Rags,,,  
 clothRagsDesc,,,,汚れた「古い布切れ」。があああ、良いもの見つからないなぁ。,"Dirty cloth rags. Bah, I never find good stuff.",,,
-clothRug,,,,Old Rug,Old Rug,,,
+clothRug,,,,Old Rug,Old Rug,,,  
 clothRugDesc,,,,「古い絨毯」。これはいい玄関マットになりそうだ。ゲームに埋め込む方法が分かれば・・・だけどね？,An old cloth rug. This might make a nice welcome mat if I could only figure out how to make Unity assets...,,,
-clothOldBlanket,,,,Old Blanket,Old Blanket,,,
+clothOldBlanket,,,,Old Blanket,Old Blanket,,,  
 clothOldBlanketDesc,,,,「使い古しのブランケット」。PEANUTSでライナスがこんなの持ってましたね。,A worn old blanket. Kinda like the one Linus van Pelt carries.,,,
-clothOldShoe,,,,Old Slipper,Old Slipper,,,
+clothOldShoe,,,,Old Slipper,Old Slipper,,,  
 clothOldShoeDesc,,,,こんな古い「スリッパ」の使い道はありますかね？,What good is one old slipper?.,,,
-clothChewedDogCollar,,,,Chewed up DogCollar,Chewed up DogCollar,,,
+clothChewedDogCollar,,,,Chewed up DogCollar,Chewed up DogCollar,,,  
 clothChewedDogCollarDesc,,,,「噛み切られた犬の首輪」。これが犬ごと噛み切られていないことを祈るよ・・・。,I hope this collar wasn't on the dog when it got chewed on.....,,,
 plasticCds,,,,CD's,CD's,,,
 plasticCdsDesc,,,,「コンパクトディスク」。CDプレイヤー無しじゃ意味ないね。,Compact Disks. Not much use without a player.,,,
-plasticSoldier,,,,Plastic Soldier Toy,Plastic Soldier Toy,,,
+plasticSoldier,,,,Plastic Soldier Toy,Plastic Soldier Toy,,,  
 plasticSoldierDesc,,,,小さな「プラスチックの兵士のおもちゃ」,A small plastic toy soldier.,,,
 plasticLegos,,,,Legos,Legos,,,
 plasticLegosHey,,,,「レゴブロック」。やあ、子供の時はいつも遊んでたものさ。,"Hey, I used to play with these all the time when I was a kid.",,,
-plasticCondom,,,,Condoms,Condoms,,,
+plasticCondom,,,,Condoms,Condoms,,,  
 plasticCondomDesc,,,,「コンドーム」。えっと・・・、バンディットと使ってみる？,"Well, these might be useful if I find a friendly bandit.",,,
-plasticHairBrush,,,,HairBrush,HairBrush,,,
+plasticHairBrush,,,,HairBrush,HairBrush,,,  
 plasticHairBrushDesc,,,,「ヘアブラシ」。今や大した使い道はないけど。,Not much need for this now.,,,
-plasticFrisbee,,,,Old Frisbee,Old Frisbee,,,
+plasticFrisbee,,,,Old Frisbee,Old Frisbee,,,  
 plasticFrisbeeDesc,,,,「古いフリスビー」。投げ合うような友達がいれば楽しいかもね。,A Frisbee would be fun if I had someone to play catch with.,,,
-plasticKite,,,,Broken Kite,Broken Kite,,,
+plasticKite,,,,Broken Kite,Broken Kite,,,  
 plasticKiteDesc,,,,小さな「壊れた凧」,A small kite.,,,
-plasticToothBrush,,,,Old ToothBrush,Old ToothBrush,,,
+plasticToothBrush,,,,Old ToothBrush,Old ToothBrush,,,  
 plasticToothBrushDesc,,,,「古い歯ブラシ」歯科衛生は大事だよ！・・・、もうどこにも歯医者はないからね？,Dental hygiene is serious business without dentists alive!,,,
-plasticLighter,,,,Plastic Lighter,Plastic Lighter,,,
+plasticLighter,,,,Plastic Lighter,Plastic Lighter,,,  
 plasticLighterDesc,,,,「プラスチックライター」。オイル切れみたいだ、残念だね。,Too bad its out of fuel.....,,,
-plasticShoppingBag,,,,Shopping Bag,Shopping Bag,,,
+plasticShoppingBag,,,,Shopping Bag,Shopping Bag,,,  
 plasticShoppingBagDesc,,,,小さな「買い物袋」ほとんど破けて伸びきってるけどね。,"Small shopping bags, mostly ripped and torn.",,,
-electronic3ds,,,,Broken 3DS,Broken 3DS,,,
+electronic3ds,,,,Broken 3DS,Broken 3DS,,,  
 electronic3dsDesc,,,,「壊れた[sup]NINTENDO[/sup][e62020]3[-]DS」」。うわぁ、バッテリー切れだ。,"A Nintendo 3DS. Bah, the battery is dead.",,,
-electronicCellPhone,,,,Cell Phone,Cell Phone,,,
+electronicCellPhone,,,,Cell Phone,Cell Phone,,,  
 electronicCellPhoneDesc,,,,壊れた「携帯電話」。誰に電話を掛けるつもりだい？,A busted cellphone. Who ya gonna call anyway?,,,
-electronicClockRadio,,,,Clock Radio,Clock Radio,,,
+electronicClockRadio,,,,Clock Radio,Clock Radio,,,  
 electronicClockRadioDesc,,,,壊れた「ラジオ時計」もはや早起きして仕事に行く必要は無いですけどね。,A broken clock radio. No need to wakeup early for work now though.,,,
-electronicBrokenIPod,,,,Broken IPod,Broken IPod,,,
+electronicBrokenIPod,,,,Broken IPod,Broken IPod,,,  
 electronicBrokenIPodDesc,,,,「壊れたIPod」,A broken IPod.,,,
-electronicBrokenIPad,,,,Broken IPad,Broken IPad,,,
+electronicBrokenIPad,,,,Broken IPad,Broken IPad,,,  
 electronicBrokenIPadDesc,,,,「壊れたIPad」,A broken IPad.,,,
-electronicBrokenLapTop,,,,Broken LapTop,Broken LapTop,,,
+electronicBrokenLapTop,,,,Broken LapTop,Broken LapTop,,,  
 electronicBrokenLapTopDesc,,,,「壊れたノートパソコン」,A broken laptop.,,,
-electricShaver,,,,Electric Shaver,Electric Shaver,,,
+electricShaver,,,,Electric Shaver,Electric Shaver,,,  
 electricShaverDesc,,,,さびた「電気シェーバー」。バッテリーが抜けてますね、まだナイフで剃らないといけないね。,"A rusty electric shaver. The battery is missing, guess I will keep shaving with my knife.",,,
-electricToyMotor,,,,Toy Motor,Toy Motor,,,
+electricToyMotor,,,,Toy Motor,Toy Motor,,, 
 electricToyMotorDesc,,,,小さな「おもちゃ用モーター」です。これはいい部品につかえそう。,A small toy motor. Might be good for parts.,,,
-electricToaster,,,,Toaster,Toaster,,,
+electricToaster,,,,Toaster,Toaster,,,  
 electricToasterDesc,,,,昔の壊れた「トースター」。何か使えるパーツがあるかもね。,An old broken toaster. Might have some useful parts inside.,,,
-electricVibrator,,,,Vibrator,Vibrator,,,
+electricVibrator,,,,Vibrator,Vibrator,,,  
 electricVibratorDesc,,,,古い壊れた「バイブレーター」。一体誰がこんなになるまで使ったんだ・・・。,An old broken vibrator. Probably from overuse...,,,
-electricBlender,,,,Electric Blender,Electric Blender,,,
+electricBlender,,,,Electric Blender,Electric Blender,,,  
 electricBlenderDesc,,,,古い壊れた「電動ミキサー」。何か使えるパーツがあるかもね。,An old broken blender. Might have some useful parts inside.,,,
-mechanicalKeyPad,,,,Broken Key Pad,Broken Key Pad,,,
+mechanicalKeyPad,,,,Broken Key Pad,Broken Key Pad,,,  
 mechanicalKeyPadDesc,,,,「壊れたキーパッド」。組み合わせは何かな？,A mechanical keypad. I wonder what the combination was?,,,
-mechanicalOldWatch,,,,Old Pocketwatch,Old Pocketwatch,,,
+mechanicalOldWatch,,,,Old Pocketwatch,Old Pocketwatch,,,  
 mechanicalOldWatchDesc,,,,壊れた「懐中時計」。ふむ、正午で止まっているようだ。,"An old broken pocketwatch. Hum, the watch stopped at noon.",,,
-mechanicalTypeWriter,,,,Old Typewriter,Old Typewriter,,,
+mechanicalTypeWriter,,,,Old Typewriter,Old Typewriter,,,  
 mechanicalTypeWriterDesc,,,,「壊れたタイプライター」テテーン！紙と時間はなら有りますし、あの小説の続きを自分で書きましょうよ。,"A broken typewriter. Darn, and I have the time and paper I need to write that novel now too.",,,
-rubberDoll,,,,Strange Dolly,Strange Dolly,,,
+rubberDoll,,,,Strange Dolly,Strange Dolly,,,  
 rubberDollDesc,,,,小さな「ゴム人形」ゾンビみたいな変な見た目だねぇ・・・。,A small rubber dolly. Looks strangly like a zombie.  That's just wrong.,,,
-rubberDuck,,,,Rubber Duckie,Rubber Duckie,,,
+rubberDuck,,,,Rubber Duckie,Rubber Duckie,,,  
 rubberDuckDesc,,,,小さな「ゴムのアヒル」。風呂が見つかったら浮かべようか・・・。,"A small rubber duckie. Rubber duckie, your so fine..... Gotta find a bathtub soon!",,,
-rubberChicken,,,,Rubber Chicken,Rubber Chicken,,,
+rubberChicken,,,,Rubber Chicken,Rubber Chicken,,,  
 rubberChickenDesc,,,,「ゴムのニワトリ」。へ？マジで？ゴムのニワトリ？,A rubber chicken. Ha! Seriously? A rubber chicken?,,,
-rubberBands,,,,Rubber Bands,Rubber Bands,,,
+rubberBands,,,,Rubber Bands,Rubber Bands,,,  
 rubberBandsDesc,,,,「ゴムバンド」いつも役に立ってた気がする。何に使ったか思い出せないけど。,"Rubber bands. These always came in handy, just can't remember how.",,,
-rubberOldRainBoot,,,,Old RainBoot,Old RainBoot,,,
+rubberOldRainBoot,,,,Old RainBoot,Old RainBoot,,,  
 rubberOldRainBootDesc,,,,「古い長靴」。片足だけじゃ意味がない。もうひとつ釣り上げないとな。,One boot isn't going to help much.  Maybe I will catch the other fishing someday.,,,
-steelHinge,,,,Strong Hinge,Strong Hinge,,,
+steelHinge,,,,Strong Hinge,Strong Hinge,,,  
 steelHingeDesc,,,,しっかりしたスチールの「ちょうつがい」。ドアをかけ直す日が来れば、役に立つのかな。,A sturdy steel hinge. Probably be useful someday hanging vault doors but who knows...,,,
-steelSpoon,,,,Spoon,Spoon,,,
+steelSpoon,,,,Spoon,Spoon,,,  
 steelSpoonDesc,,,,「スチールスプーン」。いぇあ、これで動物みたいに直飲みしなくていいぞ！,A steel spoon. yea! No more drinking soup from a can like an animal.,,,
-steelBracelet,,,,Medical Bracelet,Medical Bracelet,,,
+steelBracelet,,,,Medical Bracelet,Medical Bracelet,,,  
 steelBraceletDesc,,,,小さなスチールの「投薬注意タグブレスレット」。これを付けても何の助けにもなりませんけどね。,A small steel medical bracelet. Probably didn't help the gal who was wearing it at the end.,,,
-steelDogBowl,,,,Dog Bowl,Dog Bowl,,,
+steelDogBowl,,,,Dog Bowl,Dog Bowl,,,  
 steelDogBowlDesc,,,,スチールの「犬用エサ入れ」。それで犬はどこに・・・？,A steel dog bowl...I wonder where the dog is?...,,,
-steelFork,,,,Steel Fork,Steel Fork,,,
+steelFork,,,,Steel Fork,Steel Fork,,,  
 steelForkDesc,,,,「スチールフォーク」。いぇあ、これで手づかみで食べなくていいぞ！,A steel fork. yea! No more eating with my hands.,,,
-steelButterKnife,,,,Butter Knife,Butter Knife,,,
+steelButterKnife,,,,Butter Knife,Butter Knife,,,  
 steelButterKnifeDesc,,,,バターが無い世界の小さなスチール「バターナイフ」,A small steel butter knife for a world without butter.,,,
-glassPurfume,,,,Purfume Bottle,Purfume Bottle,,,
+glassPurfume,,,,Purfume Bottle,Purfume Bottle,,,  
 glassPurfumeDesc,,,,小さな空の「香水ビン」。きつめのライラックの花のにおいがまだ残ってます。,A small empty perfume bottle.  Still has a faint smell of lilacs.,,,
-glassCompact,,,,Compact,Compact,,,
+glassCompact,,,,Compact,Compact,,,  
 glassCompactDesc,,,,化粧用のガラス「コンパクト」。今や使い道はありませんが。,A small glass makeup compact.  Not much use now.,,,
-glassFrame,,,,Picture Frame,Picture Frame,,,
+glassFrame,,,,Picture Frame,Picture Frame,,,  
 glassFrameDesc,,,,小さな「写真フレーム」。おい、あの女ゾンビなんていいんじゃない？,A small photo frame.  Man that zombie chick looks nice!,,,
-glassEye,,,,Glass Eye,Glass Eye,,,
+glassEye,,,,Glass Eye,Glass Eye,,,  
 glassEyeDesc,,,,小さな「ガラスの目。グワアアアア。,A small glass eye.  Ewwwwwwww.,,,
-glassBong,,,,Glass Bong,Glass Bong,,,
+glassBong,,,,Glass Bong,Glass Bong,,,  
 glassBongDesc,,,,小さな「ガラス配管」何か詰めておきましょうか。,A small Bong pipe.  Time to find something to put in it!,,,
 salvagedSawBat,items,Melee,KgNone,salvagedSawBat,salvagedSawBat,,,
 salvagedSawBatDesc,items,Melee,New,野球バットと回転のこぎりを組み合わせた「ソーバット」です。ゾンビを切り刻むのに最高ですよ。,The sawbat is a mashup of a baseball bat and a rotating sawblade.  Very effective at carving up the zombies\n [ Crafted in Workbench. ],,,
@@ -5854,11 +5854,11 @@ ShutterDoor,,,,Horizontal Shutter Door,Horizontal Shutter Door,,,
 ShutterDoorDesc,,,,仕事用の「上下シャッター」です。(2x3サイズ),Sliding door for your business. (Size: 2x3)\n [ Crafted in Workbench. ],,,
 ShutterDoorV,,,,Shutter Door,Shutter Door,,,
 ShutterDoorVDesc,,,,仕事用の「シャッター」です。(2x3サイズ),Sliding door for your business. (Size: 3x2)\n [ Crafted in Workbench. ],,,
-WeaponWorkbenchFlyer,,,,銃器作業台使い方指南書,Weapon Workbench User Manual,,,
+WeaponWorkbenchFlyer,,,,銃器作業台使い方指南書,Weapon Workbench User Manual,,,	
 WeaponWorkbenchFlyerDesc,,,,「銃器作業台」は組み立て・解体・修理に使う作業台です。\n作業台を手に入れるまではこれらの操作ができません。,"The Weapon Workbench is used to assemble, disassemble and repair fire arms\nThose operations are not possible unless you use this station.",,,
-powerCore,,,,Power Core,Power Core,,,
+powerCore,,,,Power Core,Power Core,,,	
 powerCoreDesc,,,,軍用の「パワーセル」です。[66ff00]laser swords[-]や[66ff00]exoskeletons[-]の動力源として使います。一つで容量を完全に満たすことができます。,A military grade power core. Can be used to power [66ff00]laser swords[ffffff] and [66ff00]exoskeletons[ffffff]\n [ Crafted in Big Workbench with a X-Rad Gloves. ],,,
-lightsword,,,,Laser Sword,Laser Sword,,,
+lightsword,,,,Laser Sword,Laser Sword,,,	
 lightswordDesc,,,,軍用「レーザーカッター」です。障害物を迅速に切るために作られ、クローンの戦闘と医療で使われるようになりました。[66ff00]power cores[-]を使って動力を補給します。,"A military laser cutter. Originally created to quickly cut through obstacles, it soon became commonly used as a weapon in close combat emergency situations. Powered with military grade [66ff00]power cores[ffffff].",,,
 exoSuitDesc,,,,あなたはパワードスーツを完全装備しました。[43b3ae]速度[-]と[43b3ae]スタミナ[-]に補正がかかります。[66ff00]重装備[-]を扱えるようになり、動力がある限り放射線ダメージを軽減します。 [e62020]Power Cores[-]を使って動力を補充します。,You're wearing a full Exoskeleton. It grants you [43b3ae]speed[ffffff] and [43b3ae]stamina[ffffff] bonus. You can wear a [66ff00]heavy weaponry[ffffff] and radiation damage will be fully mitigated while exosuit is powered. Power it up by using [e62020]Power Cores[ffffff].,,,
 exoArmorGroupDesc,,,,軍用[66ff00]パワードスーツ[-]の部品。5つのパーツを見つければ、最高なおもちゃが手に入るぞ!!本来の能力を発揮するには[e62020]Power Core[-]が必要です。,"Part of a military [66ff00]exoskeleton suit[ffffff]. If you can find all 5 parts, you'll have a new toy!",,,
@@ -6059,39 +6059,39 @@ mp7Desc,,,,Heckler & Koch MP[sub]7[/sub]はドイツの個人防衛火器( PDW )
 stung,,,,ハチ刺され,Bee Sting,,,
 stungDesc,,,,ハチに刺されました。[e62020]痛み止めや虫刺され薬[ffffff]で治療しましょう。,You've been stung by bees. Take care of it [e62020]using any painkillers or insect bite antidote[ffffff],,,
 stungToolTip,,,,Bee Sting,Bee Sting,,,
-toyBoxAction,,,,Action Toys Box,Action Toys Box,,,
+toyBoxAction,,,,Action Toys Box,Action Toys Box,,,  
 toyBoxActionDesc,,,,アクションフィギュアでいっぱいのおもちゃ箱,A box filled with action toys!,,,
-toyBoxFun,,,,Fun Toys Box,Fun Toys Box,,,
+toyBoxFun,,,,Fun Toys Box,Fun Toys Box,,,  
 toyBoxFunDesc,,,,カラフルなおもちゃでいっぱいのおもちゃ箱,A box filled with fun toys!,,,
 Vomit,,,,グワアア!気持ち悪い!,AAUGH! I feel sick!,,,
 VomitDesc,,,,[66ff00]Mortelentusゾンビ[-]の視界歪曲で気分が悪いです。,The disgusting sight of a Mortelentus zombie made you sick!,,,
 vomitTooltip,,,,AAUGH! I feel sick!,AAUGH! I feel sick!,,,
-glassPane,,,,Glass Plates,Glass Plates,,,
+glassPane,,,,Glass Plates,Glass Plates,,,  
 glassPaneDesc,,,,コーティング済み「ガラス板」。[e62020]Solar Cell[-]大量生産のめどは立った・・・。,"Coated glass plates, ready to use for the manufacturing of solar cells",,,
-pendulum,,,,Pedulum,Pedulum,,,
+pendulum,,,,Pedulum,Pedulum,,,  
 pendulumDesc,,,,「ペンデュラムブレード」思い付きで作った電気式罠です。巨大な刃を振り子のように振り回します。\n [ Workbenchクラフト ],Electrical contraption which holds a large blade in the shape of a pendulum.\n [ Crafted in Workbench. ],,,
-oreScanner,,,,Ore Scanner,Ore Scanner,,,
+oreScanner,,,,Ore Scanner,Ore Scanner,,,  
 oreScannerDesc,,,,「鉱石スキャナー」この電気機器はあなたの真下岩盤までの鉱石を探知します。ただし水平方向は3mの範囲です。,This electronic device will scan for ore directly under you down to bedrock in a radius of 3 meters.,,,
-praseodymiumFragment,,,,Praseodymium Fragment,Praseodymium Fragment,,,
+praseodymiumFragment,,,,Praseodymium Fragment,Praseodymium Fragment,,,  
 praseodymiumFragmentDesc,,,,「プラセオジム鉱」は自然界では貴重な鉱石で、剛性の高い金属を作るのに使われます。,Praseodymium is a natural rare ore that can be used to create high-strength metals,,,
-lanthanumFragment,,,,Lanthanum Fragment,Lanthanum Fragment,,,
+lanthanumFragment,,,,Lanthanum Fragment,Lanthanum Fragment,,,  
 lanthanumFragmentDesc,,,,「ランタン鉱」は光の屈折作用に優れていて、工学機器の部品には完璧です。,"Lanthanum light refraction properties are impressive, making them perfect for optical processes",,,
-neodymiumFragment,,,,Neodymium Fragment,Neodymium Fragment,,,
+neodymiumFragment,,,,Neodymium Fragment,Neodymium Fragment,,,  
 neodymiumFragmentDesc,,,,「ネオジウム磁鉱」は最強の磁鉱石であり、高等技術の武器には当たり前のように使われるものです。,"Neodymium magnets are the strongest, and are usually used in high tech weaponry",,,
-rawLarimar,,,,Larimar Gem,Larimar Gem,,,
+rawLarimar,,,,Larimar Gem,Larimar Gem,,,  
 rawLarimarDesc,,,,「ラリマーの宝玉」はペクトライト鉱の中でもとても貴重な青色の宝石で、鮮明に光を一点に集めます。,Larimar Gem is a very rare blue variety of the mineral pectolite and has impressive light concentration properties,,,
-rawBenitoite,,,,Benitoite Crystal,Benitoite Crystal,,,
+rawBenitoite,,,,Benitoite Crystal,Benitoite Crystal,,,  
 rawBenitoiteDesc,,,,「ベニト石の結晶」は大変貴重です。ベニト石で覆われた表面は傷ひとつなくなり、武器の攻撃力を上げるのに使えます。,"Benitoite Crystals are very rare. Benitoite covered surfaces are extreamly clean, and it can be used to improve weapons damage to entities",,,
-rawHessonite,,,,Hessonite Crystal,Hessonite Crystal,,,
+rawHessonite,,,,Hessonite Crystal,Hessonite Crystal,,,  
 rawHessoniteDesc,,,,「ザクロ石の結晶」は大変貴重です。ザクロ石は強く、流線形の表面を持っており、武器の対物ダメージを上げるには完璧な素材です。,Hessonite Crystals are very rare. Hessonite strong and wavy surface is perfect to increase weapons damage to blocks,,,
-rawRuby,,,,Ruby Crystal,Ruby Crystal,,,
+rawRuby,,,,Ruby Crystal,Ruby Crystal,,,  
 rawRubyDesc,,,,「ルビーの結晶」はレーザー工学によって重要性は失われたようですが、武器の対物ダメージを上げるのに使えます。,"Ruby Crystals may have lost its importance in the laser industry, but they can still be used to improve weapons damage to blocks",,,
-rawPainite,,,,Painite Crystal,Painite Crystal,,,
+rawPainite,,,,Painite Crystal,Painite Crystal,,,  
 rawPainiteDesc,,,,「ペイン石の結晶」は大変貴重です。その特性は武器の攻撃力を上げるものです。,Painite Crystals are very rare. Painite properties make it useful to increase weapons damage to entities,,,
 freezingStomp,,,,Freezing Stomp,Freezing Stomp,,,
 freezingStompDesc,,,,あなたはあの忌々しい雪男に凍らされてしまいました。,You've been frozen by an abominable snow man.,,,
 freezingStompToolTip,,,,Freezing Stomp,Freezing Stomp,,,
-xmasGift,,,,Christmas Present,Christmas Present,,,
+xmasGift,,,,Christmas Present,Christmas Present,,,  
 xmasGiftDesc,,,,サンタのくれた「プレゼント」。中身はなんだろうね！,Santa gave you a present. I wonder what it is!,,,
 ControlBox,,,,Miner Control Box,Miner Control Box,,,
 ControlBoxDesc,,,,この一級品の操作盤は自動掘削機の操作に使えます。\n[ Science Workstationクラフト ],This top notch control box is used to control miners.\n [ Crafted in Science Workstation. ],,,
@@ -6138,24 +6138,26 @@ woodShinglesCNRWedgedFiller,,,,Wood Shingles Corner Filler,Wood Shingles Corner 
 --------Manual Workstation--------,,,,,,,,
 smithHammerDesc,,,,「鍛冶師のハンマー」は振り回しやすい中型ハンマーです。また、[66ff00]Big Anvil[-]にセットすることで一部のクラフトを開放します。,Smith Hammer,,,
 --------Power--------,,,,,,,,
-~~~~Powered Workstation~~~~,,,,,,,,
-~~~~Heat Power~~~~,,,,,,,,
-~~~~Electric Power~~~~,,,,,,,,
-~~~~Gas Power~~~~,,,,,,,,
-~~~~Wires~~~~,,,,,,,,
-~~~~Power Ingredient~~~~,,,,,,,,
+toys,,,,Toys,,,,
+~~~~~~~~Powered Workstation~~~~~~~~,,,,,,,,
+~~~~~~~~Heat Power~~~~~~~~,,,,,,,,
+~~~~~~~~Electric Power~~~~~~~~,,,,,,,,
+~~~~~~~~Gas Power~~~~~~~~,,,,,,,,
+~~~~~~~~Wires~~~~~~~~,,,,,,,,
+~~~~~~~~Power Ingredient~~~~~~~~,,,,,,,,
 sheave,,,,Sheave,,,,
-~~~~Trap~~~~,,,,,,,,
+~~~~~~~~Trap~~~~~~~~,,,,,,,,
+--------Miner--------,,,,,,,,
 ========FOOD========,,,,,,,,
 --------Fishing--------,,,,,,,,
-~~~~Fishing Skill~~~~,,,,,,,,
-~~~~Lure~~~~,,,,,,,,
-~~~~Fishing Food~~~~,,,,,,,,
+~~~~~~~~Fishing Skill~~~~~~~~,,,,,,,,
+~~~~~~~~Lure~~~~~~~~,,,,,,,,
+~~~~~~~~Fishing Food~~~~~~~~,,,,,,,,
 rudFish,,,,Rud Fish,Rud Fish,,,
 rudFishDesc,,,,コイの仲間の「ラッド」です。まな板に置いて[66ff00]Hunting Knife[-]で捌きましょう。,Common fish. Place it on the table and mince using [66ff00]Hunting Knife[-].,,,
 --------Farming--------,,,,,,,,
 --------Husbandry--------,,,,,,,,
-~~~~Chicken and Rabbit~~~~,,,,,,,,
+~~~~~~~~Chicken and Rabbit~~~~~~~~,,,,,,,,
 --------Spoilage--------,,,,,,,,
 --------Cooking--------,,,,,,,,
 goodFood,,,,健康的食生活,,,,
@@ -6227,14 +6229,14 @@ crazy,,,,Crazy,心労,,,
 mad,,,,Mad,狂気,,,
 insane,,,,Insane,発狂,,,
 --------Radiation--------,,,,,,,,
-~~~~Ex-Rad~~~~,,,,,,,,
+~~~~~~~~Ex-Rad~~~~~~~~,,,,,,,,
 uranium,,,,Uranium,Uranium,,,
-~~~~Poisonous~~~~,,,,,,,,
+~~~~~~~~Poisonous~~~~~~~~,,,,,,,,
 ========MATES========,,,,,,,,
 --------Pet--------,,,,,,,,
-~~~~Pet Item~~~~,,,,,,,,
-~~~~Wildlife Pet~~~~,,,,,,,,
-~~~~Albino Pet~~~~,,,,,,,,
+~~~~~~~~Pet Item~~~~~~~~,,,,,,,,
+~~~~~~~~Wildlife Pet~~~~~~~~,,,,,,,,
+~~~~~~~~Albino Pet~~~~~~~~,,,,,,,,
 --------Colony--------,,,,,,,,
 ========WEAPONS========,,,,,,,,
 --------Melee--------,,,,,,,,
@@ -6249,11 +6251,15 @@ nailShotgun_receiver,,,,Nail Shotgun Receiver,,,,
 nailShotgun_parts,,,,Nail Shotgun Parts,,,,
 nailShotgun_barrelShort,,,,Nail Shotgun Barrel,,,,
 --------Modern Weapon--------,,,,,,,,
+ksr,,,,KSR-29,,,,
+mp7,,,,H&K MP7,,,,
 --------Turret--------,,,,,,,,
 turret,,,,銃座,,,,
 --------Heavy Weapon--------,,,,,,,,
 --------Attachment--------,,,,,,,,
+--------Exo Update--------,,,,,,,,
 ========MISC========,,,,,,,,
+--------Junk--------,,,,,,,,
 --------Entity Name Key--------,,,,,,,,
 --------Additional Armor & Cloth,,,,,,,,
 steelPlateDesc,,,,強力な「鋼の板」です。[43b3ae]Armored Plates[-]や[66ff00]Steel Armor[-]を作るのに使います。,"Strong steel plate. You can use these plates to make [43b3ae]Armored Plates[-], required to craft [66ff00]Steel Armor[-].",,,
@@ -6282,11 +6288,8 @@ xuiForgestoneInfoPanelText,,,,【石器作業台】\n\n単純な構造の改造�
 ttCrafter,,,,このレシピは熟練した職人にしか作ることはできません。\n電波塔を建てて生存者を呼びましょう！,,,,
 sugarcaneCane,,,,Gnarl of Sugarcane,,,,
 sugarcaneCaneDesc,,,,一節のサトウキビです。種か砂糖に加工できます。,,,,
-xuiClientVersion,,,,ローカル:v16.0.0.32b日本語化,,,,
+xuiClientVersion,,,,ローカル:v16.0.1.2日本語化,,,,
 toModders,,,,xuiClientVersion と XUiwindows/window[@name='emptyInfoPanel']/rect/label[@name='serverversionText'] は、サーバーとクライアントのバージョンを比較するために用意しています。もし、追加パッチのバージョンも表示したい場合は、ローカル:v16.0.0.XX日本語化+BPEのように書き換えてください。,,,,
 ========NEW STUFF========,,,,,,,,
-toys,,,,Toys,,,,
-ksr,,,,KSR-29,,,,
-mp7,,,,H&K MP7,,,,
 ========+Workstation Desc========,,,,,,,,
 <<======Localizer01_end======>>,,,,,,,,

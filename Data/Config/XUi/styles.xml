@@ -49,7 +49,7 @@
 	<style type="label">
 		<style_entry name="color" value="[labelColor]" />
 		<style_entry name="font_face" value="AgencyB" />
-		<style_entry name="font_size" value="22" />
+		<style_entry name="font_size" value="23" />
 		<style_entry name="justify" value="left" />
 		<style_entry name="effect" value="none" />
 		<style_entry name="pivot" value="topleft" />
@@ -59,7 +59,7 @@
 	<style type="label" name="protection">
 		<style_entry name="width" value="50" />
 		<style_entry name="height" value="28" />
-		<style_entry name="font_size" value="20" />
+		<style_entry name="font_size" value="21" />
 	</style>
 	<style type="label" name="icon30px">
 		<style_entry name="width" value="30" />
@@ -192,14 +192,14 @@
 		<style_entry name="depth" value="2" />
 		<style_entry name="pos" value="42,-6" />
 		<style_entry name="size" value="250,32" />
-		<style_entry name="font_size" value="32" />
+		<style_entry name="font_size" value="26" />
 	</style>
 	<style name="header.timer" type="label">
 		<style_entry name="name" value="burnTimeLeft" />
 		<style_entry name="depth" value="2" />
 		<style_entry name="size" value="64,28" />
 		<style_entry name="text" value="00:00" />
-		<style_entry name="font_size" value="20" />
+		<style_entry name="font_size" value="21" />
 		<style_entry name="color" value="[mediumGrey]" />
 		<style_entry name="justify" value="right" />
 		<style_entry name="anchor_side" value="right" />
@@ -217,7 +217,7 @@
 	</style>
 	<style name="paging.window.name" type="label">
 		<style_entry name="depth" value="4" />
-		<style_entry name="font_size" value="36" />
+		<style_entry name="font_size" value="29" />
 		<style_entry name="pivot" value="center" />
 		<style_entry name="justify" value="center" />
 		<style_entry name="pos" value="300,-20" />
@@ -392,7 +392,7 @@
 	</style>
 	<style name="nonpaging.window.name" type="label">
 		<style_entry name="depth" value="4" />
-		<style_entry name="font_size" value="36" />
+		<style_entry name="font_size" value="29" />
 		<style_entry name="pivot" value="center" />
 		<style_entry name="justify" value="center" />
 		<style_entry name="pos" value="200,-20" />

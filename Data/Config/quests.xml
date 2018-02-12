@@ -264,7 +264,7 @@
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="quest_militaryAid" name="軍人の仇討ち" name_key="軍人の仇討ち" subtitle="仇を討ってくれ！" description="俺の小隊は放射能汚染区域で全滅しちまった！\n俺はあの憎きミュータントどもをお前に倒してほしいんだ！\n\n見返りはすぐに用意する。" icon="ui_game_symbol_zombie" category_key="challenge">
-		<objective type="ZombieKill" id="radApe" value="1" />
+		<objective type="AnimalKill" id="radApe" value="1" />
 		<objective type="ZombieKill" id="zombieWightFeralRadiated" value="1" />
 		<reward type="Item" id="aviatorGoggles" />
 	</quest>
@@ -568,8 +568,6 @@
 	</quest>
 	<quest id="Q_WAR5" group_name="弓術の訓練" name="弓術の訓練 5/5" subtitle="弓師「アシタカ」" description="自分の練度を示すために、真の試練が必要だ。" icon="ui_game_symbol_archery" repeatable="false" category_key="challenge" offer="挑戦するといい。心折れるまで、何度でも。" difficulty="hard">
 		<objective type="ZombieKill" id="zombieFatCop" value="20" />
-		<objective type="ZombieKill" id="zombieBoeFeral" value="3" />
-		<objective type="ZombieKill" id="zombieJoeFeral" value="3" />
 		<objective type="ZombieKill" id="zombieFemaleFatFeral" value="3" />
 		<objective type="ZombieKill" id="FirefighterZd" value="5" />
 		<objective type="ZombieKill" id="PoliceZd" value="5" />
@@ -673,8 +671,6 @@
 	</quest>
 	<quest id="Q_WBL5" group_name="鈍器の訓練" name="鈍器の訓練 5/5" subtitle="「トール」の化身" description="自分の練度を示すために、真の試練が必要だ。" icon="ui_game_symbol_club" repeatable="false" category_key="challenge" offer="挑戦するといい。心折れるまで、何度でも。" difficulty="hard">
 		<objective type="ZombieKill" id="zombieFatCop" value="20" />
-		<objective type="ZombieKill" id="zombieBoeFeral" value="3" />
-		<objective type="ZombieKill" id="zombieJoeFeral" value="3" />
 		<objective type="ZombieKill" id="zombieFemaleFatFeral" value="3" />
 		<objective type="ZombieKill" id="FirefighterZd" value="5" />
 		<objective type="ZombieKill" id="PoliceZd" value="5" />
@@ -772,8 +768,6 @@
 	</quest>
 	<quest id="Q_WBA5" group_name="刃物の訓練" name="刃物の訓練 5/5" subtitle="「宮本武蔵」" description="自分の練度を示すために、真の試練が必要だ。" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer="挑戦するといい。心折れるまで、何度でも。" difficulty="hard">
 		<objective type="ZombieKill" id="zombieFatCop" value="20" />
-		<objective type="ZombieKill" id="zombieBoeFeral" value="3" />
-		<objective type="ZombieKill" id="zombieJoeFeral" value="3" />
 		<objective type="ZombieKill" id="zombieFemaleFatFeral" value="3" />
 		<objective type="ZombieKill" id="FirefighterZd" value="5" />
 		<objective type="ZombieKill" id="PoliceZd" value="5" />
@@ -847,8 +841,6 @@
 	</quest>
 	<quest id="Q_WPI5" group_name="ハンドガンの訓練" name="ハンドガン 5/5" subtitle="007「ジェームズ・ポンド」" description="自分の練度を示すために、真の試練が必要だ。" icon="ui_game_symbol_pistol" repeatable="false" category_key="challenge" offer="挑戦するといい。心折れるまで、何度でも。" difficulty="hard">
 		<objective type="ZombieKill" id="zombieFatCop" value="20" />
-		<objective type="ZombieKill" id="zombieBoeFeral" value="3" />
-		<objective type="ZombieKill" id="zombieJoeFeral" value="3" />
 		<objective type="ZombieKill" id="zombieFemaleFatFeral" value="3" />
 		<objective type="ZombieKill" id="FirefighterZd" value="5" />
 		<objective type="ZombieKill" id="PoliceZd" value="5" />
@@ -917,8 +909,6 @@
 	</quest>
 	<quest id="Q_WSH5" group_name="ショットガンの訓練" name="ショットガン 5/5" subtitle="T-800「ターミネーター」" description="自分の練度を示すために、真の試練が必要だ。" icon="ui_game_symbol_shotgun" repeatable="false" category_key="challenge" offer="挑戦するといい。心折れるまで、何度でも。" difficulty="hard">
 		<objective type="ZombieKill" id="zombieFatCop" value="20" />
-		<objective type="ZombieKill" id="zombieBoeFeral" value="3" />
-		<objective type="ZombieKill" id="zombieJoeFeral" value="3" />
 		<objective type="ZombieKill" id="zombieFemaleFatFeral" value="3" />
 		<objective type="ZombieKill" id="FirefighterZd" value="5" />
 		<objective type="ZombieKill" id="PoliceZd" value="5" />
@@ -1023,8 +1013,6 @@
 	</quest>
 	<quest id="Q_WRI5" group_name="ライフルの訓練" name="ライフル 5/5" subtitle="死の弾丸" description="自分の練度を示すために、真の試練が必要だ。" icon="ui_game_symbol_rifle" repeatable="false" category_key="challenge" offer="挑戦するといい。心折れるまで、何度でも。" difficulty="hard">
 		<objective type="ZombieKill" id="zombieFatCop" value="20" />
-		<objective type="ZombieKill" id="zombieBoeFeral" value="3" />
-		<objective type="ZombieKill" id="zombieJoeFeral" value="3" />
 		<objective type="ZombieKill" id="zombieFemaleFatFeral" value="3" />
 		<objective type="ZombieKill" id="FirefighterZd" value="5" />
 		<objective type="ZombieKill" id="PoliceZd" value="5" />
